@@ -1,0 +1,60 @@
+name: Deploy Flamingo docs to GitHub Pages
+
+# The Docusaurus site lives in the `website/` subfolder of this repo, so every
+# build step sets working-directory: website. Builds on push to main and
+# publishes to GitHub Pages. After the first successful run, go to
+# Settings -> Pages and set "Source" to "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+    # Only rebuild when the docs site (or this workflow) actually changes.
+    paths:
+      - 'website/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Build website
+        run: npm run build
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Path is relative to the repo root, so include the subfolder.
+          path: website/build
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

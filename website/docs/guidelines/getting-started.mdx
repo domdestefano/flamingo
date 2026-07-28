@@ -1,0 +1,34 @@
+---
+title: Getting started
+status: stable
+tags: [overview, onboarding]
+---
+
+# Getting started with Flamingo
+
+Flamingo is the design system for the Delivery Hero rider app. This site is the
+single place to find each component's specification, live behaviour, usage
+rules, and accessibility notes.
+
+## How this site is organised
+
+- **Components** — one page per component, each with a live Storybook embed,
+  usage do's and don'ts, variants, and accessibility notes.
+- **Guidelines** — cross-cutting rules that apply across components: content,
+  placement, and interaction principles.
+
+## How pages stay current
+
+- **Live components** come straight from Storybook, so they always reflect the
+  shipped code.
+- **Design tokens** sync automatically from Figma via a pull request, so token
+  values on these pages match the source.
+- **Usage rules** are written by the design system team and reviewed like any
+  other change, through a pull request.
+
+## Contributing
+
+Designers can edit pages through the visual editor (added in a later phase)
+without touching Git. Engineers can edit the MDX files directly and open a pull
+request. Either way, merging to `main` rebuilds and redeploys the site
+automatically.
