@@ -1,0 +1,19 @@
+{
+  "name": "flamingo-cms",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "tinacms build && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tinacms/cli": "latest",
+    "@tinacms/datalayer": "^2.0.29",
+    "@tinacms/graphql": "^2.4.9",
+    "next": "^14.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "tinacms": "latest"
+  }
+}
