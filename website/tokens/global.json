@@ -1,0 +1,26 @@
+{
+  "colors": {
+    "primary": "#0066CC",
+    "secondary": "#666666",
+    "success": "#00A854",
+    "warning": "#FF7A00",
+    "error": "#FF4D4F"
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px"
+  },
+  "typography": {
+    "fontFamily": "'Inter', sans-serif",
+    "fontSize": {
+      "xs": "12px",
+      "sm": "14px",
+      "md": "16px",
+      "lg": "18px",
+      "xl": "20px"
+    }
+  }
+}
