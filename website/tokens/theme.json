@@ -1,0 +1,442 @@
+{
+  "baemin": {
+    "name": "Baemin",
+    "light": {
+      "primary-dark02": "#006462",
+      "primary-main": "#08A794",
+      "primary-light01": "#0ABFA9",
+      "primary-light02": "#0CEFD3",
+      "primary-light04": "#87FFE5",
+      "secondary-dark02": "#C29216",
+      "secondary-main": "#D9A92D",
+      "secondary-light01": "#E9B93D",
+      "secondary-light02": "#FFCF53",
+      "secondary-light04": "#FFE091"
+    },
+    "dark": {
+      "primary-dark02": "#87FFE5",
+      "primary-main": "#0CEFD3",
+      "primary-light01": "#0ABFA9",
+      "primary-light02": "#08A794",
+      "primary-light04": "#006462",
+      "secondary-dark02": "#C29216",
+      "secondary-main": "#D9A92D",
+      "secondary-light01": "#E9B93D",
+      "secondary-light02": "#FFCF53",
+      "secondary-light04": "#FFE091"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#87FFE5",
+      "color-light04-opacity06": "#87FFE5",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "efood": {
+    "name": "Efood",
+    "light": {
+      "primary-dark02": "#A40E0E",
+      "primary-main": "#ED2E2E",
+      "primary-light01": "#F15D5D",
+      "primary-light02": "#F7A1A1",
+      "primary-light04": "#FDE8E8",
+      "secondary-dark02": "#008B67",
+      "secondary-main": "#00B485",
+      "secondary-light01": "#03D49D",
+      "secondary-light02": "#42F0C3",
+      "secondary-light04": "#B1FFEB"
+    },
+    "dark": {
+      "primary-dark02": "#F7A1A1",
+      "primary-main": "#F15D5D",
+      "primary-light01": "#ED2E2E",
+      "primary-light02": "#A40E0E",
+      "primary-light04": "#590707",
+      "secondary-dark02": "#008B67",
+      "secondary-main": "#00B485",
+      "secondary-light01": "#03D49D",
+      "secondary-light02": "#42F0C3",
+      "secondary-light04": "#B1FFEB"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FDE8E8",
+      "color-light04-opacity06": "#FDE8E8",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "foodora": {
+    "name": "Foodora",
+    "light": {
+      "primary-dark02": "#C60D5C",
+      "primary-main": "#D70F64",
+      "primary-light01": "#FF3D8A",
+      "primary-light02": "#F7BDD1",
+      "primary-light04": "#FDF1F5",
+      "secondary-dark02": "#002C2C",
+      "secondary-main": "#1D4242",
+      "secondary-light01": "#226A6A",
+      "secondary-light02": "#61D2D2",
+      "secondary-light04": "#D2F8F8"
+    },
+    "dark": {
+      "primary-dark02": "#F7BDD1",
+      "primary-main": "#FF3D8A",
+      "primary-light01": "#D70F64",
+      "primary-light02": "#C60D5C",
+      "primary-light04": "#730835",
+      "secondary-dark02": "#002C2C",
+      "secondary-main": "#1D4242",
+      "secondary-light01": "#226A6A",
+      "secondary-light02": "#61D2D2",
+      "secondary-light04": "#D2F8F8"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FDF1F5",
+      "color-light04-opacity06": "#FDF1F5",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "foodpanda": {
+    "name": "Foodpanda",
+    "light": {
+      "primary-dark02": "#89003B",
+      "primary-main": "#D70F64",
+      "primary-light01": "#FF2B85",
+      "primary-light02": "#F386B4",
+      "primary-light04": "#FFE0ED",
+      "secondary-dark02": "#826F3D",
+      "secondary-main": "#9F8644",
+      "secondary-light01": "#C3A14A",
+      "secondary-light02": "#E6C673",
+      "secondary-light04": "#FFE6B3"
+    },
+    "dark": {
+      "primary-dark02": "#F386B4",
+      "primary-main": "#FF2B85",
+      "primary-light01": "#D70F64",
+      "primary-light02": "#89003B",
+      "primary-light04": "#3E041D",
+      "secondary-dark02": "#826F3D",
+      "secondary-main": "#9F8644",
+      "secondary-light01": "#C3A14A",
+      "secondary-light02": "#E6C673",
+      "secondary-light04": "#FFE6B3"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FFE0ED",
+      "color-light04-opacity06": "#FFE0ED",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "foody": {
+    "name": "Foody",
+    "light": {
+      "primary-dark02": "#BC4410",
+      "primary-main": "#EC662B",
+      "primary-light01": "#F29269",
+      "primary-light02": "#F7BBA1",
+      "primary-light04": "#FCE4D9",
+      "secondary-dark02": "#0098A7",
+      "secondary-main": "#07C1D4",
+      "secondary-light01": "#0FDCF0",
+      "secondary-light02": "#73F3FF",
+      "secondary-light04": "#BAF9FF"
+    },
+    "dark": {
+      "primary-dark02": "#F7BBA1",
+      "primary-main": "#F29269",
+      "primary-light01": "#EC662B",
+      "primary-light02": "#BC4410",
+      "primary-light04": "#682608",
+      "secondary-dark02": "#0098A7",
+      "secondary-main": "#07C1D4",
+      "secondary-light01": "#0FDCF0",
+      "secondary-light02": "#73F3FF",
+      "secondary-light04": "#BAF9FF"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FCE4D9",
+      "color-light04-opacity06": "#FCE4D9",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "glovo": {
+    "name": "Glovo",
+    "light": {
+      "primary-dark02": "#006F5A",
+      "primary-main": "#188669",
+      "primary-light01": "#009E81",
+      "primary-light02": "#5ACBB6",
+      "primary-light04": "#B6EEE3",
+      "secondary-dark02": "#BC9300",
+      "secondary-main": "#DBAB00",
+      "secondary-light01": "#EBBA0B",
+      "secondary-light02": "#FFCD1A",
+      "secondary-light04": "#FFE68B"
+    },
+    "dark": {
+      "primary-dark02": "#B6EEE3",
+      "primary-main": "#5ACBB6",
+      "primary-light01": "#188669",
+      "primary-light02": "#006F5A",
+      "primary-light04": "#003329",
+      "secondary-dark02": "#BC9300",
+      "secondary-main": "#DBAB00",
+      "secondary-light01": "#EBBA0B",
+      "secondary-light02": "#FFCD1A",
+      "secondary-light04": "#FFE68B"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#B6EEE3",
+      "color-light04-opacity06": "#B6EEE3",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "hunger-station": {
+    "name": "Hunger Station",
+    "light": {
+      "primary-dark02": "#5A2F23",
+      "primary-main": "#6F3D2F",
+      "primary-light01": "#B76953",
+      "primary-light02": "#EC967E",
+      "primary-light04": "#FFCEC1",
+      "secondary-dark02": "#A08700",
+      "secondary-main": "#BFA200",
+      "secondary-light01": "#DBB901",
+      "secondary-light02": "#FFD700",
+      "secondary-light04": "#FFF0A1"
+    },
+    "dark": {
+      "primary-dark02": "#FFCEC1",
+      "primary-main": "#EC967E",
+      "primary-light01": "#B76953",
+      "primary-light02": "#6F3D2F",
+      "primary-light04": "#481E12",
+      "secondary-dark02": "#A08700",
+      "secondary-main": "#BFA200",
+      "secondary-light01": "#DBB901",
+      "secondary-light02": "#FFD700",
+      "secondary-light04": "#FFF0A1"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FFCEC1",
+      "color-light04-opacity06": "#FFCEC1",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "pedidosya": {
+    "name": "PedidosYa",
+    "light": {
+      "primary-dark02": "#970131",
+      "primary-main": "#EA044E",
+      "primary-light01": "#F44F84",
+      "primary-light02": "#F690B1",
+      "primary-light04": "#FFD1E0",
+      "secondary-dark02": "#00A1BB",
+      "secondary-main": "#00BEDD",
+      "secondary-light01": "#00D9FC",
+      "secondary-light02": "#68EAFF",
+      "secondary-light04": "#BEF6FF"
+    },
+    "dark": {
+      "primary-dark02": "#F690B1",
+      "primary-main": "#F44F84",
+      "primary-light01": "#EA044E",
+      "primary-light02": "#970131",
+      "primary-light04": "#660022",
+      "secondary-dark02": "#00A1BB",
+      "secondary-main": "#00BEDD",
+      "secondary-light01": "#00D9FC",
+      "secondary-light02": "#68EAFF",
+      "secondary-light04": "#BEF6FF"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FFD1E0",
+      "color-light04-opacity06": "#FFD1E0",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "roadrunner": {
+    "name": "Roadrunner",
+    "light": {
+      "primary-dark02": "#232783",
+      "primary-main": "#3F47CF",
+      "primary-light01": "#6D80DC",
+      "primary-light02": "#A3B1E9",
+      "primary-light04": "#CDD8FF",
+      "secondary-dark02": "#E0005C",
+      "secondary-main": "#FF0061",
+      "secondary-light01": "#F65187",
+      "secondary-light02": "#FF7893",
+      "secondary-light04": "#FFD4D9"
+    },
+    "dark": {
+      "primary-dark02": "#CDD8FF",
+      "primary-main": "#A3B1E9",
+      "primary-light01": "#6D80DC",
+      "primary-light02": "#3F47CF",
+      "primary-light04": "#232783",
+      "secondary-dark02": "#E0005C",
+      "secondary-main": "#FF0061",
+      "secondary-light01": "#F65187",
+      "secondary-light02": "#FF7893",
+      "secondary-light04": "#FFD4D9"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#CDD8FF",
+      "color-light04-opacity06": "#CDD8FF",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "talabat": {
+    "name": "Talabat",
+    "light": {
+      "primary-dark02": "#E85301",
+      "primary-main": "#FF5A00",
+      "primary-light01": "#FF9459",
+      "primary-light02": "#FFCDB2",
+      "primary-light04": "#FFEEE5",
+      "secondary-dark02": "#012CAE",
+      "secondary-main": "#0E4AFF",
+      "secondary-light01": "#5881FF",
+      "secondary-light02": "#A6BCFF",
+      "secondary-light04": "#D3DEFF"
+    },
+    "dark": {
+      "primary-dark02": "#FFCDB2",
+      "primary-main": "#FF9459",
+      "primary-light01": "#FF5A00",
+      "primary-light02": "#E85301",
+      "primary-light04": "#662500",
+      "secondary-dark02": "#012CAE",
+      "secondary-main": "#0E4AFF",
+      "secondary-light01": "#5881FF",
+      "secondary-light02": "#A6BCFF",
+      "secondary-light04": "#D3DEFF"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FFDDCB",
+      "color-light04-opacity06": "#FFDDCB",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  },
+  "yemeksepeti": {
+    "name": "Yemeksepeti",
+    "light": {
+      "primary-dark02": "#AF0038",
+      "primary-main": "#FA0050",
+      "primary-light01": "#FB5187",
+      "primary-light02": "#FEB2CA",
+      "primary-light04": "#FFE6EE",
+      "secondary-dark02": "#0D9E5C",
+      "secondary-main": "#1EC177",
+      "secondary-light01": "#29DC8B",
+      "secondary-light02": "#5EFFB6",
+      "secondary-light04": "#B8FFDF"
+    },
+    "dark": {
+      "primary-dark02": "#FEB2CA",
+      "primary-main": "#FB5187",
+      "primary-light01": "#FA0050",
+      "primary-light02": "#AF0038",
+      "primary-light04": "#85002A",
+      "secondary-dark02": "#0D9E5C",
+      "secondary-main": "#1EC177",
+      "secondary-light01": "#29DC8B",
+      "secondary-light02": "#5EFFB6",
+      "secondary-light04": "#B8FFDF"
+    },
+    "illustration": {
+      "color-light04-opacity00": "#FFE6EE",
+      "color-light04-opacity06": "#FFE6EE",
+      "illustration90": "#4B1F00",
+      "illustration80": "#582E10",
+      "illustration70": "#904915",
+      "illustration60": "#C6773F",
+      "illustration50": "#DBA279",
+      "illustration40": "#EFBA95",
+      "illustration30": "#FDD5B9",
+      "illustration20": "#FFE7D5",
+      "illustration10": "#FFF1E7"
+    }
+  }
+}
