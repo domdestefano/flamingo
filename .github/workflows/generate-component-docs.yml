@@ -1,0 +1,60 @@
+name: Generate Component Documentation
+
+on:
+  pull_request:
+    types: [opened, labeled, synchronize]
+    paths:
+      - 'website/docs/components/**'
+  workflow_dispatch:
+    inputs:
+      component:
+        description: 'Component to document (e.g., button, badge, icon-button)'
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate-docs:
+    # Only run if PR has 'docs-gen' label OR manually triggered
+    if: |
+      contains(github.event.pull_request.labels.*.name, 'docs-gen') ||
+      github.event_name == 'workflow_dispatch'
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate component documentation
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        run: |
+          node scripts/generate-component-docs.js ${{ github.event.inputs.component || 'button' }}
+
+      - name: Commit generated documentation
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add website/docs/components/
+          git commit -m "docs: auto-generate ${{ github.event.inputs.component || 'button' }} documentation" || echo "No changes to commit"
+          git push
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Component documentation generated and committed'
+            })
