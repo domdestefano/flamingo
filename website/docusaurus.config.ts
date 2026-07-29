@@ -77,6 +77,10 @@ const config: Config = {
           label: 'Guidelines',
         },
         {
+          type: 'custom-brandSwitcher',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/deliveryhero/flamingo',
           label: 'GitHub',
           position: 'right',
