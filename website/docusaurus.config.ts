@@ -77,6 +77,16 @@ const config: Config = {
           label: 'Guidelines',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'tokensSidebar',
+          position: 'left',
+          label: 'Tokens',
+        },
+        {
+          type: 'custom-brandSwitcher',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/deliveryhero/flamingo',
           label: 'GitHub',
           position: 'right',
@@ -91,6 +101,7 @@ const config: Config = {
           items: [
             { label: 'Components', to: '/components/button' },
             { label: 'Guidelines', to: '/guidelines/getting-started' },
+            { label: 'Tokens', to: '/tokens/design-tokens' },
           ],
         },
       ],

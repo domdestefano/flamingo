@@ -1,0 +1,656 @@
+/**
+ * AUTO-GENERATED — do not edit directly.
+ * Regenerate with: node scripts/generate-token-css.js
+ * Source: website/tokens/global.json, website/tokens/theme.json
+ *
+ * Default brand: foodora (see DEFAULT_BRAND in scripts/generate-token-css.js)
+ * Light/dark follow Docusaurus's [data-theme] toggle automatically.
+ * Other brands are available via [data-brand='<slug>'] for a future brand switcher.
+ */
+
+:root {
+  /* spacing */
+  --flamingo-spacing00: 0px;
+  --flamingo-spacing01: 4px;
+  --flamingo-spacing02: 8px;
+  --flamingo-spacing03: 12px;
+  --flamingo-spacing04: 16px;
+  --flamingo-spacing05: 20px;
+  --flamingo-spacing06: 24px;
+  --flamingo-spacing07: 28px;
+  --flamingo-spacing08: 32px;
+  --flamingo-spacing09: 36px;
+  --flamingo-spacing10: 40px;
+  --flamingo-spacing11: 44px;
+  --flamingo-spacing12: 48px;
+  /* opacity */
+  --flamingo-opacity00: 0%;
+  --flamingo-opacity01: 4%;
+  --flamingo-opacity02: 8%;
+  --flamingo-opacity03: 16%;
+  --flamingo-opacity04: 32%;
+  --flamingo-opacity05: 40%;
+  --flamingo-opacity06: 72%;
+  --flamingo-opacity07: 80%;
+  --flamingo-opacity10: 100%;
+  /* corner-radius */
+  --flamingo-corner-radius01: 8px;
+  --flamingo-corner-radius02: 8px;
+  --flamingo-corner-radius03: 12px;
+  --flamingo-corner-radius04: 12px;
+  --flamingo-corner-radius05: 20px;
+  --flamingo-corner-radius06: 24px;
+  --flamingo-corner-radius07: 24px;
+  --flamingo-corner-radius08: 24px;
+  --flamingo-corner-radius09: 28px;
+  --flamingo-corner-radius10: 32px;
+  --flamingo-corner-radius11: 47px;
+  --flamingo-corner-radius12: 50px;
+  /* border-thickness */
+  --flamingo-border01: 1px;
+  --flamingo-border02: 2px;
+  --flamingo-border03: 3px;
+  /* font-size */
+  --flamingo-font-size01: 12px;
+  --flamingo-font-size02: 16px;
+  --flamingo-font-size03: 18px;
+  --flamingo-font-size04: 24px;
+  --flamingo-font-size05: 32px;
+  --flamingo-font-size06: 48px;
+  /* line-height */
+  --flamingo-line-height01: 16px;
+  --flamingo-line-height02: 24px;
+  --flamingo-line-height03: 32px;
+  --flamingo-line-height04: 48px;
+  --flamingo-line-height05: 64px;
+  /* letter-spacing */
+  --flamingo-letter-space01: -0.3px;
+  --flamingo-letter-space02: 0px;
+  /* paragraph-spacing */
+  --flamingo-paragraph-space01: 4px;
+  --flamingo-paragraph-space02: 8px;
+  --flamingo-paragraph-space03: 16px;
+  /* list-spacing */
+  --flamingo-list-space01: 4px;
+  --flamingo-list-space02: 8px;
+  /* blur */
+  --flamingo-blur00: 2px;
+  --flamingo-blur01: 24px;
+}
+
+/* Semantic colours — brand-independent, light/dark only */
+:root {
+  --flamingo-color-neutral100: #171717;
+  --flamingo-color-neutral80: #3F3F3F;
+  --flamingo-color-neutral50: #7C7C7C;
+  --flamingo-color-neutral30: #B9B9B9;
+  --flamingo-color-neutral20: #E0E0E0;
+  --flamingo-color-neutral10: #EDEDED;
+  --flamingo-color-neutral05: #F4F4F4;
+  --flamingo-color-neutral00: #FFFFFF;
+  --flamingo-color-primary-dark02: #232783;
+  --flamingo-color-primary-main: #3F47CF;
+  --flamingo-color-primary-light01: #6D80DC;
+  --flamingo-color-primary-light02: #A3B1E9;
+  --flamingo-color-primary-light04: #CDD8FF;
+  --flamingo-color-secondary-dark02: #E0005C;
+  --flamingo-color-secondary-main: #FF0061;
+  --flamingo-color-secondary-light01: #F65187;
+  --flamingo-color-secondary-light02: #FF7893;
+  --flamingo-color-secondary-light04: #FFD4D9;
+  --flamingo-color-success-main: #007C04;
+  --flamingo-color-success-light: #D8FCDD;
+  --flamingo-color-error-dark: #900101;
+  --flamingo-color-error-main: #C02424;
+  --flamingo-color-error-light: #FFE2E2;
+  --flamingo-color-alert-main: #C15108;
+  --flamingo-color-alert-light: #FFFAE6;
+  --flamingo-color-background-default: #FFFFFF;
+  --flamingo-color-background-light: #F4F4F4;
+  --flamingo-color-background-brand: #3F47CF;
+  --flamingo-color-background-overlay: rgba(47, 47, 47, 0.8);
+  --flamingo-color-overlay-primary: #FFFFFF;
+  --flamingo-color-overlay-secondary: #EDEDED;
+  --flamingo-color-overlay-tertiary: #171717;
+  --flamingo-color-shadow-light: rgba(23, 23, 23, 0.32);
+  --flamingo-color-shadow-heavy: rgba(23, 23, 23, 0.16);
+  --flamingo-color-neutral-opacity07: rgba(23, 23, 23, 0.8);
+  --flamingo-color-neutral-opacity06: rgba(23, 23, 23, 0.72);
+  --flamingo-color-neutral-opacity05: rgba(23, 23, 23, 0.4);
+  --flamingo-color-neutral-opacity04: rgba(23, 23, 23, 0.32);
+  --flamingo-color-neutral-opacity03: rgba(23, 23, 23, 0.16);
+  --flamingo-color-neutral-opacity02: rgba(23, 23, 23, 0.08);
+  --flamingo-color-neutral-opacity01: rgba(23, 23, 23, 0.04);
+  --flamingo-color-neutral-opacity00: rgba(23, 23, 23, 0);
+  --flamingo-color-error-opacity06: rgba(192, 36, 36, 0.72);
+  --flamingo-color-error-opacity05: rgba(192, 36, 36, 0.4);
+  --flamingo-color-error-opacity03: rgba(192, 36, 36, 0.16);
+  --flamingo-color-white-opacity03: rgba(255, 255, 255, 0.16);
+  --flamingo-color-white-opacity02: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme='dark'] {
+  --flamingo-color-neutral100: #FFFFFF;
+  --flamingo-color-neutral80: #EDEDED;
+  --flamingo-color-neutral50: #E0E0E0;
+  --flamingo-color-neutral30: #9B9B9B;
+  --flamingo-color-neutral20: #5D5D5D;
+  --flamingo-color-neutral10: #3F3F3F;
+  --flamingo-color-neutral05: #272727;
+  --flamingo-color-neutral00: #171717;
+  --flamingo-color-primary-dark02: #CDD8FF;
+  --flamingo-color-primary-main: #A3B1E9;
+  --flamingo-color-primary-light01: #6D80DC;
+  --flamingo-color-primary-light02: #3F47CF;
+  --flamingo-color-primary-light04: #232783;
+  --flamingo-color-secondary-dark02: #E0005C;
+  --flamingo-color-secondary-main: #FF0061;
+  --flamingo-color-secondary-light01: #F65187;
+  --flamingo-color-secondary-light02: #FF7893;
+  --flamingo-color-secondary-light04: #FFD4D9;
+  --flamingo-color-success-main: #43D717;
+  --flamingo-color-success-light: #09560B;
+  --flamingo-color-error-dark: #FF7174;
+  --flamingo-color-error-main: #FF5D4B;
+  --flamingo-color-error-light: #5D0304;
+  --flamingo-color-alert-main: #F7893B;
+  --flamingo-color-alert-light: #563709;
+  --flamingo-color-background-default: #171717;
+  --flamingo-color-background-light: #272727;
+  --flamingo-color-background-brand: #3F47CF;
+  --flamingo-color-background-overlay: rgba(47, 47, 47, 0.8);
+  --flamingo-color-overlay-primary: #FFFFFF;
+  --flamingo-color-overlay-secondary: #EDEDED;
+  --flamingo-color-overlay-tertiary: #171717;
+  --flamingo-color-shadow-light: rgba(255, 255, 255, 0.32);
+  --flamingo-color-shadow-heavy: #000000;
+  --flamingo-color-neutral-opacity07: rgba(255, 255, 255, 0.8);
+  --flamingo-color-neutral-opacity06: rgba(255, 255, 255, 0.72);
+  --flamingo-color-neutral-opacity05: rgba(255, 255, 255, 0.6);
+  --flamingo-color-neutral-opacity04: rgba(255, 255, 255, 0.4);
+  --flamingo-color-neutral-opacity03: rgba(255, 255, 255, 0.32);
+  --flamingo-color-neutral-opacity02: rgba(255, 255, 255, 0.24);
+  --flamingo-color-neutral-opacity01: rgba(255, 255, 255, 0.16);
+  --flamingo-color-neutral-opacity00: rgba(255, 255, 255, 0);
+  --flamingo-color-error-opacity06: rgba(255, 93, 75, 0.72);
+  --flamingo-color-error-opacity05: rgba(255, 93, 75, 0.48);
+  --flamingo-color-error-opacity03: rgba(255, 93, 75, 0.24);
+  --flamingo-color-white-opacity03: rgba(23, 23, 23, 0.16);
+  --flamingo-color-white-opacity02: rgba(23, 23, 23, 0.08);
+}
+
+/* Baemin — light */
+[data-brand='baemin'] {
+  --flamingo-primary-dark02: #006462;
+  --flamingo-primary-main: #08A794;
+  --flamingo-primary-light01: #0ABFA9;
+  --flamingo-primary-light02: #0CEFD3;
+  --flamingo-primary-light04: #87FFE5;
+  --flamingo-secondary-dark02: #C29216;
+  --flamingo-secondary-main: #D9A92D;
+  --flamingo-secondary-light01: #E9B93D;
+  --flamingo-secondary-light02: #FFCF53;
+  --flamingo-secondary-light04: #FFE091;
+}
+
+/* Baemin — dark */
+[data-brand='baemin'][data-theme='dark'] {
+  --flamingo-primary-dark02: #87FFE5;
+  --flamingo-primary-main: #0CEFD3;
+  --flamingo-primary-light01: #0ABFA9;
+  --flamingo-primary-light02: #08A794;
+  --flamingo-primary-light04: #006462;
+  --flamingo-secondary-dark02: #C29216;
+  --flamingo-secondary-main: #D9A92D;
+  --flamingo-secondary-light01: #E9B93D;
+  --flamingo-secondary-light02: #FFCF53;
+  --flamingo-secondary-light04: #FFE091;
+}
+
+/* Baemin — illustration */
+[data-brand='baemin'] {
+  --flamingo-color-light04-opacity00: rgba(135, 255, 229, 0);
+  --flamingo-color-light04-opacity06: rgba(135, 255, 229, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Efood — light */
+[data-brand='efood'] {
+  --flamingo-primary-dark02: #A40E0E;
+  --flamingo-primary-main: #ED2E2E;
+  --flamingo-primary-light01: #F15D5D;
+  --flamingo-primary-light02: #F7A1A1;
+  --flamingo-primary-light04: #FDE8E8;
+  --flamingo-secondary-dark02: #008B67;
+  --flamingo-secondary-main: #00B485;
+  --flamingo-secondary-light01: #03D49D;
+  --flamingo-secondary-light02: #42F0C3;
+  --flamingo-secondary-light04: #B1FFEB;
+}
+
+/* Efood — dark */
+[data-brand='efood'][data-theme='dark'] {
+  --flamingo-primary-dark02: #F7A1A1;
+  --flamingo-primary-main: #F15D5D;
+  --flamingo-primary-light01: #ED2E2E;
+  --flamingo-primary-light02: #A40E0E;
+  --flamingo-primary-light04: #590707;
+  --flamingo-secondary-dark02: #008B67;
+  --flamingo-secondary-main: #00B485;
+  --flamingo-secondary-light01: #03D49D;
+  --flamingo-secondary-light02: #42F0C3;
+  --flamingo-secondary-light04: #B1FFEB;
+}
+
+/* Efood — illustration */
+[data-brand='efood'] {
+  --flamingo-color-light04-opacity00: rgba(253, 232, 232, 0);
+  --flamingo-color-light04-opacity06: rgba(253, 232, 232, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Foodora — light */
+:root,
+[data-brand='foodora'] {
+  --flamingo-primary-dark02: #C60D5C;
+  --flamingo-primary-main: #D70F64;
+  --flamingo-primary-light01: #FF3D8A;
+  --flamingo-primary-light02: #F7BDD1;
+  --flamingo-primary-light04: #FDF1F5;
+  --flamingo-secondary-dark02: #002C2C;
+  --flamingo-secondary-main: #1D4242;
+  --flamingo-secondary-light01: #226A6A;
+  --flamingo-secondary-light02: #61D2D2;
+  --flamingo-secondary-light04: #D2F8F8;
+}
+
+/* Foodora — dark */
+[data-theme='dark'],
+[data-brand='foodora'][data-theme='dark'] {
+  --flamingo-primary-dark02: #F7BDD1;
+  --flamingo-primary-main: #FF3D8A;
+  --flamingo-primary-light01: #D70F64;
+  --flamingo-primary-light02: #C60D5C;
+  --flamingo-primary-light04: #730835;
+  --flamingo-secondary-dark02: #002C2C;
+  --flamingo-secondary-main: #1D4242;
+  --flamingo-secondary-light01: #226A6A;
+  --flamingo-secondary-light02: #61D2D2;
+  --flamingo-secondary-light04: #D2F8F8;
+}
+
+/* Foodora — illustration */
+:root,
+[data-brand='foodora'] {
+  --flamingo-color-light04-opacity00: rgba(253, 241, 245, 0);
+  --flamingo-color-light04-opacity06: rgba(253, 241, 245, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Foodpanda — light */
+[data-brand='foodpanda'] {
+  --flamingo-primary-dark02: #89003B;
+  --flamingo-primary-main: #D70F64;
+  --flamingo-primary-light01: #FF2B85;
+  --flamingo-primary-light02: #F386B4;
+  --flamingo-primary-light04: #FFE0ED;
+  --flamingo-secondary-dark02: #826F3D;
+  --flamingo-secondary-main: #9F8644;
+  --flamingo-secondary-light01: #C3A14A;
+  --flamingo-secondary-light02: #E6C673;
+  --flamingo-secondary-light04: #FFE6B3;
+}
+
+/* Foodpanda — dark */
+[data-brand='foodpanda'][data-theme='dark'] {
+  --flamingo-primary-dark02: #F386B4;
+  --flamingo-primary-main: #FF2B85;
+  --flamingo-primary-light01: #D70F64;
+  --flamingo-primary-light02: #89003B;
+  --flamingo-primary-light04: #3E041D;
+  --flamingo-secondary-dark02: #826F3D;
+  --flamingo-secondary-main: #9F8644;
+  --flamingo-secondary-light01: #C3A14A;
+  --flamingo-secondary-light02: #E6C673;
+  --flamingo-secondary-light04: #FFE6B3;
+}
+
+/* Foodpanda — illustration */
+[data-brand='foodpanda'] {
+  --flamingo-color-light04-opacity00: rgba(255, 224, 237, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 224, 237, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Foody — light */
+[data-brand='foody'] {
+  --flamingo-primary-dark02: #BC4410;
+  --flamingo-primary-main: #EC662B;
+  --flamingo-primary-light01: #F29269;
+  --flamingo-primary-light02: #F7BBA1;
+  --flamingo-primary-light04: #FCE4D9;
+  --flamingo-secondary-dark02: #0098A7;
+  --flamingo-secondary-main: #07C1D4;
+  --flamingo-secondary-light01: #0FDCF0;
+  --flamingo-secondary-light02: #73F3FF;
+  --flamingo-secondary-light04: #BAF9FF;
+}
+
+/* Foody — dark */
+[data-brand='foody'][data-theme='dark'] {
+  --flamingo-primary-dark02: #F7BBA1;
+  --flamingo-primary-main: #F29269;
+  --flamingo-primary-light01: #EC662B;
+  --flamingo-primary-light02: #BC4410;
+  --flamingo-primary-light04: #682608;
+  --flamingo-secondary-dark02: #0098A7;
+  --flamingo-secondary-main: #07C1D4;
+  --flamingo-secondary-light01: #0FDCF0;
+  --flamingo-secondary-light02: #73F3FF;
+  --flamingo-secondary-light04: #BAF9FF;
+}
+
+/* Foody — illustration */
+[data-brand='foody'] {
+  --flamingo-color-light04-opacity00: rgba(252, 228, 217, 0);
+  --flamingo-color-light04-opacity06: rgba(252, 228, 217, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Glovo — light */
+[data-brand='glovo'] {
+  --flamingo-primary-dark02: #006F5A;
+  --flamingo-primary-main: #188669;
+  --flamingo-primary-light01: #009E81;
+  --flamingo-primary-light02: #5ACBB6;
+  --flamingo-primary-light04: #B6EEE3;
+  --flamingo-secondary-dark02: #BC9300;
+  --flamingo-secondary-main: #DBAB00;
+  --flamingo-secondary-light01: #EBBA0B;
+  --flamingo-secondary-light02: #FFCD1A;
+  --flamingo-secondary-light04: #FFE68B;
+}
+
+/* Glovo — dark */
+[data-brand='glovo'][data-theme='dark'] {
+  --flamingo-primary-dark02: #B6EEE3;
+  --flamingo-primary-main: #5ACBB6;
+  --flamingo-primary-light01: #188669;
+  --flamingo-primary-light02: #006F5A;
+  --flamingo-primary-light04: #003329;
+  --flamingo-secondary-dark02: #BC9300;
+  --flamingo-secondary-main: #DBAB00;
+  --flamingo-secondary-light01: #EBBA0B;
+  --flamingo-secondary-light02: #FFCD1A;
+  --flamingo-secondary-light04: #FFE68B;
+}
+
+/* Glovo — illustration */
+[data-brand='glovo'] {
+  --flamingo-color-light04-opacity00: rgba(182, 238, 227, 0);
+  --flamingo-color-light04-opacity06: rgba(182, 238, 227, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Hunger Station — light */
+[data-brand='hunger-station'] {
+  --flamingo-primary-dark02: #5A2F23;
+  --flamingo-primary-main: #6F3D2F;
+  --flamingo-primary-light01: #B76953;
+  --flamingo-primary-light02: #EC967E;
+  --flamingo-primary-light04: #FFCEC1;
+  --flamingo-secondary-dark02: #A08700;
+  --flamingo-secondary-main: #BFA200;
+  --flamingo-secondary-light01: #DBB901;
+  --flamingo-secondary-light02: #FFD700;
+  --flamingo-secondary-light04: #FFF0A1;
+}
+
+/* Hunger Station — dark */
+[data-brand='hunger-station'][data-theme='dark'] {
+  --flamingo-primary-dark02: #FFCEC1;
+  --flamingo-primary-main: #EC967E;
+  --flamingo-primary-light01: #B76953;
+  --flamingo-primary-light02: #6F3D2F;
+  --flamingo-primary-light04: #481E12;
+  --flamingo-secondary-dark02: #A08700;
+  --flamingo-secondary-main: #BFA200;
+  --flamingo-secondary-light01: #DBB901;
+  --flamingo-secondary-light02: #FFD700;
+  --flamingo-secondary-light04: #FFF0A1;
+}
+
+/* Hunger Station — illustration */
+[data-brand='hunger-station'] {
+  --flamingo-color-light04-opacity00: rgba(255, 206, 193, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 206, 193, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* PedidosYa — light */
+[data-brand='pedidosya'] {
+  --flamingo-primary-dark02: #970131;
+  --flamingo-primary-main: #EA044E;
+  --flamingo-primary-light01: #F44F84;
+  --flamingo-primary-light02: #F690B1;
+  --flamingo-primary-light04: #FFD1E0;
+  --flamingo-secondary-dark02: #00A1BB;
+  --flamingo-secondary-main: #00BEDD;
+  --flamingo-secondary-light01: #00D9FC;
+  --flamingo-secondary-light02: #68EAFF;
+  --flamingo-secondary-light04: #BEF6FF;
+}
+
+/* PedidosYa — dark */
+[data-brand='pedidosya'][data-theme='dark'] {
+  --flamingo-primary-dark02: #F690B1;
+  --flamingo-primary-main: #F44F84;
+  --flamingo-primary-light01: #EA044E;
+  --flamingo-primary-light02: #970131;
+  --flamingo-primary-light04: #660022;
+  --flamingo-secondary-dark02: #00A1BB;
+  --flamingo-secondary-main: #00BEDD;
+  --flamingo-secondary-light01: #00D9FC;
+  --flamingo-secondary-light02: #68EAFF;
+  --flamingo-secondary-light04: #BEF6FF;
+}
+
+/* PedidosYa — illustration */
+[data-brand='pedidosya'] {
+  --flamingo-color-light04-opacity00: rgba(255, 209, 224, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 209, 224, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Roadrunner — light */
+[data-brand='roadrunner'] {
+  --flamingo-primary-dark02: #232783;
+  --flamingo-primary-main: #3F47CF;
+  --flamingo-primary-light01: #6D80DC;
+  --flamingo-primary-light02: #A3B1E9;
+  --flamingo-primary-light04: #CDD8FF;
+  --flamingo-secondary-dark02: #E0005C;
+  --flamingo-secondary-main: #FF0061;
+  --flamingo-secondary-light01: #F65187;
+  --flamingo-secondary-light02: #FF7893;
+  --flamingo-secondary-light04: #FFD4D9;
+}
+
+/* Roadrunner — dark */
+[data-brand='roadrunner'][data-theme='dark'] {
+  --flamingo-primary-dark02: #CDD8FF;
+  --flamingo-primary-main: #A3B1E9;
+  --flamingo-primary-light01: #6D80DC;
+  --flamingo-primary-light02: #3F47CF;
+  --flamingo-primary-light04: #232783;
+  --flamingo-secondary-dark02: #E0005C;
+  --flamingo-secondary-main: #FF0061;
+  --flamingo-secondary-light01: #F65187;
+  --flamingo-secondary-light02: #FF7893;
+  --flamingo-secondary-light04: #FFD4D9;
+}
+
+/* Roadrunner — illustration */
+[data-brand='roadrunner'] {
+  --flamingo-color-light04-opacity00: rgba(205, 216, 255, 0);
+  --flamingo-color-light04-opacity06: rgba(205, 216, 255, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Talabat — light */
+[data-brand='talabat'] {
+  --flamingo-primary-dark02: #E85301;
+  --flamingo-primary-main: #FF5A00;
+  --flamingo-primary-light01: #FF9459;
+  --flamingo-primary-light02: #FFCDB2;
+  --flamingo-primary-light04: #FFEEE5;
+  --flamingo-secondary-dark02: #012CAE;
+  --flamingo-secondary-main: #0E4AFF;
+  --flamingo-secondary-light01: #5881FF;
+  --flamingo-secondary-light02: #A6BCFF;
+  --flamingo-secondary-light04: #D3DEFF;
+}
+
+/* Talabat — dark */
+[data-brand='talabat'][data-theme='dark'] {
+  --flamingo-primary-dark02: #FFCDB2;
+  --flamingo-primary-main: #FF9459;
+  --flamingo-primary-light01: #FF5A00;
+  --flamingo-primary-light02: #E85301;
+  --flamingo-primary-light04: #662500;
+  --flamingo-secondary-dark02: #012CAE;
+  --flamingo-secondary-main: #0E4AFF;
+  --flamingo-secondary-light01: #5881FF;
+  --flamingo-secondary-light02: #A6BCFF;
+  --flamingo-secondary-light04: #D3DEFF;
+}
+
+/* Talabat — illustration */
+[data-brand='talabat'] {
+  --flamingo-color-light04-opacity00: rgba(255, 221, 203, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 221, 203, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
+/* Yemeksepeti — light */
+[data-brand='yemeksepeti'] {
+  --flamingo-primary-dark02: #AF0038;
+  --flamingo-primary-main: #FA0050;
+  --flamingo-primary-light01: #FB5187;
+  --flamingo-primary-light02: #FEB2CA;
+  --flamingo-primary-light04: #FFE6EE;
+  --flamingo-secondary-dark02: #0D9E5C;
+  --flamingo-secondary-main: #1EC177;
+  --flamingo-secondary-light01: #29DC8B;
+  --flamingo-secondary-light02: #5EFFB6;
+  --flamingo-secondary-light04: #B8FFDF;
+}
+
+/* Yemeksepeti — dark */
+[data-brand='yemeksepeti'][data-theme='dark'] {
+  --flamingo-primary-dark02: #FEB2CA;
+  --flamingo-primary-main: #FB5187;
+  --flamingo-primary-light01: #FA0050;
+  --flamingo-primary-light02: #AF0038;
+  --flamingo-primary-light04: #85002A;
+  --flamingo-secondary-dark02: #0D9E5C;
+  --flamingo-secondary-main: #1EC177;
+  --flamingo-secondary-light01: #29DC8B;
+  --flamingo-secondary-light02: #5EFFB6;
+  --flamingo-secondary-light04: #B8FFDF;
+}
+
+/* Yemeksepeti — illustration */
+[data-brand='yemeksepeti'] {
+  --flamingo-color-light04-opacity00: rgba(255, 230, 238, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 230, 238, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}

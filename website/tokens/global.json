@@ -1,0 +1,79 @@
+{
+  "spacing": {
+    "spacing00": 0,
+    "spacing01": 4,
+    "spacing02": 8,
+    "spacing03": 12,
+    "spacing04": 16,
+    "spacing05": 20,
+    "spacing06": 24,
+    "spacing07": 28,
+    "spacing08": 32,
+    "spacing09": 36,
+    "spacing10": 40,
+    "spacing11": 44,
+    "spacing12": 48
+  },
+  "opacity": {
+    "opacity00": 0,
+    "opacity01": 4,
+    "opacity02": 8,
+    "opacity03": 16,
+    "opacity04": 32,
+    "opacity05": 40,
+    "opacity06": 72,
+    "opacity07": 80,
+    "opacity10": 100
+  },
+  "corner-radius": {
+    "corner-radius01": 8,
+    "corner-radius02": 8,
+    "corner-radius03": 12,
+    "corner-radius04": 12,
+    "corner-radius05": 20,
+    "corner-radius06": 24,
+    "corner-radius07": 24,
+    "corner-radius08": 24,
+    "corner-radius09": 28,
+    "corner-radius10": 32,
+    "corner-radius11": 47,
+    "corner-radius12": 50
+  },
+  "border-thickness": {
+    "border01": 1,
+    "border02": 2,
+    "border03": 3
+  },
+  "font-size": {
+    "font-size01": 12,
+    "font-size02": 16,
+    "font-size03": 18,
+    "font-size04": 24,
+    "font-size05": 32,
+    "font-size06": 48
+  },
+  "line-height": {
+    "line-height01": 16,
+    "line-height02": 24,
+    "line-height03": 32,
+    "line-height04": 48,
+    "line-height05": 64
+  },
+  "letter-spacing": {
+    "letter-space01": -0.3,
+    "letter-space02": 0
+  },
+  "paragraph-spacing": {
+    "paragraph-space01": 4,
+    "paragraph-space02": 8,
+    "paragraph-space03": 16
+  },
+  "list-spacing": {
+    "list-space01": 4,
+    "list-space02": 8
+  },
+  "blur": {
+    "blur00": 2,
+    "blur01": 24
+  }
+}

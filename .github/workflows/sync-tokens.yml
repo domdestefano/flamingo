@@ -1,8 +1,13 @@
-name: Sync Design Tokens from Figma
+name: Transform Design Tokens
 
 on:
-  schedule:
-    - cron: '0 9 * * 1' # Every Monday at 9am
+  push:
+    branches: [main]
+    paths:
+      - 'tokens-source/**'
+  pull_request:
+    paths:
+      - 'tokens-source/**'
   workflow_dispatch: # Manual trigger
 
 permissions:
@@ -10,7 +15,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  sync-tokens:
+  transform-tokens:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,30 +26,17 @@ jobs:
         with:
           node-version: 20
 
-      - name: Fetch tokens from Figma
-        id: fetch-tokens
-        env:
-          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          FIGMA_FILE_KEY: SS96QDVedbpCNWbkju1UbI
+      - name: Transform Figma token export into JSON
+        run: node scripts/transform-figma-tokens.js
+
+      - name: Generate CSS custom properties from tokens
+        run: node scripts/generate-token-css.js
+
+      - name: Commit generated tokens
+        if: github.event_name != 'pull_request'
         run: |
-          node scripts/sync-tokens-from-figma.js
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'chore(tokens): sync design tokens from Figma'
-          title: 'chore: sync design tokens from Figma'
-          body: |
-            ## Design Tokens Sync
-
-            Automated sync of design tokens from Figma Core Library.
-
-            **Changes:**
-            - Color tokens (from theme)
-            - Spacing tokens
-            - Typography tokens
-
-            Please review and merge if tokens are correct.
-          branch: chore/sync-tokens-${{ github.run_number }}
-          delete-branch: true
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add website/tokens/ website/src/css/tokens.css
+          git diff --staged --quiet && echo "No token changes" || git commit -m "chore(tokens): regenerate from tokens-source/"
+          git push
