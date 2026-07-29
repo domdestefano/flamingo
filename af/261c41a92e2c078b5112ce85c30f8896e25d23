@@ -1,0 +1,36 @@
+website/package.json
+  s_54bf5f254aeba9::t_d72f6d7b3fc365 25
+.github/workflows/export-component-images.yml
+  s_54bf5f254aeba9::t_2cfd95ce640a5e 32,34
+  s_54bf5f254aeba9::t_72c798711a9e5b 1-31,33,35-53
+scripts/export-component-images.js
+  s_54bf5f254aeba9::t_30cd3956b87c9c 1-117
+.github/workflows/sync-tokens.yml
+  s_54bf5f254aeba9::t_d2c68211df7958 1-27,29,31-50
+  s_54bf5f254aeba9::t_4a232775b4a5de 28,30
+.github/workflows/generate-component-docs.yml
+  s_54bf5f254aeba9::t_1e05527cf5d617 1-38,40-60
+  s_54bf5f254aeba9::t_90282eab073e1b 39
+scripts/sync-tokens-from-figma.js
+  s_54bf5f254aeba9::t_1bceb674cc11ec 1-147
+scripts/generate-component-docs.js
+  s_54bf5f254aeba9::t_eec499c0515aa6 1-65
+PHASE3_SETUP.md
+  s_54bf5f254aeba9::t_1d2bbb228895a2 1-169
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "af261c41a92e2c078b5112ce85c30f8896e25d23",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
