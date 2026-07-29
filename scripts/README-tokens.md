@@ -51,10 +51,25 @@ This generates:
   opacity, blur (identical across light/dark, sourced from `dark-mode/Off.tokens.json`)
 - `website/tokens/theme.json` — colours, per brand, per light/dark mode
 
-## Step 4: Commit and open a PR
+## Step 4: Regenerate the site's CSS custom properties
 
 ```bash
-git add tokens-source/ website/tokens/
+node scripts/generate-token-css.js
+```
+
+This writes `website/src/css/tokens.css`, which is imported by
+`website/src/css/custom.css` and wired to Infima's theme variables
+(`--ifm-color-primary` etc.), so the docs site itself reflects the current
+brand colours. Light/dark mode follows Docusaurus's built-in `[data-theme]`
+toggle automatically. Every brand is emitted behind a `[data-brand='<slug>']`
+selector for a future brand switcher — see `DEFAULT_BRAND` in
+`scripts/generate-token-css.js` to change which brand powers the site by
+default (currently `foodora`).
+
+## Step 5: Commit and open a PR
+
+```bash
+git add tokens-source/ website/tokens/ website/src/css/tokens.css
 git commit -m "chore(tokens): update from Figma export"
 git push
 ```
