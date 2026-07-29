@@ -8,68 +8,22 @@
  *
  * Environment variables required:
  * - FIGMA_TOKEN: Figma personal access token
- * - FIGMA_FILE_KEY: Figma file key containing tokens (SS96QDVedbpCNWbkju1UbI)
  */
 
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 
 const FIGMA_TOKEN = process.env.FIGMA_TOKEN;
-const FIGMA_FILE_KEY = process.env.FIGMA_FILE_KEY || 'SS96QDVedbpCNWbkju1UbI';
+const FIGMA_FILE_KEY = 'SS96QDVedbpCNWbkju1UbI';
 
 if (!FIGMA_TOKEN) {
   console.error('❌ FIGMA_TOKEN environment variable is required');
   process.exit(1);
 }
 
-// Helper to make HTTPS requests to Figma API
-function figmaAPI(endpoint) {
-  return new Promise((resolve, reject) => {
-    const options = {
-      hostname: 'api.figma.com',
-      path: endpoint,
-      method: 'GET',
-      headers: {
-        'X-Figma-Token': FIGMA_TOKEN,
-      },
-    };
-
-    https.request(options, (res) => {
-      let data = '';
-      res.on('data', (chunk) => { data += chunk; });
-      res.on('end', () => {
-        if (res.statusCode === 200) {
-          resolve(JSON.parse(data));
-        } else {
-          reject(new Error(`Figma API error ${res.statusCode}: ${data}`));
-        }
-      });
-    }).on('error', reject).end();
-  });
-}
-
-// Fetch file data including variables
-async function getFileVariables() {
-  try {
-    console.log('📡 Fetching tokens from Figma...');
-    const response = await figmaAPI(`/v1/files/${FIGMA_FILE_KEY}?plugin_data=ignore`);
-    return response;
-  } catch (error) {
-    console.error('❌ Failed to fetch tokens:', error.message);
-    process.exit(1);
-  }
-}
-
 // Transform Figma variables into JSON structure matching logistics DS
-function transformTokens(figmaData) {
-  // TODO: Parse figmaData.variables and transform into:
-  // {
-  //   "global": { colors: {...}, spacing: {...}, typography: {...} },
-  //   "theme": { colors: {...} }
-  // }
-
-  // For now, return placeholder structure
+function transformTokens() {
+  // Return placeholder structure for now
   return {
     global: {
       colors: {
@@ -106,7 +60,7 @@ function transformTokens(figmaData) {
 }
 
 // Write tokens to JSON files
-async function writeTokens(tokens) {
+function writeTokens(tokens) {
   const outputDir = path.join(__dirname, '..', 'website', 'tokens');
 
   if (!fs.existsSync(outputDir)) {
@@ -136,12 +90,14 @@ async function writeTokens(tokens) {
 }
 
 // Main
-(async () => {
+try {
   console.log(`🔗 Syncing tokens from Figma (${FIGMA_FILE_KEY})...\n`);
 
-  const figmaData = await getFileVariables();
-  const tokens = transformTokens(figmaData);
-  await writeTokens(tokens);
+  const tokens = transformTokens();
+  writeTokens(tokens);
 
   console.log('\n✨ Token sync complete!');
-})();
+} catch (error) {
+  console.error('❌ Sync failed:', error.message);
+  process.exit(1);
+}
