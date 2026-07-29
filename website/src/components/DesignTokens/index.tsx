@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import globalTokens from '@site/tokens/global.json';
 import semanticTokens from '@site/tokens/semantic.json';
 import theme from '@site/tokens/theme.json';
@@ -228,102 +230,110 @@ export default function DesignTokens(): React.ReactElement {
 
   return (
     <div className={styles.root}>
-      <Section
-        title="Semantic colours"
-        description="Brand-independent — used everywhere regardless of brand. These follow light/dark mode only."
-      >
-        <SemanticColourGroups names={Object.keys(semanticTokens.light)} />
-      </Section>
+      <Tabs groupId="design-tokens" queryString>
+        <TabItem value="colours" label="Colours" default>
+          <Section
+            title="Semantic colours"
+            description="Brand-independent — used everywhere regardless of brand. These follow light/dark mode only."
+          >
+            <SemanticColourGroups names={Object.keys(semanticTokens.light)} />
+          </Section>
 
-      <Section
-        title="Brand colours"
-        description="Primary, secondary, and illustration colours for whichever brand is currently selected in the navbar switcher — these swatches update live when you change it."
-      >
-        <Subsection title="Primary">
-          <SwatchGrid names={primaryNames} />
-        </Subsection>
-        <Subsection title="Secondary">
-          <SwatchGrid names={secondaryNames} />
-        </Subsection>
-        <Subsection title="Illustration">
-          <SwatchGrid names={Object.keys(reference.illustration)} />
-        </Subsection>
-      </Section>
+          <Section
+            title="Brand colours"
+            description="Primary, secondary, and illustration colours for whichever brand is currently selected in the navbar switcher — these swatches update live when you change it."
+          >
+            <Subsection title="Primary">
+              <SwatchGrid names={primaryNames} />
+            </Subsection>
+            <Subsection title="Secondary">
+              <SwatchGrid names={secondaryNames} />
+            </Subsection>
+            <Subsection title="Illustration">
+              <SwatchGrid names={Object.keys(reference.illustration)} />
+            </Subsection>
+          </Section>
+        </TabItem>
 
-      <Section
-        title="Spacing"
-        description="Used for padding, gaps, and layout spacing throughout the rider app."
-      >
-        <SpacingBars tokens={globalTokens.spacing} />
-      </Section>
+        <TabItem value="spacing-sizing" label="Spacing & sizing">
+          <Section
+            title="Spacing"
+            description="Used for padding, gaps, and layout spacing throughout the rider app."
+          >
+            <SpacingBars tokens={globalTokens.spacing} />
+          </Section>
 
-      <Section title="Corner radius">
-        <TokenBoxes
-          tokens={globalTokens['corner-radius']}
-          unit="px"
-          boxStyle={(name) => ({
-            background: 'var(--flamingo-primary-main)',
-            borderRadius: `var(--flamingo-${name})`,
-          })}
-        />
-      </Section>
+          <Section title="Corner radius">
+            <TokenBoxes
+              tokens={globalTokens['corner-radius']}
+              unit="px"
+              boxStyle={(name) => ({
+                background: 'var(--flamingo-primary-main)',
+                borderRadius: `var(--flamingo-${name})`,
+              })}
+            />
+          </Section>
 
-      <Section title="Border thickness">
-        <TokenBoxes
-          tokens={globalTokens['border-thickness']}
-          unit="px"
-          boxStyle={(name) => ({
-            borderRadius: 8,
-            borderStyle: 'solid',
-            borderColor: 'var(--flamingo-primary-main)',
-            borderWidth: `var(--flamingo-${name})`,
-          })}
-        />
-      </Section>
+          <Section title="Border thickness">
+            <TokenBoxes
+              tokens={globalTokens['border-thickness']}
+              unit="px"
+              boxStyle={(name) => ({
+                borderRadius: 8,
+                borderStyle: 'solid',
+                borderColor: 'var(--flamingo-primary-main)',
+                borderWidth: `var(--flamingo-${name})`,
+              })}
+            />
+          </Section>
 
-      <Section title="Opacity">
-        <TokenBoxes
-          tokens={globalTokens.opacity}
-          unit="%"
-          boxStyle={(name) => ({
-            borderRadius: 8,
-            background: 'var(--flamingo-primary-main)',
-            opacity: `var(--flamingo-${name})`,
-          })}
-        />
-      </Section>
+          <Section title="Opacity">
+            <TokenBoxes
+              tokens={globalTokens.opacity}
+              unit="%"
+              boxStyle={(name) => ({
+                borderRadius: 8,
+                background: 'var(--flamingo-primary-main)',
+                opacity: `var(--flamingo-${name})`,
+              })}
+            />
+          </Section>
 
-      <Section title="Blur">
-        <TokenBoxes
-          tokens={globalTokens.blur}
-          unit="px"
-          boxStyle={(name) => ({
-            borderRadius: 8,
-            background: 'var(--flamingo-primary-main)',
-            filter: `blur(var(--flamingo-${name}))`,
-          })}
-        />
-      </Section>
+          <Section title="Blur">
+            <TokenBoxes
+              tokens={globalTokens.blur}
+              unit="px"
+              boxStyle={(name) => ({
+                borderRadius: 8,
+                background: 'var(--flamingo-primary-main)',
+                filter: `blur(var(--flamingo-${name}))`,
+              })}
+            />
+          </Section>
+        </TabItem>
 
-      <Section title="Font size">
-        <FontSizeSamples tokens={globalTokens['font-size']} />
-      </Section>
+        <TabItem value="typography" label="Typography">
+          <Section title="Font size">
+            <FontSizeSamples tokens={globalTokens['font-size']} />
+          </Section>
 
-      <Section title="Line height">
-        <TokenTable tokens={globalTokens['line-height']} unit="px" />
-      </Section>
+          <Section title="Line height">
+            <TokenTable tokens={globalTokens['line-height']} unit="px" />
+          </Section>
 
-      <Section title="Letter spacing">
-        <TokenTable tokens={globalTokens['letter-spacing']} unit="px" />
-      </Section>
+          <Section title="Letter spacing">
+            <TokenTable tokens={globalTokens['letter-spacing']} unit="px" />
+          </Section>
 
-      <Section title="Paragraph spacing">
-        <TokenTable tokens={globalTokens['paragraph-spacing']} unit="px" />
-      </Section>
+          <Section title="Paragraph spacing">
+            <TokenTable tokens={globalTokens['paragraph-spacing']} unit="px" />
+          </Section>
 
-      <Section title="List spacing">
-        <TokenTable tokens={globalTokens['list-spacing']} unit="px" />
-      </Section>
+          <Section title="List spacing">
+            <TokenTable tokens={globalTokens['list-spacing']} unit="px" />
+          </Section>
+        </TabItem>
+      </Tabs>
     </div>
   );
 }
