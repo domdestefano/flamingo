@@ -1,0 +1,55 @@
+scripts/README-tokens.md
+  s_54bf5f254aeba9::t_0fd6d157e5618e 1-111
+scripts/transform-figma-tokens.js
+  s_54bf5f254aeba9::t_5fc7c87ce960e9 117-120
+  s_54bf5f254aeba9::t_572fb36518cb6b 1-116,121-213
+.github/workflows/sync-tokens.yml
+  s_54bf5f254aeba9::t_276c55941a7c3b 1,4-10,18,29-30,32-39
+website/tokens/global.json
+  s_54bf5f254aeba9::t_da6aa8294995bc 18
+  s_54bf5f254aeba9::t_333898aea20f4b 1-17,19-79
+website/tokens/theme.json
+  s_54bf5f254aeba9::t_da6aa8294995bc 1-442
+tokens-source/dark-mode/Off.tokens.json
+  s_54bf5f254aeba9::t_436f4b03fa15ba 1-1849
+tokens-source/dark-mode/On.tokens.json
+  s_54bf5f254aeba9::t_73d0b5b0c451dc 1-1849
+tokens-source/flamingo-theme/Baemin.tokens.json
+  s_54bf5f254aeba9::t_6318051e0d7362 1-1773
+tokens-source/flamingo-theme/Efood.tokens.json
+  s_54bf5f254aeba9::t_b9619092faac33 1-1773
+tokens-source/flamingo-theme/Foodora.tokens.json
+  s_54bf5f254aeba9::t_ae813929675291 1-1773
+tokens-source/flamingo-theme/Foodpanda.tokens.json
+  s_54bf5f254aeba9::t_95f27795a0a11c 1-1773
+tokens-source/flamingo-theme/Foody.tokens.json
+  s_54bf5f254aeba9::t_9eb8aaf0c7f443 1-1773
+tokens-source/flamingo-theme/Glovo.tokens.json
+  s_54bf5f254aeba9::t_76060053711702 1-1773
+"tokens-source/flamingo-theme/Hunger Station.tokens.json"
+  s_54bf5f254aeba9::t_0e0e4929426bf9 1-1773
+tokens-source/flamingo-theme/PedidosYa.tokens.json
+  s_54bf5f254aeba9::t_78bb1d2a0de425 1-1773
+tokens-source/flamingo-theme/Roadrunner.tokens.json
+  s_54bf5f254aeba9::t_c1237d0e17b777 1-1773
+tokens-source/flamingo-theme/Talabat.tokens.json
+  s_54bf5f254aeba9::t_3e8cec6c89b4a5 1-1773
+tokens-source/flamingo-theme/Yemeksepeti.tokens.json
+  s_54bf5f254aeba9::t_ba759ea9568c9c 1-1773
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "9b6d31c390c09e6aa2a3899ae341f8ce5cad8a6c",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
