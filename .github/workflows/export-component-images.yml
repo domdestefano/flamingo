@@ -1,0 +1,53 @@
+name: Export Component Images from Figma
+
+on:
+  schedule:
+    - cron: '0 10 * * 1' # Every Monday at 10am (after token sync)
+  workflow_dispatch:
+    inputs:
+      components:
+        description: 'Components to export (comma-separated, or "all")'
+        required: false
+        default: 'button'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  export-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Export component images from Figma Spec file
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_SPEC_FILE: VuBl4ugiWKRiGROf3zglzb
+        run: |
+          node scripts/export-component-images.js ${{ github.event.inputs.components || 'button' }}
+
+      - name: Create Pull Request
+        if: always()
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(images): export component images from Figma'
+          title: 'chore: export component images from Figma'
+          body: |
+            ## Component Images Export
+
+            Automated export of component specs and images from Figma.
+
+            **Components exported:**
+            - ${{ github.event.inputs.components || 'button' }}
+
+            Images are now up-to-date with Figma specs.
+          branch: chore/export-images-${{ github.run_number }}
+          delete-branch: true
