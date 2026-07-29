@@ -75,6 +75,12 @@ function renderColourVars(colours) {
     .join('\n');
 }
 
+function renderSemanticBlock(semantic) {
+  const light = `:root {\n${renderColourVars(semantic.light)}\n}`;
+  const dark = `[data-theme='dark'] {\n${renderColourVars(semantic.dark)}\n}`;
+  return `/* Semantic colours — brand-independent, light/dark only */\n${light}\n\n${dark}`;
+}
+
 function renderBrandBlocks(theme) {
   const blocks = [];
 
@@ -104,15 +110,17 @@ function renderBrandBlocks(theme) {
 
 function main() {
   const globalPath = path.join(TOKENS_DIR, 'global.json');
+  const semanticPath = path.join(TOKENS_DIR, 'semantic.json');
   const themePath = path.join(TOKENS_DIR, 'theme.json');
 
-  if (!fs.existsSync(globalPath) || !fs.existsSync(themePath)) {
-    console.error('❌ Missing website/tokens/global.json or theme.json.');
+  if (!fs.existsSync(globalPath) || !fs.existsSync(themePath) || !fs.existsSync(semanticPath)) {
+    console.error('❌ Missing website/tokens/{global,semantic,theme}.json.');
     console.error('   Run scripts/transform-figma-tokens.js first.');
     process.exit(1);
   }
 
   const globalTokens = readJSON(globalPath);
+  const semantic = readJSON(semanticPath);
   const theme = readJSON(themePath);
 
   if (!theme[DEFAULT_BRAND]) {
@@ -134,6 +142,8 @@ function main() {
   const css = [
     header,
     renderGlobalBlock(globalTokens),
+    '',
+    renderSemanticBlock(semantic),
     '',
     renderBrandBlocks(theme),
     '',

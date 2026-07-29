@@ -64,7 +64,7 @@
   --flamingo-line-height04: 48px;
   --flamingo-line-height05: 64px;
   /* letter-spacing */
-  --flamingo-letter-space01: -0.30000001192092896px;
+  --flamingo-letter-space01: -0.3px;
   --flamingo-letter-space02: 0px;
   /* paragraph-spacing */
   --flamingo-paragraph-space01: 4px;
@@ -76,6 +76,107 @@
   /* blur */
   --flamingo-blur00: 2px;
   --flamingo-blur01: 24px;
+}
+
+/* Semantic colours — brand-independent, light/dark only */
+:root {
+  --flamingo-color-neutral100: #171717;
+  --flamingo-color-neutral80: #3F3F3F;
+  --flamingo-color-neutral50: #7C7C7C;
+  --flamingo-color-neutral30: #B9B9B9;
+  --flamingo-color-neutral20: #E0E0E0;
+  --flamingo-color-neutral10: #EDEDED;
+  --flamingo-color-neutral05: #F4F4F4;
+  --flamingo-color-neutral00: #FFFFFF;
+  --flamingo-color-primary-dark02: #232783;
+  --flamingo-color-primary-main: #3F47CF;
+  --flamingo-color-primary-light01: #6D80DC;
+  --flamingo-color-primary-light02: #A3B1E9;
+  --flamingo-color-primary-light04: #CDD8FF;
+  --flamingo-color-secondary-dark02: #E0005C;
+  --flamingo-color-secondary-main: #FF0061;
+  --flamingo-color-secondary-light01: #F65187;
+  --flamingo-color-secondary-light02: #FF7893;
+  --flamingo-color-secondary-light04: #FFD4D9;
+  --flamingo-color-success-main: #007C04;
+  --flamingo-color-success-light: #D8FCDD;
+  --flamingo-color-error-dark: #900101;
+  --flamingo-color-error-main: #C02424;
+  --flamingo-color-error-light: #FFE2E2;
+  --flamingo-color-alert-main: #C15108;
+  --flamingo-color-alert-light: #FFFAE6;
+  --flamingo-color-background-default: #FFFFFF;
+  --flamingo-color-background-light: #F4F4F4;
+  --flamingo-color-background-brand: #3F47CF;
+  --flamingo-color-background-overlay: rgba(47, 47, 47, 0.8);
+  --flamingo-color-overlay-primary: #FFFFFF;
+  --flamingo-color-overlay-secondary: #EDEDED;
+  --flamingo-color-overlay-tertiary: #171717;
+  --flamingo-color-shadow-light: rgba(23, 23, 23, 0.32);
+  --flamingo-color-shadow-heavy: rgba(23, 23, 23, 0.16);
+  --flamingo-color-neutral-opacity07: rgba(23, 23, 23, 0.8);
+  --flamingo-color-neutral-opacity06: rgba(23, 23, 23, 0.72);
+  --flamingo-color-neutral-opacity05: rgba(23, 23, 23, 0.4);
+  --flamingo-color-neutral-opacity04: rgba(23, 23, 23, 0.32);
+  --flamingo-color-neutral-opacity03: rgba(23, 23, 23, 0.16);
+  --flamingo-color-neutral-opacity02: rgba(23, 23, 23, 0.08);
+  --flamingo-color-neutral-opacity01: rgba(23, 23, 23, 0.04);
+  --flamingo-color-neutral-opacity00: rgba(23, 23, 23, 0);
+  --flamingo-color-error-opacity06: rgba(192, 36, 36, 0.72);
+  --flamingo-color-error-opacity05: rgba(192, 36, 36, 0.4);
+  --flamingo-color-error-opacity03: rgba(192, 36, 36, 0.16);
+  --flamingo-color-white-opacity03: rgba(255, 255, 255, 0.16);
+  --flamingo-color-white-opacity02: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme='dark'] {
+  --flamingo-color-neutral100: #FFFFFF;
+  --flamingo-color-neutral80: #EDEDED;
+  --flamingo-color-neutral50: #E0E0E0;
+  --flamingo-color-neutral30: #9B9B9B;
+  --flamingo-color-neutral20: #5D5D5D;
+  --flamingo-color-neutral10: #3F3F3F;
+  --flamingo-color-neutral05: #272727;
+  --flamingo-color-neutral00: #171717;
+  --flamingo-color-primary-dark02: #CDD8FF;
+  --flamingo-color-primary-main: #A3B1E9;
+  --flamingo-color-primary-light01: #6D80DC;
+  --flamingo-color-primary-light02: #3F47CF;
+  --flamingo-color-primary-light04: #232783;
+  --flamingo-color-secondary-dark02: #E0005C;
+  --flamingo-color-secondary-main: #FF0061;
+  --flamingo-color-secondary-light01: #F65187;
+  --flamingo-color-secondary-light02: #FF7893;
+  --flamingo-color-secondary-light04: #FFD4D9;
+  --flamingo-color-success-main: #43D717;
+  --flamingo-color-success-light: #09560B;
+  --flamingo-color-error-dark: #FF7174;
+  --flamingo-color-error-main: #FF5D4B;
+  --flamingo-color-error-light: #5D0304;
+  --flamingo-color-alert-main: #F7893B;
+  --flamingo-color-alert-light: #563709;
+  --flamingo-color-background-default: #171717;
+  --flamingo-color-background-light: #272727;
+  --flamingo-color-background-brand: #3F47CF;
+  --flamingo-color-background-overlay: rgba(47, 47, 47, 0.8);
+  --flamingo-color-overlay-primary: #FFFFFF;
+  --flamingo-color-overlay-secondary: #EDEDED;
+  --flamingo-color-overlay-tertiary: #171717;
+  --flamingo-color-shadow-light: rgba(255, 255, 255, 0.32);
+  --flamingo-color-shadow-heavy: #000000;
+  --flamingo-color-neutral-opacity07: rgba(255, 255, 255, 0.8);
+  --flamingo-color-neutral-opacity06: rgba(255, 255, 255, 0.72);
+  --flamingo-color-neutral-opacity05: rgba(255, 255, 255, 0.6);
+  --flamingo-color-neutral-opacity04: rgba(255, 255, 255, 0.4);
+  --flamingo-color-neutral-opacity03: rgba(255, 255, 255, 0.32);
+  --flamingo-color-neutral-opacity02: rgba(255, 255, 255, 0.24);
+  --flamingo-color-neutral-opacity01: rgba(255, 255, 255, 0.16);
+  --flamingo-color-neutral-opacity00: rgba(255, 255, 255, 0);
+  --flamingo-color-error-opacity06: rgba(255, 93, 75, 0.72);
+  --flamingo-color-error-opacity05: rgba(255, 93, 75, 0.48);
+  --flamingo-color-error-opacity03: rgba(255, 93, 75, 0.24);
+  --flamingo-color-white-opacity03: rgba(23, 23, 23, 0.16);
+  --flamingo-color-white-opacity02: rgba(23, 23, 23, 0.08);
 }
 
 /* Baemin — light */
@@ -108,8 +209,8 @@
 
 /* Baemin — illustration */
 [data-brand='baemin'] {
-  --flamingo-color-light04-opacity00: #87FFE5;
-  --flamingo-color-light04-opacity06: #87FFE5;
+  --flamingo-color-light04-opacity00: rgba(135, 255, 229, 0);
+  --flamingo-color-light04-opacity06: rgba(135, 255, 229, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -151,8 +252,8 @@
 
 /* Efood — illustration */
 [data-brand='efood'] {
-  --flamingo-color-light04-opacity00: #FDE8E8;
-  --flamingo-color-light04-opacity06: #FDE8E8;
+  --flamingo-color-light04-opacity00: rgba(253, 232, 232, 0);
+  --flamingo-color-light04-opacity06: rgba(253, 232, 232, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -197,8 +298,8 @@
 /* Foodora — illustration */
 :root,
 [data-brand='foodora'] {
-  --flamingo-color-light04-opacity00: #FDF1F5;
-  --flamingo-color-light04-opacity06: #FDF1F5;
+  --flamingo-color-light04-opacity00: rgba(253, 241, 245, 0);
+  --flamingo-color-light04-opacity06: rgba(253, 241, 245, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -240,8 +341,8 @@
 
 /* Foodpanda — illustration */
 [data-brand='foodpanda'] {
-  --flamingo-color-light04-opacity00: #FFE0ED;
-  --flamingo-color-light04-opacity06: #FFE0ED;
+  --flamingo-color-light04-opacity00: rgba(255, 224, 237, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 224, 237, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -283,8 +384,8 @@
 
 /* Foody — illustration */
 [data-brand='foody'] {
-  --flamingo-color-light04-opacity00: #FCE4D9;
-  --flamingo-color-light04-opacity06: #FCE4D9;
+  --flamingo-color-light04-opacity00: rgba(252, 228, 217, 0);
+  --flamingo-color-light04-opacity06: rgba(252, 228, 217, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -326,8 +427,8 @@
 
 /* Glovo — illustration */
 [data-brand='glovo'] {
-  --flamingo-color-light04-opacity00: #B6EEE3;
-  --flamingo-color-light04-opacity06: #B6EEE3;
+  --flamingo-color-light04-opacity00: rgba(182, 238, 227, 0);
+  --flamingo-color-light04-opacity06: rgba(182, 238, 227, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -369,8 +470,8 @@
 
 /* Hunger Station — illustration */
 [data-brand='hunger-station'] {
-  --flamingo-color-light04-opacity00: #FFCEC1;
-  --flamingo-color-light04-opacity06: #FFCEC1;
+  --flamingo-color-light04-opacity00: rgba(255, 206, 193, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 206, 193, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -412,8 +513,8 @@
 
 /* PedidosYa — illustration */
 [data-brand='pedidosya'] {
-  --flamingo-color-light04-opacity00: #FFD1E0;
-  --flamingo-color-light04-opacity06: #FFD1E0;
+  --flamingo-color-light04-opacity00: rgba(255, 209, 224, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 209, 224, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -455,8 +556,8 @@
 
 /* Roadrunner — illustration */
 [data-brand='roadrunner'] {
-  --flamingo-color-light04-opacity00: #CDD8FF;
-  --flamingo-color-light04-opacity06: #CDD8FF;
+  --flamingo-color-light04-opacity00: rgba(205, 216, 255, 0);
+  --flamingo-color-light04-opacity06: rgba(205, 216, 255, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -498,8 +599,8 @@
 
 /* Talabat — illustration */
 [data-brand='talabat'] {
-  --flamingo-color-light04-opacity00: #FFDDCB;
-  --flamingo-color-light04-opacity06: #FFDDCB;
+  --flamingo-color-light04-opacity00: rgba(255, 221, 203, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 221, 203, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;
@@ -541,8 +642,8 @@
 
 /* Yemeksepeti — illustration */
 [data-brand='yemeksepeti'] {
-  --flamingo-color-light04-opacity00: #FFE6EE;
-  --flamingo-color-light04-opacity06: #FFE6EE;
+  --flamingo-color-light04-opacity00: rgba(255, 230, 238, 0);
+  --flamingo-color-light04-opacity06: rgba(255, 230, 238, 0.72);
   --flamingo-illustration90: #4B1F00;
   --flamingo-illustration80: #582E10;
   --flamingo-illustration70: #904915;

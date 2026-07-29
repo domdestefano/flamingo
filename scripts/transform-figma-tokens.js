@@ -75,10 +75,19 @@ function toKebabCase(name) {
  */
 function resolveValue(value, fileTokensByGroup, seen = new Set()) {
   if (typeof value === 'number') {
-    return value;
+    // Figma exports some numbers with float rounding noise (e.g.
+    // -0.30000001192092896), so round to a sane precision.
+    return Math.round(value * 1000) / 1000;
   }
 
   if (typeof value === 'object' && value !== null && 'hex' in value) {
+    // Preserve transparency: a plain hex string can't represent alpha < 1,
+    // which several overlay/shadow/opacity tokens rely on.
+    if (typeof value.alpha === 'number' && value.alpha < 1) {
+      const [r, g, b] = value.components.map((c) => Math.round(c * 255));
+      const a = Math.round(value.alpha * 1000) / 1000;
+      return `rgba(${r}, ${g}, ${b}, ${a})`;
+    }
     return value.hex;
   }
 
@@ -144,6 +153,25 @@ function buildGlobalTokens() {
 }
 
 /**
+ * Build website/tokens/semantic.json from dark-mode/Off.tokens.json (light)
+ * and dark-mode/On.tokens.json (dark). This is the brand-independent
+ * semantic colour layer: backgrounds, alerts, errors, success, neutrals,
+ * overlays, shadows — used everywhere regardless of which brand is active.
+ */
+function buildSemanticTokens() {
+  const offFile = path.join(DARK_MODE_DIR, 'Off.tokens.json');
+  const onFile = path.join(DARK_MODE_DIR, 'On.tokens.json');
+
+  const offData = readJSON(offFile);
+  const onData = readJSON(onFile);
+
+  return {
+    light: flattenGroup('Colours', offData),
+    dark: flattenGroup('Colours', onData),
+  };
+}
+
+/**
  * Build website/tokens/theme.json from every brand file in flamingo-theme/,
  * combined with light/dark semantic colours resolved against that brand's
  * own Global Colours group.
@@ -197,6 +225,10 @@ function main() {
   const global = buildGlobalTokens();
   writeOutput('global.json', global);
   console.log(`   Categories: ${Object.keys(global).join(', ')}\n`);
+
+  const semantic = buildSemanticTokens();
+  writeOutput('semantic.json', semantic);
+  console.log(`   Semantic tokens: ${Object.keys(semantic.light).length} (light + dark)\n`);
 
   const theme = buildThemeTokens();
   writeOutput('theme.json', theme);

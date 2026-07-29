@@ -26,8 +26,8 @@
       "secondary-light04": "#FFE091"
     },
     "illustration": {
-      "color-light04-opacity00": "#87FFE5",
-      "color-light04-opacity06": "#87FFE5",
+      "color-light04-opacity00": "rgba(135, 255, 229, 0)",
+      "color-light04-opacity06": "rgba(135, 255, 229, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -66,8 +66,8 @@
       "secondary-light04": "#B1FFEB"
     },
     "illustration": {
-      "color-light04-opacity00": "#FDE8E8",
-      "color-light04-opacity06": "#FDE8E8",
+      "color-light04-opacity00": "rgba(253, 232, 232, 0)",
+      "color-light04-opacity06": "rgba(253, 232, 232, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -106,8 +106,8 @@
       "secondary-light04": "#D2F8F8"
     },
     "illustration": {
-      "color-light04-opacity00": "#FDF1F5",
-      "color-light04-opacity06": "#FDF1F5",
+      "color-light04-opacity00": "rgba(253, 241, 245, 0)",
+      "color-light04-opacity06": "rgba(253, 241, 245, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -146,8 +146,8 @@
       "secondary-light04": "#FFE6B3"
     },
     "illustration": {
-      "color-light04-opacity00": "#FFE0ED",
-      "color-light04-opacity06": "#FFE0ED",
+      "color-light04-opacity00": "rgba(255, 224, 237, 0)",
+      "color-light04-opacity06": "rgba(255, 224, 237, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -186,8 +186,8 @@
       "secondary-light04": "#BAF9FF"
     },
     "illustration": {
-      "color-light04-opacity00": "#FCE4D9",
-      "color-light04-opacity06": "#FCE4D9",
+      "color-light04-opacity00": "rgba(252, 228, 217, 0)",
+      "color-light04-opacity06": "rgba(252, 228, 217, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -226,8 +226,8 @@
       "secondary-light04": "#FFE68B"
     },
     "illustration": {
-      "color-light04-opacity00": "#B6EEE3",
-      "color-light04-opacity06": "#B6EEE3",
+      "color-light04-opacity00": "rgba(182, 238, 227, 0)",
+      "color-light04-opacity06": "rgba(182, 238, 227, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -266,8 +266,8 @@
       "secondary-light04": "#FFF0A1"
     },
     "illustration": {
-      "color-light04-opacity00": "#FFCEC1",
-      "color-light04-opacity06": "#FFCEC1",
+      "color-light04-opacity00": "rgba(255, 206, 193, 0)",
+      "color-light04-opacity06": "rgba(255, 206, 193, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -306,8 +306,8 @@
       "secondary-light04": "#BEF6FF"
     },
     "illustration": {
-      "color-light04-opacity00": "#FFD1E0",
-      "color-light04-opacity06": "#FFD1E0",
+      "color-light04-opacity00": "rgba(255, 209, 224, 0)",
+      "color-light04-opacity06": "rgba(255, 209, 224, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -346,8 +346,8 @@
       "secondary-light04": "#FFD4D9"
     },
     "illustration": {
-      "color-light04-opacity00": "#CDD8FF",
-      "color-light04-opacity06": "#CDD8FF",
+      "color-light04-opacity00": "rgba(205, 216, 255, 0)",
+      "color-light04-opacity06": "rgba(205, 216, 255, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -386,8 +386,8 @@
       "secondary-light04": "#D3DEFF"
     },
     "illustration": {
-      "color-light04-opacity00": "#FFDDCB",
-      "color-light04-opacity06": "#FFDDCB",
+      "color-light04-opacity00": "rgba(255, 221, 203, 0)",
+      "color-light04-opacity06": "rgba(255, 221, 203, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
@@ -426,8 +426,8 @@
       "secondary-light04": "#B8FFDF"
     },
     "illustration": {
-      "color-light04-opacity00": "#FFE6EE",
-      "color-light04-opacity06": "#FFE6EE",
+      "color-light04-opacity00": "rgba(255, 230, 238, 0)",
+      "color-light04-opacity06": "rgba(255, 230, 238, 0.72)",
       "illustration90": "#4B1F00",
       "illustration80": "#582E10",
       "illustration70": "#904915",
