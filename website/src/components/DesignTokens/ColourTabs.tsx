@@ -181,6 +181,7 @@ function TokenUsageTable({ items }: { items: { name: string; usage: string }[] }
 export default function ColourTabs(): React.ReactElement {
   const reference = theme[REFERENCE_BRAND];
   const secondaryNames = Object.keys(reference.light).filter((n) => n.startsWith('secondary'));
+  const illustrationNames = Object.keys(reference.illustration);
 
   return (
     <>
@@ -289,23 +290,44 @@ export default function ColourTabs(): React.ReactElement {
         <TabItem value="transparent" label="Transparent">
           <Section
             title="Transparent"
-            description="Used primarily to highlight elements and areas in layered interfaces, like maps. The less transparent (higher opacity) a shade is, the more prominent the highlighted element or area appears — for example, a heatmap showing high-demand areas."
+            description="Used primarily to highlight elements and areas in layered interfaces, like maps. The less transparent (higher opacity) a shade is, the more prominent the highlighted element or area appears — for example, a heatmap showing high-demand areas. These follow light/dark mode, the same as Semantic colours."
           >
             <Subsection title="Neutral opacity">
+              <p>
+                The default choice for highlighting layered elements or areas. Use increasing opacity
+                to draw more attention to a specific area, e.g. the busiest zone on a map.
+              </p>
               <SwatchGrid
                 names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-neutral-opacity'))}
               />
             </Subsection>
             <Subsection title="Error opacity">
+              <p>
+                Used to highlight layered areas that carry a warning or danger meaning, e.g. a
+                restricted or high-risk zone on a map.
+              </p>
               <SwatchGrid
                 names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-error-opacity'))}
               />
             </Subsection>
             <Subsection title="White opacity">
+              <p>
+                Used for subtle shading over light surfaces, e.g. dividers or layered cards, to add
+                depth without introducing a new colour.
+              </p>
               <SwatchGrid
                 names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-white-opacity'))}
               />
             </Subsection>
+          </Section>
+        </TabItem>
+
+        <TabItem value="illustration" label="Illustration">
+          <Section
+            title="Illustration"
+            description="Used only for illustration and animation assets — not for UI elements. Unlike every other colour family here, illustration colours don't change between light and dark mode. They do change per brand, matching whichever brand is selected in the navbar switcher."
+          >
+            <SwatchGrid names={illustrationNames} />
           </Section>
         </TabItem>
       </Tabs>
