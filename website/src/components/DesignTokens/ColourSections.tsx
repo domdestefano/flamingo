@@ -1,6 +1,4 @@
 import React from 'react';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 import semanticTokens from '@site/tokens/semantic.json';
 import theme from '@site/tokens/theme.json';
 import { Section, Subsection, SwatchGrid, useResolvedToken } from './shared';
@@ -178,11 +176,7 @@ function TokenUsageTable({ items }: { items: { name: string; usage: string }[] }
   );
 }
 
-export default function ColourTabs(): React.ReactElement {
-  const reference = theme[REFERENCE_BRAND];
-  const secondaryNames = Object.keys(reference.light).filter((n) => n.startsWith('secondary'));
-  const illustrationNames = Object.keys(reference.illustration);
-
+export function ColourPrinciples(): React.ReactElement {
   return (
     <>
       <p className={styles.sectionDescription}>
@@ -207,130 +201,148 @@ export default function ColourTabs(): React.ReactElement {
           </li>
         </ul>
       </div>
-
-      <Tabs groupId="design-tokens-colours">
-        <TabItem value="primary" label="Primary" default>
-          <Section
-            title="Primary"
-            description="Used primarily for interactive elements — things that can be tapped or interacted with. Secondarily, these shades indicate progression (loading bars, circles, pies), activeness (switches), and selection (segmented controls, toggles)."
-          >
-            <TokenUsageTable items={PRIMARY_ITEMS} />
-
-            <Subsection title="Secondary">
-              <p className={styles.sectionDescription}>
-                Where a brand defines a secondary accent colour, it follows the same five-tier
-                pattern as Primary above (dark02 → light04, from most to least prominent) and is
-                used the same way, as an alternate emphasis colour.
-              </p>
-              <SwatchGrid names={secondaryNames} />
-            </Subsection>
-          </Section>
-        </TabItem>
-
-        <TabItem value="neutral" label="Neutral">
-          <Section
-            title="Neutral"
-            description="Used primarily for text and for static or inactive elements — things that cannot be tapped or interacted with. Secondarily, these shades indicate progression, inactiveness (buttons, switches, links), and un-selection (checkboxes, radios, switches)."
-          >
-            <TokenUsageTable items={NEUTRAL_ITEMS} />
-
-            <Subsection title="Text">
-              <p>
-                For text, use the higher-emphasis neutral shades — neutral100, neutral80, and
-                neutral50 — depending on how prominent the text should be. Avoid the lighter shades
-                for text: the contrast against most backgrounds won't be high enough for everyone to
-                read comfortably.
-              </p>
-            </Subsection>
-
-            <Subsection title="Icons">
-              <p>
-                For icons that simply indicate a state, use a neutral or status colour. Reserve
-                interactive (primary) colours for icons that are themselves tappable.
-              </p>
-            </Subsection>
-          </Section>
-        </TabItem>
-
-        <TabItem value="status" label="Status">
-          <Section
-            title="Status"
-            description="Used primarily for static UI elements — things that cannot be tapped or interacted with. Mostly seen in tags, message banners, message bars, and icons, to indicate success, caution, or danger."
-          >
-            <Subsection title="Success">
-              <TokenUsageTable items={SUCCESS_ITEMS} />
-            </Subsection>
-            <Subsection title="Alert">
-              <TokenUsageTable items={ALERT_ITEMS} />
-            </Subsection>
-            <Subsection title="Error">
-              <p>
-                Error is the one status colour with an interactive exception: it's used for
-                destructive actions, like a "Delete" button.
-              </p>
-              <TokenUsageTable items={ERROR_ITEMS} />
-            </Subsection>
-          </Section>
-        </TabItem>
-
-        <TabItem value="background" label="Background">
-          <Section title="Background" description="Used for the background of the UI. These should not be used for the background of UI elements themselves.">
-            <TokenUsageTable items={BACKGROUND_ITEMS} />
-
-            <Subsection title="Sections">
-              <p>
-                Combine both background colours when a screen is split into sections: the part of
-                the UI with elevated content uses <code>color.background.light</code>, while the
-                other section uses <code>color.background.default</code>.
-              </p>
-            </Subsection>
-          </Section>
-        </TabItem>
-
-        <TabItem value="transparent" label="Transparent">
-          <Section
-            title="Transparent"
-            description="Used primarily to highlight elements and areas in layered interfaces, like maps. The less transparent (higher opacity) a shade is, the more prominent the highlighted element or area appears — for example, a heatmap showing high-demand areas. These follow light/dark mode, the same as Semantic colours."
-          >
-            <Subsection title="Neutral opacity">
-              <p>
-                The default choice for highlighting layered elements or areas. Use increasing opacity
-                to draw more attention to a specific area, e.g. the busiest zone on a map.
-              </p>
-              <SwatchGrid
-                names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-neutral-opacity'))}
-              />
-            </Subsection>
-            <Subsection title="Error opacity">
-              <p>
-                Used to highlight layered areas that carry a warning or danger meaning, e.g. a
-                restricted or high-risk zone on a map.
-              </p>
-              <SwatchGrid
-                names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-error-opacity'))}
-              />
-            </Subsection>
-            <Subsection title="White opacity">
-              <p>
-                Used for subtle shading over light surfaces, e.g. dividers or layered cards, to add
-                depth without introducing a new colour.
-              </p>
-              <SwatchGrid
-                names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-white-opacity'))}
-              />
-            </Subsection>
-          </Section>
-        </TabItem>
-
-        <TabItem value="illustration" label="Illustration">
-          <Section
-            title="Illustration"
-            description="Used only for illustration and animation assets — not for UI elements. Unlike every other colour family here, illustration colours don't change between light and dark mode. They do change per brand, matching whichever brand is selected in the navbar switcher."
-          >
-            <SwatchGrid names={illustrationNames} />
-          </Section>
-        </TabItem>
-      </Tabs>
     </>
+  );
+}
+
+export function PrimaryColours(): React.ReactElement {
+  const reference = theme[REFERENCE_BRAND];
+  const secondaryNames = Object.keys(reference.light).filter((n) => n.startsWith('secondary'));
+
+  return (
+    <Section
+      title="Primary"
+      description="Used primarily for interactive elements — things that can be tapped or interacted with. Secondarily, these shades indicate progression (loading bars, circles, pies), activeness (switches), and selection (segmented controls, toggles)."
+    >
+      <TokenUsageTable items={PRIMARY_ITEMS} />
+
+      <Subsection title="Secondary">
+        <p className={styles.sectionDescription}>
+          Where a brand defines a secondary accent colour, it follows the same five-tier pattern as
+          Primary above (dark02 → light04, from most to least prominent) and is used the same way,
+          as an alternate emphasis colour.
+        </p>
+        <SwatchGrid names={secondaryNames} />
+      </Subsection>
+    </Section>
+  );
+}
+
+export function NeutralColours(): React.ReactElement {
+  return (
+    <Section
+      title="Neutral"
+      description="Used primarily for text and for static or inactive elements — things that cannot be tapped or interacted with. Secondarily, these shades indicate progression, inactiveness (buttons, switches, links), and un-selection (checkboxes, radios, switches)."
+    >
+      <TokenUsageTable items={NEUTRAL_ITEMS} />
+
+      <Subsection title="Text">
+        <p>
+          For text, use the higher-emphasis neutral shades — neutral100, neutral80, and neutral50 —
+          depending on how prominent the text should be. Avoid the lighter shades for text: the
+          contrast against most backgrounds won't be high enough for everyone to read comfortably.
+        </p>
+      </Subsection>
+
+      <Subsection title="Icons">
+        <p>
+          For icons that simply indicate a state, use a neutral or status colour. Reserve
+          interactive (primary) colours for icons that are themselves tappable.
+        </p>
+      </Subsection>
+    </Section>
+  );
+}
+
+export function StatusColours(): React.ReactElement {
+  return (
+    <Section
+      title="Status"
+      description="Used primarily for static UI elements — things that cannot be tapped or interacted with. Mostly seen in tags, message banners, message bars, and icons, to indicate success, caution, or danger."
+    >
+      <Subsection title="Success">
+        <TokenUsageTable items={SUCCESS_ITEMS} />
+      </Subsection>
+      <Subsection title="Alert">
+        <TokenUsageTable items={ALERT_ITEMS} />
+      </Subsection>
+      <Subsection title="Error">
+        <p>
+          Error is the one status colour with an interactive exception: it's used for destructive
+          actions, like a "Delete" button.
+        </p>
+        <TokenUsageTable items={ERROR_ITEMS} />
+      </Subsection>
+    </Section>
+  );
+}
+
+export function BackgroundColours(): React.ReactElement {
+  return (
+    <Section
+      title="Background"
+      description="Used for the background of the UI. These should not be used for the background of UI elements themselves."
+    >
+      <TokenUsageTable items={BACKGROUND_ITEMS} />
+
+      <Subsection title="Sections">
+        <p>
+          Combine both background colours when a screen is split into sections: the part of the UI
+          with elevated content uses <code>color.background.light</code>, while the other section
+          uses <code>color.background.default</code>.
+        </p>
+      </Subsection>
+    </Section>
+  );
+}
+
+export function TransparentColours(): React.ReactElement {
+  return (
+    <Section
+      title="Transparent"
+      description="Used primarily to highlight elements and areas in layered interfaces, like maps. The less transparent (higher opacity) a shade is, the more prominent the highlighted element or area appears — for example, a heatmap showing high-demand areas. These follow light/dark mode, the same as Semantic colours."
+    >
+      <Subsection title="Neutral opacity">
+        <p>
+          The default choice for highlighting layered elements or areas. Use increasing opacity to
+          draw more attention to a specific area, e.g. the busiest zone on a map.
+        </p>
+        <SwatchGrid
+          names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-neutral-opacity'))}
+        />
+      </Subsection>
+      <Subsection title="Error opacity">
+        <p>
+          Used to highlight layered areas that carry a warning or danger meaning, e.g. a restricted
+          or high-risk zone on a map.
+        </p>
+        <SwatchGrid
+          names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-error-opacity'))}
+        />
+      </Subsection>
+      <Subsection title="White opacity">
+        <p>
+          Used for subtle shading over light surfaces, e.g. dividers or layered cards, to add depth
+          without introducing a new colour.
+        </p>
+        <SwatchGrid
+          names={Object.keys(semanticTokens.light).filter((n) => n.startsWith('color-white-opacity'))}
+        />
+      </Subsection>
+    </Section>
+  );
+}
+
+export function IllustrationColours(): React.ReactElement {
+  const reference = theme[REFERENCE_BRAND];
+  const illustrationNames = Object.keys(reference.illustration);
+
+  return (
+    <Section
+      title="Illustration"
+      description="Used only for illustration and animation assets — not for UI elements. Unlike every other colour family here, illustration colours don't change between light and dark mode. They do change per brand, matching whichever brand is selected in the navbar switcher."
+    >
+      <SwatchGrid names={illustrationNames} />
+    </Section>
   );
 }

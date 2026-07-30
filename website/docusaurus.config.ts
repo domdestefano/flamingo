@@ -101,7 +101,7 @@ const config: Config = {
           items: [
             { label: 'Components', to: '/components/button' },
             { label: 'Guidelines', to: '/guidelines/getting-started' },
-            { label: 'Tokens', to: '/tokens/design-tokens' },
+            { label: 'Tokens', to: '/tokens/overview' },
           ],
         },
       ],
