@@ -1,0 +1,96 @@
+{
+  "_comment": "Maps a Figma frame to a local image file. Add an entry here to have scripts/sync-figma-images.js (run manually or on a schedule via .github/workflows/sync-figma-images.yml) keep that exact file in sync with Figma. See scripts/README-figma-images.md for how to add a new screen.",
+  "images": [
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001548:1844",
+      "output": "website/static/img/tokens/corner-radius/corner-radius-01.png",
+      "description": "Corner radius 01 (8px) use case — tab container / bar chart",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001617:12974",
+      "output": "website/static/img/tokens/corner-radius/corner-radius-03.png",
+      "description": "Corner radius 03 (12px) use case — snackbar / input field",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001617:13820",
+      "output": "website/static/img/tokens/corner-radius/corner-radius-05.png",
+      "description": "Corner radius 05 (20px) use case — small pill buttons",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001617:13601",
+      "output": "website/static/img/tokens/corner-radius/corner-radius-06.png",
+      "description": "Corner radius 06 (24px) use case — cards, sheets, message boxes",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001617:13483",
+      "output": "website/static/img/tokens/corner-radius/corner-radius-09.png",
+      "description": "Corner radius 09 (28px) use case — big pill buttons",
+      "scale": 1
+    },
+    {
+      "fileKey": "SS96QDVedbpCNWbkju1UbI",
+      "nodeId": "8023:3987",
+      "output": "website/static/img/tokens/typography/typography-page-with-content.png",
+      "description": "Typography hierarchy — page with content",
+      "scale": 1
+    },
+    {
+      "fileKey": "SS96QDVedbpCNWbkju1UbI",
+      "nodeId": "8023:4002",
+      "output": "website/static/img/tokens/typography/typography-data-on-top.png",
+      "description": "Typography hierarchy — data on top",
+      "scale": 1
+    },
+    {
+      "fileKey": "SS96QDVedbpCNWbkju1UbI",
+      "nodeId": "8023:4015",
+      "output": "website/static/img/tokens/typography/typography-lists.png",
+      "description": "Typography hierarchy — lists",
+      "scale": 1
+    },
+    {
+      "fileKey": "SS96QDVedbpCNWbkju1UbI",
+      "nodeId": "8023:4146",
+      "output": "website/static/img/tokens/typography/typography-cards.png",
+      "description": "Typography hierarchy — cards",
+      "scale": 1
+    },
+    {
+      "fileKey": "SS96QDVedbpCNWbkju1UbI",
+      "nodeId": "8023:4114",
+      "output": "website/static/img/tokens/typography/typography-tags-do.png",
+      "description": "Typography tags — Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "SS96QDVedbpCNWbkju1UbI",
+      "nodeId": "8023:4224",
+      "output": "website/static/img/tokens/typography/typography-tags-dont.png",
+      "description": "Typography tags — Don't example (long text)",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:4144",
+      "output": "website/static/img/components/primary-button/primary-button-overview.png",
+      "description": "Primary button overview — big/small, icon left/right, inactive, pressed, loading",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004031:2416",
+      "output": "website/static/img/components/primary-button/primary-button-anatomy.png",
+      "description": "Primary button anatomy — background, text",
+      "scale": 2
+    }
+  ]
+}

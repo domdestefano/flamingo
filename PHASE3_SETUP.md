@@ -1,169 +1,79 @@
-# Phase 3: Automated Documentation & Token Sync
+# Phase 3: Automated Design Token & Image Sync
 
-Flamingo Phase 3 automates the generation of component documentation, design token syncing, and image exports from Figma.
+Flamingo Phase 3 keeps design tokens and reference screenshots in sync with
+Figma, without needing an Enterprise Figma plan.
 
-## Architecture
+## Why two different sync strategies
 
-Three GitHub Actions work together:
+Figma's **Variables API** (used for colours, spacing, typography scale
+values) requires an Enterprise plan, which this org's Figma seat doesn't
+have. Its **file/image API** (used for screenshots and diagrams) has no such
+restriction. That split is why tokens and images are synced differently:
 
-### 1. Sync Tokens (`.github/workflows/sync-tokens.yml`)
-- **Trigger:** Every Monday at 9am, or manual `workflow_dispatch`
-- **Source:** Figma Tokens file (SS96QDVedbpCNWbkju1UbI)
-- **Output:** `website/tokens/global.json`, `website/tokens/theme.json`
-- **Result:** Creates PR with token updates (for review before merge)
+### 1. Design tokens — semi-automated (manual export + automated transform)
 
-### 2. Export Component Images (`.github/workflows/export-component-images.yml`)
-- **Trigger:** Every Monday at 10am, or manual with component input
-- **Source:** Figma Component Specs file (VuBl4ugiWKRiGROf3zglzb)
-- **Output:** `website/static/img/components/{component}/`
-- **Currently:** Button only (testing phase)
-- **Result:** Creates PR with updated images
+- **Source of truth:** `tokens-source/**` — raw JSON exported from Figma's
+  Variables panel ("Export variables"), which any editor can do manually in
+  under a minute.
+- **Transform:** `scripts/transform-figma-tokens.js` and
+  `scripts/generate-token-css.js`, run automatically by
+  `.github/workflows/sync-tokens.yml` whenever `tokens-source/**` changes.
+- **Output:** `website/tokens/*.json`, `website/src/css/tokens.css`.
+- Full instructions: [`scripts/README-tokens.md`](scripts/README-tokens.md).
 
-### 3. Generate Component Docs (`.github/workflows/generate-component-docs.yml`)
-- **Trigger:** Manual via `workflow_dispatch` or PR labeled `docs-gen`
-- **Input:** Component name (e.g., `button`, `badge`)
-- **Source:** Figma Spec + Code repo + Storybook
-- **Output:** `website/docs/components/{component}.mdx`
-- **Process:** Uses agent prompt to intelligently generate docs
-- **Result:** Auto-commits .mdx file with approval
+### 2. Component/token reference images — fully automated
 
----
+- **Source of truth:** `scripts/figma-images.json` — maps a Figma frame
+  (fileKey + nodeId) to a local image path.
+- **Sync:** `scripts/sync-figma-images.js`, run by
+  `.github/workflows/sync-figma-images.yml`:
+  - Daily, automatically.
+  - Immediately, when `scripts/figma-images.json` changes on `main`.
+  - On demand, via "Run workflow" in the Actions tab.
+- Opens a PR only when a registered frame's rendered output actually
+  changed — review the visual diff, then merge.
+- Full instructions, including how to register a new screen:
+  [`scripts/README-figma-images.md`](scripts/README-figma-images.md).
 
-## Setup Requirements
+### 3. Guideline text — intentionally manual
 
-### 1. Add GitHub Secret: FIGMA_TOKEN
-
-Go to **GitHub Repo Settings → Secrets and variables → Actions** and add:
-
-- **Name:** `FIGMA_TOKEN`
-- **Value:** (the token you provided)
-
-This allows the workflows to authenticate with Figma API.
-
-### 2. Verify Token Files Exist
-
-Ensure you have Figma access to:
-- **Tokens file:** `SS96QDVedbpCNWbkju1UbI` (core library)
-- **Spec file:** `VuBl4ugiWKRiGROf3zglzb` (component specs)
+Rule/guideline prose (Do's & Don'ts, usage guidance) is not auto-synced.
+Screenshots are mechanical; text needs editorial judgement (rephrasing,
+cross-referencing our actual token names). When Figma guideline text
+changes, someone (or Claude, pointed at the relevant Figma frame) updates
+the corresponding `.mdx` file directly — see the "Adding a new rule" section
+in `scripts/README-figma-images.md`.
 
 ---
 
-## Usage
+## Setup requirements
 
-### Sync Tokens (Manual)
-
-```bash
-# Trigger via GitHub Actions UI
-# Go to Actions → "Sync Design Tokens from Figma" → Run workflow
-```
-
-Or wait for Monday 9am (automatic).
-
-This will:
-1. Fetch token definitions from Figma
-2. Transform to JSON matching logistics DS structure
-3. Create PR for review
-4. Merge to update `website/tokens/`
-
-### Export Component Images (Manual)
-
-```bash
-# Via GitHub Actions UI
-# Go to Actions → "Export Component Images from Figma"
-# Run workflow → Enter component name (e.g., "button")
-```
-
-Or wait for Monday 10am (automatic, button only).
-
-### Generate Component Docs (Manual)
-
-```bash
-# Via workflow_dispatch
-gh workflow run generate-component-docs.yml \
-  -f component=button
-```
-
-Or:
-1. Create a PR
-2. Add label `docs-gen` to trigger on push
-3. Workflow generates .mdx and commits
+- **GitHub secret `FIGMA_TOKEN`** — a Figma personal access token with
+  `File content: Read` scope. Already configured in this repo's Actions
+  secrets.
+- **Workflow permissions** — Settings → Actions → General → Workflow
+  permissions must allow "Read and write" + "Allow GitHub Actions to create
+  and approve pull requests", since both sync workflows open PRs.
 
 ---
 
-## Implementation Status
-
-| Workflow | Status | Notes |
-| --- | --- | --- |
-| **sync-tokens.yml** | 🟡 Framework ready | Token parsing from Figma needs `script/sync-tokens-from-figma.js` implementation |
-| **export-component-images.yml** | 🟡 Framework ready | Image export needs Figma frame ID mapping |
-| **generate-component-docs.yml** | 🟡 Framework ready | Needs agent integration (Claude API calls) |
-
-Each workflow has a placeholder `.js` script in `scripts/` directory that needs full implementation.
-
----
-
-## Next Steps
-
-### Immediate (Testing Phase)
-1. Add `FIGMA_TOKEN` secret to GitHub
-2. Test token sync workflow manually
-3. Verify JSON output in `website/tokens/`
-4. Test image export for button component
-5. Test doc generation agent integration
-
-### Future
-- [ ] Full Figma variable parsing (currently placeholder)
-- [ ] Image export for all components
-- [ ] Agent integration for doc generation
-- [ ] Multi-platform variants (iOS, Android)
-- [ ] Design token CSS variable generation
-- [ ] Automatic spec frame discovery
-
----
-
-## Files Structure
+## Files
 
 ```
 flamingo/
 ├── .github/workflows/
-│   ├── sync-tokens.yml                    # Token sync workflow
-│   ├── export-component-images.yml        # Image export workflow
-│   └── generate-component-docs.yml        # Doc generation workflow
+│   ├── sync-tokens.yml            # Regenerates website/tokens/*.json + tokens.css
+│   ├── sync-figma-images.yml      # Daily + on-change image sync
+│   └── deploy.yml                 # Site build & deploy
 ├── scripts/
-│   ├── sync-tokens-from-figma.js          # Token fetch & transform
-│   ├── export-component-images.js         # Image export implementation
-│   └── generate-component-docs.js         # Doc generation implementation
-├── website/
-│   ├── tokens/                            # Output: global.json, theme.json
-│   ├── static/img/components/             # Output: component images
-│   └── docs/components/                   # Output: .mdx files
-└── PHASE3_SETUP.md                        # This file
+│   ├── transform-figma-tokens.js  # tokens-source/** -> website/tokens/*.json
+│   ├── generate-token-css.js      # website/tokens/*.json -> tokens.css
+│   ├── sync-figma-images.js       # figma-images.json -> static/img/**
+│   ├── figma-images.json          # image registry (see README-figma-images.md)
+│   ├── README-tokens.md
+│   └── README-figma-images.md
+└── website/
+    ├── tokens/                    # global.json, semantic.json, theme.json
+    ├── static/img/                # synced screenshots/diagrams
+    └── docs/{tokens,components}/  # pages consuming the above
 ```
-
----
-
-## Troubleshooting
-
-### Workflow fails with "FIGMA_TOKEN not found"
-- Ensure secret is added to GitHub repo settings
-- Secret name must be exactly `FIGMA_TOKEN`
-- Workflows must use `secrets.FIGMA_TOKEN`
-
-### Token sync creates empty JSON
-- Figma variables API might need different parsing
-- Check Figma file structure (is data in variables or component props?)
-- Verify file key is correct: `SS96QDVedbpCNWbkju1UbI`
-
-### Image export doesn't find components
-- Figma frame IDs must be mapped in script
-- Component specs file structure needs to be parsed
-- File key might be incorrect: `VuBl4ugiWKRiGROf3zglzb`
-
----
-
-## Questions?
-
-Refer to:
-- `website/scripts/agent-generate-component-mdx.md` — Agent prompt for doc generation
-- `website/scripts/generate-component-mdx-template.md` — Documentation template
-- GitHub Actions logs for each workflow run

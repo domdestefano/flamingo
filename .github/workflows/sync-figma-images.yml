@@ -1,0 +1,56 @@
+name: Sync Figma Images
+
+on:
+  schedule:
+    - cron: '17 6 * * *' # Daily at 6:17am UTC — keeps screens in sync with Figma automatically
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/figma-images.json' # sync immediately when a new image is registered
+  workflow_dispatch: # manual trigger, e.g. right after editing a frame in Figma
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sync images from Figma
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        run: node scripts/sync-figma-images.js
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git add website/static/img
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create Pull Request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(images): sync images from Figma'
+          title: 'chore: sync images from Figma'
+          body: |
+            Automated pull of every image registered in `scripts/figma-images.json`.
+
+            Only opens when Figma's rendered output actually changed for one or more
+            registered frames — review the diff below before merging.
+          branch: chore/sync-figma-images
+          delete-branch: true
