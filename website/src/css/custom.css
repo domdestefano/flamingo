@@ -9,6 +9,8 @@
 /* Map Flamingo design tokens onto Infima's theme variables so the site
    reflects the actual brand palette instead of Docusaurus defaults. */
 :root {
+  --ifm-font-family-base: 'Noto Sans', sans-serif;
+  --ifm-heading-font-family: 'Noto Sans', sans-serif;
   --ifm-color-primary: var(--flamingo-primary-main);
   --ifm-color-primary-dark: var(--flamingo-primary-dark02);
   --ifm-color-primary-darker: var(--flamingo-primary-dark02);

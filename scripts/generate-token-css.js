@@ -81,19 +81,40 @@ function renderSemanticBlock(semantic) {
   return `/* Semantic colours — brand-independent, light/dark only */\n${light}\n\n${dark}`;
 }
 
+/**
+ * Render the default brand's colours as a plain :root / [data-theme='dark']
+ * fallback (used before the brand switcher sets data-brand at all).
+ *
+ * This MUST be a separate, earlier block from the per-brand rules below —
+ * not combined into one "​:root, [data-brand='foodora']" selector list.
+ * [data-brand='X'] and :root both have equal CSS specificity, so combining
+ * them ties the default brand's cascade position to wherever it falls
+ * alphabetically among the other brands, silently breaking every brand
+ * whose name sorts before it (their [data-brand] rule would be overridden
+ * by the later '​:root, [data-brand=foodora]' block). Keeping :root as its
+ * own block up front, before every brand block, means each individual
+ * [data-brand='<slug>'] rule always comes later in source order and
+ * reliably wins — regardless of alphabetical ordering.
+ */
+function renderDefaultBrandFallback(theme) {
+  const brand = theme[DEFAULT_BRAND];
+  const light = `:root {\n${renderColourVars(brand.light)}\n}`;
+  const dark = `[data-theme='dark'] {\n${renderColourVars(brand.dark)}\n}`;
+  const blocks = [`/* Default brand fallback (${brand.name}) — before data-brand is set */\n${light}\n\n${dark}`];
+
+  if (brand.illustration && Object.keys(brand.illustration).length > 0) {
+    blocks.push(`:root {\n${renderColourVars(brand.illustration)}\n}`);
+  }
+
+  return blocks.join('\n\n');
+}
+
 function renderBrandBlocks(theme) {
   const blocks = [];
 
   for (const [brandSlug, brand] of Object.entries(theme)) {
-    const isDefault = brandSlug === DEFAULT_BRAND;
-
-    const lightSelector = isDefault
-      ? `:root,\n[data-brand='${brandSlug}']`
-      : `[data-brand='${brandSlug}']`;
-
-    const darkSelector = isDefault
-      ? `[data-theme='dark'],\n[data-brand='${brandSlug}'][data-theme='dark']`
-      : `[data-brand='${brandSlug}'][data-theme='dark']`;
+    const lightSelector = `[data-brand='${brandSlug}']`;
+    const darkSelector = `[data-brand='${brandSlug}'][data-theme='dark']`;
 
     blocks.push(`/* ${brand.name} — light */\n${lightSelector} {\n${renderColourVars(brand.light)}\n}`);
     blocks.push(`/* ${brand.name} — dark */\n${darkSelector} {\n${renderColourVars(brand.dark)}\n}`);
@@ -144,6 +165,8 @@ function main() {
     renderGlobalBlock(globalTokens),
     '',
     renderSemanticBlock(semantic),
+    '',
+    renderDefaultBrandFallback(theme),
     '',
     renderBrandBlocks(theme),
     '',

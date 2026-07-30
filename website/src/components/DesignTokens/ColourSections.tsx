@@ -79,6 +79,33 @@ const ERROR_ITEMS: { name: string; usage: string }[] = [
   },
 ];
 
+const OVERLAY_ITEMS: { name: string; usage: string }[] = [
+  {
+    name: 'color-overlay-primary',
+    usage:
+      "Base colour for overlay interfaces, e.g. a scrim or viewfinder frame. Unlike every other Semantic colour, this stays the same regardless of light/dark mode — so overlay UI doesn't flicker or change when a rider switches modes.",
+  },
+  {
+    name: 'color-overlay-secondary',
+    usage: 'Secondary colour for overlay interfaces, for less prominent elements within the same overlay.',
+  },
+  {
+    name: 'color-overlay-tertiary',
+    usage: 'Tertiary colour for overlay interfaces, for the least prominent elements within the same overlay.',
+  },
+];
+
+const SHADOW_ITEMS: { name: string; usage: string }[] = [
+  {
+    name: 'color-shadow-light',
+    usage: 'Light shadow colour, for subtle elevation on cards and surfaces.',
+  },
+  {
+    name: 'color-shadow-heavy',
+    usage: 'Heavy shadow colour, for pronounced elevation, e.g. modals or floating action buttons.',
+  },
+];
+
 const BACKGROUND_ITEMS: { name: string; usage: string }[] = [
   {
     name: 'color-background-default',
@@ -292,6 +319,28 @@ export function BackgroundColours(): React.ReactElement {
           uses <code>color.background.default</code>.
         </p>
       </Subsection>
+    </Section>
+  );
+}
+
+export function OverlayColours(): React.ReactElement {
+  return (
+    <Section
+      title="Overlay"
+      description="Used in overlay interfaces where elements need to stay the same colour regardless of the light/dark switch, e.g. a camera viewfinder or map overlay that sits above the rest of the app."
+    >
+      <TokenUsageTable items={OVERLAY_ITEMS} />
+    </Section>
+  );
+}
+
+export function ShadowColours(): React.ReactElement {
+  return (
+    <Section
+      title="Shadow"
+      description="Used for elevation and depth effects, like drop shadows behind cards or floating elements. These follow light/dark mode, unlike Overlay above."
+    >
+      <TokenUsageTable items={SHADOW_ITEMS} />
     </Section>
   );
 }

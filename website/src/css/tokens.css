@@ -179,6 +179,47 @@
   --flamingo-color-white-opacity02: rgba(23, 23, 23, 0.08);
 }
 
+/* Default brand fallback (Foodora) — before data-brand is set */
+:root {
+  --flamingo-primary-dark02: #C60D5C;
+  --flamingo-primary-main: #D70F64;
+  --flamingo-primary-light01: #FF3D8A;
+  --flamingo-primary-light02: #F7BDD1;
+  --flamingo-primary-light04: #FDF1F5;
+  --flamingo-secondary-dark02: #002C2C;
+  --flamingo-secondary-main: #1D4242;
+  --flamingo-secondary-light01: #226A6A;
+  --flamingo-secondary-light02: #61D2D2;
+  --flamingo-secondary-light04: #D2F8F8;
+}
+
+[data-theme='dark'] {
+  --flamingo-primary-dark02: #F7BDD1;
+  --flamingo-primary-main: #FF3D8A;
+  --flamingo-primary-light01: #D70F64;
+  --flamingo-primary-light02: #C60D5C;
+  --flamingo-primary-light04: #730835;
+  --flamingo-secondary-dark02: #002C2C;
+  --flamingo-secondary-main: #1D4242;
+  --flamingo-secondary-light01: #226A6A;
+  --flamingo-secondary-light02: #61D2D2;
+  --flamingo-secondary-light04: #D2F8F8;
+}
+
+:root {
+  --flamingo-color-light04-opacity00: rgba(253, 241, 245, 0);
+  --flamingo-color-light04-opacity06: rgba(253, 241, 245, 0.72);
+  --flamingo-illustration90: #4B1F00;
+  --flamingo-illustration80: #582E10;
+  --flamingo-illustration70: #904915;
+  --flamingo-illustration60: #C6773F;
+  --flamingo-illustration50: #DBA279;
+  --flamingo-illustration40: #EFBA95;
+  --flamingo-illustration30: #FDD5B9;
+  --flamingo-illustration20: #FFE7D5;
+  --flamingo-illustration10: #FFF1E7;
+}
+
 /* Baemin — light */
 [data-brand='baemin'] {
   --flamingo-primary-dark02: #006462;
@@ -266,7 +307,6 @@
 }
 
 /* Foodora — light */
-:root,
 [data-brand='foodora'] {
   --flamingo-primary-dark02: #C60D5C;
   --flamingo-primary-main: #D70F64;
@@ -281,7 +321,6 @@
 }
 
 /* Foodora — dark */
-[data-theme='dark'],
 [data-brand='foodora'][data-theme='dark'] {
   --flamingo-primary-dark02: #F7BDD1;
   --flamingo-primary-main: #FF3D8A;
@@ -296,7 +335,6 @@
 }
 
 /* Foodora — illustration */
-:root,
 [data-brand='foodora'] {
   --flamingo-color-light04-opacity00: rgba(253, 241, 245, 0);
   --flamingo-color-light04-opacity06: rgba(253, 241, 245, 0.72);

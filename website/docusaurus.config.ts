@@ -35,6 +35,27 @@ const config: Config = {
     locales: ['en'],
   },
 
+  headTags: [
+    // Flamingo's typeface is Noto Sans (see Tokens > Typography). Loaded
+    // site-wide so every page — not just the type-scale samples — renders
+    // in the real brand font instead of Docusaurus's default.
+    {
+      tagName: 'link',
+      attributes: { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    },
+    {
+      tagName: 'link',
+      attributes: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900&display=swap',
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
