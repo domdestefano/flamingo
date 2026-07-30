@@ -1,0 +1,56 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [button, secondary, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/buttons/secondary-button" />
+
+## Preview
+
+Secondary button shares the same underlying `Button` component and Storybook docs page as Primary
+button — scroll to the "Secondary Button" section below.
+
+<StorybookEmbed storyId="components-buttons-button--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-buttons-button--docs)
+
+## API
+
+Same `Button` component API as Primary button — set `variant="secondary"`. See the shared
+[Button API](/components/buttons/primary-button/code-web#api) for the full prop table, or below:
+
+<PropsTable
+  rows={[
+    { name: 'color', description: 'Color of button', type: "'default' | 'destructive' | undefined", default: 'default' },
+    {
+      name: 'disabled',
+      description: 'A boolean indicating whether the button is disabled. If isLoading is true then disabled will be true as well.',
+      type: 'boolean | undefined',
+      default: 'false',
+    },
+    { name: 'endIcon', description: 'An optional icon to be displayed at the end of the button.', type: 'ReactNode' },
+    {
+      name: 'inverted',
+      description: 'A boolean indicating whether the button is inverted. Currently only supported for the secondary variant.',
+      type: 'boolean | undefined',
+      default: 'false',
+    },
+    { name: 'loading', description: 'A boolean indicating loading state.', type: 'boolean | undefined', default: 'false' },
+    {
+      name: 'size',
+      description: 'The size of the button. Variant = secondary supports both sizes.',
+      type: "'small' | 'large' | undefined",
+      default: 'large',
+    },
+    { name: 'startIcon', description: 'An optional icon to be displayed at the start of the button.', type: 'ReactNode' },
+    { name: 'variant', description: 'Variant of button', type: "'primary' | 'secondary' | 'tertiary' | undefined", default: 'primary' },
+  ]}
+/>

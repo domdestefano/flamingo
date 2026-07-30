@@ -91,6 +91,83 @@
       "output": "website/static/img/components/primary-button/primary-button-anatomy.png",
       "description": "Primary button anatomy — background, text",
       "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001041:2192",
+      "output": "website/static/img/components/primary-button/primary-button-placement-do.png",
+      "description": "Primary button Usage > Placement — Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:4338",
+      "output": "website/static/img/components/primary-button/primary-button-placement-dont.png",
+      "description": "Primary button Usage > Placement — Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6180",
+      "output": "website/static/img/components/primary-button/primary-button-stack-do.png",
+      "description": "Primary button Usage > Stack — Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6117",
+      "output": "website/static/img/components/primary-button/primary-button-stack-dont.png",
+      "description": "Primary button Usage > Stack — Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001041:2246",
+      "output": "website/static/img/components/primary-button/primary-button-non-primary-do.png",
+      "description": "Primary button Usage > Non primary actions — Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001041:2268",
+      "output": "website/static/img/components/primary-button/primary-button-non-primary-dont.png",
+      "description": "Primary button Usage > Non primary actions — Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6422",
+      "output": "website/static/img/components/secondary-button/secondary-button-overview.png",
+      "description": "Secondary button overview — default and inverted, big and small",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6446",
+      "output": "website/static/img/components/secondary-button/secondary-button-anatomy.png",
+      "description": "Secondary button anatomy — background, icon, text",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6468",
+      "output": "website/static/img/components/secondary-button/secondary-button-pair-do.png",
+      "description": "Secondary button Usage > Pairing — Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6503",
+      "output": "website/static/img/components/secondary-button/secondary-button-pair-dont.png",
+      "description": "Secondary button Usage > Pairing — Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6547",
+      "output": "website/static/img/components/secondary-button/secondary-button-repetition-caution.png",
+      "description": "Secondary button Usage > Caution: repetition example",
+      "scale": 1
     }
   ]
 }

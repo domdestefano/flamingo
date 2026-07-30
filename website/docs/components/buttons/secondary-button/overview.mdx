@@ -1,0 +1,51 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: buttons
+figma_node: '40000182:6414'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [button, secondary, action, cta, interactive]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Secondary button <StatusBadge status="stable" />
+
+Indicate a supporting action on a screen.
+
+<ComponentTabs basePath="/components/buttons/secondary-button" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+<ComponentImage src="/img/components/secondary-button/secondary-button-overview.png" alt="Secondary button — default and inverted, big and small" />
+
+Use the secondary button for **medium emphasis** — for the secondary action on a screen. This may
+imply that there's also a primary and more important action on the screen. The secondary button is,
+in general, used for actions that are somewhat important.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Size | Use according to the relevance of the action on the page — the same two sizes as the primary button. |
+| Inverse | Use the inverse property only for darker-coloured backgrounds, e.g. an image or a dark section of the UI, so the button stays legible. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/secondary-button/secondary-button-anatomy.png" alt="Secondary button anatomy: background, icon, text" />
+
+1. Background
+2. Icon
+3. Text
+
+### Clickable area
+
+The secondary button's background is intentionally low-opacity, which can make its visible bounds
+look smaller than a primary button's. Its actual tappable area still meets the standard touch
+target size — don't shrink the hit area to match the faint background visually.

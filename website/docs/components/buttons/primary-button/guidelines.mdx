@@ -6,6 +6,7 @@ tags: [button, primary, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 
 # Guidelines
 
@@ -23,9 +24,14 @@ on a screen.
 2. **On the screen**: primary buttons can also be used in the content sections.
 3. There should be **normally only one (or none) primary action per screen**.
 
+<div style={{ display: "flex", gap: "1.5rem", margin: "1.25rem 0", flexWrap: "wrap" }}>
+  <ComponentImage src="/img/components/primary-button/primary-button-placement-do.png" alt="Placement Do example" width={180} />
+  <ComponentImage src="/img/components/primary-button/primary-button-placement-dont.png" alt="Placement Don't example" width={180} />
+</div>
+
 ## Use cases
 
-### Use for primary, most important actions only
+### Don't use for non-primary actions
 
 Use primary buttons only for the most important actions you'll need a user to do. Repetitive or
 less important actions can be indicated by using different button types. Always consider the main
@@ -36,6 +42,11 @@ so the edit button is displayed in the header as an icon, an optional and not-re
 
 **Don't** — using a primary button for editing data gives the impression that the user has to do
 this action though (this is not the case here).
+
+<div style={{ display: "flex", gap: "1.5rem", margin: "1.25rem 0", flexWrap: "wrap" }}>
+  <ComponentImage src="/img/components/primary-button/primary-button-non-primary-do.png" alt="Non-primary action Do example" width={180} />
+  <ComponentImage src="/img/components/primary-button/primary-button-non-primary-dont.png" alt="Non-primary action Don't example" width={180} />
+</div>
 
 ### Multiple use on the screen
 
@@ -58,22 +69,27 @@ in Flamingo do not support multi-line.
 **Don't** — buttons do not resize vertically. Make sure to also check translations, since a longer
 translated label is the most common cause of an unwanted second line.
 
-### Shelf
+### Stack
 
 When the primary button is combined with another action to express the dualism of choice, try to
 provide a preferred (primary) and an alternative (secondary or tertiary) option.
 
-**Do** — when using vertical shelves, keep the primary button on top of the secondary or tertiary
-one.
+**Do** — when stacking buttons, keep the primary button on top of (or first in reading order to) the
+secondary or tertiary one.
 
 **Don't** — don't place two secondary buttons above each other, as they fight for attention and
 priority.
+
+<div style={{ display: "flex", gap: "1.5rem", margin: "1.25rem 0", flexWrap: "wrap" }}>
+  <ComponentImage src="/img/components/primary-button/primary-button-stack-do.png" alt="Stack Do example" width={180} />
+  <ComponentImage src="/img/components/primary-button/primary-button-stack-dont.png" alt="Stack Don't example" width={180} />
+</div>
 
 For the `button.small` variant, you can horizontally stack it with other elements as the size of
 the elements are small enough to accommodate longer labels. Be always mindful of the length and
 translation of the text.
 
-**Do** — use vertical shelves only with small primary buttons and short labels.
+**Do** — use horizontal stacks only with small primary buttons and short labels.
 
 **Don't** — medium to long labels can easily create readability issues. Always consider
 translations.

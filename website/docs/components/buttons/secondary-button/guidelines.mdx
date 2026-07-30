@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [button, secondary, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/secondary-button" />
+
+## Usage
+
+Use the secondary button for medium emphasis — a supporting action alongside (or instead of) a
+primary button. It signals "this matters, but less than the primary action."
+
+### Pairing with a primary button
+
+**Do** — pair one secondary button with one primary button to express a clear preferred vs.
+alternative choice.
+
+**Don't** — don't use a secondary button as the only action on a screen when the action is actually
+the most important one; use a primary button instead.
+
+<div style={{ display: 'flex', gap: '1.5rem', margin: '1.25rem 0', flexWrap: 'wrap' }}>
+  <ComponentImage src="/img/components/secondary-button/secondary-button-pair-do.png" alt="Secondary button pairing Do example" width={180} />
+  <ComponentImage src="/img/components/secondary-button/secondary-button-pair-dont.png" alt="Secondary button pairing Don't example" width={180} />
+</div>
+
+### Caution: repetition
+
+Avoid using several secondary buttons in a row for similar, repeated actions — at that point none of
+them reads as more important than the others, which defeats the purpose of a "medium emphasis"
+button. Consider a list or menu pattern instead.
+
+<ComponentImage src="/img/components/secondary-button/secondary-button-repetition-caution.png" alt="Secondary button repetition caution example" width={220} />
