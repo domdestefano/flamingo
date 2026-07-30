@@ -1,0 +1,100 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: buttons
+figma_node: '40000182:4136'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [button, primary, action, cta, interactive]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Primary button <StatusBadge status="stable" />
+
+Indicate the primary action you want a user to take.
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Live component
+
+<StorybookEmbed storyId="components-buttons-button--docs" viewMode="docs" height={900} />
+
+The embed above is the real, shipped component from Storybook — not a screenshot. When engineering
+changes the component, this updates on the next Storybook deploy, so it can't drift from what's in
+production.
+
+## Component
+
+<ComponentImage src="/img/components/primary-button/primary-button-overview.png" alt="Primary button states: big and small, icon left and right, inactive, pressed, loading" />
+
+1. Big and small button
+2. Icon left and right
+3. Inactive
+4. Pressed
+5. Loading
+
+Use the primary button for **high emphasis** — for the primary, most important, or most common
+action on a screen.
+
+- In most cases, there is only one (or none) primary button per screen.
+- If you have several actions, consider using other button types and define the hierarchy of
+  actions.
+
+## Properties
+
+The component has several properties you can choose from:
+
+| Property | Details |
+| --- | --- |
+| Size | The button comes in **2 sizes**, depending on the prominence the designers want to give to the action and on the size of the element it refers to. For instance, if the button is placed inside a small card, we recommend using `button.primary.small`. |
+| State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. **Loading**: the button is showing that an action is being triggered. A spinner appears next to the label and it spins until the loading of the action is completed. The loading state is only for primary actions, big and small, as the other actions should not fetch any data from the backend, therefore there should not be any loading involved. |
+| Icon | (Optional) Ability to add an icon left or right of the text. |
+
+### Left or right icon
+
+The use of the icon is used as a **visual assistance to the label**, in order to make the user
+understand the action faster.
+
+Generally, we recommend to **not use an icon in the primary button if not explicitly needed**. If
+you still decide to use one, consider the following:
+
+- Think of its direction based on the action that you want the user to trigger or initiate. In
+  western countries the human brain tends to read from left to right. Use the button with the left
+  icon variant when you want to draw the user's attention to the icon first and then the label,
+  e.g. an alert icon + "Important information about this" — in this case, you want to draw the
+  attention to the icon first, that visually alerts the user, and then read the label it refers to.
+- You should use the button with left icon variant also when an action refers to a **flow going
+  backward**, i.e. a step back would require putting the icon on the left hand side rather than on
+  the right.
+- In the opposite way, use the button with right icon variant when an action refers to a **flow
+  going forward**, i.e. the next step would require putting the icon on the right hand side rather
+  than on the left.
+
+### Loading button vs. full screen loading
+
+The difference between the loading state for the primary buttons and the full screen loading state
+is that the former you want to give to the user the glimpse that only the action they have
+triggered is being loaded; this means that the user can interact with the rest of the interface
+while the loading is happening. It can also be defined that as the user clicks on the button again,
+the loading stops and gets cancelled. The full screen loading state, instead, is when you want to
+show that the whole interface is loading and the user cannot interact with the UI until the loading
+is complete.
+
+### Loading label
+
+The loading label can be customised by the team into whatever makes more sense for the use case,
+e.g. "accepting order…" or "booking shift…". We recommend using the 3 dots (…) at the end of the
+label to give a textual indication that the action is loading.
+
+If no customised label is defined, the default "Loading…" will take place.
+
+## Anatomy
+
+<ComponentImage src="/img/components/primary-button/primary-button-anatomy.png" alt="Primary button anatomy: background and text" />
+
+1. Background
+2. Text

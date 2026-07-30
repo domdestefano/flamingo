@@ -16,6 +16,13 @@ type StorybookEmbedProps = {
   height?: number;
   /** Override the deployed Storybook base URL if it differs per environment. */
   baseUrl?: string;
+  /**
+   * 'story' embeds a single isolated story. 'docs' embeds the component's
+   * full autodocs page (all variants/states in one render) — use this when
+   * the component doesn't have separate per-variant story IDs, e.g.
+   * "components-buttons-button--docs".
+   */
+  viewMode?: 'story' | 'docs';
 };
 
 const DEFAULT_STORYBOOK_URL =
@@ -25,11 +32,12 @@ export default function StorybookEmbed({
   storyId,
   height = 320,
   baseUrl = DEFAULT_STORYBOOK_URL,
+  viewMode = 'story',
 }: StorybookEmbedProps): React.ReactElement {
   // `iframe.html` renders a single story with no Storybook chrome around it.
   const src = `${baseUrl}/iframe.html?id=${encodeURIComponent(
     storyId,
-  )}&viewMode=story`;
+  )}&viewMode=${viewMode}`;
 
   return (
     <div

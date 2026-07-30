@@ -120,7 +120,7 @@ const config: Config = {
         {
           title: 'Design System',
           items: [
-            { label: 'Components', to: '/components/button' },
+            { label: 'Components', to: '/components/buttons/primary-button/overview' },
             { label: 'Guidelines', to: '/guidelines/getting-started' },
             { label: 'Tokens', to: '/tokens/overview' },
           ],

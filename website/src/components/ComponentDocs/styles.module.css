@@ -1,0 +1,18 @@
+.statusBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--flamingo-color-success-light);
+  color: var(--flamingo-color-success-main);
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.componentImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}

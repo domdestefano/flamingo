@@ -1,0 +1,45 @@
+---
+title: Change log
+sidebar_position: 4
+status: stable
+tags: [button, primary, changelog]
+---
+
+import { ChangelogTable } from '@site/src/components/ComponentDocs/shared';
+
+# Change log
+
+<ChangelogTable
+  rows={[
+    {
+      date: 'June 2026',
+      version: '2.2',
+      description: (
+        <>
+          <strong>Lumi</strong>
+          <ul>
+            <li>Updated color tokens</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      date: '15/05/2025',
+      version: '2.0',
+      description: (
+        <>
+          <strong>Lumi</strong> — update of tokens:
+          <ul>
+            <li>Updated text styles</li>
+            <li>Colours based on Grey100 + opacity</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      date: 'Early May',
+      version: '1.5',
+      description: 'Updated the background colours.',
+    },
+  ]}
+/>
