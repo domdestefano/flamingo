@@ -19,7 +19,7 @@ function SpacingBars({ tokens }: { tokens: Record<string, number> }) {
     <div className={styles.barList}>
       {Object.entries(tokens).map(([name, value]) => (
         <div key={name} className={styles.barRow}>
-          <code className={styles.barLabel}>--flamingo-{name}</code>
+          <code className={styles.barLabel}>{name}</code>
           <div className={styles.bar} style={{ width: `var(--flamingo-${name})` }} />
           <span className={styles.barValue}>{value}px</span>
         </div>

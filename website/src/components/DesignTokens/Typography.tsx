@@ -20,16 +20,14 @@ function TokenTable({ tokens, unit }: { tokens: Record<string, number>; unit: st
       <thead>
         <tr>
           <th>Token</th>
-          <th>CSS variable</th>
           <th>Value</th>
         </tr>
       </thead>
       <tbody>
         {Object.entries(tokens).map(([name, value]) => (
           <tr key={name}>
-            <td>{name}</td>
             <td>
-              <code>--flamingo-{name}</code>
+              <code>{name}</code>
             </td>
             <td>
               {value}
@@ -47,7 +45,7 @@ function FontSizeSamples({ tokens }: { tokens: Record<string, number> }) {
     <div className={styles.fontSizeList}>
       {Object.entries(tokens).map(([name, value]) => (
         <div key={name} className={styles.fontSizeRow}>
-          <code className={styles.fontSizeLabel}>--flamingo-{name}</code>
+          <code className={styles.fontSizeLabel}>{name}</code>
           <span style={{ fontFamily: "'Noto Sans', sans-serif", fontSize: `var(--flamingo-${name})` }}>
             Rider app text
           </span>
@@ -363,7 +361,18 @@ export function TypographyGuidelines(): React.ReactElement {
           </>
         }
       >
-        <ExampleImage src="/img/tokens/typography/typography-tags.png" alt="Tags example" caption="Tags" />
+        <div className={styles.exampleGrid}>
+          <ExampleImage
+            src="/img/tokens/typography/typography-tags-do.png"
+            alt="Tags Do example"
+            caption="Do"
+          />
+          <ExampleImage
+            src="/img/tokens/typography/typography-tags-dont.png"
+            alt="Tags Don't example"
+            caption="Don't"
+          />
+        </div>
         <Subsection title="Do">
           <p>Use the Tag style for component items that use 1 to max. 3 words, which describe the content briefly.</p>
         </Subsection>

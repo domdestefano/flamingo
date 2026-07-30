@@ -175,7 +175,7 @@ function TokenUsageRow({ name, usage }: { name: string; usage: string }) {
         </div>
       </td>
       <td>
-        <code>--flamingo-{name}</code>
+        <code>{name}</code>
       </td>
       <td className={styles.monoValue}>{resolved}</td>
       <td>{usage}</td>

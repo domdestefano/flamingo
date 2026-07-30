@@ -63,7 +63,7 @@ export function Swatch({ name }: { name: string }) {
       <div className={styles.swatchCheckerboard}>
         <div className={styles.swatchColor} style={{ background: `var(--flamingo-${name})` }} />
       </div>
-      <code className={styles.swatchName}>--flamingo-{name}</code>
+      <code className={styles.swatchName}>{name}</code>
       <span className={styles.swatchValue}>{resolved}</span>
     </div>
   );

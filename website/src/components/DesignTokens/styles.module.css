@@ -215,7 +215,7 @@
 
 .exampleGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 180px));
   gap: 1.5rem;
   margin: 1.25rem 0;
 }
@@ -227,9 +227,9 @@
 
 .exampleImage {
   width: 100%;
+  max-width: 180px;
   height: auto;
   border-radius: 12px;
-  border: 1px solid var(--ifm-color-emphasis-300);
 }
 
 .exampleCaption {
