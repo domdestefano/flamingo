@@ -210,3 +210,45 @@
   font-size: 0.8rem;
   color: var(--ifm-color-emphasis-700);
 }
+
+/* --- Example screenshots (real Figma frames) --- */
+
+.exampleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.exampleFigure {
+  margin: 0;
+  text-align: center;
+}
+
+.exampleImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.exampleCaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* --- Reasons / definition list (Font family) --- */
+
+.subsection dl {
+  margin: 0;
+}
+
+.subsection dt {
+  margin-top: 1rem;
+}
+
+.subsection dd {
+  margin: 0.25rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+}

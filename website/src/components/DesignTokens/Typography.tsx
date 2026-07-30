@@ -1,7 +1,18 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import globalTokens from '@site/tokens/global.json';
-import { Section } from './shared';
+import { Section, Subsection } from './shared';
 import styles from './styles.module.css';
+
+function ExampleImage({ src, alt, caption }: { src: string; alt: string; caption: string }) {
+  const url = useBaseUrl(src);
+  return (
+    <figure className={styles.exampleFigure}>
+      <img src={url} alt={alt} className={styles.exampleImage} />
+      <figcaption className={styles.exampleCaption}>{caption}</figcaption>
+    </figure>
+  );
+}
 
 function TokenTable({ tokens, unit }: { tokens: Record<string, number>; unit: string }) {
   return (
@@ -37,7 +48,9 @@ function FontSizeSamples({ tokens }: { tokens: Record<string, number> }) {
       {Object.entries(tokens).map(([name, value]) => (
         <div key={name} className={styles.fontSizeRow}>
           <code className={styles.fontSizeLabel}>--flamingo-{name}</code>
-          <span style={{ fontSize: `var(--flamingo-${name})` }}>Rider app text</span>
+          <span style={{ fontFamily: "'Noto Sans', sans-serif", fontSize: `var(--flamingo-${name})` }}>
+            Rider app text
+          </span>
           <span className={styles.fontSizeValue}>{value}px</span>
         </div>
       ))}
@@ -96,6 +109,30 @@ export function FontFamilyTokens(): React.ReactElement {
           ))}
         </tbody>
       </table>
+
+      <div className={styles.subsection}>
+        <h3 className={styles.subsectionTitle}>Why Noto Sans</h3>
+        <dl>
+          <dt>
+            <strong>International</strong>
+          </dt>
+          <dd>Flamingo's text styles were designed to be accessible in all languages. Noto is "a typeface for the world" and supports every language the rider app ships in.</dd>
+          <dt>
+            <strong>Bold</strong>
+          </dt>
+          <dd>
+            The rider app uses bold UI elements to prioritise the most important elements, so a rider
+            can easily scan what's necessary for their work, on the go.
+          </dd>
+          <dt>
+            <strong>Accessible</strong>
+          </dt>
+          <dd>
+            Our text styles comply with the highest accessibility standards and settings, to make the
+            experience enjoyable for every possible rider.
+          </dd>
+        </dl>
+      </div>
     </Section>
   );
 }
@@ -277,5 +314,67 @@ export function ListSpacingTokens(): React.ReactElement {
     <Section title="List spacing">
       <TokenTable tokens={globalTokens['list-spacing']} unit="px" />
     </Section>
+  );
+}
+
+export function TypographyGuidelines(): React.ReactElement {
+  return (
+    <>
+      <Section
+        title="Hierarchy"
+        description="Use different text styles based on the level of importance and prominence the text has within the interface you're designing. Mix text sizes based on typographic harmony, especially if your UI is rich in text and needs hierarchy to let the reader understand what's most important and what can be skipped."
+      >
+        <div className={styles.exampleGrid}>
+          <ExampleImage
+            src="/img/tokens/typography/typography-page-with-content.png"
+            alt="Page with content example"
+            caption="Page with content"
+          />
+          <ExampleImage
+            src="/img/tokens/typography/typography-data-on-top.png"
+            alt="Data on top example"
+            caption="Data on top"
+          />
+        </div>
+        <p>
+          Use headlines and subtitles to create hierarchy in a parent-child scenario: headlines,
+          subtitles, body = parent, child, grandchild. Use headlines and subtitles for page and
+          section titles, body for description.
+        </p>
+        <p>
+          The <code>display</code> style should only be used to highlight a main number on a page or
+          component. This style takes a lot of screen space, so use it sparingly.
+        </p>
+
+        <div className={styles.exampleGrid}>
+          <ExampleImage src="/img/tokens/typography/typography-lists.png" alt="Lists example" caption="Lists" />
+          <ExampleImage src="/img/tokens/typography/typography-cards.png" alt="Cards example" caption="Cards" />
+        </div>
+        <p>Make sure to highlight the important element of lists, and choose styles accordingly.</p>
+        <p>Think of cards as sections wrapped in containers — they should follow the same rules of hierarchy.</p>
+      </Section>
+
+      <Section
+        title="Tags"
+        description={
+          <>
+            The <code>tag</code> style is usually used for identification components. As this style is
+            all caps, avoid using it for texts that have several words.
+          </>
+        }
+      >
+        <ExampleImage src="/img/tokens/typography/typography-tags.png" alt="Tags example" caption="Tags" />
+        <Subsection title="Do">
+          <p>Use the Tag style for component items that use 1 to max. 3 words, which describe the content briefly.</p>
+        </Subsection>
+        <Subsection title="Don't">
+          <p>
+            Don't use tags for longer texts. Readability is reduced with all caps, because all-caps
+            words have a uniform rectangular shape, meaning readers can't identify words by their
+            shape.
+          </p>
+        </Subsection>
+      </Section>
+    </>
   );
 }
