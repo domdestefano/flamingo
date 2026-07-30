@@ -16,3 +16,35 @@
   display: block;
   margin: 1.5rem auto;
 }
+
+/* --- Inline component tab bar (Overview / Guidelines / Content / ...) --- */
+
+.componentTabs {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  margin-bottom: 2rem;
+}
+
+.componentTab,
+.componentTabActive {
+  padding: 0.6rem 0.1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+
+.componentTab {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.componentTab:hover {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.componentTabActive {
+  color: var(--flamingo-primary-main);
+  border-bottom-color: var(--flamingo-primary-main);
+}
