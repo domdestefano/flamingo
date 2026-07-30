@@ -1,0 +1,67 @@
+website/docs/tokens/colours/neutral.mdx
+  s_54bf5f254aeba9::t_03c5a4051b1eca 1-10
+website/docs/tokens/spacing-sizing/_category_.json
+  s_54bf5f254aeba9::t_fb89ddf81febc9 1-4
+website/docs/tokens/typography/list-spacing.mdx
+  s_54bf5f254aeba9::t_97cd1218784f84 1-10
+website/docs/tokens/spacing-sizing/spacing.mdx
+  s_54bf5f254aeba9::t_c52c7eaaa9e468 1-10
+website/docs/tokens/spacing-sizing/corner-radius.mdx
+  s_54bf5f254aeba9::t_10de1524d53065 1-10
+website/docs/tokens/overview.mdx
+  s_54bf5f254aeba9::t_c4d3c9de6870a2 1-23
+website/docs/tokens/typography/_category_.json
+  s_54bf5f254aeba9::t_0d4ac3c065717e 1-4
+website/docs/tokens/spacing-sizing/blur.mdx
+  s_54bf5f254aeba9::t_8bba841ca35f80 1-10
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_1c4e2c2127e281 104
+website/docs/tokens/typography/font-size.mdx
+  s_54bf5f254aeba9::t_757af91db88213 1-10
+website/src/components/DesignTokens/SpacingSizing.tsx
+  s_54bf5f254aeba9::t_8e6918d8bd754e 1-118
+website/docs/tokens/colours/status.mdx
+  s_54bf5f254aeba9::t_1c6cea95c725b2 1-10
+website/docs/tokens/colours/background.mdx
+  s_54bf5f254aeba9::t_564b50ff492850 1-10
+website/docs/tokens/colours/principles.mdx
+  s_54bf5f254aeba9::t_ee2190f11f18c9 1-12
+website/docs/tokens/spacing-sizing/border-thickness.mdx
+  s_54bf5f254aeba9::t_ac1c120425941e 1-10
+website/docs/tokens/typography/line-height.mdx
+  s_54bf5f254aeba9::t_4e406731accab8 1-10
+website/src/components/DesignTokens/ColourSections.tsx
+  s_54bf5f254aeba9::t_0228c52d153128 1-348
+website/docs/tokens/colours/transparent.mdx
+  s_54bf5f254aeba9::t_da7cbe6ac77db1 1-10
+website/docs/tokens/colours/illustration.mdx
+  s_54bf5f254aeba9::t_dc830305078871 1-10
+website/docs/tokens/typography/letter-spacing.mdx
+  s_54bf5f254aeba9::t_d8b0a9eb3e8979 1-10
+website/docs/tokens/colours/_category_.json
+  s_54bf5f254aeba9::t_fed1894e444043 1-4
+website/docs/tokens/colours/primary.mdx
+  s_54bf5f254aeba9::t_ffc91e44a5b6c8 1-10
+website/docs/tokens/spacing-sizing/opacity.mdx
+  s_54bf5f254aeba9::t_b65504d0483939 1-10
+website/docs/tokens/typography/paragraph-spacing.mdx
+  s_54bf5f254aeba9::t_2dd255033f77e3 1-10
+website/src/components/DesignTokens/Typography.tsx
+  s_54bf5f254aeba9::t_50ab1c52793f56 1-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "6ba84331e63b9c219d0273be8bcec2febba7e87e",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
