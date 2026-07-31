@@ -1,0 +1,70 @@
+website/docs/components/buttons/floating-button/guidelines.mdx
+  s_54bf5f254aeba9::t_30132ecb44b40f 1-47
+website/docs/components/buttons/tertiary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_b84e028a7f1d34 1-31
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_be7f73066e6b97 8,15,22,29,36,43,50,57,64,71,78,85,92,99,106,113,120,127,134,141,148,155,162,190,197,211,232-233,239-240,246-247,253-254,260,281-282,288-289,295-296,302-303,309,330-331,337-338,344-345,351-352,358-359,365-366
+  s_54bf5f254aeba9::t_b805544ca2dd25 185-189,191-196,198-205
+  s_54bf5f254aeba9::t_fbe6790bf59a87 206-210,212-231,234-238,241-245,248-252,255-259,261-280,283-287,290-294,297-301,304-308,310-329,332-336,339-343,346-350,353-357,360-364
+website/docs/components/buttons/tertiary-button/change-log.mdx
+  s_54bf5f254aeba9::t_cf402f7924640b 1-23
+website/docs/components/buttons/floating-icon-button/guidelines.mdx
+  s_54bf5f254aeba9::t_e7c35871f611bf 1-47
+website/docs/components/buttons/floating-icon-button/content.mdx
+  s_54bf5f254aeba9::t_1ea64ca24693f4 1-20
+website/docs/components/buttons/icon-button/guidelines.mdx
+  s_54bf5f254aeba9::t_b55bd235c50ef4 1-47
+website/docs/components/buttons/icon-button/change-log.mdx
+  s_54bf5f254aeba9::t_77322c46a0e278 1-23
+website/docs/components/buttons/icon-button/content.mdx
+  s_54bf5f254aeba9::t_0d93fd892705c6 1-27
+website/docs/components/buttons/floating-icon-button/overview.mdx
+  s_54bf5f254aeba9::t_76b4ca5249563c 1-51
+website/docs/components/buttons/floating-button/content.mdx
+  s_54bf5f254aeba9::t_d1701c4d04104e 1-21
+website/docs/components/buttons/icon-button/overview.mdx
+  s_54bf5f254aeba9::t_3ec10e9212034d 1-55
+website/docs/components/buttons/floating-button/change-log.mdx
+  s_54bf5f254aeba9::t_77fa8a3207fbd1 1-23
+website/docs/components/buttons/floating-icon-button/change-log.mdx
+  s_54bf5f254aeba9::t_86ef4fa541d3f6 1-23
+website/docs/components/buttons/floating-icon-button/code-web.mdx
+  s_54bf5f254aeba9::t_fb30cf7daf9710 1-48
+website/docs/components/buttons/floating-button/_category_.json
+  s_54bf5f254aeba9::t_3e779fb6184901 1-4
+website/docs/components/buttons/floating-button/code-web.mdx
+  s_54bf5f254aeba9::t_2671ea1112aea5 1-23
+website/docs/components/buttons/icon-button/_category_.json
+  s_54bf5f254aeba9::t_8e078633b71034 1-4
+website/docs/components/buttons/tertiary-button/overview.mdx
+  s_54bf5f254aeba9::t_e1b586f381b034 1-59
+website/docs/components/buttons/floating-icon-button/_category_.json
+  s_54bf5f254aeba9::t_c7947e4ff64678 1-4
+website/docs/components/buttons/icon-button/code-web.mdx
+  s_54bf5f254aeba9::t_71fa3c0cbdff47 1-48
+website/docs/components/buttons/tertiary-button/content.mdx
+  s_54bf5f254aeba9::t_5a2eee65ceef9f 1-36
+website/docs/components/buttons/tertiary-button/code-web.mdx
+  s_54bf5f254aeba9::t_c428563e9dc0be 1-44
+website/docs/components/buttons/tertiary-button/_category_.json
+  s_54bf5f254aeba9::t_0a47861a6ec5de 1-4
+website/docs/components/buttons/floating-button/overview.mdx
+  s_54bf5f254aeba9::t_78408df08227fb 22
+  s_54bf5f254aeba9::t_97a13a4a677a0d 1-21,23-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "402252935109b789ef551f43f3e1ceea5a533c5d",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
