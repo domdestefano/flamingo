@@ -49,11 +49,14 @@
   border-bottom-color: var(--flamingo-primary-main);
 }
 
-/* --- Stretch a table to fill the content width, columns evenly sized --- */
+/* --- Stretch a table to fill the content width. Columns keep their
+   natural (auto) sizing — only Do/Don't uses forced-equal columns, since
+   variable-width tables like Change log (short Date/Version, long
+   Description) shouldn't be squeezed into equal thirds. --- */
 
 .stretchTable {
   width: 100%;
-  table-layout: fixed;
+  table-layout: auto;
 }
 
 /* --- Do / Don't (and Caution) comparison table --- */
