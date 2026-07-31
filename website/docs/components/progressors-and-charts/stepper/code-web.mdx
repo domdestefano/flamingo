@@ -1,0 +1,30 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [stepper, progressors-and-charts, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/progressors-and-charts/stepper" />
+
+## Preview
+
+<StorybookEmbed storyId="components-progressors-and-charts-stepper--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-stepper--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'steps', description: 'Step data: title, subtitle, caption, state.', type: "Array<{ title: string; subtitle?: string; caption?: string; state: 'completed' | 'active' | 'upcoming' }>" },
+    { name: 'indicator', description: 'How each step is represented.', type: "'number' | 'icon'" },
+    { name: 'suffix', description: 'Optional trailing content per step (text, tag, icon).', type: 'ReactNode' },
+  ]}
+/>

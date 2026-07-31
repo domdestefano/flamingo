@@ -1,0 +1,29 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [pie-chart, progressors-and-charts, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/progressors-and-charts/pie-chart" />
+
+## Usage
+
+Use the pie chart when progress is naturally counted in discrete steps (e.g. "6 of 7 tasks done"),
+not a continuous percentage — use the Circle Chart for that instead.
+
+## Use cases
+
+### Amount of segments
+
+<DoDontTable
+  doImage="/img/components/pie-chart/pie-chart-amount-do.png"
+  doText="Keep the number of segments small enough to distinguish at a glance."
+  dontImage="/img/components/pie-chart/pie-chart-amount-dont.png"
+  dontText="Don't use so many segments (e.g. 20) that individual sections become indistinguishable."
+/>

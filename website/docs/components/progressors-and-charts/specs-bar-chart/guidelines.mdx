@@ -1,0 +1,29 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [bar-chart, progressors-and-charts, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/progressors-and-charts/specs-bar-chart" />
+
+## Usage
+
+Use the bar chart to compare numerical values across a set of categories. Consider translations
+and label length up front — long axis labels in some locales may need to wrap or truncate.
+
+## Use cases
+
+### Width
+
+<DoDontTable
+  doImage="/img/components/specs-bar-chart/specs-bar-chart-width-do.png"
+  doText="Give the bar chart the full available width for readability."
+  dontImage="/img/components/specs-bar-chart/specs-bar-chart-width-caution.png"
+  dontText="Be cautious squeezing the chart into a narrow, partial-width layout alongside other content — it's designed to use the full width."
+/>
