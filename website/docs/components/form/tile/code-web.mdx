@@ -1,0 +1,32 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [tile, form, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/tile" />
+
+## Preview
+
+<StorybookEmbed storyId="components-form-tile--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-tile--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'label', description: 'The tile\'s label.', type: 'string' },
+    { name: 'icon', description: 'Icon shown above the label.', type: 'ReactNode' },
+    { name: 'selected', description: 'Whether the tile is selected.', type: 'boolean' },
+    { name: 'disabled', description: 'Whether the tile is inactive.', type: 'boolean' },
+    { name: 'onSelect', description: 'Called when the tile is selected.', type: '() => void' },
+  ]}
+/>

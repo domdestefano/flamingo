@@ -1,0 +1,43 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [switch, form, guidelines]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/switch" />
+
+## Usage
+
+Use a Switch for a setting that takes effect immediately, with no need to confirm — e.g. toggling
+dark mode. Don't use a Switch for a choice that needs an explicit submit action; use a checkbox or
+button instead.
+
+## Use cases
+
+### Placement
+
+<DoDontTable
+  doImage="/img/components/switch/switch-placement-do.png"
+  doText="Place the switch at the trailing (right) edge of its label."
+  dontImage="/img/components/switch/switch-placement-dont.png"
+  dontText="Don't place the switch at the leading edge — it breaks the expected reading order of label then control."
+/>
+
+### Explain the effect
+
+<ComponentImage src="/img/components/switch/switch-explain-do.png" alt="Switch with a label and explanatory body text" />
+
+Add a short body text under the label when a setting's effect isn't self-evident — e.g. "Dark mode
+consumes less battery and will strain your eyes less."
+
+<CautionTable
+  image="/img/components/switch/switch-explain-caution.png"
+  text={<>Be cautious about leaving a non-obvious setting with just a label and no body text — users may not understand what it does before toggling it.</>}
+/>

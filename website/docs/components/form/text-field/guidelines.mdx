@@ -1,0 +1,29 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [text-field, form, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/text-field" />
+
+## Usage
+
+Use a Text Field for a short, single-line input — a name, an email, an amount. Don't use a Text
+Field for multi-line content; use a Text Area instead.
+
+## Use cases
+
+### Field type
+
+<DoDontTable
+  doImage="/img/components/text-field/text-field-labeltype-do.png"
+  doText="Use a Text Field for short, single-line input."
+  dontImage="/img/components/text-field/text-field-labeltype-dont.png"
+  dontText="Don't use a large multi-line box for content that's really a short, single-line input — use a Text Field, not a Text Area."
+/>

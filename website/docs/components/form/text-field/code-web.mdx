@@ -1,0 +1,40 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [text-field, form, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/text-field" />
+
+## Preview
+
+This component is named **Text Input** in Storybook and code.
+
+<StorybookEmbed storyId="components-form-text-input--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-text-input--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'label', description: 'The Field title.', type: 'string' },
+    { name: 'required', description: 'Shows a "Required" label.', type: 'boolean' },
+    { name: 'value', description: 'The input value.', type: 'string' },
+    { name: 'prefix', description: 'Optional prefix label, e.g. a currency symbol.', type: 'string' },
+    { name: 'suffix', description: 'Optional suffix label, e.g. a unit.', type: 'string' },
+    { name: 'leadingIcon', description: 'Optional leading icon.', type: 'ReactNode' },
+    { name: 'trailingIcon', description: 'Optional trailing icon button.', type: 'ReactNode' },
+    { name: 'hint', description: 'Optional hint text below the field.', type: 'string' },
+    { name: 'error', description: 'Error message — also switches the field into its error state.', type: 'string' },
+    { name: 'disabled', description: 'Whether the field is inactive.', type: 'boolean' },
+    { name: 'onChange', description: 'Called when the value changes.', type: '(value: string) => void' },
+  ]}
+/>

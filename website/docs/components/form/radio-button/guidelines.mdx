@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [radio-button, form, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/radio-button" />
+
+## Usage
+
+Use radio buttons when only one option in a group can be true at a time. Don't use radio buttons
+when more than one option could apply — use checkboxes instead.
+
+## Use cases
+
+### Exclusive
+
+<DoDontTable
+  doImage="/img/components/radio-button/radio-button-exclusive-do.png"
+  doText="Use radio buttons for mutually-exclusive choices, e.g. selecting one gender."
+  dontImage="/img/components/radio-button/radio-button-exclusive-dont.png"
+  dontText="Don't use radio buttons when multiple answers could apply, e.g. which pets someone owns — use checkboxes instead."
+/>
+
+### Location
+
+<DoDontTable
+  doImage="/img/components/radio-button/radio-button-location-do.png"
+  doText="Place the radio button leading, before its label."
+  dontImage="/img/components/radio-button/radio-button-location-dont.png"
+  dontText="Don't place the radio button trailing, after its label."
+/>

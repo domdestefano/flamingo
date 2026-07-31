@@ -1,0 +1,47 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000145:2488'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [text-area, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Text Area <StatusBadge status="stable" />
+
+Lets the user enter longer, multi-line text.
+
+<ComponentTabs basePath="/components/form/text-area" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/text-area/text-area-overview.png" alt="Text area with title and multi-line input box" />
+
+Styling (text colours, strokes, etc.) is the same as the Text Field.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| State | Active / Inactive / Error. |
+| Show Header | Optional — toggles the Field title row. |
+| Show Required label | Optional — toggles the "Required" label. |
+| Show Hint | Optional — toggles hint text below the field. |
+| Show Error message | Optional — toggles an error message below the field. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/text-area/text-area-anatomy.png" alt="Text area anatomy: Field title, Required label, Placeholder or text, Hint text" />
+
+1. **Field title**
+2. **Required label** — optional
+3. **Placeholder or text**
+4. **Hint text** — optional

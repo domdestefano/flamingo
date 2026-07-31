@@ -1,0 +1,49 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000560:4722'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [chips, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Chips <StatusBadge status="stable" />
+
+Compact, pill-shaped controls for filtering, single/multi-select, or removable input tokens.
+
+<ComponentTabs basePath="/components/form/chips" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/chips/chips-overview.png" alt="Chips: single-select, multi-select, and removable groups" />
+
+Chips come in three groupings:
+1. **Single-select** — one chip in the group can be active at a time, like a filter.
+2. **Multi-select** — any number of chips can be checked at once.
+3. **Removable** — each chip has a remove (×) action, plus a "Clear all" link for the group.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| # of Chips | The number of chips in the group. |
+| Icon | Optional — toggles a leading icon per chip. |
+| State | Selected / Unselected. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/chips/chips-anatomy.png" alt="Chips anatomy: Chip, Label, Icon, Remove icon, Chip group" />
+
+1. **Chip** — an individual chip's container.
+2. **Label**
+3. **Icon** — optional, leading.
+4. **Remove icon** — only on removable chips.
+5. **Chip group** — the full set of chips.

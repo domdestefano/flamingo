@@ -1,0 +1,31 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [radio-button, form, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/radio-button" />
+
+## Preview
+
+<StorybookEmbed storyId="components-form-radio--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-radio--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'checked', description: 'Whether this option is selected.', type: 'boolean' },
+    { name: 'name', description: 'Shared group name — only one radio per group can be checked.', type: 'string' },
+    { name: 'disabled', description: 'Whether the radio button is inactive.', type: 'boolean' },
+    { name: 'onChange', description: 'Called when this option is selected.', type: '() => void' },
+  ]}
+/>

@@ -1,0 +1,44 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000452:6458'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [switch, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Switch <StatusBadge status="stable" />
+
+Lets the user make one choice between two options.
+
+<ComponentTabs basePath="/components/form/switch" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/switch/switch-overview.png" alt="Switch, selected state" />
+
+For a switch used alongside text, use the Simple list item and set its suffix to "switch" rather
+than composing one from scratch.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Active | Whether the switch is enabled/interactive. |
+| Selected | On / off state. |
+| Show Label | Optional — toggles an inline label rendered by this component. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/switch/switch-anatomy.png" alt="Switch anatomy: Track, Thumb" />
+
+1. **Thumb** — the moving control.
+2. **Track** — the background the thumb slides along.

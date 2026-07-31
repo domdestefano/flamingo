@@ -1,0 +1,35 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [drop-down, form, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/drop-down" />
+
+## Preview
+
+This component is named **Dropdown** in Storybook and code.
+
+<StorybookEmbed storyId="components-form-dropdown--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-dropdown--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'label', description: 'The Field title.', type: 'string' },
+    { name: 'required', description: 'Shows a "Required" label.', type: 'boolean' },
+    { name: 'value', description: 'The selected option.', type: 'string' },
+    { name: 'options', description: 'The list of selectable options.', type: 'Array<{ label: string; value: string }>' },
+    { name: 'disabled', description: 'Whether the field is inactive.', type: 'boolean' },
+    { name: 'onChange', description: 'Called when a different option is selected.', type: '(value: string) => void' },
+  ]}
+/>

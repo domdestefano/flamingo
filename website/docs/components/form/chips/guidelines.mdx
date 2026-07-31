@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [chips, form, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/chips" />
+
+## Usage
+
+Use chips for filtering or lightweight selection — single-select for one active filter at a time,
+multi-select for any combination, and removable chips for tokens the user added themselves (e.g.
+applied filters) that they can individually clear.
+
+## Use cases
+
+### Styling
+
+<DoDontTable
+  doImage="/img/components/chips/chips-styling-do.png"
+  doText="Keep icons consistent across a chip set, or omit them entirely."
+  dontImage="/img/components/chips/chips-styling-dont.png"
+  dontText="Don't mix unrelated icon styles across chips in the same set — it reads as inconsistent, not informative."
+/>
+
+### Wraparound
+
+<DoDontTable
+  doImage="/img/components/chips/chips-wraparound-do.png"
+  doText="Let a removable chip group wrap onto a new line when it runs out of horizontal space."
+  dontImage="/img/components/chips/chips-wraparound-dont.png"
+  dontText="Don't let chips overflow and get clipped at the edge of the screen."
+/>
