@@ -420,6 +420,167 @@
       "output": "website/static/img/components/leading-list/leading-list-detach-dont.png",
       "description": "Leading List Usage > Detach \u2014 Don't example",
       "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000750:1954",
+      "output": "website/static/img/components/horizontal-divider/horizontal-divider-overview.png",
+      "description": "Horizontal divider overview \u2014 thin and extra thick",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:8509",
+      "output": "website/static/img/components/horizontal-divider/horizontal-divider-amount-do.png",
+      "description": "Horizontal divider Usage > Amount \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:8527",
+      "output": "website/static/img/components/horizontal-divider/horizontal-divider-amount-dont.png",
+      "description": "Horizontal divider Usage > Amount \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:8561",
+      "output": "website/static/img/components/horizontal-divider/horizontal-divider-width-do.png",
+      "description": "Horizontal divider Usage > Full Width & Paddings \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:8579",
+      "output": "website/static/img/components/horizontal-divider/horizontal-divider-width-dont.png",
+      "description": "Horizontal divider Usage > Full Width & Paddings \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:9745",
+      "output": "website/static/img/components/horizontal-divider/horizontal-divider-type-do.png",
+      "description": "Horizontal divider Usage > Type \u2014 Do example (thin vs thick)",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:9662",
+      "output": "website/static/img/components/horizontal-divider/horizontal-divider-type-dont.png",
+      "description": "Horizontal divider Usage > Type \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:9812",
+      "output": "website/static/img/components/vertical-divider/vertical-divider-overview.png",
+      "description": "Vertical divider overview \u2014 thin and extra thick",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:9827",
+      "output": "website/static/img/components/vertical-divider/vertical-divider-height-do.png",
+      "description": "Vertical divider Usage > Height \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:9844",
+      "output": "website/static/img/components/vertical-divider/vertical-divider-height-dont.png",
+      "description": "Vertical divider Usage > Height \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:10253",
+      "output": "website/static/img/components/vertical-divider/vertical-divider-one-style-do.png",
+      "description": "Vertical divider Usage > One style \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:10314",
+      "output": "website/static/img/components/vertical-divider/vertical-divider-one-style-dont.png",
+      "description": "Vertical divider Usage > One style \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:10380",
+      "output": "website/static/img/components/vertical-divider/vertical-divider-boxes-do.png",
+      "description": "Vertical divider Usage > Boxes don't need dividers \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000909:10406",
+      "output": "website/static/img/components/vertical-divider/vertical-divider-boxes-dont.png",
+      "description": "Vertical divider Usage > Boxes don't need dividers \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004045:1273",
+      "output": "website/static/img/components/empty-screen/empty-screen-overview.png",
+      "description": "Empty screen overview \u2014 no buttons variant",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004045:4251",
+      "output": "website/static/img/components/empty-screen/empty-screen-anatomy.png",
+      "description": "Empty screen anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004045:3692",
+      "output": "website/static/img/components/empty-screen/empty-screen-clickable-area.png",
+      "description": "Empty screen Appearance > Behaviour > Clickable area example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004046:4058",
+      "output": "website/static/img/components/empty-screen/empty-screen-constraints-do.png",
+      "description": "Empty screen Usage > Constraints \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004046:4163",
+      "output": "website/static/img/components/empty-screen/empty-screen-constraints-dont.png",
+      "description": "Empty screen Usage > Constraints \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004046:4438",
+      "output": "website/static/img/components/empty-screen/empty-screen-button-types-do.png",
+      "description": "Empty screen Usage > Button types \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004046:4545",
+      "output": "website/static/img/components/empty-screen/empty-screen-button-types-dont.png",
+      "description": "Empty screen Usage > Button types \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004046:4758",
+      "output": "website/static/img/components/empty-screen/empty-screen-minimal-messaging-do.png",
+      "description": "Empty screen Usage > Minimal messaging \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004046:4865",
+      "output": "website/static/img/components/empty-screen/empty-screen-minimal-messaging-dont.png",
+      "description": "Empty screen Usage > Minimal messaging \u2014 Don't example",
+      "scale": 1
     }
   ]
 }

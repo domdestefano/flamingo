@@ -1,0 +1,47 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [divider, vertical, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/layout/vertical-divider" />
+
+## Usage
+
+Use the vertical divider to separate items placed side by side — e.g. stats or actions arranged in
+a row — when they don't already have their own visual boundary.
+
+## Use cases
+
+### Height
+
+<DoDontTable
+  doImage="/img/components/vertical-divider/vertical-divider-height-do.png"
+  doText="Match the divider's height to the content it separates, so it reads as belonging to that row."
+  dontImage="/img/components/vertical-divider/vertical-divider-height-dont.png"
+  dontText="Don't let the divider run taller or shorter than the content next to it — a mismatched height looks unintentional."
+/>
+
+### One style
+
+<DoDontTable
+  doImage="/img/components/vertical-divider/vertical-divider-one-style-do.png"
+  doText="Use consistent spacing and the same divider style across every separation in the same row."
+  dontImage="/img/components/vertical-divider/vertical-divider-one-style-dont.png"
+  dontText="Don't mix inconsistent spacing between dividers in the same row — it reads as unbalanced even when the difference is subtle."
+/>
+
+### Boxes don't need dividers
+
+<DoDontTable
+  doImage="/img/components/vertical-divider/vertical-divider-boxes-do.png"
+  doText="Skip the divider when items already have their own visual boundary, like a bordered or elevated card — the boundary already does the separating."
+  dontImage="/img/components/vertical-divider/vertical-divider-boxes-dont.png"
+  dontText="Don't add a divider between elements that already have their own edge or border — it's redundant and adds visual clutter."
+/>

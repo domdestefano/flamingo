@@ -1,0 +1,58 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: layout
+figma_node: '40004045:532'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [empty-screen, empty-state, layout]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Empty screen <StatusBadge status="stable" />
+
+Communicate that a screen genuinely has nothing to show yet, and what the user can do about it.
+
+<ComponentTabs basePath="/components/layout/empty-screen" />
+
+<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="available" />
+
+## Component
+
+<ComponentImage src="/img/components/empty-screen/empty-screen-overview.png" alt="Empty screen with an illustration, title, and description" />
+
+Use the empty screen when a list, page, or section has no data to show — e.g. no deliveries yet,
+no saved addresses. It pairs an illustration with a short title and description, and can optionally
+include one or two buttons for the next action.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Graphic block | (Optional) An illustration relevant to the empty state — shown or hidden via `Show Graphic Block`. |
+| Title | A short, direct statement of what's empty. |
+| Body | (Optional) A short description adding context or next steps. |
+| Buttons | (Optional) Zero, one, or two buttons for the next action. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/empty-screen/empty-screen-anatomy.png" alt="Empty screen anatomy: illustration, title, description, and button area" />
+
+1. Illustration
+2. Title
+3. Description
+4. Button area
+5. Primary button
+6. Divider (shown only when a second button is present)
+7. Secondary button
+
+### Clickable area
+
+Each button's tappable area meets the standard touch target size, even when both buttons are
+placed close together side by side.
+
+<ComponentImage src="/img/components/empty-screen/empty-screen-clickable-area.png" alt="Empty screen buttons' clickable areas" width={280} />

@@ -1,0 +1,47 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [empty-screen, empty-state, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/layout/empty-screen" />
+
+## Usage
+
+Use the empty screen only when there's genuinely nothing to show — not as a loading state, and not
+as an error state (use a dedicated error or message component for those instead).
+
+## Use cases
+
+### Constraints
+
+<DoDontTable
+  doImage="/img/components/empty-screen/empty-screen-constraints-do.png"
+  doText="Let the empty screen take over the available space on its own, so its content stays vertically centred."
+  dontImage="/img/components/empty-screen/empty-screen-constraints-dont.png"
+  dontText="Don't squeeze the empty screen under a header bar without accounting for it — the illustration and message end up off-centre in the remaining space."
+/>
+
+### Button types
+
+<DoDontTable
+  doImage="/img/components/empty-screen/empty-screen-button-types-do.png"
+  doText="Use low-emphasis (Tertiary) buttons for the empty screen's actions — they're secondary to the main message, not the focus of the screen."
+  dontImage="/img/components/empty-screen/empty-screen-button-types-dont.png"
+  dontText="Don't use a high-emphasis Primary button here — it visually competes with the empty state's message instead of supporting it."
+/>
+
+### Minimal messaging
+
+<DoDontTable
+  doImage="/img/components/empty-screen/empty-screen-minimal-messaging-do.png"
+  doText="Let the empty screen's own title and description carry the message — that's enough."
+  dontImage="/img/components/empty-screen/empty-screen-minimal-messaging-dont.png"
+  dontText="Don't stack an additional Snackbar or message component on top of the empty screen — it's redundant messaging for a screen that's already explaining itself."
+/>

@@ -1,0 +1,32 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [divider, horizontal, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/layout/horizontal-divider" />
+
+## Preview
+
+Horizontal and Vertical divider share the same `Divider` component and Storybook docs page — set
+`orientation="horizontal"`.
+
+<StorybookEmbed storyId="components-layout-divider--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-layout-divider--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'orientation', description: 'Direction of the divider.', type: "'horizontal' | 'vertical' | undefined", default: 'horizontal' },
+    { name: 'size', description: 'Weight of the divider line.', type: "'thin' | 'extraThick' | undefined", default: 'thin' },
+  ]}
+/>
