@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [list, expandable, accordion, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/content-display-and-lists/expandable-list" />
+
+## Usage
+
+Use the expandable list when each row has genuinely relevant supplementary detail that most users
+won't need at a glance, but some will want to check without leaving the list.
+
+## Use cases
+
+### Hidden info
+
+<DoDontTable
+  doImage="/img/components/expandable-list/expandable-list-hidden-info-do.png"
+  doText="Only reveal information that's directly relevant to that row — e.g. distance, cash collected, and tips for a specific delivery."
+  dontImage="/img/components/expandable-list/expandable-list-hidden-info-dont.png"
+  dontText="Don't use the expanded area for unrelated or excessive filler text — if it's not relevant supplementary detail about that specific row, it doesn't belong here."
+/>
+
+### Detach
+
+<DoDontTable
+  doImage="/img/components/expandable-list/expandable-list-detach-do.png"
+  doText="Keep the expand/collapse chevron as the standard, linked component."
+  dontImage="/img/components/expandable-list/expandable-list-detach-dont.png"
+  dontText="Don't detach the chevron instance and replace it with custom symbols (like +/-) — it breaks visual consistency with every other expandable row in the product."
+/>

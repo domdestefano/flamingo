@@ -1,0 +1,33 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [list, leading, navigation, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/content-display-and-lists/leading-list" />
+
+## Preview
+
+In code this is the `LeadingListItem` component.
+
+<StorybookEmbed storyId="components-content-display-and-lists-leading-list-item--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-content-display-and-lists-leading-list-item--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'The row title.', type: 'ReactNode' },
+    { name: 'subtitle', description: 'Optional secondary text shown under the title (e.g. the current value).', type: 'ReactNode' },
+    { name: 'onClick', description: 'Called when the row is tapped.', type: '() => void' },
+    { name: 'disabled', description: 'A boolean indicating whether the row is disabled.', type: 'boolean | undefined', default: 'false' },
+  ]}
+/>

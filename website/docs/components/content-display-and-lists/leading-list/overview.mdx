@@ -1,0 +1,30 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: content-display-and-lists
+figma_node: '40000296:7495'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [list, leading, navigation, content-display]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Leading list <StatusBadge status="stable" />
+
+A navigational list row — tapping it takes the user somewhere else, rather than expanding in place.
+
+<ComponentTabs basePath="/components/content-display-and-lists/leading-list" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+Each row pairs a title (plus optional subtitle) with a trailing chevron, signalling that tapping
+the row navigates to another screen — e.g. a settings row like "Time" or "Preferred Chat Language".
+
+This component's Figma spec doesn't yet include an Overview/Anatomy breakdown — only Usage
+examples. If one gets added to Figma, register its frame and update this section rather than
+inventing an anatomy list.
