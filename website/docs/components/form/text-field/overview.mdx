@@ -1,0 +1,56 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000136:1570'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [text-field, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Text Field <StatusBadge status="stable" />
+
+Lets the user enter a short, single line of text.
+
+<ComponentTabs basePath="/components/form/text-field" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/text-field/text-field-overview.png" alt="Text field with title, leading icon, prefix, suffix, and trailing icon" />
+
+Note: in Storybook and code, this component is named **Text Input**.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| State | Active / Inactive / Error. |
+| Show Header | Optional — toggles the Field title row. |
+| Show Required label | Optional — toggles the "Required" label. |
+| Show left Icon | Optional — toggles a leading icon. |
+| Show Prefix | Optional — toggles a prefix label (e.g. a currency symbol). |
+| Show Suffix | Optional — toggles a suffix label (e.g. a unit). |
+| Show Icon button | Optional — toggles a trailing icon button. |
+| Show Hint | Optional — toggles hint text below the field. |
+| Show Error message | Optional — toggles an error message below the field. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/text-field/text-field-anatomy.png" alt="Text field anatomy: Field title, Required label, Leading icon, Prefix, Input value, Suffix, Trailing icon button, Hint, Error message" />
+
+1. **Field title**
+2. **Required label**
+3. **Leading icon** — optional
+4. **Prefix** — optional
+5. **Input value**
+6. **Suffix** — optional
+7. **Trailing icon button** — optional
+8. **Hint** — optional
+9. **Error message** — shown in the Error state

@@ -1,0 +1,31 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [checkbox, form, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/checkbox" />
+
+## Preview
+
+<StorybookEmbed storyId="components-form-checkbox--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-checkbox--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'checked', description: 'Whether the checkbox is selected.', type: 'boolean' },
+    { name: 'indeterminate', description: 'Shows a dash instead of a check or empty box — for a parent checkbox with a mix of checked/unchecked children.', type: 'boolean' },
+    { name: 'disabled', description: 'Whether the checkbox is inactive.', type: 'boolean' },
+    { name: 'onChange', description: 'Called when the checkbox is toggled.', type: '(checked: boolean) => void' },
+  ]}
+/>

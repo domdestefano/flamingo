@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [checkbox, form, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/checkbox" />
+
+## Usage
+
+Use checkboxes when a user can select any number of options from a set, including none or all.
+Don't use checkboxes for a mutually-exclusive choice; use a Radio button instead.
+
+## Use cases
+
+### Indeterminate
+
+<DoDontTable
+  doImage="/img/components/checkbox/checkbox-indeterminate-do.png"
+  doText="Use Indeterminate only on a parent checkbox, to summarize a mix of checked and unchecked children."
+  dontImage="/img/components/checkbox/checkbox-indeterminate-dont.png"
+  dontText="Don't set a leaf checkbox (one with no children of its own) to Indeterminate — it has nothing to summarize."
+/>
+
+### Location
+
+<DoDontTable
+  doImage="/img/components/checkbox/checkbox-location-do.png"
+  doText="Place the checkbox leading, before its label."
+  dontImage="/img/components/checkbox/checkbox-location-dont.png"
+  dontText="Don't place the checkbox trailing, after its label."
+/>

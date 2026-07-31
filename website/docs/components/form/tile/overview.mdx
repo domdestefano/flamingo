@@ -1,0 +1,44 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000450:2236'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [tile, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Tile <StatusBadge status="stable" />
+
+A selectable card-style option, combining an icon and a label.
+
+<ComponentTabs basePath="/components/form/tile" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/tile/tile-overview.png" alt="Tile with icon and label" />
+
+Use a Tile to let users pick from a small set of visual options, e.g. a delivery method or a
+vehicle type.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| State | Active / Selected / Inactive. |
+| Text | The tile's label. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/tile/tile-anatomy.png" alt="Tile anatomy: Icon, Label, Container" />
+
+1. **Icon**
+2. **Label**
+3. **Container**

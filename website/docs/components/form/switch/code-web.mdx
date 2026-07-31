@@ -1,0 +1,30 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [switch, form, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/switch" />
+
+## Preview
+
+<StorybookEmbed storyId="components-form-switch--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-switch--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'checked', description: 'Whether the switch is on.', type: 'boolean' },
+    { name: 'disabled', description: 'Whether the switch is inactive.', type: 'boolean' },
+    { name: 'onChange', description: 'Called when the switch is toggled.', type: '(checked: boolean) => void' },
+  ]}
+/>

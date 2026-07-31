@@ -1,0 +1,45 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000145:3534'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [drop-down, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Drop Down <StatusBadge status="stable" />
+
+A compact way to let the user choose from several options.
+
+<ComponentTabs basePath="/components/form/drop-down" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/drop-down/drop-down-overview.png" alt="Drop down with title and selected item" />
+
+Note: in Storybook and code, this component is named **Dropdown** (one word). Styling (text
+colours, strokes, etc.) is the same as the Text Field.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| State | Active / Selected / Inactive. |
+| Show Header | Optional — toggles the Field title row. |
+| Show Required label | Optional — toggles the "Required" label. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/drop-down/drop-down-anatomy.png" alt="Drop down anatomy: Field title, Required label, Selected item" />
+
+1. **Field title**
+2. **Required label** — optional
+3. **Selected item**

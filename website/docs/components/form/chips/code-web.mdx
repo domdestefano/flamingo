@@ -1,0 +1,32 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [chips, form, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/chips" />
+
+## Preview
+
+<StorybookEmbed storyId="components-form-chip--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-chip--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'label', description: 'The chip\'s label.', type: 'string' },
+    { name: 'icon', description: 'Optional leading icon.', type: 'ReactNode' },
+    { name: 'selected', description: 'Whether the chip is selected.', type: 'boolean' },
+    { name: 'onRemove', description: 'If provided, renders a remove (×) action and calls this when clicked.', type: '() => void' },
+    { name: 'onSelect', description: 'Called when the chip is selected.', type: '() => void' },
+  ]}
+/>

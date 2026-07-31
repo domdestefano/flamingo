@@ -1,0 +1,43 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000460:1148'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [radio-button, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Radio Button <StatusBadge status="stable" />
+
+Lets the user make one choice among several mutually-exclusive options.
+
+<ComponentTabs basePath="/components/form/radio-button" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/radio-button/radio-button-overview.png" alt="Radio button, selected state" />
+
+For a radio button used alongside text, use the Simple list item and set its prefix to "radio
+button" rather than composing one from scratch.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Active | Whether the radio button is enabled/interactive. |
+| Selected | Whether this option is the one chosen in the group. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/radio-button/radio-button-anatomy.png" alt="Radio button anatomy: Ring, Dot" />
+
+1. **Dot** — shown when selected.
+2. **Ring**

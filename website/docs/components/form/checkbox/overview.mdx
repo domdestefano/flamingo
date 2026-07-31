@@ -1,0 +1,43 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: form
+figma_node: '40000455:1664'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [checkbox, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Checkbox <StatusBadge status="stable" />
+
+Lets the user make multiple choices among several options.
+
+<ComponentTabs basePath="/components/form/checkbox" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/checkbox/checkbox-overview.png" alt="Checkbox, selected state" />
+
+For a checkbox used alongside text, use the Simple list item and set its prefix to "checkbox"
+rather than composing one from scratch.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Active | Whether the checkbox is enabled/interactive. |
+| State | Unselected / Selected / Indeterminate. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/checkbox/checkbox-anatomy.png" alt="Checkbox anatomy: Box, Checkmark" />
+
+1. **Checkmark** — shown when selected.
+2. **Box**

@@ -1,0 +1,46 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [tile, form, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/tile" />
+
+## Usage
+
+Use Tiles for a small set of visually distinct options the user picks from — each tile pairs an
+icon with a short label. Don't use Tiles for a long list of options; use a different selection
+pattern instead.
+
+## Use cases
+
+### Grouping
+
+<DoDontTable
+  doImage="/img/components/tile/tile-grouping-do.png"
+  doText="Group a small, fixed set of tiles in a grid."
+  dontImage="/img/components/tile/tile-grouping-dont.png"
+  dontText="Don't use tiles for a large number of options — beyond a handful, they take up too much space. Use a different selection pattern instead."
+/>
+
+### Different size
+
+<DoDontTable
+  doImage="/img/components/tile/tile-grouping-do.png"
+  doText="Keep every tile in a set the same size."
+  dontImage="/img/components/tile/tile-size-dont.png"
+  dontText="Don't let a longer label make one tile grow taller than its siblings."
+/>
+
+### Grouping (horizontal scroll)
+
+<CautionTable
+  image="/img/components/tile/tile-grouping-caution.png"
+  text={<>Be cautious with a horizontally scrolling row of tiles — users may not notice there are more options past the edge of the screen.</>}
+/>
