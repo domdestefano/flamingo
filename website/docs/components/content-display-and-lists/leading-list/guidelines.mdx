@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [list, leading, navigation, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/content-display-and-lists/leading-list" />
+
+## Usage
+
+Use the leading list for rows that navigate somewhere else on tap — e.g. a settings menu — not for
+rows that reveal more detail in place (use the expandable list for that instead).
+
+## Use cases
+
+### Chevron icon
+
+<DoDontTable
+  doImage="/img/components/leading-list/leading-list-chevron-icon-do.png"
+  doText="Use the standard trailing chevron to signal that a row navigates to another screen."
+  dontImage="/img/components/leading-list/leading-list-chevron-icon-dont.png"
+  dontText="Don't replace the chevron with a different icon (like an arrow or a plus) — it breaks the shared visual convention users rely on to recognise a navigational row."
+/>
+
+### Detach
+
+<DoDontTable
+  doImage="/img/components/leading-list/leading-list-detach-do.png"
+  doText="Keep row titles in the standard text colour and weight, even when a title needs two lines."
+  dontImage="/img/components/leading-list/leading-list-detach-dont.png"
+  dontText="Don't detach a row's title and restyle its colour or weight — recolouring it (e.g. to an accent colour) makes it read as a link or an error rather than a normal navigational row."
+/>
