@@ -76,15 +76,3 @@ jobs:
             ```
           branch: chore/agentic-doc-sync
           delete-branch: true
-
-      - name: Notify Slack
-        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        run: |
-          curl -sf -X POST -H 'Content-type: application/json' \
-            --data "$(cat <<EOF
-          {"text": "🦩 Flamingo docs auto-sync opened a PR: ${{ steps.cpr.outputs.pull-request-url }}"}
-          EOF
-          )" \
-            "$SLACK_WEBHOOK_URL"

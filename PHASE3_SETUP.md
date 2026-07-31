@@ -67,8 +67,10 @@ one component at a time.
 - **Never fabricates** the Content or Change log pages, which have no
   Figma source.
 - Opens a PR only if something actually changed (same `git diff` gate as
-  the image sync) — never pushes to `main` directly — and posts a Slack
-  notification with the PR link when it does.
+  the image sync) — never pushes to `main` directly. Review the PR like any
+  other; there's no separate chat notification, so keep an eye on the repo's
+  PR list (or watch the repo/subscribe to the Actions workflow) to notice
+  when it runs.
 - Full prompt: [`.github/scripts/doc-sync-prompt.md`](.github/scripts/doc-sync-prompt.md).
 
 ### Additional setup requirements for Phase 4
@@ -78,8 +80,6 @@ one component at a time.
   isn't reachable from a hosted Actions runner — it's a localhost-only
   tunnel — so this workflow authenticates directly against the Anthropic
   API instead.)
-- **GitHub secret `SLACK_WEBHOOK_URL`** — a Slack Incoming Webhook URL for
-  whichever channel should get notified when the agent opens a PR.
 
 ---
 
