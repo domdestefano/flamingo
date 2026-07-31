@@ -57,7 +57,7 @@ export function AvailabilityTable({
     { label: 'Specs', value: specs },
   ];
   return (
-    <table>
+    <table className={styles.stretchTable}>
       <thead>
         <tr>
           {platforms.map((p) => (
@@ -88,7 +88,7 @@ export type PropRow = {
 /** Renders a component's API/props table (name, description, type, default). */
 export function PropsTable({ rows }: { rows: PropRow[] }) {
   return (
-    <table>
+    <table className={styles.stretchTable}>
       <thead>
         <tr>
           <th>Name</th>
@@ -160,6 +160,36 @@ export function DoDontTable({
   );
 }
 
+/**
+ * Single-column callout matching DoDontTable's visual design, for guidance
+ * that's neither a clear Do nor a Don't — e.g. "use sparingly" warnings.
+ */
+export function CautionTable({
+  image,
+  text,
+}: {
+  image?: string;
+  text: React.ReactNode;
+}) {
+  return (
+    <table className={styles.doDontTable}>
+      <thead>
+        <tr>
+          <th className={styles.cautionHeader}>⚠️ Caution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {image && <DoDontImage src={image} alt="Caution example" />}
+            <p>{text}</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
 export type ChangelogRow = {
   date: string;
   version: string;
@@ -168,7 +198,7 @@ export type ChangelogRow = {
 
 export function ChangelogTable({ rows }: { rows: ChangelogRow[] }) {
   return (
-    <table>
+    <table className={styles.stretchTable}>
       <thead>
         <tr>
           <th>Date</th>

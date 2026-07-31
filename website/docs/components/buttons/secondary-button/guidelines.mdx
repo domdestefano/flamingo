@@ -6,8 +6,7 @@ tags: [button, secondary, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
-import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
@@ -40,8 +39,7 @@ primary button. It signals "this matters, but less than the primary action."
 
 ### Caution: repetition
 
-Avoid using several secondary buttons in a row for similar, repeated actions — at that point none of
-them reads as more important than the others, which defeats the purpose of a "medium emphasis"
-button. Consider a list or menu pattern instead.
-
-<ComponentImage src="/img/components/secondary-button/secondary-button-repetition-caution.png" alt="Secondary button repetition caution example" width={220} />
+<CautionTable
+  image="/img/components/secondary-button/secondary-button-repetition-caution.png"
+  text={<>Avoid using several secondary buttons in a row for similar, repeated actions — at that point none of them reads as more important than the others, which defeats the purpose of a "medium emphasis" button. Consider a list or menu pattern instead.</>}
+/>

@@ -49,12 +49,24 @@
   border-bottom-color: var(--flamingo-primary-main);
 }
 
-/* --- Do / Don't comparison table --- */
+/* --- Stretch a table to fill the content width, columns evenly sized --- */
+
+.stretchTable {
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* --- Do / Don't (and Caution) comparison table --- */
 
 .doDontTable {
   width: 100%;
   table-layout: fixed;
   margin: 1.25rem 0 2rem;
+}
+
+.doDontTable th,
+.doDontTable td {
+  width: 50%;
 }
 
 .doHeader {
@@ -65,6 +77,12 @@
 .dontHeader {
   background: var(--flamingo-color-error-light) !important;
   color: var(--flamingo-color-error-main);
+}
+
+.cautionHeader {
+  background: var(--flamingo-color-alert-light) !important;
+  color: var(--flamingo-color-alert-main);
+  width: 100%;
 }
 
 .doDontTable td {
