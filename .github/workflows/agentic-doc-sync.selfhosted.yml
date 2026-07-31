@@ -1,0 +1,116 @@
+# SKETCH / FALLBACK — not enabled, not verified.
+#
+# This is an alternative to .github/workflows/agentic-doc-sync.yml for if the
+# team can't get an ANTHROPIC_API_KEY funded. It swaps direct Anthropic API
+# billing for the DH internal LiteLLM gateway, at the cost of needing real
+# infra this repo doesn't have yet:
+#
+#   1. A self-hosted GitHub Actions runner on a DH machine/VM with the
+#      `dp-devinf` LiteLLM tunnel active (http://localhost:36253 reachable).
+#      A hosted `ubuntu-latest` runner can NOT reach that tunnel — this is
+#      why `runs-on` below is `[self-hosted, dh-litellm]`, a label that does
+#      not exist until someone (likely platform/IT) registers a runner with
+#      it.
+#   2. `.github/scripts/anthropic-to-litellm-proxy.js` translating between
+#      Claude Code's Anthropic Messages API calls and the gateway's
+#      OpenAI-only chat/completions format. This is a rough sketch, NOT a
+#      verified implementation — tool_use/tool_result translation (the Bash,
+#      Edit, and Figma MCP calls this workflow's prompt depends on) is the
+#      hardest part to get right and is only best-effort in that file. Test
+#      that tool calls actually work before trusting this in an unattended
+#      nightly run.
+#
+# Until both of those are true and verified, this workflow only supports
+# `workflow_dispatch` (manual) — no schedule, no pull_request trigger — so it
+# can't fire on its own and silently fail.
+#
+# If/when this is verified working, the on: block should mirror
+# agentic-doc-sync.yml (schedule + pull_request merge + workflow_dispatch),
+# and that file's ANTHROPIC_API_KEY-based job should be removed to avoid
+# running the same sync twice.
+
+name: Agentic Doc Sync (self-hosted / LiteLLM fallback)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-docs:
+    runs-on: [self-hosted, dh-litellm] # does not exist yet — see notes above
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Start Anthropic-to-LiteLLM translation proxy
+        run: |
+          node .github/scripts/anthropic-to-litellm-proxy.js &
+          echo $! > /tmp/proxy.pid
+          # crude readiness wait — replace with a real healthcheck if this
+          # gets productionized
+          sleep 2
+
+      - name: Run doc-sync agent
+        env:
+          ANTHROPIC_BASE_URL: http://localhost:8787
+          ANTHROPIC_API_KEY: not-needed-by-litellm-but-cli-requires-a-value
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        run: |
+          claude -p "$(cat .github/scripts/doc-sync-prompt.md)" \
+            --mcp-config .mcp.json \
+            --allowedTools "Edit,Write,Bash,mcp__figma__get_figma_data,mcp__figma__download_figma_images" \
+            --permission-mode acceptEdits
+
+      - name: Stop translation proxy
+        if: always()
+        run: kill "$(cat /tmp/proxy.pid)" 2>/dev/null || true
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git add website/docs website/static/img scripts/figma-images.json DOC_SYNC_SUGGESTIONS.md 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "summary<<EOF"
+              git diff --staged --stat
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create Pull Request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore(docs): agentic sync from Figma (self-hosted/LiteLLM)'
+          title: 'chore: agentic doc sync from Figma (self-hosted/LiteLLM)'
+          body: |
+            Automated check of every documented component against its Figma spec,
+            run via the self-hosted/LiteLLM fallback path.
+
+            Directly edited: verifiable/structural drift only (anatomy order,
+            properties tables, stale screenshots, missing Do/Don't or Caution
+            sections). Any guideline-prose changes are **not** applied here —
+            see `DOC_SYNC_SUGGESTIONS.md` in this diff (if present) for drafted
+            text changes that need editorial review before landing elsewhere.
+
+            Changed files:
+            ```
+            ${{ steps.diff.outputs.summary }}
+            ```
+          branch: chore/agentic-doc-sync-selfhosted
+          delete-branch: true
