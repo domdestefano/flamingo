@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [option-picker, overlay, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/overlay/option-picker" />
+
+## Usage
+
+Use single-select mode when picking an option should confirm and dismiss immediately (e.g.
+choosing a country). Use multi-select mode when the user needs to pick several options before
+confirming — this mode requires an explicit confirm and Cancel action.
+
+## Use cases
+
+### Single select main button
+
+<DoDontTable
+  doImage="/img/components/option-picker/option-picker-mainbutton-do.png"
+  doText="In single-select mode, let tapping an option confirm and dismiss immediately — no separate confirm button needed."
+  dontImage="/img/components/option-picker/option-picker-mainbutton-dont.png"
+  dontText="Don't add a redundant Confirm button to a single-select list — selecting an option already confirms it."
+/>
+
+### Cancel action
+
+<DoDontTable
+  doImage="/img/components/option-picker/option-picker-cancel-do.png"
+  doText="In multi-select mode, always pair the confirm action with a Cancel action."
+  dontImage="/img/components/option-picker/option-picker-cancel-dont.png"
+  dontText="Don't omit Cancel on a multi-select picker — without it, users can't back out without confirming a selection."
+/>

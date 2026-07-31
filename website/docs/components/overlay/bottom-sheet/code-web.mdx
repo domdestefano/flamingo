@@ -1,0 +1,33 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [bottom-sheet, overlay, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/overlay/bottom-sheet" />
+
+## Preview
+
+<StorybookEmbed storyId="components-overlay-bottom-sheet--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-overlay-bottom-sheet--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'The sheet\'s title.', type: 'string' },
+    { name: 'description', description: 'Optional supporting text below the title.', type: 'string' },
+    { name: 'graphic', description: 'Optional leading illustration.', type: 'ReactNode' },
+    { name: 'primaryAction', description: 'Label and handler for the primary action.', type: '{ label: string; onClick: () => void }' },
+    { name: 'secondaryAction', description: 'Optional label and handler for the secondary/dismissing action.', type: '{ label: string; onClick: () => void }' },
+    { name: 'onDismiss', description: 'Called when the sheet is dismissed (swipe down, scrim tap, etc.).', type: '() => void' },
+  ]}
+/>

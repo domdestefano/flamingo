@@ -1,0 +1,32 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [date-picker, overlay, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/overlay/date-picker" />
+
+## Preview
+
+<StorybookEmbed storyId="components-form-date-picker--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-date-picker--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'value', description: 'Selected date, or a { start, end } range in range mode.', type: 'Date | { start: Date; end: Date }' },
+    { name: 'rangeMode', description: 'Enables selecting a date range instead of a single date.', type: 'boolean' },
+    { name: 'locale', description: 'Locale used for month/weekday labels (supports RTL locales, e.g. Arabic).', type: 'string' },
+    { name: 'onChange', description: 'Called when the selection changes.', type: '(value: Date | { start: Date; end: Date }) => void' },
+    { name: 'onConfirm', description: 'Called when the confirm action is pressed.', type: '() => void' },
+  ]}
+/>

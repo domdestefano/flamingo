@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [action-picker, overlay, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/overlay/action-picker" />
+
+## Usage
+
+Use the Action picker for a plain list of actions the user can pick from — not for custom
+supplemental content, which belongs in a Bottom sheet instead.
+
+## Use cases
+
+### Destructive actions
+
+<DoDontTable
+  doImage="/img/components/action-picker/action-picker-destructive-do.png"
+  doText="Style only the genuinely destructive action (e.g. delete) in red, and place it last."
+  dontImage="/img/components/action-picker/action-picker-destructive-dont.png"
+  dontText="Don't style every action as destructive — it dilutes the warning and makes nothing stand out."
+/>
+
+### Number of actions
+
+<DoDontTable
+  doImage="/img/components/action-picker/action-picker-numberofactions-do1.png"
+  doText="Keep the list to a small, manageable number of actions."
+  dontImage="/img/components/action-picker/action-picker-numberofactions-dont.png"
+  dontText="Don't list so many actions that the sheet requires excessive scrolling — group or simplify instead."
+/>

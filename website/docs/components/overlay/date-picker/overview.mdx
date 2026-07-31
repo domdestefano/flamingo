@@ -1,0 +1,47 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: overlay
+figma_node: '40001808:54495'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [date-picker, overlay]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Date picker <StatusBadge status="stable" />
+
+Lets the user select a single date or a date range.
+
+<ComponentTabs basePath="/components/overlay/date-picker" />
+
+<AvailabilityTable figma="available" web="available" ios="in-progress" android="in-progress" specs="in-progress" />
+
+Per Figma's own spec, this component is currently **web only**.
+
+## Component
+
+<ComponentImage src="/img/components/date-picker/date-picker-overview.png" alt="Date picker showing a month grid and a Select date action" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| View | Date / Month and Years — switches between the day grid and a month/year selector. |
+| Date selection | None / Single (a range mode is also supported per the component description). |
+| Show Stack | Optional — toggles an extra content slot below the calendar grid. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/date-picker/date-picker-anatomy.png" alt="Date picker anatomy: Month/Year label, Month navigation, Calendar view toggle, Calendar grid, Optional content slot, Confirm action" />
+
+1. **Month/Year label**
+2. **Month navigation** — previous/next
+3. **Calendar view toggle** — switches to the Month and Years view
+4. **Calendar grid**
+5. **Optional content slot** — extra content below the grid
+6. **Confirm action**

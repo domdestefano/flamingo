@@ -1,0 +1,34 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [time-picker, overlay, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/overlay/time-picker" />
+
+## Preview
+
+<StorybookEmbed storyId="components-overlay-time-picker--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-overlay-time-picker--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'value', description: 'The selected time.', type: 'string' },
+    { name: 'hourMode', description: 'Hour display format.', type: "12 | 24" },
+    { name: 'minuteInterval', description: 'Minute step between selectable values.', type: 'number' },
+    { name: 'disabledHours', description: 'Hours the user can\'t select.', type: 'number[]' },
+    { name: 'disabledMinutes', description: 'Minutes the user can\'t select.', type: 'number[]' },
+    { name: 'onChange', description: 'Called when the selection changes.', type: '(value: string) => void' },
+    { name: 'onConfirm', description: 'Called when the confirm action is pressed.', type: '() => void' },
+  ]}
+/>

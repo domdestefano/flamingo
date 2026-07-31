@@ -1,0 +1,44 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: overlay
+figma_node: '40001834:13685'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [time-picker, overlay]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Time picker <StatusBadge status="stable" />
+
+Lets the user select a time using scrolling hour/minute wheels.
+
+<ComponentTabs basePath="/components/overlay/time-picker" />
+
+<AvailabilityTable figma="available" web="available" ios="in-progress" android="in-progress" specs="in-progress" />
+
+Per Figma's own spec, this component is currently **web only**.
+
+## Component
+
+<ComponentImage src="/img/components/time-picker/time-picker-overview.png" alt="Time picker with hour/minute wheels and a Select time action" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Format | 24h (a 12h format is also supported per the component's variants). |
+| Show Stack | Optional — toggles a content slot below the wheels. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/time-picker/time-picker-anatomy.png" alt="Time picker anatomy: View toggle, Hour/minute wheels, Content slot, Confirm action" />
+
+1. **View toggle** — switches between wheel and keyboard entry.
+2. **Hour/minute wheels**
+3. **Content slot** — optional, for supporting text.
+4. **Confirm action**
