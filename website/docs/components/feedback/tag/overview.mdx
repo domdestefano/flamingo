@@ -1,0 +1,48 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: feedback
+figma_node: '40001772:20610'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [tag, feedback, status]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Tag <StatusBadge status="stable" />
+
+Indicate the status of the rider or something related to them — a shift, a quest, an order.
+
+<ComponentTabs basePath="/components/feedback/tag" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/tag/tag-overview.png" alt="Tag prominence variants: pale and bold, with and without an icon" width={300} />
+
+Tags are used to indicate the status of the rider or things related to them, like shifts, quests,
+or orders — e.g. "New," "In progress," "Expired."
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | **Success**, **Alert**, **Error**, **Neutral**, **White**, **Transparent**, or **Default** — match the status being communicated. |
+| Prominence | **Pale** or **Bold** — Bold draws more attention, use for statuses that need to stand out. |
+| Icon | (Optional) Shown or hidden via `Show Icon`. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/tag/tag-anatomy.png" alt="Tag anatomy: icon and label" width={140} />
+
+1. Icon (optional)
+2. Label
+
+## Constraints
+
+The tag should have a limited number of characters — it isn't meant to stretch to fit longer text.

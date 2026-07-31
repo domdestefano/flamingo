@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [snackbar, feedback, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/feedback/snackbar" />
+
+## Usage
+
+Use a snackbar to confirm a completed or upcoming action — e.g. "Name updated successfully" — that
+the user doesn't need to actively acknowledge. It appears briefly, then dismisses on its own.
+
+## Use cases
+
+### Placement
+
+<DoDontTable
+  doImage="/img/components/snackbar/snackbar-placement-do.png"
+  doText="Anchor the snackbar to the bottom edge of the screen."
+  dontImage="/img/components/snackbar/snackbar-placement-dont.png"
+  dontText="Don't place the snackbar inline with page content instead of anchored to the bottom edge — it reads as part of the content rather than a temporary system message."
+/>
+
+### Length
+
+<DoDontTable
+  doImage="/img/components/snackbar/snackbar-length-do.png"
+  doText="Keep the message to one short line."
+  dontImage="/img/components/snackbar/snackbar-length-dont.png"
+  dontText="Don't write a long, multi-sentence message — a snackbar disappears on its own after a few seconds, so anything that takes longer to read than that isn't the right fit for this component."
+/>

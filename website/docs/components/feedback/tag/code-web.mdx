@@ -1,0 +1,41 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [tag, feedback, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/feedback/tag" />
+
+## Preview
+
+<StorybookEmbed storyId="components-feedback-tag--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-feedback-tag--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'label', description: 'The tag text.', type: 'string' },
+    {
+      name: 'type',
+      description: 'Colour variant of the tag.',
+      type: "'success' | 'alert' | 'error' | 'neutral' | 'white' | 'transparent' | 'default' | undefined",
+      default: 'default',
+    },
+    {
+      name: 'prominence',
+      description: 'Visual weight of the tag.',
+      type: "'pale' | 'bold' | undefined",
+      default: 'pale',
+    },
+    { name: 'icon', description: 'Optional icon shown before the label.', type: 'ReactNode' },
+  ]}
+/>

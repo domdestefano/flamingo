@@ -1,0 +1,33 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [message-box, feedback, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/feedback/message-box" />
+
+## Preview
+
+<StorybookEmbed storyId="components-feedback-message-box--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-feedback-message-box--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'type', description: 'Visual type of the message.', type: "'neutral' | 'success' | 'alert' | 'error' | undefined", default: 'neutral' },
+    { name: 'title', description: 'The message title, always visible.', type: 'ReactNode' },
+    { name: 'body', description: 'Optional supporting text.', type: 'ReactNode' },
+    { name: 'prefix', description: 'Optional icon or emoji shown before the title.', type: 'ReactNode' },
+    { name: 'buttonLabel', description: 'Optional action button label.', type: 'string' },
+    { name: 'onButtonClick', description: 'Called when the action button is tapped.', type: '() => void' },
+  ]}
+/>

@@ -1,0 +1,42 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [message-box, feedback, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/feedback/message-box" />
+
+## Usage
+
+Use the message box for important, persistent information about the user or their work — e.g.
+account limits or status changes — that deserves more visual weight than a Snackbar or Message bar.
+
+## Constraints
+
+The prefix can be any icon or emoji, but its size variant can't be changed. The message box's
+height adjusts dynamically based on whether a prefix, body, and button are shown. The button area
+follows the same width constraints as the text area above it.
+
+## Use cases
+
+### Content length
+
+<DoDontTable
+  doImage="/img/components/message-box/message-box-usage-do.png"
+  doText="Keep the body text short and scannable — a sentence or two at most."
+  dontImage="/img/components/message-box/message-box-usage-dont.png"
+  dontText="Don't write a long paragraph in the body — if the message needs that much explanation, it belongs somewhere with more room, like a dedicated help screen."
+/>
+
+### Placement of several
+
+<CautionTable
+  image="/img/components/message-box/message-box-placement-caution.png"
+  text={<>Avoid stacking multiple message boxes on the same screen — each one is meant to be prominent, and stacking them dilutes that prominence until none of them draws real attention.</>}
+/>
