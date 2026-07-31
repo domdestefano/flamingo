@@ -1,0 +1,36 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: loaders
+figma_node: '40004008:6210'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [skeleton, skeleton-screen, loader, loading]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Skeleton screen <StatusBadge status="stable" />
+
+A full-screen loading pattern built from multiple [Skeleton](/components/loaders/skeleton/overview)
+shapes arranged to preview an upcoming layout.
+
+<ComponentTabs basePath="/components/loaders/skeleton-screen" />
+
+<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/skeleton-screen/skeleton-screen-overview.png" alt="A full skeleton screen made of stacked skeleton bars" width={300} />
+
+This isn't a separate coded component — it's a composition pattern: repeat and arrange
+[Skeleton](/components/loaders/skeleton/overview) shapes to preview the layout of the screen that's about
+to load, then swap them for the real content once it's ready.
+
+**Note:** Figma's spec has a second, near-identical frame for this pattern labelled "Loading
+Screen" (same layout, no distinguishing content of its own). It looks like an unfinished duplicate
+rather than a genuinely different component — flagged here rather than documented as a separate
+page until someone confirms what, if anything, actually differs.
