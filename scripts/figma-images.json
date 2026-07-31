@@ -581,6 +581,62 @@
       "output": "website/static/img/components/empty-screen/empty-screen-minimal-messaging-dont.png",
       "description": "Empty screen Usage > Minimal messaging \u2014 Don't example",
       "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004007:23792",
+      "output": "website/static/img/components/skeleton/skeleton-overview.png",
+      "description": "Skeleton overview \u2014 light and dark, bar/square/circle shapes",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004007:24022",
+      "output": "website/static/img/components/skeleton/skeleton-anatomy.png",
+      "description": "Skeleton anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004016:17525",
+      "output": "website/static/img/components/skeleton/skeleton-sizing-do.png",
+      "description": "Skeleton Usage > Sizing \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004016:17554",
+      "output": "website/static/img/components/skeleton/skeleton-sizing-dont.png",
+      "description": "Skeleton Usage > Sizing \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004016:17534",
+      "output": "website/static/img/components/skeleton/skeleton-color-do.png",
+      "description": "Skeleton Usage > Color \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004016:17545",
+      "output": "website/static/img/components/skeleton/skeleton-color-dont.png",
+      "description": "Skeleton Usage > Color \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004008:8610",
+      "output": "website/static/img/components/skeleton-screen/skeleton-screen-overview.png",
+      "description": "Skeleton screen overview",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004029:5112",
+      "output": "website/static/img/components/loading-screen/loading-screen-overview.png",
+      "description": "Loading screen overview",
+      "scale": 1
     }
   ]
 }

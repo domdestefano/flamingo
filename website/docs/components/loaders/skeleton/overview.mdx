@@ -1,0 +1,45 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: loaders
+figma_node: '40004002:14984'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [skeleton, loader, loading]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Skeleton <StatusBadge status="stable" />
+
+A single placeholder shape that hints at the content being loaded, before the real UI appears.
+
+<ComponentTabs basePath="/components/loaders/skeleton" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/skeleton/skeleton-overview.png" alt="Skeleton shapes: square, bar, and circle, in light and dark, big/medium/small" />
+
+Skeleton components are UI elements used to provide a visual hint of the content that is loading.
+After loading completes, skeletons are replaced with the actual UI elements of the screen.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Shape | **Square**, **Bar**, or **Circle** — match the shape of the real content this skeleton stands in for (e.g. Circle for an avatar). |
+| Size | **Big**, **Medium**, or **Small** — match the size of the real content. |
+| Type | **Light** or **Dark** — match the surface it sits on. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/skeleton/skeleton-anatomy.png" alt="Skeleton anatomy: a single placeholder shape" width={220} />
+
+1. Placeholder shape
+
+A skeleton is a single shape — there's no further breakdown of parts.

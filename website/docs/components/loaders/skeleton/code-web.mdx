@@ -1,0 +1,29 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [skeleton, loader, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/loaders/skeleton" />
+
+## Preview
+
+<StorybookEmbed storyId="components-loaders-skeleton--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-loaders-skeleton--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'shape', description: 'Shape of the skeleton.', type: "'square' | 'bar' | 'circle' | undefined", default: 'bar' },
+    { name: 'size', description: 'Size of the skeleton.', type: "'big' | 'medium' | 'small' | undefined", default: 'medium' },
+  ]}
+/>

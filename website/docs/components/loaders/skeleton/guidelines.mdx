@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [skeleton, loader, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/loaders/skeleton" />
+
+## Usage
+
+Use skeletons to represent content that's actively loading, arranged to roughly match the layout
+of the real content that will replace them — this sets the right expectation for what's coming and
+reduces perceived wait time.
+
+## Use cases
+
+### Sizing
+
+<DoDontTable
+  doImage="/img/components/skeleton/skeleton-sizing-do.png"
+  doText="Size and shape each skeleton to match the real content it stands in for — an avatar-sized circle for an avatar, a title-width bar for a title."
+  dontImage="/img/components/skeleton/skeleton-sizing-dont.png"
+  dontText="Don't use skeleton shapes with proportions that don't match the real content — a mismatched layout causes a jarring shift once the real content loads in."
+/>
+
+### Color
+
+<DoDontTable
+  doImage="/img/components/skeleton/skeleton-color-do.png"
+  doText="Use the skeleton's standard neutral colour token."
+  dontImage="/img/components/skeleton/skeleton-color-dont.png"
+  dontText="Don't recolour skeletons with a brand accent colour — a neutral, low-contrast placeholder is what signals 'still loading,' not real content."
+/>
