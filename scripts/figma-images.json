@@ -175,6 +175,13 @@
       "output": "website/static/img/components/secondary-button/secondary-button-clickable-area.png",
       "description": "Secondary button Appearance > Behaviour > Clickable area example",
       "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:4305",
+      "output": "website/static/img/components/primary-button/primary-button-clickable-area.png",
+      "description": "Primary button Appearance > Behaviour > Clickable area example",
+      "scale": 2
     }
   ]
 }
