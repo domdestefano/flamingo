@@ -168,6 +168,13 @@
       "output": "website/static/img/components/secondary-button/secondary-button-repetition-caution.png",
       "description": "Secondary button Usage > Caution: repetition example",
       "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000182:6456",
+      "output": "website/static/img/components/secondary-button/secondary-button-clickable-area.png",
+      "description": "Secondary button Appearance > Behaviour > Clickable area example",
+      "scale": 2
     }
   ]
 }
