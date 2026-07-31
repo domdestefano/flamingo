@@ -1,0 +1,45 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [tabs, navigation, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/navigation/tabs" />
+
+## Usage
+
+Use tabs to switch between distinct views of the same screen — e.g. "Daily / Weekly / Monthly."
+Don't use tabs for a multi-step flow; use a different navigation pattern for that.
+
+## Use cases
+
+### Sizing
+
+<DoDontTable
+  doImage="/img/components/tabs/tabs-fillhug-do.png"
+  doText="Size each tab to hug its own label."
+  dontImage="/img/components/tabs/tabs-fillhug-dont.png"
+  dontText="Don't force tabs to stretch or fill unevenly — keep their width consistent with their content."
+/>
+
+### Color
+
+<DoDontTable
+  doImage="/img/components/tabs/tabs-color-do.png"
+  doText="Use the standard neutral colour for the selected tab's background."
+  dontImage="/img/components/tabs/tabs-color-dont.png"
+  dontText="Don't recolour the selected tab with a custom brand accent colour — it breaks visual consistency with every other tab set in the product."
+/>
+
+### Label length
+
+<CautionTable
+  image="/img/components/tabs/tabs-length-caution.png"
+  text={<>Avoid long tab labels — they get truncated, and a cut-off label is harder to scan than a short, complete one. Keep labels to a word or two.</>}
+/>

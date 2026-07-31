@@ -1,0 +1,51 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: navigation
+figma_node: '40001333:7781'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [header, navigation]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Header <StatusBadge status="stable" />
+
+Provides content and actions related to the current screen. Appears at the top of every screen.
+
+<ComponentTabs basePath="/components/navigation/header" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/header/header-overview.png" alt="Header with hamburger menu, title, and action" />
+
+The Header appears at the top of every screen and adapts its leading action — Hamburger menu, Back
+button, or none — depending on where the screen sits in the navigation hierarchy.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Navigation type | Hamburger menu / Back button / Full screen modal (close). |
+| With elevation | Whether the header casts a shadow over the content beneath it. |
+| Show Title | Optional — toggles the title. |
+| Show Subtitle | Optional — toggles the subtitle line below the title. |
+| Show (R) actions | Optional — toggles the first trailing action. |
+| Show 2nd (R) action | Optional — toggles a second trailing action. |
+| Show 2nd Block / Show 3rd Block | Optional — toggles extra content rows below the title row (e.g. tabs, search, status). |
+| Show Status indicator | Optional — toggles a status indicator. |
+| Show Background | Optional — toggles a background fill. |
+
+## Anatomy
+
+1. **Back button** (or Hamburger menu / close, depending on Navigation type)
+2. **Title**
+3. **Subtitle** — optional
+4. **Actions** — trailing, up to two
+5. **Additional blocks** — optional extra rows below the title (e.g. tabs, search, status)

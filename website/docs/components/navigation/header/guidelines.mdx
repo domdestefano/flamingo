@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [header, navigation, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/navigation/header" />
+
+## Usage
+
+Use the Header at the top of every screen. Match its leading action to the screen's place in the
+navigation hierarchy — a Hamburger menu (or no leading action) on entry-level pages, a Back button
+on any page reached by navigating forward.
+
+## Use cases
+
+### Hierarchy
+
+<DoDontTable
+  doImage="/img/components/header/header-hierarchy-do.png"
+  doText="Show the Hamburger menu on the entry-level page, and switch to a Back button on pages reached by navigating deeper."
+  dontImage="/img/components/header/header-hierarchy-dont.png"
+  dontText="Don't show a Back button on the entry-level page — there's nowhere for it to go back to."
+/>
+
+### Label length
+
+<DoDontTable
+  doImage="/img/components/header/header-labellength-do.png"
+  doText="Keep the title short enough to fit on one line."
+  dontImage="/img/components/header/header-labellength-dont.png"
+  dontText="Don't use a title so long it gets truncated — shorten it instead."
+/>

@@ -1,0 +1,44 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: navigation
+figma_node: '40000560:2984'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [tabs, navigation]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Tabs <StatusBadge status="stable" />
+
+Switch between distinct sections of content within the same screen.
+
+<ComponentTabs basePath="/components/navigation/tabs" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/tabs/tabs-overview.png" alt="Tabs, selected and unselected" />
+
+Sticky tabs should contain content that is genuinely distinct from other tabs in the same set —
+each tab represents a different view of the same screen, not a separate flow.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| # of Tabs | The number of tabs in the set. |
+| Selected Tab | Which tab is currently active. |
+| Icon | (Optional) Shown or hidden per tab. |
+
+## Anatomy
+
+Each tab item has two states:
+
+- **Selected** — filled background, indicating the currently active section.
+- **Unselected** — a lighter, unfilled background.

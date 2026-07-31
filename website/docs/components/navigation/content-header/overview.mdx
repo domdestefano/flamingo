@@ -1,0 +1,47 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: navigation
+figma_node: '40001313:4024'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [content-header, navigation]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Content header <StatusBadge status="stable" />
+
+Divide page content into sections, guiding users through the interface and creating structure.
+
+<ComponentTabs basePath="/components/navigation/content-header" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/content-header/content-header-overview.png" alt="Content header with Title, Description, and content below it" />
+
+Use the Content header to divide your page content into sections. This will guide users through the
+interface and create structure.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Level | Page / Section / Subsection — sets the hierarchy the header represents. |
+| Alignment | Default (left-aligned) / Centred. |
+| Type | Default / Illustration-Animation. |
+| Show description | Optional — toggles the description line. |
+| Show action | Optional — toggles the trailing action (e.g. a tertiary button). |
+
+## Anatomy
+
+<ComponentImage src="/img/components/content-header/content-header-anatomy.png" alt="Content header anatomy: Title, Description, Action" />
+
+1. **Title** — the section's name.
+2. **Description** — optional supporting text.
+3. **Action** — optional trailing control, e.g. a tertiary button.

@@ -1,0 +1,30 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [tabs, navigation, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/navigation/tabs" />
+
+## Preview
+
+<StorybookEmbed storyId="components-navigation-tabs--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-navigation-tabs--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'tabs', description: 'Array of tab labels (and optional icons).', type: 'Array<{ label: string; icon?: ReactNode }>' },
+    { name: 'selectedIndex', description: 'Index of the currently selected tab.', type: 'number' },
+    { name: 'onChange', description: 'Called when a different tab is selected.', type: '(index: number) => void' },
+  ]}
+/>
