@@ -1,0 +1,32 @@
+website/src/components/ComponentDocs/styles.module.css
+  s_54bf5f254aeba9::t_95e5891d12012a 51-86
+website/src/components/ComponentDocs/shared.tsx
+  s_54bf5f254aeba9::t_c2b90400f9a723 2
+  s_54bf5f254aeba9::t_0df2ad40acfd64 116-162
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_187c2bd4845efa 26-33
+website/docs/components/buttons/secondary-button/change-log.mdx
+  s_54bf5f254aeba9::t_7d88d237942d5c 9,15-23
+website/docs/components/buttons/primary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_39fa31c7ed9ef2 85-88
+  s_54bf5f254aeba9::t_2005d85b6dd610 9,27-32,42-47,74-79
+  s_54bf5f254aeba9::t_1d1e83486375a1 54-57,64-67
+website/docs/components/buttons/secondary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_3750c3ac064c0d 10,21-26,28,30,32-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "1f03254b8ce8cb3d8bea5bc657864712de335dcf",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
