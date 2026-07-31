@@ -76,3 +76,10 @@ Instead, when a rule changes or is added in Figma:
 
 This keeps rule text deliberate and reviewed, while screenshots stay
 mechanically fresh without anyone remembering to re-export them.
+
+`.github/workflows/agentic-doc-sync.yml` (see `PHASE3_SETUP.md`) respects
+this too: its nightly/PR-merge run only *drafts* suggested prose changes
+into `DOC_SYNC_SUGGESTIONS.md` for human review — it never edits guideline
+text in place. It does directly fix things that don't need editorial
+judgement (anatomy order, properties tables, stale screenshots), the same
+category of change this file already automates for images.
