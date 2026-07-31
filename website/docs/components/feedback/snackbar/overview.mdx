@@ -1,0 +1,44 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: feedback
+figma_node: '40000877:10299'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [snackbar, feedback, toast]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Snackbar <StatusBadge status="stable" />
+
+Briefly inform the user of a process the app has performed, or will perform.
+
+<ComponentTabs basePath="/components/feedback/snackbar" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/snackbar/snackbar-overview.png" alt="Snackbar types (success, alert, error) and with an action button" />
+
+Snackbars inform users of a process the app has performed or will perform. They appear
+temporarily, anchored to the bottom of the screen, then dismiss on their own — unlike a Message
+box, which is a persistent part of the page.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | **Success**, **Alert**, or **Error** — match the outcome being communicated. |
+| Button | (Optional) A single action, like "Undo" or "Retry," shown via `Show Button`. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/snackbar/snackbar-anatomy.png" alt="Snackbar anatomy: message and button" width={300} />
+
+1. Message
+2. Button (optional)

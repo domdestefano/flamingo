@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [tag, feedback, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/feedback/tag" />
+
+## Usage
+
+Use a tag to label the status of an item at a glance — never as an interactive control, and never
+for long-form information (use a Message box or Message bar for that instead).
+
+## Use cases
+
+### Length
+
+<DoDontTable
+  doImage="/img/components/tag/tag-length-do.png"
+  doText="Keep the tag's label short — a single word or short phrase, like 'New.'"
+  dontImage="/img/components/tag/tag-length-dont.png"
+  dontText="Don't use a long label that gets truncated — a cut-off ellipsis is harder to read than a short, complete word."
+/>
+
+### Width
+
+<DoDontTable
+  doImage="/img/components/tag/tag-width-do.png"
+  doText="Let the tag hug its label's content, however short."
+  dontImage="/img/components/tag/tag-width-dont.png"
+  dontText="Don't stretch the tag to fill the width of its container — it should always size to its content, not its surroundings."
+/>

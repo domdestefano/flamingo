@@ -1,0 +1,34 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [message-bar, feedback, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/feedback/message-bar" />
+
+## Preview
+
+<StorybookEmbed storyId="components-feedback-message-bar--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-feedback-message-bar--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'The message title, always visible.', type: 'ReactNode' },
+    { name: 'body', description: 'Optional supporting text, shown when expanded.', type: 'ReactNode' },
+    { name: 'type', description: 'Visual type of the message.', type: "'neutral' | 'success' | 'alert' | 'error' | undefined", default: 'neutral' },
+    { name: 'prominence', description: 'Visual weight.', type: "'pale' | 'bold' | undefined", default: 'pale' },
+    { name: 'expandable', description: 'A boolean indicating whether the bar can expand to reveal the body text.', type: 'boolean | undefined', default: 'false' },
+    { name: 'linkLabel', description: 'Optional link label.', type: 'string' },
+    { name: 'onLinkClick', description: 'Called when the link is tapped.', type: '() => void' },
+  ]}
+/>

@@ -1,0 +1,43 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: feedback
+figma_node: '40001769:9750'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [badge, feedback]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Badge <StatusBadge status="stable" />
+
+Communicate secondary or additional information attached to another UI element.
+
+<ComponentTabs basePath="/components/feedback/badge" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/badge/badge-overview.png" alt="Badge examples: a count, a plain dot, and short labels" width={300} />
+
+Badges are used for communicating secondary or additional information on top of other UI
+elements — e.g. the number of unread messages, or the number of filters applied.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Label | Optional short text or number. When absent, the badge renders as a plain dot. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/badge/badge-anatomy.png" alt="Badge anatomy: a single label" width={100} />
+
+1. Label
+
+A badge is a single shape with an optional label — there's no further breakdown of parts.

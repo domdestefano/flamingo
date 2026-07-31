@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [message-bar, feedback, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/feedback/message-bar" />
+
+## Usage
+
+Use the message bar for genuinely ongoing, important status information — e.g. location services
+being off, or a persistent connectivity issue — not for one-off confirmations (use a Snackbar) or
+promotional content.
+
+## Use cases
+
+### Location
+
+<DoDontTable
+  doImage="/img/components/message-bar/message-bar-location-do.png"
+  doText="Anchor the message bar directly below the navigation bar."
+  dontImage="/img/components/message-bar/message-bar-location-dont.png"
+  dontText="Don't place the message bar elsewhere on screen, like the bottom — it's meant to stick to the navigation bar so it stays visible as the page's own status."
+/>
+
+### Content
+
+<DoDontTable
+  doImage="/img/components/message-bar/message-bar-content-do.png"
+  doText="Use the message bar for genuinely important, ongoing system status — e.g. location services being off."
+  dontImage="/img/components/message-bar/message-bar-content-dont.png"
+  dontText="Don't use the message bar for promotional or marketing content — it's meant for status the user needs to know about, not an announcement."
+/>

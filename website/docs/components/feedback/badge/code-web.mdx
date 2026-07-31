@@ -1,0 +1,29 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [badge, feedback, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/feedback/badge" />
+
+## Preview
+
+<StorybookEmbed storyId="components-feedback-badge--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-feedback-badge--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'label', description: 'Optional text or number. Renders as a plain dot when omitted.', type: 'string | number | undefined' },
+    { name: 'max', description: 'Caps a numeric label, appending a "+" when exceeded (e.g. 99+).', type: 'number | undefined' },
+  ]}
+/>

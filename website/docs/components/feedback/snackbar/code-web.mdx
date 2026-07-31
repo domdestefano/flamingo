@@ -1,0 +1,34 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [snackbar, feedback, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/feedback/snackbar" />
+
+## Preview
+
+<StorybookEmbed storyId="components-feedback-snackbar--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-feedback-snackbar--docs)
+
+A `useSnackbar` hook is also available for imperatively triggering snackbars — see
+[useSnackbar in Storybook](https://deliveryhero.github.io/rrds-web/?path=/docs/utils-usesnackbar--docs).
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'body', description: 'The message text.', type: 'string' },
+    { name: 'type', description: 'Visual type of the snackbar.', type: "'success' | 'alert' | 'error' | undefined", default: 'success' },
+    { name: 'buttonLabel', description: 'Optional action button label.', type: 'string' },
+    { name: 'onButtonClick', description: 'Called when the action button is tapped.', type: '() => void' },
+  ]}
+/>

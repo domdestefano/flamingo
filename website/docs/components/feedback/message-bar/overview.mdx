@@ -1,0 +1,49 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: feedback
+figma_node: '40001043:2659'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [message-bar, feedback]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Message bar <StatusBadge status="stable" />
+
+Provide continuous information to the user, stuck right below the navigation bar.
+
+<ComponentTabs basePath="/components/feedback/message-bar" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/message-bar/message-bar-overview.png" alt="Message bar types, prominence, and expandable variants" />
+
+Message bars provide continuous information to the user — unlike a Snackbar, they don't
+disappear on their own, and unlike a Message box, they're always anchored right below the
+navigation bar rather than placed within the page's content.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | **Neutral**, **Success**, **Alert**, or **Error** — match the nature of the ongoing status. |
+| Prominence | **Pale** or **Bold** — Bold draws more attention. |
+| Expandable | **False**, or **True** (collapsed/expanded) — allows a longer message to be revealed on tap. |
+| Link | (Optional) A text link, shown via `Show Link`. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/message-bar/message-bar-anatomy.png" alt="Message bar anatomy: icon, title, body, link, and expand chevron" />
+
+1. Icon
+2. Title
+3. Body (expandable variant only)
+4. Link (optional)
+5. Expand chevron (expandable variant only)

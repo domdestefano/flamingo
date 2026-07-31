@@ -1,0 +1,48 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: feedback
+figma_node: '1960:45068'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [message-box, feedback, alert]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Message box <StatusBadge status="stable" />
+
+Show a prominent piece of information about something that refers to the user or their work.
+
+<ComponentTabs basePath="/components/feedback/message-box" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/message-box/message-box-overview.png" alt="Message box types: neutral, success, alert, error" />
+
+Message boxes are quite prominent, as they need to draw the user's attention and inform them
+about important matters — unlike a Snackbar or Message bar, they're a persistent part of the
+page's content, not a temporary overlay.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | **Neutral**, **Success**, **Alert**, or **Error** — match the nature of the information being shown. |
+| Prefix | (Optional) An icon or emoji, shown or hidden via `Show Prefix`. |
+| Body | (Optional) Supporting text, shown or hidden via `Show Body`. |
+| Button | (Optional) A single action button, shown or hidden via `Show Button`. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/message-box/message-box-anatomy.png" alt="Message box anatomy: prefix, title, body, and button" />
+
+1. Prefix (icon or emoji)
+2. Title
+3. Body
+4. Button

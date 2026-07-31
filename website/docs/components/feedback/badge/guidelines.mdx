@@ -1,0 +1,44 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [badge, feedback, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/feedback/badge" />
+
+## Usage
+
+Use the badge to attach a small, secondary piece of information to another element — a count, a
+filter indicator, or a plain "new" dot. It's never used on its own, always alongside the element it
+refers to.
+
+## Constraints
+
+The component supports more than 3 characters, but its text style shouldn't be changed regardless
+of label length.
+
+## Use cases
+
+### Number of characters
+
+<DoDontTable
+  doImage="/img/components/badge/badge-characters-do.png"
+  doText="Cap large counts at the standard truncated format (e.g. '99+') rather than showing the raw number."
+  dontImage="/img/components/badge/badge-characters-dont.png"
+  dontText="Don't show an uncapped, many-digit number — it overflows the badge's intended size and is harder to scan at a glance than a capped count."
+/>
+
+### Position
+
+<DoDontTable
+  doImage="/img/components/badge/badge-position-do.png"
+  doText="Anchor the badge to a consistent corner of the element it's attached to, so its meaning is unambiguous."
+  dontImage="/img/components/badge/badge-position-dont.png"
+  dontText="Don't place the badge somewhere inconsistent with how it's used elsewhere in the product — an unfamiliar position makes it unclear what element the badge belongs to."
+/>
