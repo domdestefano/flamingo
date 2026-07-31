@@ -1,0 +1,53 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: buttons
+figma_node: '40001689:14495'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [button, floating, fab, action, cta, interactive]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Floating button <StatusBadge status="stable" />
+
+Indicate a prominent action that floats above a layered UI, like a map.
+
+<ComponentTabs basePath="/components/buttons/floating-button" />
+
+<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="available" />
+
+## Component
+
+<ComponentImage src="/img/components/fab/fab-overview.png" alt="Floating button variants: default/prominent type, active/pressed/inactive/loading state" />
+
+Use floating buttons for **prominent actions in a UI that consists of multiple layers on top of
+each other**, like a map-based interface — e.g. "Start navigation" over a route preview. Unlike the
+floating icon button, it always carries a text label, so use it when the action needs to be
+unambiguous rather than universally recognisable from an icon alone.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | **Default**: a lighter-weight floating action. **Prominent**: a solid dark background, for the single most important floating action on screen. |
+| State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. **Loading**: the button is showing that an action is being triggered. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/fab/fab-anatomy.png" alt="Floating button anatomy: background, icon, and text" />
+
+1. Background
+2. Icon
+3. Text
+
+### Clickable area
+
+The floating button's tappable area matches its visible background, but still meets the standard
+touch target size regardless of where it's placed on screen.
+
+<ComponentImage src="/img/components/fab/fab-clickable-area.png" alt="Floating button clickable area" width={220} />

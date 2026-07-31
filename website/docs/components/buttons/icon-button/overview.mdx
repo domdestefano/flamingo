@@ -1,0 +1,55 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: buttons
+figma_node: '40000231:1714'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [button, icon, action, cta, interactive]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Icon button <StatusBadge status="stable" />
+
+Indicate a minimal-emphasis action using only an icon, no label.
+
+<ComponentTabs basePath="/components/buttons/icon-button" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+<ComponentImage src="/img/components/icon-button/icon-button-overview.png" alt="Icon button variants: type, size, and state" />
+
+Use the icon button for **minimal emphasis** — for the most minimal, common actions on a screen,
+where a universally-recognisable icon can replace a text label entirely.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | **Primary**: a solid filled background — for icon-only actions that still need visual weight. **Secondary**: a light tinted background — a lighter-weight alternative. **Tertiary**: no background at all — the lowest-emphasis option, an icon alone. |
+| Size | **Big** and **Medium** — use according to the relevance of the action and the density of the surrounding UI. |
+| State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. **Loading**: the button is showing that an action is being triggered. |
+
+Because there's no text label, only use an icon button where its icon is unambiguous — if there's
+any doubt a user will recognise what it does, use a labelled button (Tertiary or Secondary) instead.
+
+## Anatomy
+
+<ComponentImage src="/img/components/icon-button/icon-button-anatomy.png" alt="Icon button anatomy: background and icon" />
+
+1. Background
+2. Icon
+
+### Clickable area
+
+The icon button's tappable area extends beyond its visible background, so it still meets the
+standard touch target size even for the Medium size variant — don't shrink the hit area to match
+the visible circle.
+
+<ComponentImage src="/img/components/icon-button/icon-button-clickable-area.png" alt="Icon button clickable area, larger than the visible background" width={160} />

@@ -5,161 +5,161 @@
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001548:1844",
       "output": "website/static/img/tokens/corner-radius/corner-radius-01.png",
-      "description": "Corner radius 01 (8px) use case — tab container / bar chart",
+      "description": "Corner radius 01 (8px) use case \u2014 tab container / bar chart",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001617:12974",
       "output": "website/static/img/tokens/corner-radius/corner-radius-03.png",
-      "description": "Corner radius 03 (12px) use case — snackbar / input field",
+      "description": "Corner radius 03 (12px) use case \u2014 snackbar / input field",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001617:13820",
       "output": "website/static/img/tokens/corner-radius/corner-radius-05.png",
-      "description": "Corner radius 05 (20px) use case — small pill buttons",
+      "description": "Corner radius 05 (20px) use case \u2014 small pill buttons",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001617:13601",
       "output": "website/static/img/tokens/corner-radius/corner-radius-06.png",
-      "description": "Corner radius 06 (24px) use case — cards, sheets, message boxes",
+      "description": "Corner radius 06 (24px) use case \u2014 cards, sheets, message boxes",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001617:13483",
       "output": "website/static/img/tokens/corner-radius/corner-radius-09.png",
-      "description": "Corner radius 09 (28px) use case — big pill buttons",
+      "description": "Corner radius 09 (28px) use case \u2014 big pill buttons",
       "scale": 1
     },
     {
       "fileKey": "SS96QDVedbpCNWbkju1UbI",
       "nodeId": "8023:3987",
       "output": "website/static/img/tokens/typography/typography-page-with-content.png",
-      "description": "Typography hierarchy — page with content",
+      "description": "Typography hierarchy \u2014 page with content",
       "scale": 1
     },
     {
       "fileKey": "SS96QDVedbpCNWbkju1UbI",
       "nodeId": "8023:4002",
       "output": "website/static/img/tokens/typography/typography-data-on-top.png",
-      "description": "Typography hierarchy — data on top",
+      "description": "Typography hierarchy \u2014 data on top",
       "scale": 1
     },
     {
       "fileKey": "SS96QDVedbpCNWbkju1UbI",
       "nodeId": "8023:4015",
       "output": "website/static/img/tokens/typography/typography-lists.png",
-      "description": "Typography hierarchy — lists",
+      "description": "Typography hierarchy \u2014 lists",
       "scale": 1
     },
     {
       "fileKey": "SS96QDVedbpCNWbkju1UbI",
       "nodeId": "8023:4146",
       "output": "website/static/img/tokens/typography/typography-cards.png",
-      "description": "Typography hierarchy — cards",
+      "description": "Typography hierarchy \u2014 cards",
       "scale": 1
     },
     {
       "fileKey": "SS96QDVedbpCNWbkju1UbI",
       "nodeId": "8023:4114",
       "output": "website/static/img/tokens/typography/typography-tags-do.png",
-      "description": "Typography tags — Do example",
+      "description": "Typography tags \u2014 Do example",
       "scale": 1
     },
     {
       "fileKey": "SS96QDVedbpCNWbkju1UbI",
       "nodeId": "8023:4224",
       "output": "website/static/img/tokens/typography/typography-tags-dont.png",
-      "description": "Typography tags — Don't example (long text)",
+      "description": "Typography tags \u2014 Don't example (long text)",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:4144",
       "output": "website/static/img/components/primary-button/primary-button-overview.png",
-      "description": "Primary button overview — big/small, icon left/right, inactive, pressed, loading",
+      "description": "Primary button overview \u2014 big/small, icon left/right, inactive, pressed, loading",
       "scale": 2
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40004031:2416",
       "output": "website/static/img/components/primary-button/primary-button-anatomy.png",
-      "description": "Primary button anatomy — background, text",
+      "description": "Primary button anatomy \u2014 background, text",
       "scale": 2
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001041:2192",
       "output": "website/static/img/components/primary-button/primary-button-placement-do.png",
-      "description": "Primary button Usage > Placement — Do example",
+      "description": "Primary button Usage > Placement \u2014 Do example",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:4338",
       "output": "website/static/img/components/primary-button/primary-button-placement-dont.png",
-      "description": "Primary button Usage > Placement — Don't example",
+      "description": "Primary button Usage > Placement \u2014 Don't example",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:6180",
       "output": "website/static/img/components/primary-button/primary-button-stack-do.png",
-      "description": "Primary button Usage > Stack — Do example",
+      "description": "Primary button Usage > Stack \u2014 Do example",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:6117",
       "output": "website/static/img/components/primary-button/primary-button-stack-dont.png",
-      "description": "Primary button Usage > Stack — Don't example",
+      "description": "Primary button Usage > Stack \u2014 Don't example",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001041:2246",
       "output": "website/static/img/components/primary-button/primary-button-non-primary-do.png",
-      "description": "Primary button Usage > Non primary actions — Do example",
+      "description": "Primary button Usage > Non primary actions \u2014 Do example",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40001041:2268",
       "output": "website/static/img/components/primary-button/primary-button-non-primary-dont.png",
-      "description": "Primary button Usage > Non primary actions — Don't example",
+      "description": "Primary button Usage > Non primary actions \u2014 Don't example",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:6422",
       "output": "website/static/img/components/secondary-button/secondary-button-overview.png",
-      "description": "Secondary button overview — default and inverted, big and small",
+      "description": "Secondary button overview \u2014 default and inverted, big and small",
       "scale": 2
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:6446",
       "output": "website/static/img/components/secondary-button/secondary-button-anatomy.png",
-      "description": "Secondary button anatomy — background, icon, text",
+      "description": "Secondary button anatomy \u2014 background, icon, text",
       "scale": 2
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:6468",
       "output": "website/static/img/components/secondary-button/secondary-button-pair-do.png",
-      "description": "Secondary button Usage > Pairing — Do example",
+      "description": "Secondary button Usage > Pairing \u2014 Do example",
       "scale": 1
     },
     {
       "fileKey": "VuBl4ugiWKRiGROf3zglzb",
       "nodeId": "40000182:6503",
       "output": "website/static/img/components/secondary-button/secondary-button-pair-dont.png",
-      "description": "Secondary button Usage > Pairing — Don't example",
+      "description": "Secondary button Usage > Pairing \u2014 Don't example",
       "scale": 1
     },
     {
@@ -181,6 +181,188 @@
       "nodeId": "40000182:4305",
       "output": "website/static/img/components/primary-button/primary-button-clickable-area.png",
       "description": "Primary button Appearance > Behaviour > Clickable area example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001021:30268",
+      "output": "website/static/img/components/tertiary-button/tertiary-button-overview.png",
+      "description": "Tertiary button overview \u2014 active/pressed/inactive/loading, icon left/right",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001021:30291",
+      "output": "website/static/img/components/tertiary-button/tertiary-button-anatomy.png",
+      "description": "Tertiary button anatomy \u2014 icon, text",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001021:30301",
+      "output": "website/static/img/components/tertiary-button/tertiary-button-clickable-area.png",
+      "description": "Tertiary button Appearance > Behaviour > Clickable area example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000231:2272",
+      "output": "website/static/img/components/icon-button/icon-button-overview.png",
+      "description": "Icon button overview \u2014 primary/secondary/tertiary type, big/medium size, active/pressed/inactive/loading",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000248:15551",
+      "output": "website/static/img/components/icon-button/icon-button-anatomy.png",
+      "description": "Icon button anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000248:15613",
+      "output": "website/static/img/components/icon-button/icon-button-clickable-area.png",
+      "description": "Icon button Appearance > Behaviour > Clickable area example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000249:16167",
+      "output": "website/static/img/components/icon-button/icon-button-styling-do.png",
+      "description": "Icon button Usage > Styling \u2014 Do example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000249:16478",
+      "output": "website/static/img/components/icon-button/icon-button-sizing-do.png",
+      "description": "Icon button Usage > Sizing \u2014 Do example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000249:16233",
+      "output": "website/static/img/components/icon-button/icon-button-styling-dont.png",
+      "description": "Icon button Usage > Styling \u2014 Don't example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000249:16567",
+      "output": "website/static/img/components/icon-button/icon-button-sizing-dont.png",
+      "description": "Icon button Usage > Sizing \u2014 Don't example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000871:1483",
+      "output": "website/static/img/components/fab-icon/fab-icon-overview.png",
+      "description": "Floating icon button overview \u2014 default/destructive, active/pressed/inactive/loading",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000871:1618",
+      "output": "website/static/img/components/fab-icon/fab-icon-anatomy.png",
+      "description": "Floating icon button anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000871:1627",
+      "output": "website/static/img/components/fab-icon/fab-icon-clickable-area.png",
+      "description": "Floating icon button Appearance > Behaviour > Clickable area example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000264:18983",
+      "output": "website/static/img/components/fab-icon/fab-icon-styling-do.png",
+      "description": "Floating icon button Usage > Styling \u2014 Do example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000264:18998",
+      "output": "website/static/img/components/fab-icon/fab-icon-scrolling-do.png",
+      "description": "Floating icon button Usage > Scrolling \u2014 Do example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000264:19069",
+      "output": "website/static/img/components/fab-icon/fab-icon-styling-dont.png",
+      "description": "Floating icon button Usage > Styling \u2014 Don't example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000264:19083",
+      "output": "website/static/img/components/fab-icon/fab-icon-scrolling-dont.png",
+      "description": "Floating icon button Usage > Scrolling \u2014 Don't example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001689:14503",
+      "output": "website/static/img/components/fab/fab-overview.png",
+      "description": "Floating button overview \u2014 default/prominent, active/pressed/inactive/loading",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001689:14531",
+      "output": "website/static/img/components/fab/fab-anatomy.png",
+      "description": "Floating button anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001689:14540",
+      "output": "website/static/img/components/fab/fab-clickable-area.png",
+      "description": "Floating button Appearance > Behaviour > Clickable area example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001689:14552",
+      "output": "website/static/img/components/fab/fab-styling-do.png",
+      "description": "Floating button Usage > Styling \u2014 Do example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001689:15027",
+      "output": "website/static/img/components/fab/fab-stacking-do.png",
+      "description": "Floating button Usage > Stacking \u2014 Do example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001691:16444",
+      "output": "website/static/img/components/fab/fab-double-do.png",
+      "description": "Floating button Usage > Double FAB \u2014 Do example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001689:14591",
+      "output": "website/static/img/components/fab/fab-styling-dont.png",
+      "description": "Floating button Usage > Styling \u2014 Don't example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001689:15085",
+      "output": "website/static/img/components/fab/fab-stacking-dont.png",
+      "description": "Floating button Usage > Stacking \u2014 Don't example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001691:16509",
+      "output": "website/static/img/components/fab/fab-double-dont.png",
+      "description": "Floating button Usage > Double FAB \u2014 Don't example",
       "scale": 2
     }
   ]

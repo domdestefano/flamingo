@@ -1,0 +1,47 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [button, floating, icon, fab, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/floating-icon-button" />
+
+## Usage
+
+Use the floating icon button for subtle actions on top of a layered UI — most commonly a map —
+where the action needs to stay accessible regardless of what's underneath it.
+
+## Placement
+
+1. Floating icon buttons are anchored to the **viewport, not the scrolling content** — they float
+   in a fixed position (typically bottom-right) above whatever is underneath.
+2. They should always be **reachable**, since floating actions exist specifically to stay
+   accessible while the rest of the screen scrolls or changes.
+3. Don't place a floating icon button where it can permanently obscure content the user needs to
+   read or interact with.
+
+## Use cases
+
+### Styling
+
+<DoDontTable
+  doImage="/img/components/fab-icon/fab-icon-styling-do.png"
+  doText="Use the floating icon button's standard neutral colours so it reads as a persistent UI control, not page content."
+  dontImage="/img/components/fab-icon/fab-icon-styling-dont.png"
+  dontText="Don't recolour a floating icon button with an arbitrary brand accent colour — it starts competing with the map or content underneath instead of sitting quietly above it."
+/>
+
+### Scrolling
+
+<DoDontTable
+  doImage="/img/components/fab-icon/fab-icon-scrolling-do.png"
+  doText="Keep the floating icon button fixed in place as the content underneath scrolls."
+  dontImage="/img/components/fab-icon/fab-icon-scrolling-dont.png"
+  dontText="Don't let the floating icon button scroll inline with the content, or duplicate it at multiple scroll positions — it should be a single, persistent control."
+/>
