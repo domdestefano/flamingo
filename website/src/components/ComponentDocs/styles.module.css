@@ -48,3 +48,39 @@
   color: var(--flamingo-primary-main);
   border-bottom-color: var(--flamingo-primary-main);
 }
+
+/* --- Do / Don't comparison table --- */
+
+.doDontTable {
+  width: 100%;
+  table-layout: fixed;
+  margin: 1.25rem 0 2rem;
+}
+
+.doHeader {
+  background: var(--flamingo-color-success-light) !important;
+  color: var(--flamingo-color-success-main);
+}
+
+.dontHeader {
+  background: var(--flamingo-color-error-light) !important;
+  color: var(--flamingo-color-error-main);
+}
+
+.doDontTable td {
+  vertical-align: top;
+  text-align: center;
+}
+
+.doDontTable td p {
+  text-align: left;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.doDontImage {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

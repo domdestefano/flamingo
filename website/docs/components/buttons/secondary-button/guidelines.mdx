@@ -7,6 +7,7 @@ tags: [button, secondary, guidelines]
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
@@ -17,18 +18,23 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 Use the secondary button for medium emphasis — a supporting action alongside (or instead of) a
 primary button. It signals "this matters, but less than the primary action."
 
+## Placement
+
+Secondary buttons are placed the same way as primary buttons: usually at the bottom of the screen
+(sticky if the content scrolls), or within a content section for actions that are local to that
+section. Most often, a secondary button appears **next to a primary button**, as the alternative
+option in that pair, rather than standalone.
+
+## Use cases
+
 ### Pairing with a primary button
 
-**Do** — pair one secondary button with one primary button to express a clear preferred vs.
-alternative choice.
-
-**Don't** — don't use a secondary button as the only action on a screen when the action is actually
-the most important one; use a primary button instead.
-
-<div style={{ display: 'flex', gap: '1.5rem', margin: '1.25rem 0', flexWrap: 'wrap' }}>
-  <ComponentImage src="/img/components/secondary-button/secondary-button-pair-do.png" alt="Secondary button pairing Do example" width={180} />
-  <ComponentImage src="/img/components/secondary-button/secondary-button-pair-dont.png" alt="Secondary button pairing Don't example" width={180} />
-</div>
+<DoDontTable
+  doImage="/img/components/secondary-button/secondary-button-pair-do.png"
+  doText="Pair one secondary button with one primary button to express a clear preferred vs. alternative choice."
+  dontImage="/img/components/secondary-button/secondary-button-pair-dont.png"
+  dontText="Don't use a secondary button as the only action on a screen when the action is actually the most important one — use a primary button instead."
+/>
 
 ### Caution: repetition
 

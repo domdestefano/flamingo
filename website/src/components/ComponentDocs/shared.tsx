@@ -1,4 +1,5 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 // --- Reusable pieces for component documentation pages -------------------
@@ -107,6 +108,53 @@ export function PropsTable({ rows }: { rows: PropRow[] }) {
             <td>{row.default ? <code>{row.default}</code> : '—'}</td>
           </tr>
         ))}
+      </tbody>
+    </table>
+  );
+}
+
+function DoDontImage({ src, alt }: { src: string; alt: string }) {
+  const url = useBaseUrl(src);
+  return <img src={url} alt={alt} className={styles.doDontImage} />;
+}
+
+/**
+ * Side-by-side Do / Don't comparison, rendered as a proper two-column table
+ * (Docusaurus has no built-in component for this — Admonitions
+ * (:::tip / :::danger) only render single stacked callouts, not a
+ * comparison layout, so this is a small custom one used across every
+ * component's Guidelines page).
+ */
+export function DoDontTable({
+  doImage,
+  doText,
+  dontImage,
+  dontText,
+}: {
+  doImage?: string;
+  doText: React.ReactNode;
+  dontImage?: string;
+  dontText: React.ReactNode;
+}) {
+  return (
+    <table className={styles.doDontTable}>
+      <thead>
+        <tr>
+          <th className={styles.doHeader}>✅ Do</th>
+          <th className={styles.dontHeader}>❌ Don't</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {doImage && <DoDontImage src={doImage} alt="Do example" />}
+            <p>{doText}</p>
+          </td>
+          <td>
+            {dontImage && <DoDontImage src={dontImage} alt="Don't example" />}
+            <p>{dontText}</p>
+          </td>
+        </tr>
       </tbody>
     </table>
   );

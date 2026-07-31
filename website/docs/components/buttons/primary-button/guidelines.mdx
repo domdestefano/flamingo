@@ -6,7 +6,7 @@ tags: [button, primary, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
@@ -24,10 +24,12 @@ on a screen.
 2. **On the screen**: primary buttons can also be used in the content sections.
 3. There should be **normally only one (or none) primary action per screen**.
 
-<div style={{ display: "flex", gap: "1.5rem", margin: "1.25rem 0", flexWrap: "wrap" }}>
-  <ComponentImage src="/img/components/primary-button/primary-button-placement-do.png" alt="Placement Do example" width={180} />
-  <ComponentImage src="/img/components/primary-button/primary-button-placement-dont.png" alt="Placement Don't example" width={180} />
-</div>
+<DoDontTable
+  doImage="/img/components/primary-button/primary-button-placement-do.png"
+  doText="Place the primary button at the bottom of the screen, sticky if the content scrolls, so it stays reachable."
+  dontImage="/img/components/primary-button/primary-button-placement-dont.png"
+  dontText="Don't bury the primary action inside a scrolling content area where it can be missed."
+/>
 
 ## Use cases
 
@@ -37,59 +39,50 @@ Use primary buttons only for the most important actions you'll need a user to do
 less important actions can be indicated by using different button types. Always consider the main
 purpose of a screen.
 
-**Do** — a screen whose purpose is to show personal data has no main action a user has to take,
-so the edit button is displayed in the header as an icon, an optional and not-required task.
-
-**Don't** — using a primary button for editing data gives the impression that the user has to do
-this action though (this is not the case here).
-
-<div style={{ display: "flex", gap: "1.5rem", margin: "1.25rem 0", flexWrap: "wrap" }}>
-  <ComponentImage src="/img/components/primary-button/primary-button-non-primary-do.png" alt="Non-primary action Do example" width={180} />
-  <ComponentImage src="/img/components/primary-button/primary-button-non-primary-dont.png" alt="Non-primary action Don't example" width={180} />
-</div>
+<DoDontTable
+  doImage="/img/components/primary-button/primary-button-non-primary-do.png"
+  doText={<>A screen whose purpose is to show personal data has no main action a user has to take, so the edit button is displayed in the header as an icon — optional and not required.</>}
+  dontImage="/img/components/primary-button/primary-button-non-primary-dont.png"
+  dontText={<>Using a primary button for editing data gives the impression that the user has to do this action, though that's not actually the case here.</>}
+/>
 
 ### Multiple use on the screen
 
 Primary buttons can only be used once on a screen, as they represent the most important action of
 the screen. Use secondary or tertiary buttons for less important actions.
 
-**Do** — use primary buttons combined with secondary or tertiary ones, instead of using two of them,
-based on the importance of the actions you want the user to perform.
-
-**Don't** — avoid combining multiple primary buttons, as this may be confusing for the user and
-create a hardly scannable UI.
+<DoDontTable
+  doText="Use primary buttons combined with secondary or tertiary ones, instead of using two of them, based on the importance of the actions you want the user to perform."
+  dontText="Avoid combining multiple primary buttons — it's confusing for the user and creates a hardly scannable UI."
+/>
 
 ### Resizing
 
 Buttons can resize horizontally based on the content. Not vertically. Primary and Secondary buttons
 in Flamingo do not support multi-line.
 
-**Do** — buttons only resize horizontally and use as few words as possible in sentence case.
-
-**Don't** — buttons do not resize vertically. Make sure to also check translations, since a longer
-translated label is the most common cause of an unwanted second line.
+<DoDontTable
+  doText="Buttons only resize horizontally, using as few words as possible in sentence case."
+  dontText="Buttons don't resize vertically. Check translations, too — a longer translated label is the most common cause of an unwanted second line."
+/>
 
 ### Stack
 
 When the primary button is combined with another action to express the dualism of choice, try to
 provide a preferred (primary) and an alternative (secondary or tertiary) option.
 
-**Do** — when stacking buttons, keep the primary button on top of (or first in reading order to) the
-secondary or tertiary one.
-
-**Don't** — don't place two secondary buttons above each other, as they fight for attention and
-priority.
-
-<div style={{ display: "flex", gap: "1.5rem", margin: "1.25rem 0", flexWrap: "wrap" }}>
-  <ComponentImage src="/img/components/primary-button/primary-button-stack-do.png" alt="Stack Do example" width={180} />
-  <ComponentImage src="/img/components/primary-button/primary-button-stack-dont.png" alt="Stack Don't example" width={180} />
-</div>
+<DoDontTable
+  doImage="/img/components/primary-button/primary-button-stack-do.png"
+  doText="When stacking buttons, keep the primary button on top of (or first in reading order to) the secondary or tertiary one."
+  dontImage="/img/components/primary-button/primary-button-stack-dont.png"
+  dontText="Don't place two secondary buttons above each other — they fight for attention and priority."
+/>
 
 For the `button.small` variant, you can horizontally stack it with other elements as the size of
 the elements are small enough to accommodate longer labels. Be always mindful of the length and
 translation of the text.
 
-**Do** — use horizontal stacks only with small primary buttons and short labels.
-
-**Don't** — medium to long labels can easily create readability issues. Always consider
-translations.
+<DoDontTable
+  doText="Use horizontal stacks only with small primary buttons and short labels."
+  dontText="Medium to long labels can easily create readability issues. Always consider translations."
+/>
