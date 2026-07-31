@@ -1,0 +1,32 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: layout
+figma_node: '40000750:1946'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [divider, horizontal, layout]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Horizontal divider <StatusBadge status="stable" />
+
+Divide content that's stacked vertically.
+
+<ComponentTabs basePath="/components/layout/horizontal-divider" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/horizontal-divider/horizontal-divider-overview.png" alt="Horizontal divider sizes: thin and extra thick" />
+
+1. Thin — the default weight, for separating rows or sections within the same context.
+2. Extra thick — a heavier weight for a stronger visual break between larger sections.
+
+This component's Figma spec doesn't include a separate Anatomy section — the divider is a single
+line, described by its size property alone.
