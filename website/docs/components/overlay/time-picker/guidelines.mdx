@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [time-picker, overlay, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/overlay/time-picker" />
+
+## Usage
+
+Use the Time picker whenever the user needs to choose a specific time, e.g. a delivery slot.
+Disable hours/minutes outside a valid range (like business hours) rather than letting the user
+pick an invalid time and error out afterward.
+
+## Use cases
+
+### Intervals
+
+<DoDontTable
+  doImage="/img/components/time-picker/time-picker-intervals-do1.png"
+  doText="Use a consistent, common minute interval (e.g. every 10 minutes)."
+  dontImage="/img/components/time-picker/time-picker-intervals-dont.png"
+  dontText="Don't use an unusual interval (e.g. every 2 minutes on odd numbers) — it's slower to scan and scroll to."
+/>
+
+### Stack usage
+
+<DoDontTable
+  doImage="/img/components/time-picker/time-picker-stack-do1.png"
+  doText="Use the content slot for short supporting text, e.g. stating the valid business hours."
+  dontImage="/img/components/time-picker/time-picker-stack-dont.png"
+  dontText="Don't put a second action button in the content slot — it competes with the primary confirm action below it."
+/>

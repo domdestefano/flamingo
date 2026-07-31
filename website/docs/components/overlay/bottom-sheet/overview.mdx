@@ -1,0 +1,49 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: overlay
+figma_node: '40001797:31591'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [bottom-sheet, overlay]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Bottom sheet <StatusBadge status="stable" />
+
+A container that rises from the bottom of the screen to provide supplemental information, menus,
+or other functionality — elevated above the screen's content to convey clear hierarchy.
+
+<ComponentTabs basePath="/components/overlay/bottom-sheet" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/bottom-sheet/bottom-sheet-overview.png" alt="Bottom sheet with title, description, content, and two actions" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Scrolled state | Whether the sheet's content has been scrolled (changes elevation/header treatment). |
+| Show Graphic Block | Optional — toggles a leading illustration. |
+| Show Stack | Optional — toggles the content area. |
+| Show Action Container | Optional — toggles the actions area. |
+| Show 2nd Action | Optional — toggles a secondary/dismissing action. |
+| Show Left icon button | Optional — toggles a leading icon button (e.g. back). |
+
+## Anatomy
+
+<ComponentImage src="/img/components/bottom-sheet/bottom-sheet-anatomy.png" alt="Bottom sheet anatomy: Title, Description, Content stack, Primary action, Secondary action, Graphic block" />
+
+1. **Title**
+2. **Description**
+3. **Content stack** — the sheet's main content, replaced per use case.
+4. **Primary action**
+5. **Secondary or dismissing action** — optional
+6. **Graphic block** — optional, leading illustration

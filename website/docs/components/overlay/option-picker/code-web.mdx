@@ -1,0 +1,34 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [option-picker, overlay, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/overlay/option-picker" />
+
+## Preview
+
+<StorybookEmbed storyId="components-overlay-option-picker--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-overlay-option-picker--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'The picker\'s title.', type: 'string' },
+    { name: 'description', description: 'Optional supporting text below the title.', type: 'string' },
+    { name: 'options', description: 'The list of selectable options.', type: 'Array<{ label: string; value: string }>' },
+    { name: 'multiSelect', description: 'Enables selecting multiple options with a confirm/Cancel action.', type: 'boolean' },
+    { name: 'searchable', description: 'Shows a search field to filter long option lists.', type: 'boolean' },
+    { name: 'onChange', description: 'Called when the selection changes.', type: '(value: string | string[]) => void' },
+    { name: 'onCancel', description: 'Called when Cancel is pressed (multi-select mode).', type: '() => void' },
+  ]}
+/>

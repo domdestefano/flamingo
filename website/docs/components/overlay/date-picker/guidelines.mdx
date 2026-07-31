@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [date-picker, overlay, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/overlay/date-picker" />
+
+## Usage
+
+Use the Date picker whenever the user needs to choose a specific date or date range from a
+calendar, rather than typing one in freehand.
+
+## Use cases
+
+### Stack usage
+
+<DoDontTable
+  doImage="/img/components/date-picker/date-picker-stack-do.png"
+  doText="Use the optional content slot for short supporting text, e.g. explaining that a range can be selected."
+  dontImage="/img/components/date-picker/date-picker-stack-dont.png"
+  dontText="Don't put a second action button in the content slot — it competes with the primary confirm action below it."
+/>
+
+### Date format
+
+<DoDontTable
+  doImage="/img/components/date-picker/date-picker-format-do.png"
+  doText="Use single-letter weekday abbreviations (M T W T F S S) to match the rest of the calendar's compact format."
+  dontImage="/img/components/date-picker/date-picker-format-dont.png"
+  dontText="Don't mix abbreviation lengths — two-letter weekday labels (Mo Tu We Th Fr Sa Su) read inconsistently next to the rest of the format."
+/>

@@ -1,0 +1,42 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: overlay
+figma_node: '40001852:22670'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [action-picker, overlay]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Action picker <StatusBadge status="stable" />
+
+Lets the user pick one action among a few to trigger in the app.
+
+<ComponentTabs basePath="/components/overlay/action-picker" />
+
+<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/action-picker/action-picker-overview.png" alt="Action picker with title, description, actions list, and Cancel" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| # of Actions | The number of actions listed. |
+| Show Body | Optional — toggles the description below the title. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/action-picker/action-picker-anatomy.png" alt="Action picker anatomy: Title, Description, Actions list, Cancel" />
+
+1. **Title**
+2. **Description** — optional
+3. **Actions list**
+4. **Cancel**

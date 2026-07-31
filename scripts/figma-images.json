@@ -1309,6 +1309,216 @@
       "output": "website/static/img/components/drop-down/drop-down-multiplechoices-caution.png",
       "description": "Drop down Usage > Multiple Choices \u2014 Caution example",
       "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001797:32426",
+      "output": "website/static/img/components/bottom-sheet/bottom-sheet-overview.png",
+      "description": "Bottom sheet, unscrolled example",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001797:33499",
+      "output": "website/static/img/components/bottom-sheet/bottom-sheet-anatomy.png",
+      "description": "Bottom sheet anatomy",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001799:53787",
+      "output": "website/static/img/components/bottom-sheet/bottom-sheet-hierarchy-do1.png",
+      "description": "Bottom sheet Usage > Type of buttons and Hierarchy \u2014 Do example 1",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001799:53914",
+      "output": "website/static/img/components/bottom-sheet/bottom-sheet-hierarchy-dont.png",
+      "description": "Bottom sheet Usage > Type of buttons and Hierarchy \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001797:31828",
+      "output": "website/static/img/components/bottom-sheet/bottom-sheet-vsactionpicker-do.png",
+      "description": "Bottom sheet Usage > Bottom sheet vs Action picker \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001797:31846",
+      "output": "website/static/img/components/bottom-sheet/bottom-sheet-vsactionpicker-dont.png",
+      "description": "Bottom sheet Usage > Bottom sheet vs Action picker \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001811:57357",
+      "output": "website/static/img/components/date-picker/date-picker-overview.png",
+      "description": "Date picker, day view",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001811:57813",
+      "output": "website/static/img/components/date-picker/date-picker-anatomy.png",
+      "description": "Date picker anatomy",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001808:54731",
+      "output": "website/static/img/components/date-picker/date-picker-stack-do.png",
+      "description": "Date picker Usage > Stack usage \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001808:54763",
+      "output": "website/static/img/components/date-picker/date-picker-stack-dont.png",
+      "description": "Date picker Usage > Stack usage \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001808:54808",
+      "output": "website/static/img/components/date-picker/date-picker-format-do.png",
+      "description": "Date picker Usage > Date format \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001808:54824",
+      "output": "website/static/img/components/date-picker/date-picker-format-dont.png",
+      "description": "Date picker Usage > Date format \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001836:18001",
+      "output": "website/static/img/components/time-picker/time-picker-overview.png",
+      "description": "Time picker, wheel selector",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001834:13809",
+      "output": "website/static/img/components/time-picker/time-picker-anatomy.png",
+      "description": "Time picker anatomy",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001834:14075",
+      "output": "website/static/img/components/time-picker/time-picker-intervals-do1.png",
+      "description": "Time picker Usage > Intervals \u2014 Do example 1",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001834:14107",
+      "output": "website/static/img/components/time-picker/time-picker-intervals-dont.png",
+      "description": "Time picker Usage > Intervals \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001844:21208",
+      "output": "website/static/img/components/time-picker/time-picker-stack-do1.png",
+      "description": "Time picker Usage > Stack usage \u2014 Do example 1",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001844:21240",
+      "output": "website/static/img/components/time-picker/time-picker-stack-dont.png",
+      "description": "Time picker Usage > Stack usage \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001852:24314",
+      "output": "website/static/img/components/action-picker/action-picker-overview.png",
+      "description": "Action picker, 2 actions",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001852:22766",
+      "output": "website/static/img/components/action-picker/action-picker-anatomy.png",
+      "description": "Action picker anatomy",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001852:22942",
+      "output": "website/static/img/components/action-picker/action-picker-destructive-do.png",
+      "description": "Action picker Usage > Destructive actions \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001852:22958",
+      "output": "website/static/img/components/action-picker/action-picker-destructive-dont.png",
+      "description": "Action picker Usage > Destructive actions \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001852:22892",
+      "output": "website/static/img/components/action-picker/action-picker-numberofactions-do1.png",
+      "description": "Action picker Usage > Number of actions \u2014 Do example 1",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001852:22924",
+      "output": "website/static/img/components/action-picker/action-picker-numberofactions-dont.png",
+      "description": "Action picker Usage > Number of actions \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001856:26938",
+      "output": "website/static/img/components/option-picker/option-picker-overview.png",
+      "description": "Option picker, multi-select",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001856:25569",
+      "output": "website/static/img/components/option-picker/option-picker-anatomy.png",
+      "description": "Option picker anatomy",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001856:25641",
+      "output": "website/static/img/components/option-picker/option-picker-mainbutton-do.png",
+      "description": "Option picker Usage > Single select main button \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001856:29401",
+      "output": "website/static/img/components/option-picker/option-picker-mainbutton-dont.png",
+      "description": "Option picker Usage > Single select main button \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001856:25686",
+      "output": "website/static/img/components/option-picker/option-picker-cancel-do.png",
+      "description": "Option picker Usage > Cancel action \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001856:25718",
+      "output": "website/static/img/components/option-picker/option-picker-cancel-dont.png",
+      "description": "Option picker Usage > Cancel action \u2014 Don't example",
+      "scale": 1
     }
   ]
 }
