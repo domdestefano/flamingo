@@ -1,0 +1,32 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [content-header, navigation, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/navigation/content-header" />
+
+## Preview
+
+<StorybookEmbed storyId="components-navigation-content-header--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-navigation-content-header--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'The section title.', type: 'string' },
+    { name: 'description', description: 'Optional supporting text shown below the title.', type: 'string' },
+    { name: 'level', description: 'Hierarchy level the header represents.', type: "'page' | 'section' | 'subsection'" },
+    { name: 'align', description: 'Text alignment.', type: "'default' | 'centred'" },
+    { name: 'action', description: 'Optional trailing action, e.g. a tertiary button.', type: 'ReactNode' },
+  ]}
+/>

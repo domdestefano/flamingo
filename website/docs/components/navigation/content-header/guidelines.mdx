@@ -1,0 +1,39 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [content-header, navigation, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/navigation/content-header" />
+
+## Usage
+
+Use a Content header at the start of every distinct section of a page — Page, Section, or Subsection
+level — to establish a clear hierarchy. Don't skip levels or use headers decoratively where no new
+section actually begins.
+
+## Use cases
+
+### Hierarchy
+
+<DoDontTable
+  doImage="/img/components/content-header/content-header-hierarchy-do.png"
+  doText="Nest headers in order — Page title, then Section title, then Subsection title — so the hierarchy reads top to bottom."
+  dontImage="/img/components/content-header/content-header-hierarchy-dont.png"
+  dontText="Don't place a Subsection header above the Section header it belongs to — it breaks the reading order and confuses the hierarchy."
+/>
+
+### Page titles
+
+<DoDontTable
+  doImage="/img/components/content-header/content-header-pagetitles-do.png"
+  doText="Show the page title once, in the Content header."
+  dontImage="/img/components/content-header/content-header-pagetitles-dont.png"
+  dontText="Don't repeat the same title in both the navigation bar and the Content header — it's redundant."
+/>

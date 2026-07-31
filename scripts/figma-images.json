@@ -840,6 +840,139 @@
       "output": "website/static/img/components/message-bar/message-bar-content-dont.png",
       "description": "Message bar Usage > Content \u2014 Don't example",
       "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001691:18478",
+      "output": "website/static/img/components/tabs/tabs-overview.png",
+      "description": "Tabs overview",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000560:3039",
+      "output": "website/static/img/components/tabs/tabs-anatomy.png",
+      "description": "Tabs anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001727:13513",
+      "output": "website/static/img/components/tabs/tabs-fillhug-do.png",
+      "description": "Tabs Usage > Fill/Hug \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001727:13707",
+      "output": "website/static/img/components/tabs/tabs-fillhug-dont.png",
+      "description": "Tabs Usage > Fill/Hug \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001165:8706",
+      "output": "website/static/img/components/tabs/tabs-color-do.png",
+      "description": "Tabs Usage > Color \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001165:9130",
+      "output": "website/static/img/components/tabs/tabs-color-dont.png",
+      "description": "Tabs Usage > Color \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001691:19864",
+      "output": "website/static/img/components/tabs/tabs-length-caution.png",
+      "description": "Tabs Usage > Caution \u2014 long labels",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001313:4108",
+      "output": "website/static/img/components/content-header/content-header-anatomy.png",
+      "description": "Content header anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001313:4209",
+      "output": "website/static/img/components/content-header/content-header-hierarchy-do.png",
+      "description": "Content header Usage > Hierarchy \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001313:17867",
+      "output": "website/static/img/components/content-header/content-header-hierarchy-dont.png",
+      "description": "Content header Usage > Hierarchy \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001313:21080",
+      "output": "website/static/img/components/content-header/content-header-pagetitles-do.png",
+      "description": "Content header Usage > Page titles \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001313:18308",
+      "output": "website/static/img/components/content-header/content-header-pagetitles-dont.png",
+      "description": "Content header Usage > Page titles \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001456:10778",
+      "output": "website/static/img/components/header/header-overview.png",
+      "description": "Header, generic example with back button, title, subtitle and actions",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001333:7865",
+      "output": "website/static/img/components/header/header-anatomy.png",
+      "description": "Header anatomy, regular",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001348:8842",
+      "output": "website/static/img/components/header/header-hierarchy-do.png",
+      "description": "Header Usage > Hierarchy \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001348:8844",
+      "output": "website/static/img/components/header/header-hierarchy-dont.png",
+      "description": "Header Usage > Hierarchy \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001333:8031",
+      "output": "website/static/img/components/header/header-labellength-do.png",
+      "description": "Header Usage > Label length \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001340:9405",
+      "output": "website/static/img/components/header/header-labellength-dont.png",
+      "description": "Header Usage > Label length \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40001313:5135",
+      "output": "website/static/img/components/content-header/content-header-overview.png",
+      "description": "Content header, single clean example phone mockup",
+      "scale": 2
     }
   ]
 }
