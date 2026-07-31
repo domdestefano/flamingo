@@ -1,0 +1,51 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: buttons
+figma_node: '40000256:16686'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [button, floating, icon, fab, action, cta, interactive]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Floating icon button <StatusBadge status="stable" />
+
+Indicate a subtle, icon-only action that floats above a layered UI, like a map.
+
+<ComponentTabs basePath="/components/buttons/floating-icon-button" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+<ComponentImage src="/img/components/fab-icon/fab-icon-overview.png" alt="Floating icon button variants: default/destructive type, active/pressed/inactive/loading state" />
+
+Use floating icon buttons for **subtle actions in a UI that consists of multiple layers on top of
+each other**, like a map-based interface — e.g. recentring the map or toggling a layer.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | **Default**: the standard subtle floating action. **Prominent**: a solid dark background, for a floating icon action that needs more visual weight than Default. |
+| Destructive | Use the destructive colour only for an action that removes or undoes something (e.g. stopping a live session). |
+| State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. **Loading**: the button is showing that an action is being triggered. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/fab-icon/fab-icon-anatomy.png" alt="Floating icon button anatomy: background and icon" />
+
+1. Background
+2. Icon
+
+### Clickable area
+
+The floating icon button's tappable area matches its visible background here, but still meets the
+standard touch target size regardless of where it's placed on screen.
+
+<ComponentImage src="/img/components/fab-icon/fab-icon-clickable-area.png" alt="Floating icon button clickable area" width={160} />

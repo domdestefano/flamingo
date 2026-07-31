@@ -1,0 +1,27 @@
+---
+title: Content
+sidebar_position: 3
+status: stable
+tags: [button, icon, content, ux-writing]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+
+# Content
+
+<ComponentTabs basePath="/components/buttons/icon-button" />
+
+The icon button has no text label by design — all of its meaning comes from the icon itself, so the
+icon must be immediately and unambiguously recognisable without a caption.
+
+## Appearance
+
+- Use icons from the shared Flamingo icon set only — never a one-off custom glyph for a single use
+  case.
+- If an icon's meaning isn't obvious at a glance to a first-time user, add a text label instead
+  (use Tertiary or Secondary button) rather than relying on a tooltip or accessibility label alone.
+
+## Accessibility
+
+- Every icon button must have an accessible label (e.g. `aria-label` on web) describing the action
+  it performs, since there's no visible text for assistive technology to read.

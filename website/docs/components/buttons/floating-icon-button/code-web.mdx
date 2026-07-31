@@ -1,0 +1,48 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [button, floating, icon, fab, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/buttons/floating-icon-button" />
+
+## Preview
+
+<StorybookEmbed storyId="components-buttons-floating-icon-button--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-buttons-floating-icon-button--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'icon', description: 'The icon to render inside the button.', type: 'ReactNode' },
+    {
+      name: 'type',
+      description: 'Visual weight of the button.',
+      type: "'default' | 'prominent' | undefined",
+      default: 'default',
+    },
+    {
+      name: 'destructive',
+      description: 'A boolean indicating whether this is a destructive action (e.g. removing or undoing something).',
+      type: 'boolean | undefined',
+      default: 'false',
+    },
+    {
+      name: 'disabled',
+      description: 'A boolean indicating whether the button is disabled. If isLoading is true then disabled will be true as well.',
+      type: 'boolean | undefined',
+      default: 'false',
+    },
+    { name: 'loading', description: 'A boolean indicating loading state.', type: 'boolean | undefined', default: 'false' },
+    { name: 'aria-label', description: 'Accessible label describing the action — required since there is no visible text.', type: 'string' },
+  ]}
+/>

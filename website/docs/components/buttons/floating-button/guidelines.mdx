@@ -1,0 +1,47 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [button, floating, fab, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/floating-button" />
+
+## Usage
+
+Use the floating button for the single most prominent action on a layered UI — most commonly a map
+— where the action needs a text label to be unambiguous, unlike the icon-only floating icon button.
+
+## Placement
+
+1. The floating button is anchored to the **viewport, not the scrolling content** — it floats in a
+   fixed position (typically bottom-right) above whatever is underneath.
+2. It should always be **reachable**, since floating actions exist specifically to stay accessible
+   while the rest of the screen scrolls or changes.
+3. Don't place a floating button where it can permanently obscure content the user needs to read or
+   interact with.
+
+## Use cases
+
+### Stacking
+
+<DoDontTable
+  doImage="/img/components/fab/fab-stacking-do.png"
+  doText="When stacking a floating button with floating icon buttons, keep the labelled floating button closest to the bottom edge — nearest the thumb — with the icon-only actions stacked above it."
+  dontImage="/img/components/fab/fab-stacking-dont.png"
+  dontText="Don't place the labelled floating button in the middle of the stack — it's the most important action, so it should anchor the stack, not sit between other controls."
+/>
+
+### Double FAB
+
+<DoDontTable
+  doImage="/img/components/fab/fab-double-do.png"
+  doText="When two floating buttons represent parallel, equally-weighted actions, place them side by side — one lower-emphasis (Default) and one higher-emphasis (Prominent)."
+  dontImage="/img/components/fab/fab-double-dont.png"
+  dontText="Don't stack two floating buttons vertically — stacking implies an order or hierarchy, which is the wrong signal for two actions that are meant to be equally accessible alternatives."
+/>

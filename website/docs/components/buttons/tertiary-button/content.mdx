@@ -1,0 +1,36 @@
+---
+title: Content
+sidebar_position: 3
+status: stable
+tags: [button, tertiary, content, ux-writing]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+
+# Content
+
+<ComponentTabs basePath="/components/buttons/tertiary-button" />
+
+Buttons use short, clear text that communicates what the user can expect from interacting with that
+button. Buttons use as few words as possible and do not offer conflicting or repetitive text. In
+most cases, the text in a button uses only an **action + noun** format. Button text uses
+user-friendly terms. Buttons never use the word "Click". Avoid using abbreviations or acronyms in a
+button label, unless they are commonly understood by the target audience. Avoid using multiple words
+in a button label, as this can make it difficult to tap accurately with a finger.
+
+## Appearance
+
+- Text is always sentence case and centre-aligned within the button.
+- When an icon is used, it becomes part of the text block that is centred in the container.
+
+## Truncation
+
+Truncation behaviour refers to how text is displayed on buttons in mobile interfaces when it is too
+long to fit within the button's dimensions. Multi-line buttons are not supported in Flamingo.
+
+- **Use truncation when necessary**: if the text is too long to fit within the button's dimensions,
+  truncate it to prevent the button from appearing cluttered.
+- **Use ellipsis to indicate truncation**: use an ellipsis (…) at the end of the truncated text.
+- **Avoid truncating important words**: avoid truncating important words or phrases that may affect
+  the button's meaning.
+- **Test truncation behaviour**: test on real devices and with real translations before shipping.

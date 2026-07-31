@@ -1,0 +1,47 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [button, icon, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/icon-button" />
+
+## Usage
+
+Use the icon button for minimal-emphasis, icon-only actions — things like closing a sheet, opening
+a menu, or a header action that's common enough not to need a text label.
+
+## Placement
+
+1. The icon button can be placed **anywhere, and several times, on the screen** — most commonly in
+   headers, list rows, and toolbars.
+2. It doesn't need to be reachable by default — being the lowest-emphasis, icon-only option, there's
+   no expectation the user needs it immediately.
+3. The icon button **cannot be placed inside a navigation bar** element as a replacement for the
+   nav bar's own dedicated action slots.
+
+## Use cases
+
+### Styling
+
+<DoDontTable
+  doImage="/img/components/icon-button/icon-button-styling-do.png"
+  doText="Use the icon button's standard colours — neutral or matching the surrounding content's own accent colour used elsewhere on the same screen."
+  dontImage="/img/components/icon-button/icon-button-styling-dont.png"
+  dontText="Don't recolour an icon button with an arbitrary brand accent colour that isn't otherwise used on the screen — it reads as more important than a minimal-emphasis action should."
+/>
+
+### Sizing
+
+<DoDontTable
+  doImage="/img/components/icon-button/icon-button-sizing-do.png"
+  doText="Match the icon button's size to its context — e.g. the compact size that fits inline within a text field's suffix slot."
+  dontImage="/img/components/icon-button/icon-button-sizing-dont.png"
+  dontText="Don't use a size that doesn't fit its container — an oversized icon button inside a compact row crowds the layout around it."
+/>
