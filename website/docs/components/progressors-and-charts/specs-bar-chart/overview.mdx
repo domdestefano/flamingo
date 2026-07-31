@@ -1,0 +1,44 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: progressors-and-charts
+figma_node: '40000132:1416'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [bar-chart, progressors-and-charts]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Specs Bar Chart <StatusBadge status="stable" />
+
+Compares different numerical values to one another.
+
+<ComponentTabs basePath="/components/progressors-and-charts/specs-bar-chart" />
+
+<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/specs-bar-chart/specs-bar-chart-overview.png" alt="Bar chart with a goal line across all bars" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| # of Bars | The number of bars shown. |
+| Selected bar | Which bar (if any) is tapped/highlighted. |
+| Show Tooltip | Optional — shows a value tooltip above the selected bar. |
+| Show Goal line | Optional — shows a dashed reference line across the chart. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/specs-bar-chart/specs-bar-chart-anatomy.png" alt="Bar chart anatomy: Tooltip, Selected bar, Bars, Axis labels" />
+
+1. **Tooltip** — shown above the selected bar, optional.
+2. **Selected bar**
+3. **Bars**
+4. **Axis labels**

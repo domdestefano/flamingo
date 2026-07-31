@@ -1,0 +1,31 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [sectioned-progress-bar, progressors-and-charts, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/progressors-and-charts/sectioned-progress-bar" />
+
+## Preview
+
+<StorybookEmbed storyId="components-progressors-and-charts-sectioned-progress-bar--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-sectioned-progress-bar--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'milestones', description: 'Labels for each milestone.', type: 'string[]' },
+    { name: 'activeIndex', description: 'Index of the currently active milestone.', type: 'number' },
+    { name: 'indicator', description: 'How each milestone is represented.', type: "'icon' | 'number'" },
+    { name: 'showLabels', description: 'Whether to show labels below each milestone.', type: 'boolean' },
+  ]}
+/>

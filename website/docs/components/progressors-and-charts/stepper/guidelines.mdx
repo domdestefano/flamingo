@@ -1,0 +1,28 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [stepper, progressors-and-charts, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/progressors-and-charts/stepper" />
+
+## Usage
+
+Use the Stepper for a task broken into sequential steps the user completes one at a time.
+
+## Use cases
+
+### Step states
+
+<DoDontTable
+  doImage="/img/components/stepper/stepper-states-do.png"
+  doText="Show states in logical order — completed, then the active step, then upcoming steps."
+  dontImage="/img/components/stepper/stepper-states-dont.png"
+  dontText="Don't show states out of order — a later step appearing resolved while an earlier one still looks upcoming breaks the sequence."
+/>

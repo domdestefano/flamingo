@@ -1519,6 +1519,160 @@
       "output": "website/static/img/components/option-picker/option-picker-cancel-dont.png",
       "description": "Option picker Usage > Cancel action \u2014 Don't example",
       "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000132:11072",
+      "output": "website/static/img/components/specs-bar-chart/specs-bar-chart-overview.png",
+      "description": "Specs bar chart with tooltip and goal line",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000132:1500",
+      "output": "website/static/img/components/specs-bar-chart/specs-bar-chart-anatomy.png",
+      "description": "Specs bar chart anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000132:11776",
+      "output": "website/static/img/components/specs-bar-chart/specs-bar-chart-translations-do.png",
+      "description": "Specs bar chart Usage > Consider translations and length \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000132:11778",
+      "output": "website/static/img/components/specs-bar-chart/specs-bar-chart-translations-dont.png",
+      "description": "Specs bar chart Usage > Consider translations and length \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000132:12461",
+      "output": "website/static/img/components/specs-bar-chart/specs-bar-chart-width-do.png",
+      "description": "Specs bar chart Usage > Width \u2014 Do example (full width)",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000132:1634",
+      "output": "website/static/img/components/specs-bar-chart/specs-bar-chart-width-caution.png",
+      "description": "Specs bar chart Usage > Width \u2014 Caution example (partial width)",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000887:3817",
+      "output": "website/static/img/components/circle-chart/circle-chart-overview.png",
+      "description": "Circle chart, default type",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000887:3284",
+      "output": "website/static/img/components/circle-chart/circle-chart-anatomy.png",
+      "description": "Circle chart anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000887:3384",
+      "output": "website/static/img/components/circle-chart/circle-chart-placement-do.png",
+      "description": "Circle chart Usage > Location \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000887:3418",
+      "output": "website/static/img/components/circle-chart/circle-chart-placement-caution.png",
+      "description": "Circle chart Usage > Location \u2014 Caution example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000898:3419",
+      "output": "website/static/img/components/pie-chart/pie-chart-overview.png",
+      "description": "Pie chart, default type",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000898:2732",
+      "output": "website/static/img/components/pie-chart/pie-chart-anatomy.png",
+      "description": "Pie chart anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000898:3978",
+      "output": "website/static/img/components/pie-chart/pie-chart-amount-do.png",
+      "description": "Pie chart Usage > Amount of tasks \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000898:3995",
+      "output": "website/static/img/components/pie-chart/pie-chart-amount-dont.png",
+      "description": "Pie chart Usage > Amount of tasks \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004065:17280",
+      "output": "website/static/img/components/sectioned-progress-bar/sectioned-progress-bar-overview.png",
+      "description": "Sectioned progress bar with icon milestones",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000987:15443",
+      "output": "website/static/img/components/sectioned-progress-bar/sectioned-progress-bar-anatomy.png",
+      "description": "Sectioned progress bar anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000995:6634",
+      "output": "website/static/img/components/sectioned-progress-bar/sectioned-progress-bar-milestones-do.png",
+      "description": "Sectioned progress bar Usage > Number of milestones \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40000995:6647",
+      "output": "website/static/img/components/sectioned-progress-bar/sectioned-progress-bar-milestones-dont.png",
+      "description": "Sectioned progress bar Usage > Number of milestones \u2014 Don't example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004076:9903",
+      "output": "website/static/img/components/stepper/stepper-overview.png",
+      "description": "Stepper, 2 steps with number indicators",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004076:7069",
+      "output": "website/static/img/components/stepper/stepper-anatomy.png",
+      "description": "Stepper anatomy",
+      "scale": 2
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004076:7300",
+      "output": "website/static/img/components/stepper/stepper-states-do.png",
+      "description": "Stepper Usage > Step states \u2014 Do example",
+      "scale": 1
+    },
+    {
+      "fileKey": "VuBl4ugiWKRiGROf3zglzb",
+      "nodeId": "40004076:7313",
+      "output": "website/static/img/components/stepper/stepper-states-dont.png",
+      "description": "Stepper Usage > Step states \u2014 Don't example",
+      "scale": 1
     }
   ]
 }

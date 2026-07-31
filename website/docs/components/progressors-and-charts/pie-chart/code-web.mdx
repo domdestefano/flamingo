@@ -1,0 +1,33 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [pie-chart, progressors-and-charts, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/progressors-and-charts/pie-chart" />
+
+## Preview
+
+This component is named **Pie Progress** in Storybook and code.
+
+<StorybookEmbed storyId="components-progressors-and-charts-pie-progress--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-pie-progress--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'total', description: 'Total number of segments.', type: 'number' },
+    { name: 'completed', description: 'Number of segments filled.', type: 'number' },
+    { name: 'secondaryLabel', description: 'Supporting text below the main label.', type: 'string' },
+    { name: 'type', description: 'Color of the segments.', type: "'neutral' | 'default' | 'success' | 'alert' | 'error' | 'branded'" },
+  ]}
+/>

@@ -1,0 +1,46 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: progressors-and-charts
+figma_node: '40004076:6960'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [stepper, progressors-and-charts]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Stepper <StatusBadge status="stable" />
+
+Conveys progress through logical or numbered steps. Use it when the user needs to complete a task
+divided into smaller, sequential steps — mandatory or optional.
+
+<ComponentTabs basePath="/components/progressors-and-charts/stepper" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/stepper/stepper-overview.png" alt="Stepper with numbered steps, titles, subtitles, and a suffix area" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| # of Steps | The number of steps shown. |
+| Step indicator | Number / Icon. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/stepper/stepper-anatomy.png" alt="Stepper anatomy: Step indicator, Connector line, Title, Subtitle, Caption, Slot, Suffix" />
+
+1. **Step indicator**
+2. **Connector line**
+3. **Title**
+4. **Subtitle**
+5. **Caption**
+6. **Slot** — optional custom content
+7. **Suffix** — optional trailing text/tag/icon

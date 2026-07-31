@@ -1,0 +1,44 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: progressors-and-charts
+figma_node: '40000898:2654'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [pie-chart, progressors-and-charts]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Pie Chart <StatusBadge status="stable" />
+
+Indicates a sectioned progression in a circular shape, e.g. tasks completed out of a total.
+
+<ComponentTabs basePath="/components/progressors-and-charts/pie-chart" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+Note: in Storybook and code, this component is named **Pie Progress**.
+
+## Component
+
+<ComponentImage src="/img/components/pie-chart/pie-chart-overview.png" alt="Pie chart showing a fraction and discrete progress segments" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | Neutral / Default / Success / Alert / Error / Branded — color of the segments. |
+| Main label | The primary value, e.g. a fraction like "6/7." |
+| Secondary label | Supporting text below the main label, e.g. "Value." |
+
+## Anatomy
+
+<ComponentImage src="/img/components/pie-chart/pie-chart-anatomy.png" alt="Pie chart anatomy: Segments, Secondary label, Main label" />
+
+1. **Segments**
+2. **Secondary label**
+3. **Main label**

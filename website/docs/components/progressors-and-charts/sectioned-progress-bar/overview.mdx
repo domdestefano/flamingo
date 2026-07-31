@@ -1,0 +1,48 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: progressors-and-charts
+figma_node: '40000987:15365'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [sectioned-progress-bar, progressors-and-charts]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Sectioned Progress Bar <StatusBadge status="stable" />
+
+Represents a progression fractioned into milestones — each milestone is a stop the progression
+must pass through to reach completion.
+
+<ComponentTabs basePath="/components/progressors-and-charts/sectioned-progress-bar" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+
+## Component
+
+<ComponentImage src="/img/components/sectioned-progress-bar/sectioned-progress-bar-overview.png" alt="Sectioned progress bar with 4 milestones and labels" />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| # of Milestones | The number of milestones in the bar. |
+| Progression | Which milestone is currently active. |
+| Milestone indicator | Icon / Number — how each milestone is represented. |
+| All Milestones with Icons | Optional — whether every milestone gets an icon, not just the active one. |
+| Show Labels | Optional — toggles labels below each milestone. |
+| Mid progress | Whether progress is shown partway between two milestones. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/sectioned-progress-bar/sectioned-progress-bar-anatomy.png" alt="Sectioned progress bar anatomy: Track segments, Start dot, Active milestone, Upcoming milestone, Completed milestone" />
+
+1. **Track segments** — filled between completed milestones, unfilled ahead.
+2. **Start dot**
+3. **Active milestone**
+4. **Upcoming milestone**
+5. **Completed milestone**
