@@ -1,0 +1,52 @@
+---
+title: Design guidelines
+sidebar_position: 4
+status: in-progress
+tags: [getting-started, processes, contribution]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+
+# Contribution <StatusBadge status="in-progress" />
+
+Our process for contribution on Flamingo.
+
+<ComponentTabs
+  basePath="/getting-started/processes/contribution"
+  tabs={[
+    { label: '⚡ Process', slug: 'process' },
+    { label: 'QA', slug: 'qa' },
+    { label: 'New component vs. Variant', slug: 'new-component-vs-variant' },
+    { label: 'Design guidelines', slug: 'design-guidelines' },
+    { label: 'Tech guidelines', slug: 'tech-guidelines' },
+    { label: 'Accessibility', slug: 'accessibility' },
+  ]}
+/>
+
+<UpdateBanner date="Oct 2025" />
+
+## Design guidelines for component proposals
+
+To create a well defined **proposal** for a new component or a component change please follow
+these guidelines as much as possible:
+
+| Area | Guideline |
+| --- | --- |
+| Use cases | Research on all the use cases your component **needs** to cover. Consider what edge cases might appear. Define different types (e.g. _Default, Alert, Error, ..._). |
+| (Re-) sizing / Responsiveness | Consider sizing of component: Min./Max width & height, behaviour in different. |
+| Visual alignment | Ensure your component proposal uses Flamingo tokens and fits the overall look and feel within the system. |
+| Accessibility | Ensure that the design meets accessibility standards, such as contrast ratios, and proper semantic structure. |
+| Content | Use placeholders for labels. Consider how they might be impacted in different languages. Verify that all images and media are high-quality, optimised, and relevant if any. |
+| Scalability | User teams should be able to reuse it. Keep it scalable and abstract enough. |
+| (Micro) Animation | Consider how your component should behave when being interacted with (e.g. hover animation). Refer to the [animations settings](/getting-started/processes/asset-creation-and-implementation/animations) when proposing easing functions and duration settings. |
+
+:::info Bad with visual design?
+No worries at all! Explain as good as you can your desired component/change and the Flamingo
+designers will create it.
+:::
+
+---
+
+[← Flamingo support](/getting-started/processes/flamingo-support/overview) &nbsp;·&nbsp; [Deprecation & Update →](/getting-started/processes/deprecation-and-update)

@@ -1,0 +1,83 @@
+---
+title: Request form
+sidebar_position: 2
+status: stable
+tags: [getting-started, processes, flamingo-support]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+
+# Flamingo support <StatusBadge status="stable" />
+
+How to get support from the Design System team.
+
+<ComponentTabs
+  basePath="/getting-started/processes/flamingo-support"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Request form', slug: 'request-form' },
+    { label: 'Slack channel', slug: 'slack-channel' },
+    { label: 'Open office hours', slug: 'office-hours' },
+    { label: 'One-on-One pairing session', slug: 'pairing-session' },
+  ]}
+/>
+
+<UpdateBanner date="April 2025" />
+
+:::warning Attention
+We have updated the request process: Please don't create any Jira tickets for Flamingo anymore,
+but use our new Service Desk flow (see below).
+:::
+
+## Create a Flamingo Request
+
+Use our request form for component creation, editing or fixes, illustration or icon creation/fixes
+or other formal request.
+
+**How to do it:**
+
+1. **Create a request** through our form. _(Screenshot of the Flamingo Request form — to be added.)_
+2. Once you created the request, it will be visible on our Jira board (link to be added), swimlane
+   "Team requests". _(Screenshot of the Flamingo Design Jira board — to be added.)_
+3. **Add one category label**, to make sure we can track it correctly:
+
+| If... | Use label |
+| --- | --- |
+| You are requesting a component we don't have yet. | `new-component` |
+| You found a bug or problem and need us to fix it. | `fix` |
+| You want a change on an already existing component. | `change` |
+| You need a new icon or illustration. | `asset-request` |
+
+## What happens after?
+
+The Flamingo team will acknowledge the request, clarify any ambiguities, and provide a timeline
+for your request. Depending on the request, our process will vary, but here are some **potential
+steps** you might see:
+
+| Stage | Details |
+| --- | --- |
+| Clarification of open questions | If there are ambiguities, we might need to clarify them first with the request creator. |
+| Research and exploration | Reviewing existing design system components, UX patterns, and ensuring consistency with the overall system. Getting ideas from other sources. |
+| Design | Create initial designs in Figma, ensuring designs are aligned with the existing design system guidelines. Upload design drafts or share links to design tool prototypes directly in the Jira ticket. |
+| Feedback and iteration | The design team can review the proposed designs and use Jira comments or attach notes for any feedback. The Flamingo team can then clarify questions in Jira to ensure the feedback is clear and iterate on the designs based on the feedback. |
+| Final review | Flamingo team will present the final design to the design team to ensure we have addressed all use cases. We will then attach the final design in Jira, along with any necessary handoff documentation. The designer can conduct a final review and ensure that all feedback has been addressed and, if needed, involve product managers, developers, or other stakeholders for approval. |
+
+## Sign-off criteria
+
+The design request is considered complete when:
+
+- All feedback from the design team has been addressed.
+- The design is aligned with the design system principles and fits seamlessly into the existing components.
+- Handoff documentation is complete and includes specifications for developers (dimensions, spacing, color codes, etc.).
+- Stakeholders, including the design team and developers, have given their final approval.
+- The Jira task is updated to **"Done"** or **"Closed"** and the final files are uploaded.
+
+_In the event that the Flamingo team can't meet squad deadlines, we will provide the necessary
+content to unblock squad designers/engineers, document any design debt and provide an estimate
+for the remaining content/documentation/etc._
+
+---
+
+[← Roadmap](/getting-started/roadmap) &nbsp;·&nbsp; [Contribution →](/getting-started/processes/contribution/process)

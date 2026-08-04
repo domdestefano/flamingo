@@ -67,6 +67,7 @@ const config: Config = {
           // once you know where this site sits inside the repo.
           editUrl:
             'https://github.com/deliveryhero/flamingo/tree/main/website/',
+             exclude: ['**/admin/**'], 
         },
         blog: false, // a design system doesn't need the blog preset
         theme: {
@@ -85,6 +86,12 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'gettingStartedSidebar',
+          position: 'left',
+          label: 'Getting Started',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'componentsSidebar',

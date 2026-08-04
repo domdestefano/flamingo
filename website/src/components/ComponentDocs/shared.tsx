@@ -24,12 +24,20 @@ const AVAILABILITY_LABEL: Record<Availability, string> = {
 export function StatusBadge({
   status = 'stable',
 }: {
-  status?: 'draft' | 'in-review' | 'stable' | 'deprecated';
+  status?: 'draft' | 'in-review' | 'stable' | 'deprecated' | 'in-progress';
 }) {
-  const label = { draft: 'Draft', 'in-review': 'In review', stable: 'Ready', deprecated: 'Deprecated' }[
-    status
-  ];
-  return <span className={styles.statusBadge}>{label}</span>;
+  const label = {
+    draft: 'Draft',
+    'in-review': 'In review',
+    stable: 'Ready',
+    deprecated: 'Deprecated',
+    'in-progress': 'In progress',
+  }[status];
+  const className =
+    status === 'in-progress'
+      ? `${styles.statusBadge} ${styles.statusBadgeInProgress}`
+      : styles.statusBadge;
+  return <span className={className}>{label}</span>;
 }
 
 /**

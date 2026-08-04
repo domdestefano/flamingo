@@ -1,0 +1,49 @@
+---
+title: Tech guidelines
+sidebar_position: 5
+status: in-progress
+tags: [getting-started, processes, contribution]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+
+# Contribution <StatusBadge status="in-progress" />
+
+Our process for contribution on Flamingo.
+
+<ComponentTabs
+  basePath="/getting-started/processes/contribution"
+  tabs={[
+    { label: '⚡ Process', slug: 'process' },
+    { label: 'QA', slug: 'qa' },
+    { label: 'New component vs. Variant', slug: 'new-component-vs-variant' },
+    { label: 'Design guidelines', slug: 'design-guidelines' },
+    { label: 'Tech guidelines', slug: 'tech-guidelines' },
+    { label: 'Accessibility', slug: 'accessibility' },
+  ]}
+/>
+
+<UpdateBanner date="Oct 2025" />
+
+## Tech guidelines for component creation/updates
+
+1. Work together with the Flamingo engineers to ensure code consistency and best practices
+   ([Team & comms](/getting-started/team-and-comms)).
+2. Once your are "done", please follow our [QA](/getting-started/processes/contribution/qa) guide.
+
+## Component requirements
+
+| Area | Requirement |
+| --- | --- |
+| Use cases | All component types & states are available (i.e. Active, Tapped, Disabled, Selected, Loading, ...). Error states are available. |
+| Visual design & token usage | Component looks and behaves as in design and uses tokens, **never custom** overwrites. |
+| Matching variants | Semantic variants (i.e. primary, secondary, tertiary) are consistent with the system. |
+| LTR & RTL | Component works in both setups. |
+| Sizing & responsiveness | Components resize and behave correctly in different container and viewports sizes. |
+| Accessibility | Ensure the component meets the minimum accessibility standards. |
+
+---
+
+[← Flamingo support](/getting-started/processes/flamingo-support/overview) &nbsp;·&nbsp; [Deprecation & Update →](/getting-started/processes/deprecation-and-update)

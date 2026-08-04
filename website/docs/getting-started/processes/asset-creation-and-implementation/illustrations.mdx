@@ -1,0 +1,169 @@
+---
+title: Illustrations
+sidebar_position: 2
+status: stable
+tags: [getting-started, processes, asset-creation]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner, PeopleList } from '@site/src/components/GettingStarted/shared';
+
+# Asset creation and implementation <StatusBadge status="stable" />
+
+Guide to create assets and add them to our Flamingo library.
+
+<ComponentTabs
+  basePath="/getting-started/processes/asset-creation-and-implementation"
+  tabs={[
+    { label: 'Icons', slug: 'icons' },
+    { label: 'Illustrations', slug: 'illustrations' },
+    { label: 'Animations', slug: 'animations' },
+  ]}
+/>
+
+<UpdateBanner date="August 2025: Updated!" />
+
+## Designers in charge of illustrations
+
+<PeopleList people={[{ name: 'Alex' }, { name: 'Dom' }, { name: 'Wio' }, { name: 'Farid' }, { name: 'Othman' }]} />
+
+## Create a new Illustration
+
+### Initial research
+
+Look through our existing illustrations, to match style, tone and themes.
+
+### Creation tool
+
+You can use whichever tool you feel comfortable with; it's essential though that the illustration
+can be imported in Figma for efficiency and compatibility. Remember to add the asset to the Asset
+library (link to be added).
+
+### Layers structure and naming
+
+The naming style is Title Case; for example: `Application Hired`, `Tier Badge - Diamond`.
+
+The naming should be in **name** form: _'Session Selection'_ instead of _'Selecting Session'_.
+
+When illustrations are too complex, with multiple elements that define them, using a description
+of the object would be counterproductive to the understanding of the element. For example, an
+illustration that represents the rider reactivation and consists of multiple elements like a
+heart, clock and money should be called `Heart - Clock - Money`, but using just the description of
+the elements can be less scalable if we change the illustration, and quite unclear: the name
+doesn't explain the purpose or meaning of the illustration. If the visual changes (e.g., the heart
+is replaced with a star), the name becomes inaccurate. It's not immediately clear what this
+illustration is for. Therefore, the name should be then descriptive of the **action/situation**,
+not the **object**. We can use meta data in Figma to mention other elements in order to make the
+illustration easier to find, for examples _heart, clock, coins, money_.
+
+When illustrations are simple, with just one or two clear elements, the name can describe the
+**object** and not the **action/situation**. For example, if the illustration consists of only one
+element, a car, it can be called: `Car`.
+
+If an illustration has a variant with Background, this is added after the name; for example
+`Car - with-bg`.
+
+If an illustration has multiple alternatives, like the Tier Badge, **start with the generic/parent
+name** and **follow with the variations** in progressively more detail:
+
+- `Tier Badge - Diamond`
+- `Tier Badge - Gold`
+- `Tier Badge - Silver`
+- `Tier Badge - Bronze`
+
+For **sub-elements that are repeated** throughout the illustration library, use the **same naming
+every time** for consistency:
+
+- Fail
+  - `Goal - Fail`
+  - `Map - Fail`
+- Success
+  - `Goal - Success`
+- Warning
+  - `Cash - Warning`
+- Shine
+  - `Backpack - Shine`
+
+### Illustration size
+
+The current sizes we support are:
+
+- L - 300x300
+- Default (M) - 160x160
+- S - 100x100
+
+In order to achieve consistency and harmony across all of our illustrations, we create the asset
+in one size (Default - 100x100), which then gets scaled up and down in our graphic block
+component. We advise to use similar inner paddings between the pictogram and the container, in
+order to make all illustrations look harmonious.
+
+### Use "Union selection" property
+
+Make sure to use "union selection" for layers that have the same colours. _(Screenshot of the
+Figma right-click menu — to be added.)_
+
+### Apply colour styles
+
+Make sure to apply the colour styles from our tokens library. _(Screenshot — to be added.)_
+
+### Create symbol
+
+Create the illustration as a component, name it appropriately and then give at least 3 keywords
+for better discovery.
+
+### Publish illustrations
+
+Now that the illustration has been created, you can publish it and start the implementation
+process.
+
+## Implementation
+
+### Layer structure & auto layout
+
+Export the asset **only in the size needed**. You can scale up and down the illustration using the
+`K` command in Figma.
+
+### Plugins and Preset
+
+Make sure to have installed the plugin "Fill Rule Editor" (link to be added).
+
+### SVG export
+
+1. Select the illustration, run the plugin "Fill Rule Editor" and make sure all fills are set to
+   Non Zero.
+2. Export the asset in SVG; the name should contain only the file name. No category, nor slashes.
+3. Make sure the name of the exported asset follows `kebab-case` i.e. `car-with-bg`.
+
+### Brand the illustrations
+
+_If the illustration must stays the same for every brand, skip this step._
+
+Open Colibri (link to be added); here you can add the folder of illustration you exported. The
+output folder is anywhere you want to export the branded illustrations to.
+
+Click Colorize and make sure to have checked the Auto convert input JSON animations to `.lottie`
+checkbox.
+
+### GitHub upload
+
+For branded illustration, go here (link to be added); if the illustration must stays the same for
+every brand, go here (link to be added) instead.
+
+Branded illustrations live under
+`logistics-rider-app-design-system/assets/branded/illustrations/<brand>/`, with one folder per
+brand: `default`, `efood`, `foodora`, `foodpanda`, `foody`, `glovo`, `hungerstation`, `pedidosya`,
+`talabat`, `woowa`, `yemeksepeti`.
+
+Select the folder referring to the brand and size of the asset you are going to upload, and then
+click on the "Add file" dropdown menu in the top right, then upload files.
+
+Upload the files, and make sure you're creating a new branch; add a title, assign yourself, and
+add as reviewers Flamingo engineers (`yypessoa`, `majid-amiri`, `davidlashki`, `thajizada`,
+`ziadtawfeek`, `ashutosh-dhse`, or `JamalSharif`).
+
+Now you can click "Create pull request" and, here you go, the asset is part of the GitHub library.
+
+---
+
+[← Deprecation & Update](/getting-started/processes/deprecation-and-update) &nbsp;·&nbsp; [UX Writing in Flamingo →](/getting-started/processes/ux-writing-in-flamingo)

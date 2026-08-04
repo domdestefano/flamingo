@@ -3,7 +3,9 @@ import Link from '@docusaurus/Link';
 import { useLocation } from '@docusaurus/router';
 import styles from './styles.module.css';
 
-const TABS = [
+export type TabDef = { label: string; slug: string };
+
+const TABS: TabDef[] = [
   { label: 'Overview', slug: 'overview' },
   { label: 'Guidelines', slug: 'guidelines' },
   { label: 'Content', slug: 'content' },
@@ -12,21 +14,32 @@ const TABS = [
 ];
 
 /**
- * Inline tab bar linking to a component's sibling pages (Overview,
- * Guidelines, Content, Change log, Code - Web), so you can switch between
- * them without going back to the sidebar — mirrors the tab bar on the
- * published Flamingo site. Each "tab" is a real page/route, not a
+ * Inline tab bar linking to a page's sibling routes, so you can switch
+ * between them without going back to the sidebar — mirrors the tab bar on
+ * the published Flamingo site. Each "tab" is a real page/route, not a
  * client-side content swap, since these pages can be heavy (Storybook
  * embeds, images).
  *
+ * Defaults to the standard component doc tabs (Overview / Guidelines /
+ * Content / Change log / Code - Web). Pass `tabs` to reuse this same bar for
+ * a different tab set, e.g. Getting Started's multi-tab process pages.
+ *
  * Usage: <ComponentTabs basePath="/components/buttons/primary-button" />
+ *        <ComponentTabs basePath="/getting-started/processes/contribution"
+ *          tabs={[{ label: 'Process', slug: 'process' }, ...]} />
  */
-export default function ComponentTabs({ basePath }: { basePath: string }): React.ReactElement {
+export default function ComponentTabs({
+  basePath,
+  tabs = TABS,
+}: {
+  basePath: string;
+  tabs?: TabDef[];
+}): React.ReactElement {
   const location = useLocation();
 
   return (
     <div className={styles.componentTabs} role="tablist">
-      {TABS.map((tab) => {
+      {tabs.map((tab) => {
         const href = `${basePath}/${tab.slug}`;
         const isActive = location.pathname.replace(/\/$/, '') === href;
         return (
