@@ -10,6 +10,11 @@
   margin-left: 0.5rem;
 }
 
+.statusBadgeInProgress {
+  background: var(--flamingo-color-alert-light);
+  color: var(--flamingo-color-alert-main);
+}
+
 .componentImage {
   max-width: 100%;
   height: auto;

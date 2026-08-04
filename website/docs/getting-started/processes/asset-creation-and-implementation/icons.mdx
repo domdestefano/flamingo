@@ -1,0 +1,157 @@
+---
+title: Icons
+sidebar_position: 1
+status: stable
+tags: [getting-started, processes, asset-creation]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner, PeopleList } from '@site/src/components/GettingStarted/shared';
+
+# Asset creation and implementation <StatusBadge status="stable" />
+
+Guide to create assets and add them to our Flamingo library.
+
+<ComponentTabs
+  basePath="/getting-started/processes/asset-creation-and-implementation"
+  tabs={[
+    { label: 'Icons', slug: 'icons' },
+    { label: 'Illustrations', slug: 'illustrations' },
+    { label: 'Animations', slug: 'animations' },
+  ]}
+/>
+
+<UpdateBanner date="August 2025: Updated!" />
+
+## Designers in charge of icons
+
+<PeopleList people={[{ name: 'Alex' }, { name: 'Dom' }, { name: 'Wio' }]} />
+
+## Create a new Icon
+
+### Initial research
+
+Use the "Material Symbols" Plugin to search the icons you want to add to the Flamingo library. We
+use type "Outline". _(Screenshot of the Material Symbols plugin panel — to be added.)_
+
+### Creation tool
+
+You can use whichever tool you feel comfortable with; it's essential though that the icon can be
+imported in Figma for efficiency and compatibility. Remember to add the asset to the Asset library
+(link to be added).
+
+### Layers structure and naming
+
+The naming style is Title Case; for example: _Arrow up_ is Arrow - Up
+
+When creating a new icon, remember that only one inner layer is needed, called 'icon', which needs
+to be flattened, except for multicoloured icons. The name should be descriptive of the **object**,
+_not_ the **action/situation**, for example an icon depicting a sofa is an icon that we use when a
+rider is instructed to leave a delivery in the lobby of the customer's building.
+
+- ✅ Correct naming = "Sofa"
+- ❌ Incorrect naming = "Leave in lobby"
+
+If an icon has multiple alternatives, (such as arrows, chevrons, or chat bubbles), **start with the
+generic/parent name** and **follow with the variations** in progressively more detail:
+
+- Arrows
+  - = "Arrow - Left"
+  - = "Arrow - Down"
+- Chevrons
+  - = "Chevron - Right"
+  - = "Chevron - Circle - Right"
+- Chat bubbles
+  - = "Chat - Text"
+  - = "Chat - Star"
+
+For **sub-elements that are repeated** throughout the icon library, use the **same naming every
+time** for consistency:
+
+- Blocked
+  - = "Blocked"
+  - = "Calendar - Blocked"
+- Check
+  - = "Check"
+  - = "Bag - Group - Check"
+- Clock
+  - = "Clock"
+  - = "Calendar - Clock"
+
+### Icon size
+
+The current sizes we support are:
+
+- XL - 56x56
+- L - 40x40
+- Default (M) - 24x24
+- S - 20x20
+- XS - 16x16
+
+In order to achieve consistency and harmony across all of our icons, we create the icon in one
+size (Default - 24x24), which then gets scaled up and down in our icon component. We advise to use
+the following trick when creating the pictogram inside the icon container: the inner padding
+between the pictogram and the icon container should be either vertically or horizontally 2-4 px.
+_(Screenshot demonstrating the padding measurement — to be added.)_
+
+### Flatten the glyph and add "Union selection" property
+
+Make sure that glyph is "Flattened" and contains no editable properties such as strokes or
+combined shapes. Additionally, add "Union Selection" to the Glyph layer. _(Screenshot of the Figma
+right-click menu — to be added.)_
+
+### Remove background colour
+
+Make sure that the container containing the glyph has no colour fill assigned. _(Screenshot — to
+be added.)_
+
+### Apply Auto Layout
+
+Make sure that new icons have Auto Layout applied and its set to Hug width and Hug contents.
+"icon' layer doesn't need auto layout. _(Screenshot — to be added.)_
+
+### Apply colour styles
+
+Icons should have the neutral100 colour style applied. _(Screenshot — to be added.)_
+
+### Create symbol
+
+Create the icons as component set, name it appropriately and then give at least 5 keywords for
+better discovery. _(Screenshot — to be added.)_
+
+### Publish icon
+
+Now that the icon has been created, you can publish it and start the implementation process.
+
+## Implementation
+
+### Plugins and Preset
+
+Make sure to have installed the plugin for Figma "SVG Export" (link to be added) and added the
+"Flamingo icons" preset (link to be added) to it. Install also the plugin "Fill Rule Editor" (link
+to be added).
+
+### SVG and PDF export setup
+
+1. Select the icon, run the plugin "Fill Rule Editor" and make sure all fills are set to Non Zero.
+2. Now run the plugin "SVG Export" and select the Flamingo icons set, then start the exporting
+   process.
+3. Make sure the name of the exported asset follows `kebab-case` i.e. `arrow-up`.
+
+### GitHub upload
+
+Go to GitHub (link to be added) — the icon SVGs live under
+`logistics-rider-app-design-system/assets/icons/svg/`.
+
+Click on the "Add file" dropdown menu in the top right, then upload files.
+
+Upload the files, and make sure you're creating a new branch. Add a title, assign yourself, and add
+as reviewers Flamingo engineers (`yypessoa`, `majid-amiri`, `davidlashki`, `thajizada`,
+`ziadtawfeek`, `ashutosh-dhse`, or `JamalSharif`). Now you can click "Create pull request".
+
+Here you go, the icon is now the in the GitHub library and ready to be used by any team :)
+
+---
+
+[← Deprecation & Update](/getting-started/processes/deprecation-and-update) &nbsp;·&nbsp; [UX Writing in Flamingo →](/getting-started/processes/ux-writing-in-flamingo)

@@ -1,0 +1,59 @@
+---
+title: New component vs. Variant
+sidebar_position: 3
+status: in-progress
+tags: [getting-started, processes, contribution]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+
+# Contribution <StatusBadge status="in-progress" />
+
+Our process for contribution on Flamingo.
+
+<ComponentTabs
+  basePath="/getting-started/processes/contribution"
+  tabs={[
+    { label: '⚡ Process', slug: 'process' },
+    { label: 'QA', slug: 'qa' },
+    { label: 'New component vs. Variant', slug: 'new-component-vs-variant' },
+    { label: 'Design guidelines', slug: 'design-guidelines' },
+    { label: 'Tech guidelines', slug: 'tech-guidelines' },
+    { label: 'Accessibility', slug: 'accessibility' },
+  ]}
+/>
+
+<UpdateBanner date="Oct 2025" />
+
+## When to build new component?
+
+To ensure our Design System has only items that are relevant, follow these rules when considering
+building a new component:
+
+### 🧩 Reusability
+
+- ✅ The component should be abstract enough to be reused by other teams (in a different context).
+- 🚫 Avoid adding if it's a one-off layout hack or experiment.
+
+### 🎯 Clear purpose
+
+- ✅ The component has to have a specific purpose, that no other component can replicate.
+- 🚫 If purpose varies per context (like completely different actions, visuals, semantics), keep it
+  local.
+
+### 🎨 Visual + Behavioural Stability
+
+- ✅ The component uses our tokens, is accessible and all needed states are defined. It's overall
+  consistent with the rest.
+- 🚫 Never add custom solutions as components.
+
+:::info
+If the component you need is similar to something we already have in place, consider building a
+**variant** instead.
+:::
+
+---
+
+[← Flamingo support](/getting-started/processes/flamingo-support/overview) &nbsp;·&nbsp; [Deprecation & Update →](/getting-started/processes/deprecation-and-update)

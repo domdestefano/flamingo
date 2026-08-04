@@ -1,0 +1,147 @@
+---
+title: Animations
+sidebar_position: 3
+status: stable
+tags: [getting-started, processes, asset-creation]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner, PeopleList } from '@site/src/components/GettingStarted/shared';
+
+# Asset creation and implementation <StatusBadge status="stable" />
+
+Guide to create assets and add them to our Flamingo library.
+
+<ComponentTabs
+  basePath="/getting-started/processes/asset-creation-and-implementation"
+  tabs={[
+    { label: 'Icons', slug: 'icons' },
+    { label: 'Illustrations', slug: 'illustrations' },
+    { label: 'Animations', slug: 'animations' },
+  ]}
+/>
+
+<UpdateBanner date="August 2025: Added!" />
+
+## Designers in charge of animations
+
+<PeopleList people={[{ name: 'Farid' }]} />
+
+## Create a new Animation
+
+### Initial research
+
+Look through our existing animations, to match style, tone and themes.
+
+### Creation tool
+
+You can use whichever tool you feel comfortable with; it's essential though that the animation
+uses our colours styles and that it can be exported in a lottie/json file, for efficiency and
+compatibility. Figma doesn't support Lottie files, so in order to show the animation in our
+designs it needs to be converted to a `.gif`. Then you can add the gif to the Asset library (link
+to be added).
+
+### Layers structure and naming
+
+The naming style is Title Case; for example: `Application Hired`, `Tier Badge - Diamond`.
+
+The naming should be in **name** form: _'Session Selection'_ instead of _'Selecting Session'_.
+
+When animations are too complex, with multiple elements that define them, using a description of
+the object would be counterproductive to the understanding of the element. For example, an
+animation that represents the rider reactivation and consists of multiple elements like a heart,
+clock and money should be called `Heart - Clock - Money`, but using just the description of the
+elements can be less scalable if we change the animation, and quite unclear: the name doesn't
+explain the purpose or meaning of the animation. If the visual changes (e.g., the heart is
+replaced with a star), the name becomes inaccurate. It's not immediately clear what this animation
+is for. Therefore, the name should be then descriptive of the **action/situation**, not the
+**object**. We can use meta data in Figma to mention other elements in order to make the animation
+easier to find, for examples _heart, clock, coins, money_.
+
+When animations are simple, with just one or two clear elements, the name can describe the
+**object** and not the **action/situation**. For example, if the illustration consists of only one
+element, a car, it can be called: `Car`.
+
+If an animation has a variant with Background, this is added after the name; for example
+`Car - with-bg`.
+
+If an animation has multiple alternatives, like the Tier Badge, **start with the generic/parent
+name** and **follow with the variations** in progressively more detail:
+
+- `Tier Badge - Diamond`
+- `Tier Badge - Gold`
+- `Tier Badge - Silver`
+- `Tier Badge - Bronze`
+
+For **sub-elements that are repeated** throughout the animation library, use the **same naming
+every time** for consistency:
+
+- Fail
+  - `Goal - Fail`
+  - `Map - Fail`
+- Success
+  - `Goal - Success`
+- Warning
+  - `Cash - Warning`
+- Shine
+  - `Backpack - Shine`
+
+### Animation size
+
+The current sizes we support are:
+
+- L - 300x300
+- Default (M) - 160x160
+- S - 100x100
+
+In order to achieve consistency and harmony across all of our animations, we create the asset in
+one size (Default - 100x100), which then gets scaled up and down in our animation component. We
+advise to use similar inner paddings between the pictogram and the container, in order to make all
+animations look harmonious.
+
+### Create symbol
+
+Once the animation is created and exported to Figma, you can create it as a component, name it
+appropriately and then give at least 3 keywords for better discovery.
+
+### Publish animations
+
+Now that the animation has been created, you can publish it and start the implementation process.
+
+## Implementation process
+
+### Lottie export
+
+1. Make sure to export the animation in a `.lottie` format.
+2. Make sure the name of the exported asset follows `kebab-case` i.e. `car-with-bg`.
+
+### Brand the animations
+
+Open Colibri (link to be added); here you can add the folder of the animation you exported as
+Lottie/json. The output folder is anywhere you want to export the branded animations to.
+
+Click Colorize and make sure to have checked the Auto convert input JSON animations to `.lottie`
+checkbox.
+
+### GitHub upload
+
+Go here (link to be added).
+
+Branded animations live under
+`logistics-rider-app-design-system/assets/branded/animations/<brand>/`, with one folder per brand:
+`default`, `efood`, `foodora`, `foodpanda`, `foody`, `glovo`, `hungerstation`, `pedidosya`,
+`talabat`, `woowa`, `yemeksepeti`.
+
+Select the folder referring to the brand and size of the asset you are going to upload, and then
+click on the "Add file" dropdown menu in the top right, then upload files.
+
+Upload the files, and make sure you're creating a new branch; add a title, assign yourself, and
+add as reviewers Flamingo engineers (`yypessoa`, `majid-amiri`, `davidlashki`, `thajizada`,
+`ziadtawfeek`, `ashutosh-dhse`, or `JamalSharif`).
+
+Now you can click "Create pull request" and, here you go, the asset is part of the GitHub library.
+
+---
+
+[← Deprecation & Update](/getting-started/processes/deprecation-and-update) &nbsp;·&nbsp; [UX Writing in Flamingo →](/getting-started/processes/ux-writing-in-flamingo)
