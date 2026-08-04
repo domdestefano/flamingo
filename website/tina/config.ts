@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     outputFolder: "admin",
     publicFolder: "static", // Crucial for Docusaurus static asset routing
+    basePath: "flamingo", // Docusaurus serves this site under /flamingo/, not /
   },
   media: {
     tina: {
@@ -20,6 +21,7 @@ export default defineConfig({
         name: "doc",
         label: "Documentation",
         path: "docs", // Directs Tina to your Docusaurus docs folder
+        format: "mdx", // All content here is .mdx, not .md — Tina defaults to .md only
         fields: [
           { type: "string", name: "title", label: "Title", isTitle: true, required: true },
           { type: "string", name: "sidebar_label", label: "Sidebar Label" },
