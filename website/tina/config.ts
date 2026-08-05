@@ -20,7 +20,7 @@ export default defineConfig({
       {
         name: "doc",
         label: "Documentation",
-        path: "docs", // Directs Tina to your Docusaurus docs folder
+        path: "website/docs", // Directs Tina to your Docusaurus docs folder (repo-root-relative — testing whether TinaCloud resolves paths from repo root rather than the tina/ folder's location)
         format: "mdx", // All content here is .mdx, not .md — Tina defaults to .md only
         fields: [
           { type: "string", name: "title", label: "Title", isTitle: true, required: true },
