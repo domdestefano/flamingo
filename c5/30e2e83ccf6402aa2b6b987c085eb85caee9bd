@@ -1,0 +1,29 @@
+website/src/components/ComponentGallery/styles.module.css
+  s_54bf5f254aeba9::t_58663f2a4c7c72 6,10,13-15,18-53,67-69,74-75,77-78,82,86-87,92
+website/src/components/ComponentDocs/styles.module.css
+  s_54bf5f254aeba9::t_4b3c6a488f7cbf 23-25
+website/src/css/custom.css
+  s_54bf5f254aeba9::t_e5c5c573a28120 10-35,39-45,52-58
+website/src/components/ComponentDocs/ComponentImage.tsx
+  s_54bf5f254aeba9::t_43278db9494694 18
+website/src/css/theme-refresh.css
+  s_54bf5f254aeba9::t_2c4cf377044ebf 59-70
+website/src/components/ComponentGallery/index.tsx
+  s_54bf5f254aeba9::t_86c4fd91d2c53a 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c530e2e83ccf6402aa2b6b987c085eb85caee9bd",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
