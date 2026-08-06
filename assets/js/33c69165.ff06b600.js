@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([["4"],{48773(e){e.exports=JSON.parse('{"tag":{"label":"font-size","permalink":"/flamingo/tags/font-size","allTagsPath":"/flamingo/tags","count":1,"items":[{"id":"tokens/typography/font-size","title":"Font size","description":"","permalink":"/flamingo/tokens/typography/font-size"}],"unlisted":false}}')}}]);

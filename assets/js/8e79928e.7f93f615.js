@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([["79"],{6973(s){s.exports=JSON.parse('{"tag":{"label":"blur","permalink":"/flamingo/tags/blur","allTagsPath":"/flamingo/tags","count":1,"items":[{"id":"tokens/spacing-sizing/blur","title":"Blur","description":"","permalink":"/flamingo/tokens/spacing-sizing/blur"}],"unlisted":false}}')}}]);

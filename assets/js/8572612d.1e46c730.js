@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([["7277"],{15725(e){e.exports=JSON.parse('{"tag":{"label":"neutral","permalink":"/flamingo/tags/neutral","allTagsPath":"/flamingo/tags","count":1,"items":[{"id":"tokens/colours/neutral","title":"Neutral","description":"","permalink":"/flamingo/tokens/colours/neutral"}],"unlisted":false}}')}}]);

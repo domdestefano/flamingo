@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([["131"],{88494(s){s.exports=JSON.parse('{"tag":{"label":"spacing","permalink":"/flamingo/tags/spacing","allTagsPath":"/flamingo/tags","count":1,"items":[{"id":"tokens/spacing-sizing/spacing","title":"Spacing","description":"","permalink":"/flamingo/tokens/spacing-sizing/spacing"}],"unlisted":false}}')}}]);
