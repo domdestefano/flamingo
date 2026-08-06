@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import { useLocation } from '@docusaurus/router';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
 
 export type TabDef = { label: string; slug: string };
@@ -36,12 +37,17 @@ export default function ComponentTabs({
   tabs?: TabDef[];
 }): React.ReactElement {
   const location = useLocation();
+  const { siteConfig } = useDocusaurusContext();
+  // location.pathname includes the site's baseUrl (e.g. "/flamingo/"), but
+  // basePath is written baseUrl-relative in every call site, so it must be
+  // prefixed here before comparing — otherwise isActive is always false.
+  const baseUrl = siteConfig.baseUrl.replace(/\/$/, '');
 
   return (
     <div className={styles.componentTabs} role="tablist">
       {tabs.map((tab) => {
         const href = `${basePath}/${tab.slug}`;
-        const isActive = location.pathname.replace(/\/$/, '') === href;
+        const isActive = location.pathname.replace(/\/$/, '') === `${baseUrl}${href}`;
         return (
           <Link
             key={tab.slug}

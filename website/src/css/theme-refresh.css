@@ -43,10 +43,17 @@
    prose tables) — Infima's defaults render these with no border/radius/
    shadow at all. */
 .markdown table {
+  width: 100%;
+  table-layout: fixed;
   border: var(--flamingo-border01) solid var(--flamingo-border-color);
   border-radius: var(--flamingo-corner-radius03);
   box-shadow: var(--flamingo-shadow-sm);
   overflow: hidden;
+}
+
+.markdown table td,
+.markdown table th {
+  word-wrap: break-word;
 }
 
 .markdown table th {

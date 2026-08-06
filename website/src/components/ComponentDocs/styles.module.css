@@ -43,8 +43,9 @@
   font-size: 0.95rem;
   font-weight: 500;
   border-radius: var(--flamingo-corner-radius02) var(--flamingo-corner-radius02) 0 0;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
-  transition: background-color 150ms ease, color 150ms ease;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
 }
 
 .componentTab {
@@ -60,6 +61,8 @@
 .componentTabActive {
   color: var(--flamingo-primary-main);
   background: var(--flamingo-primary-light04);
+  border-bottom-color: var(--flamingo-primary-main);
+  font-weight: 700;
 }
 
 /* --- Stretch a table to fill the content width. Columns keep their
