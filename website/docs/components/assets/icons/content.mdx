@@ -1,0 +1,51 @@
+---
+title: Content
+sidebar_position: 3
+status: stable
+tags: [icons, assets, pictogram]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
+
+# Icons <StatusBadge status="stable" />
+
+Small graphic elements to accompany other UI elements
+
+<ComponentTabs basePath="/components/assets/icons" />
+
+## Semantic Clarity & Familiarity
+
+An icon's primary job is to act as a visual shorthand. If a user has to think
+for more than a split second about what a symbol means, the icon has failed.
+
+- **Stick to Universal Conventions:** Don't reinvent the wheel. A magnifying
+  glass should always mean "Search," and a gear should always mean
+  "Settings."
+- **Avoid Ambiguity:** Ensure icons don't have dual meanings within the same
+  context (e.g., using a heart for both "Like" and "Save to Collection").
+  Abstract symbols that require a tooltip should be avoided.
+- **Metaphor Consistency:** Use metaphors that align with the user's
+  real-world expectations.
+
+## Visual Simplicity
+
+Complexity is the enemy of recognition, especially at smaller scales (like
+16px or 24px).
+
+- **Minimize Detail:** Remove unnecessary lines, shadows, or decorations that
+  don't contribute to the core meaning.
+- **Stroke Weight:** Maintain a consistent stroke weight across the entire
+  library to ensure a unified "voice."
+- **The Squint Test:** If you squint at the icon and it becomes a blurry
+  blob, it's too complex.
+
+## Pairing with Text Labels
+
+While the goal is "clear iconography," icons are rarely 100% universal.
+
+- **The Hybrid Approach:** Whenever possible, pair icons with text labels.
+  This is a massive win for **accessibility** and prevents "mystery meat
+  navigation."
+- **When to omit labels:** Only omit text for the most ubiquitous actions
+  (Home, Search, Close) and only when space is critically limited.

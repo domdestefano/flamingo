@@ -1,0 +1,82 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: assets
+tags: [animations, assets, motion]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+
+# Animations <StatusBadge status="stable" />
+
+Animated and delightful graphic elements
+
+<ComponentTabs basePath="/components/assets/animations" tabs={[{label: 'Overview', slug: 'overview'}, {label: 'Guidelines', slug: 'guidelines'}, {label: 'Content', slug: 'content'}, {label: 'Change log', slug: 'change-log'}]} />
+
+<UpdateBanner date="March 2026" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+There are 3 sizes for the animations we recommend, but in specific cases we
+allow unique sizing.
+
+Animations are UI elements you should use whenever you want to add a
+delightful visual cue to your interfaces.
+
+- There are 3 sizes for the animations we recommend, but in specific cases we
+  allow unique sizing.
+- Animations colours should change based on the brand (Not in Figma, due to
+  limitations).
+- The Animation UI element has an instance connected to the animations
+  library. This means that the library is inside every Animation component.
+  In Figma, you can choose from the library by selecting the animation from
+  the menu on the instance property.
+
+## Properties
+
+The Animation has two properties you can choose from:
+
+| Property | Details |
+| --- | --- |
+| Size | Size of the container which scales up or down the pictogram inside. |
+| Animation | Menu to select the pictogram from our asset library. |
+
+## Anatomy
+
+The Animation is composed of:
+
+1. The pictogram, placed within a container which can scale up and down,
+   based on the chosen size.
+
+## Non branded animations
+
+These elements do not change their colour based on the brand, and can refer
+to:
+
+- Neutral assets that don't need to be customised based on the brand, e.g.
+  _Face recognition_ etc.
+
+These are stored in the GitHub repository for non-branded assets, while in
+Figma they are usually stored locally.
+
+## Interactions
+
+### Clickable area
+
+The Animation component is not clickable, but it's interactive.
+
+## Useful links
+
+- Request an animation
+- Animations library: Figma, GitHub
+
+:::info
+There is no Code - Web tab for Animations — no Storybook story exists yet for
+this asset in `rrds-web`.
+:::

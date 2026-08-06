@@ -1,0 +1,66 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [animations, assets, motion]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Animations <StatusBadge status="stable" />
+
+Animated and delightful graphic elements
+
+<ComponentTabs basePath="/components/assets/animations" tabs={[{label: 'Overview', slug: 'overview'}, {label: 'Guidelines', slug: 'guidelines'}, {label: 'Content', slug: 'content'}, {label: 'Change log', slug: 'change-log'}]} />
+
+## Usage
+
+Use the animations when you want to support information with an interactive
+and delightful element, or add a visual cue to an action or moment in your
+designs; for this reason, animations should be clear on what they mean. If
+your interface has a lot of elements, we recommend using icons, which occupy
+less space.
+
+## Placement
+
+1. **On the screen**: The animations can be placed anywhere in the screen.
+2. **Within components or compositions**: animations can placed as prefixes
+   or suffixes, on the left or right side or top part of the component or
+   composition.
+3. Animations can be used alone, when the visual cue is clear enough for the
+   meaning they represent, like a loading element for a loading screen;
+   otherwise, animations should be grouped with other elements, like text or
+   components, a supportive cue.
+
+## Use Cases
+
+### Sizes
+
+Animation sizes should be used harmoniously with the elements they
+accompany, and/or according to the prominence you want to convey.
+
+<DoDontTable
+  doText="Choose the animations size based on the element it accompanies"
+  dontText="Avoid using the biggest size if this can lead to a crowded interface"
+/>
+
+### Clear iconography
+
+Make sure to use clear animations, that refer clearly to the message you
+want to convey.
+
+<DoDontTable
+  doText="Clear animations are easier to understand"
+  dontText="Unclear animations can lead to confusion"
+/>
+
+### Hardcoded colours
+
+Make sure to use Flamingo's colour tokens, so that they change accordingly to
+the theme of each brand and to Dark mode settings.
+
+<DoDontTable
+  doText="Correct colour tokens work harmoniously with each other"
+  dontText="Hardcoded HEX values might not translate well in other settings, like Dark mode"
+/>

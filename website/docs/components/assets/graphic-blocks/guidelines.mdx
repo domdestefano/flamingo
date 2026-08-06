@@ -1,0 +1,64 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [graphic-blocks, illustrations, assets]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Graphic blocks <StatusBadge status="stable" />
+
+Complex and delightful graphic elements to accompany other UI elements
+
+<ComponentTabs basePath="/components/assets/graphic-blocks" />
+
+## Usage
+
+Use the illustrations when you want to support information with a graphical
+and delightful element, in a non crowded interface; for this reason,
+illustrations should be extremely clear on what they mean. If your interface
+has a lot of elements, we recommend using icons, which occupy less space.
+
+## Placement
+
+1. **On the screen**: The illustrations can be placed anywhere in the screen.
+2. **Within components or compositions**: Illustrations can placed as
+   prefixes or suffixes, on the left or right side or top part of the
+   component or composition.
+3. Illustrations should not be used alone, as they are non-interactive
+   elements, but always grouped with other elements, like text or
+   components.
+
+## Use Cases
+
+### Sizes
+
+Illustration sizes should be used harmoniously with the elements they
+accompany, and according to the prominence you want to convey.
+
+<DoDontTable
+  doText="Choose the illustration size based on the element it accompanies"
+  dontText="Avoid using the biggest size if this can lead to a crowded interface"
+/>
+
+### Clear iconography
+
+Make sure to use clear illustrations, that refer clearly to the message you
+want to convey.
+
+<DoDontTable
+  doText="Clear illustrations are easier to understand"
+  dontText="Unclear illustrations can lead to confusion"
+/>
+
+### Hardcoded colours
+
+Make sure to use Flamingo's colour tokens, so that they change accordingly to
+the theme of each brand and to Dark mode settings.
+
+<DoDontTable
+  doText="Correct colour tokens work harmoniously with each other"
+  dontText="Hardcoded HEX values might not translate well in other settings, like Dark mode"
+/>
