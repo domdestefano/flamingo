@@ -4,7 +4,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import StorybookEmbed from '@site/src/components/StorybookEmbed';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
@@ -25,9 +24,6 @@ function HomepageHeader() {
           <Link className="button button--outline button--secondary button--lg" to="/getting-started/team-and-comms">
             Getting Started
           </Link>
-        </div>
-        <div className={clsx(styles.heroPreview, 'flamingo-card', 'flamingo-checkerboard')}>
-          <StorybookEmbed storyId="components-buttons-button--docs" viewMode="docs" height={280} />
         </div>
       </div>
     </header>

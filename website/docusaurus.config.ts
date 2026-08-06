@@ -83,14 +83,14 @@ const config: Config = {
       title: 'Flamingo',
       logo: {
         alt: 'Flamingo Design System',
-        src: 'img/logo.svg',
+        src: 'img/flamingo-logo.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'gettingStartedSidebar',
           position: 'left',
-          label: 'Getting Started',
+          label: 'About',
         },
         {
           type: 'docSidebar',
@@ -100,19 +100,9 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'guidelinesSidebar',
-          position: 'left',
-          label: 'Guidelines',
-        },
-        {
-          type: 'docSidebar',
           sidebarId: 'tokensSidebar',
           position: 'left',
           label: 'Tokens',
-        },
-        {
-          type: 'custom-brandSwitcher',
-          position: 'right',
         },
         {
           href: 'https://github.com/deliveryhero/flamingo',

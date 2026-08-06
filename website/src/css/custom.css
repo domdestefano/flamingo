@@ -21,6 +21,11 @@
   --ifm-color-primary-lightest: var(--flamingo-primary-light04);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* The site read as very stark/all-white — give the page body a faint
+     brand-tinted background while cards/tables/navbar stay white, so
+     content still pops via contrast instead of everything blending together. */
+  --ifm-background-color: var(--flamingo-primary-light04);
+  --ifm-background-surface-color: #ffffff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -33,6 +38,11 @@
   --ifm-color-primary-lighter: var(--flamingo-primary-dark02);
   --ifm-color-primary-lightest: var(--flamingo-primary-dark02);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* primary-light04 is a saturated accent colour in dark mode (meant for
+     small highlights), too bold for a full-page background — use a neutral
+     tint instead, same idea as light mode's pale pink but desaturated. */
+  --ifm-background-color: var(--flamingo-color-neutral05);
+  --ifm-background-surface-color: var(--flamingo-color-neutral00);
 }
 
 .flamingo-brand-switcher {

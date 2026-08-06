@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BrandSwitcher from '@site/src/components/BrandSwitcher';
 
 // Reusable iframe wrapper for embedding a live Storybook story inside an MDX
 // page. Point `baseUrl` at your deployed Storybook, pass the story `id`
@@ -115,6 +116,17 @@ export default function StorybookEmbed({
         margin: '1.5rem 0',
       }}
     >
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          padding: '0.5rem',
+          borderBottom: '1px solid var(--ifm-color-emphasis-300)',
+          background: 'var(--ifm-background-surface-color)',
+        }}
+      >
+        <BrandSwitcher />
+      </div>
       <iframe
         src={src}
         title={`Storybook story: ${storyId}`}
