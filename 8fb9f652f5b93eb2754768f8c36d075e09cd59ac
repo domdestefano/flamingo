@@ -1,0 +1,35 @@
+website/src/components/DesignTokens/Typography.tsx
+  s_54bf5f254aeba9::t_4514432c552879 319-380
+  s_54bf5f254aeba9::t_879e54c76d62f7 51-53
+  s_54bf5f254aeba9::t_4328dcb8f1d5b3 112-135
+  s_54bf5f254aeba9::t_7fdca94fa876bd 2,4,7-15
+  s_54bf5f254aeba9::t_fd5b634a4d5e51 16
+website/src/components/DesignTokens/SpacingSizing.tsx
+  s_54bf5f254aeba9::t_fbedf44aaae393 56-65,70,73-194,198-199
+  s_54bf5f254aeba9::t_8b8d3ed1af6aaf 195-197
+  s_54bf5f254aeba9::t_53570bca803cfb 2,4,7-15
+  s_54bf5f254aeba9::t_41f056091cc77a 204-258,261-273,282-313
+  s_54bf5f254aeba9::t_94a7df72f0c5c7 16
+website/src/components/DesignTokens/styles.module.css
+  s_54bf5f254aeba9::t_87b166d2529aeb 213-254
+website/docs/tokens/typography/guidelines.mdx
+  s_54bf5f254aeba9::t_5db06c9745875c 1-10
+website/src/components/DesignTokens/shared.tsx
+  s_54bf5f254aeba9::t_ed5fc3660de46e 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "8fb9f652f5b93eb2754768f8c36d075e09cd59ac",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

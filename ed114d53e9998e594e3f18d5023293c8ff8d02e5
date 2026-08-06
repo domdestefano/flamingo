@@ -1,0 +1,87 @@
+website/docs/components/progressors-and-charts/circle-chart/content.mdx
+  s_54bf5f254aeba9::t_d338c3695134cd 1-15
+website/docs/components/progressors-and-charts/_category_.json
+  s_54bf5f254aeba9::t_39ee34dd2da020 1-4
+website/docs/components/progressors-and-charts/pie-chart/guidelines.mdx
+  s_54bf5f254aeba9::t_57544b125cec6b 1-29
+website/docs/components/progressors-and-charts/specs-bar-chart/code-web.mdx
+  s_54bf5f254aeba9::t_0002953ae7175f 1-15
+website/docs/components/progressors-and-charts/circle-chart/change-log.mdx
+  s_54bf5f254aeba9::t_57257e70ba1fba 1-23
+website/docs/components/progressors-and-charts/circle-chart/code-web.mdx
+  s_54bf5f254aeba9::t_55f2e230fbad01 1-33
+website/docs/components/progressors-and-charts/pie-chart/content.mdx
+  s_54bf5f254aeba9::t_85efbf57a953ac 1-15
+website/docs/components/progressors-and-charts/specs-bar-chart/overview.mdx
+  s_54bf5f254aeba9::t_da07f7b19d2e37 1-44
+website/docs/components/progressors-and-charts/pie-chart/overview.mdx
+  s_54bf5f254aeba9::t_f41374844f5d16 1-44
+website/docs/components/progressors-and-charts/stepper/content.mdx
+  s_54bf5f254aeba9::t_bd5ff601c67f42 1-15
+website/docs/components/progressors-and-charts/stepper/_category_.json
+  s_54bf5f254aeba9::t_a5bec5e27afaa7 1-4
+website/docs/components/progressors-and-charts/circle-chart/overview.mdx
+  s_54bf5f254aeba9::t_9b44ed38ff1f2d 1-44
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_e4b98825579bb7 1578-1591
+  s_54bf5f254aeba9::t_336761c6aba327 1564-1577
+  s_54bf5f254aeba9::t_c09c7f657387f4 1522-1563
+  s_54bf5f254aeba9::t_d0137cb7ddef54 1592-1619
+  s_54bf5f254aeba9::t_d15fcce36fb0e1 1620-1647
+  s_54bf5f254aeba9::t_460ebfa086a52b 1648-1675
+website/docs/components/progressors-and-charts/stepper/guidelines.mdx
+  s_54bf5f254aeba9::t_b786a3a1100481 1-28
+website/docs/components/progressors-and-charts/stepper/code-web.mdx
+  s_54bf5f254aeba9::t_3150e8868cf62f 1-30
+website/docs/components/progressors-and-charts/specs-bar-chart/_category_.json
+  s_54bf5f254aeba9::t_3a5ef4b452603d 1-4
+website/docs/components/progressors-and-charts/circle-chart/guidelines.mdx
+  s_54bf5f254aeba9::t_d856de7b20accf 8,24-27,30
+  s_54bf5f254aeba9::t_b1e77288384338 1-7,9-23,28-29,31
+website/docs/components/progressors-and-charts/sectioned-progress-bar/content.mdx
+  s_54bf5f254aeba9::t_a70bfa6ef518cd 1-15
+website/docs/components/progressors-and-charts/circle-chart/_category_.json
+  s_54bf5f254aeba9::t_e080648fdd3e85 1-4
+website/docs/components/progressors-and-charts/stepper/overview.mdx
+  s_54bf5f254aeba9::t_5adc08229d120e 1-46
+website/docs/components/progressors-and-charts/sectioned-progress-bar/code-web.mdx
+  s_54bf5f254aeba9::t_c40582c3e8d55c 1-31
+website/docs/components/progressors-and-charts/sectioned-progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_a6114e2ff74f78 1-48
+website/docs/components/progressors-and-charts/specs-bar-chart/change-log.mdx
+  s_54bf5f254aeba9::t_6bf8bb3a4b3adb 1-23
+website/docs/components/progressors-and-charts/sectioned-progress-bar/_category_.json
+  s_54bf5f254aeba9::t_3ecfb4c56b7399 1-4
+website/docs/components/progressors-and-charts/specs-bar-chart/content.mdx
+  s_54bf5f254aeba9::t_cfe5581727c292 1-15
+website/docs/components/progressors-and-charts/pie-chart/change-log.mdx
+  s_54bf5f254aeba9::t_5c184aa4c733d7 1-23
+website/docs/components/progressors-and-charts/sectioned-progress-bar/change-log.mdx
+  s_54bf5f254aeba9::t_43ac434e58d503 1-23
+website/docs/components/progressors-and-charts/stepper/change-log.mdx
+  s_54bf5f254aeba9::t_5dd2cfd48e7529 1-23
+website/docs/components/progressors-and-charts/pie-chart/_category_.json
+  s_54bf5f254aeba9::t_a9f96623d7ea41 1-4
+website/docs/components/progressors-and-charts/specs-bar-chart/guidelines.mdx
+  s_54bf5f254aeba9::t_5d1fe7b71c12f5 1-29
+website/docs/components/progressors-and-charts/sectioned-progress-bar/guidelines.mdx
+  s_54bf5f254aeba9::t_eb8e99f36e3167 1-29
+website/docs/components/progressors-and-charts/pie-chart/code-web.mdx
+  s_54bf5f254aeba9::t_3aa3d2ae5b4628 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "ed114d53e9998e594e3f18d5023293c8ff8d02e5",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

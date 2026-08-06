@@ -1,0 +1,45 @@
+website/tina/config.ts
+  s_54bf5f254aeba9::t_233a0d49ae17a7 1-4,6-7,9-12,14-59
+  s_54bf5f254aeba9::t_2e039746fda1cc 5,8,13
+website/cms/next-env.d.ts
+  s_54bf5f254aeba9::t_73ff14782a21a2 1-5
+website/package.json
+  s_54bf5f254aeba9::t_2268d74583beb7 22,26-27
+website/cms/.gitignore
+  s_54bf5f254aeba9::t_49af21b19e9a1b 1-7
+website/cms/package.json
+  s_54bf5f254aeba9::t_517f3b112b44e1 1-10,14-16,18-19
+  s_54bf5f254aeba9::t_73ff14782a21a2 11-13,17
+website/cms/pages/[[...slug]].tsx
+  s_54bf5f254aeba9::t_d684759b781afc 2,4-8,10
+  s_54bf5f254aeba9::t_d94e5651c7308b 1,3,9,11
+website/cms/pages/_app.tsx
+  s_54bf5f254aeba9::t_a851efdc9e8d49 1-5
+website/.env.local.example
+  s_54bf5f254aeba9::t_f03ce9811fca86 1-2
+website/cms/next.config.js
+  s_54bf5f254aeba9::t_c17c65a12163b5 1-6
+website/cms/tsconfig.json
+  s_54bf5f254aeba9::t_fa238e02d4d747 1-3,9-20,26,35
+  s_54bf5f254aeba9::t_73ff14782a21a2 4-8,21-25,27-34
+website/cms/tina/config.ts
+  s_54bf5f254aeba9::t_92c9d9490cfe10 1-136
+website/cms/package-lock.json
+  s_54bf5f254aeba9::t_d6f87d6509827d 1-14803
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "7a65db630908c4b6e1e68150ef9501db4d49dd4e",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

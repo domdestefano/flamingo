@@ -1,0 +1,46 @@
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_e1e2b8dc7af663 367-422
+website/docs/components/content-display-and-lists/expandable-list/guidelines.mdx
+  s_54bf5f254aeba9::t_65d630ed551d16 1-38
+website/docs/components/content-display-and-lists/expandable-list/change-log.mdx
+  s_54bf5f254aeba9::t_eaeb87377955a2 1-23
+website/docs/components/content-display-and-lists/leading-list/_category_.json
+  s_54bf5f254aeba9::t_5b5fc1703e01e2 1-4
+website/docs/components/content-display-and-lists/expandable-list/code-web.mdx
+  s_54bf5f254aeba9::t_6215178b56a962 1-43
+website/docs/components/content-display-and-lists/expandable-list/content.mdx
+  s_54bf5f254aeba9::t_09ee020be6e9d5 1-19
+website/docs/components/content-display-and-lists/leading-list/guidelines.mdx
+  s_54bf5f254aeba9::t_58a08c12c8c5d0 25,27
+  s_54bf5f254aeba9::t_0847f16bc1a57c 1-24,26,28-38
+website/docs/components/content-display-and-lists/_category_.json
+  s_54bf5f254aeba9::t_8e9c44c02c38af 1-4
+website/docs/components/content-display-and-lists/leading-list/code-web.mdx
+  s_54bf5f254aeba9::t_87812bf04d1efa 1-33
+website/docs/components/content-display-and-lists/expandable-list/overview.mdx
+  s_54bf5f254aeba9::t_d9f4d84f81bdf2 1-30
+website/docs/components/content-display-and-lists/expandable-list/_category_.json
+  s_54bf5f254aeba9::t_e9ae10ab27b530 1-4
+website/docs/components/content-display-and-lists/leading-list/change-log.mdx
+  s_54bf5f254aeba9::t_1649fae637371c 1-23
+website/docs/components/content-display-and-lists/leading-list/overview.mdx
+  s_54bf5f254aeba9::t_65434d73466ee7 1-30
+website/docs/components/content-display-and-lists/leading-list/content.mdx
+  s_54bf5f254aeba9::t_91307ed3ef7fe3 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d230a4d2ee3e0ac904c2c04852609d04bf0fe3ab",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+website/docs/components/buttons/secondary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_0c3bccaa034220 23-28
+website/docs/components/buttons/primary-button/overview.mdx
+  s_54bf5f254aeba9::t_a63f799ca93a71 91,93-95
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_8a2cd4a1a59348 48,50-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "5c974f5bee765a8c060d81ce642a5f8a9587aa31",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

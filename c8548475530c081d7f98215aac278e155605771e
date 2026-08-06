@@ -1,0 +1,41 @@
+website/docs/components/buttons/primary-button/overview.mdx
+  s_54bf5f254aeba9::t_e94aabf90945b1 1-100
+website/docs/components/buttons/primary-button/_category_.json
+  s_54bf5f254aeba9::t_a04a259b602237 1-4
+website/docs/components/buttons/primary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_65da4ed9f3eb0e 1-75
+website/src/components/ComponentDocs/ComponentImage.tsx
+  s_54bf5f254aeba9::t_d4c71ce9c9d278 1-9
+website/docs/components/buttons/primary-button/code-web.mdx
+  s_54bf5f254aeba9::t_5d4f81142a6be0 1-75
+website/src/components/ComponentDocs/shared.tsx
+  s_54bf5f254aeba9::t_55ff3ff85f9e7c 1-142
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_24311c1ca5bed8 123
+website/docs/components/buttons/primary-button/content.mdx
+  s_54bf5f254aeba9::t_1bd5555227b02d 1-42
+website/docs/components/buttons/primary-button/change-log.mdx
+  s_54bf5f254aeba9::t_ad1f73feda617b 1-45
+website/src/components/ComponentDocs/styles.module.css
+  s_54bf5f254aeba9::t_5e2c233ecba0c2 1-18
+website/docs/components/buttons/_category_.json
+  s_54bf5f254aeba9::t_a415ea8a5c31cc 1-4
+website/src/components/StorybookEmbed.tsx
+  s_54bf5f254aeba9::t_b0e32a6243c7b5 19-25,35,40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c8548475530c081d7f98215aac278e155605771e",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

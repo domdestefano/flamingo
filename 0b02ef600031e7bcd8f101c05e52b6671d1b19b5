@@ -1,0 +1,62 @@
+website/src/pages/markdown-page.mdx
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-7
+website/.github/workflows/deploy.yml
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-60
+website/static/img/undraw_docusaurus_react.svg
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-170
+website/package.json
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-49
+website/static/img/undraw_docusaurus_mountain.svg
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-171
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_2dd983bf552122 80
+  s_54bf5f254aeba9::t_0cad2df0627a48 25-28
+  s_54bf5f254aeba9::t_0d10764f73e971 48
+  s_54bf5f254aeba9::t_0f442a1b693013 22-24
+  s_54bf5f254aeba9::t_8c6c9625278afc 29-31,45-47
+  s_54bf5f254aeba9::t_adf28500b83eae 49-51,77-79
+  s_54bf5f254aeba9::t_506ea0bb9ad4d8 81-83
+website/src/pages/index.tsx
+  s_54bf5f254aeba9::t_ba1bb834fc787f 23-24
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-22,25-44
+website/tsconfig.json
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-12
+website/README.md
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-43
+website/src/components/StorybookEmbed.tsx
+  s_54bf5f254aeba9::t_a7d23b964122b9 22
+  s_54bf5f254aeba9::t_6449519520156d 19-21
+  s_54bf5f254aeba9::t_879b3ed49ebc81 23-25
+website/src/components/HomepageFeatures/index.tsx
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-71
+website/src/css/custom.css
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-30
+website/.gitignore
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-20
+.github/workflows/deploy.yml
+  s_54bf5f254aeba9::t_da13f932433e7d 1-53
+website/src/components/HomepageFeatures/styles.module.css
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-11
+website/static/img/undraw_docusaurus_tree.svg
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-40
+website/src/pages/index.module.css
+  s_54bf5f254aeba9::t_2bc927c55453bc 1-23
+website/static/img/logo.svg
+  s_54bf5f254aeba9::t_2bc927c55453bc 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "0b02ef600031e7bcd8f101c05e52b6671d1b19b5",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

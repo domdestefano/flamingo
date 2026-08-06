@@ -1,0 +1,23 @@
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_1cdf3f3b824109 178-184
+website/docs/components/buttons/primary-button/overview.mdx
+  s_54bf5f254aeba9::t_457aef8b616743 96-103
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_f3f8c702ffc664 45-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "76e3432ee52204111c39ff0733794050de46950e",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

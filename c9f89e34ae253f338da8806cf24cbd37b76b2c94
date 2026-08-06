@@ -1,0 +1,53 @@
+website/docs/tokens/colours/illustration.mdx
+  s_54bf5f254aeba9::t_9d65cc8a6c6d9b 3
+website/docs/tokens/colours/overlay.mdx
+  s_54bf5f254aeba9::t_e178fc8649bd9c 1-10
+website/docs/tokens/typography/font-size.mdx
+  s_54bf5f254aeba9::t_3332317f7b1c5c 3
+website/docs/tokens/colours/transparent.mdx
+  s_54bf5f254aeba9::t_a3634e74a388ec 3
+website/docs/tokens/colours/shadow.mdx
+  s_54bf5f254aeba9::t_2315001dbcc478 1-10
+website/docs/tokens/typography/text-styles.mdx
+  s_54bf5f254aeba9::t_132451ff6fc943 1-10
+website/src/components/DesignTokens/ColourSections.tsx
+  s_54bf5f254aeba9::t_7905f593714f6d 82-108
+  s_54bf5f254aeba9::t_b1563a4f99ab80 326-347
+website/docs/tokens/typography/line-height.mdx
+  s_54bf5f254aeba9::t_f37a09e386e78b 3
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_cf050bf8ac7206 38-58
+website/src/components/DesignTokens/Typography.tsx
+  s_54bf5f254aeba9::t_78c3c0e2225bb9 48-242
+website/src/css/custom.css
+  s_54bf5f254aeba9::t_4392775b64b1e2 12-13
+website/docs/tokens/typography/font-family.mdx
+  s_54bf5f254aeba9::t_91aa8633f5dbef 1-10
+website/docs/tokens/typography/letter-spacing.mdx
+  s_54bf5f254aeba9::t_3508e8df7d144f 3
+website/docs/tokens/typography/paragraph-spacing.mdx
+  s_54bf5f254aeba9::t_aded0047275af2 3
+website/docs/tokens/typography/list-spacing.mdx
+  s_54bf5f254aeba9::t_141dd46f384dad 3
+website/src/css/tokens.css
+  s_54bf5f254aeba9::t_0eb1081363e53c 182-222
+scripts/generate-token-css.js
+  s_54bf5f254aeba9::t_5b3c9839fea4ae 84-111,116-117
+  s_54bf5f254aeba9::t_af4e0e7c216f2e 169-170
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c9f89e34ae253f338da8806cf24cbd37b76b2c94",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
