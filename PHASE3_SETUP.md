@@ -21,17 +21,15 @@ restriction. That split is why tokens and images are synced differently:
 - **Output:** `website/tokens/*.json`, `website/src/css/tokens.css`.
 - Full instructions: [`scripts/README-tokens.md`](scripts/README-tokens.md).
 
-### 2. Component/token reference images — fully automated
+### 2. Component/token reference images — on-demand
 
 - **Source of truth:** `scripts/figma-images.json` — maps a Figma frame
   (fileKey + nodeId) to a local image path.
-- **Sync:** `scripts/sync-figma-images.js`, run by
-  `.github/workflows/sync-figma-images.yml`:
-  - Daily, automatically.
-  - Immediately, when `scripts/figma-images.json` changes on `main`.
-  - On demand, via "Run workflow" in the Actions tab.
-- Opens a PR only when a registered frame's rendered output actually
-  changed — review the visual diff, then merge.
+- **Sync:** `scripts/sync-figma-images.js`, run manually (`node
+  scripts/sync-figma-images.js`) whenever screenshots need refreshing.
+  Previously ran on a daily cron via `.github/workflows/sync-figma-images.yml`,
+  removed to stop unattended daily GitHub Actions runs — re-add that
+  workflow if automatic syncing is wanted again.
 - Full instructions, including how to register a new screen:
   [`scripts/README-figma-images.md`](scripts/README-figma-images.md).
 
@@ -47,39 +45,14 @@ too: it only *drafts* prose suggestions for review, never edits them in place.
 
 ---
 
-## Phase 4: Agentic doc sync — fully automated drift check
+## Phase 4: Agentic doc sync — removed
 
-`.github/workflows/agentic-doc-sync.yml` runs headless Claude Code nightly
-(04:40 UTC, ahead of the image sync), on every PR merged into `main`, and
-on demand. It re-checks **every** documented component against its Figma
-spec frame — the automated counterpart to the `/flamingo-sync-component`
-command in the `rider-design` repo, looped over the whole site instead of
-one component at a time.
-
-- **Directly edits**: verifiable/structural drift only — anatomy list
-  order (cross-checked against Figma badge positions, never guessed),
-  properties tables, stale/missing screenshots (registers them into
-  `scripts/figma-images.json` and re-runs `sync-figma-images.js`), missing
-  Do/Don't or Caution sections.
-- **Never directly edits guideline prose** — instead drafts suggested text
-  changes into `DOC_SYNC_SUGGESTIONS.md` at the repo root, included in the
-  PR body for a human to review and apply.
-- **Never fabricates** the Content or Change log pages, which have no
-  Figma source.
-- Opens a PR only if something actually changed (same `git diff` gate as
-  the image sync) — never pushes to `main` directly. Review the PR like any
-  other; there's no separate chat notification, so keep an eye on the repo's
-  PR list (or watch the repo/subscribe to the Actions workflow) to notice
-  when it runs.
-- Full prompt: [`.github/scripts/doc-sync-prompt.md`](.github/scripts/doc-sync-prompt.md).
-
-### Additional setup requirements for Phase 4
-
-- **GitHub secret `ANTHROPIC_API_KEY`** — used to run Claude Code headlessly
-  in CI. (The DH internal LiteLLM gateway used by some Figma plugins here
-  isn't reachable from a hosted Actions runner — it's a localhost-only
-  tunnel — so this workflow authenticates directly against the Anthropic
-  API instead.)
+`.github/workflows/agentic-doc-sync.yml` used to run headless Claude Code
+nightly (04:40 UTC) plus on every PR merge into `main`, re-checking every
+documented component against its Figma spec frame. It's been removed to stop
+unattended nightly GitHub Actions/Anthropic API usage — use the
+`/flamingo-sync-component` command in the `rider-design` repo to re-check a
+component on demand instead, one at a time.
 
 ---
 
@@ -90,7 +63,7 @@ one component at a time.
   secrets.
 - **Workflow permissions** — Settings → Actions → General → Workflow
   permissions must allow "Read and write" + "Allow GitHub Actions to create
-  and approve pull requests", since all three sync workflows open PRs.
+  and approve pull requests", since the token-sync workflow opens PRs.
 
 ---
 
@@ -98,19 +71,15 @@ one component at a time.
 
 ```
 flamingo/
-├── .mcp.json                       # Figma MCP server config for the Phase 4 agent
+├── .mcp.json                       # Figma MCP server config for on-demand doc sync
 ├── .github/
-│   ├── workflows/
-│   │   ├── sync-tokens.yml            # Regenerates website/tokens/*.json + tokens.css
-│   │   ├── sync-figma-images.yml      # Daily + on-change image sync
-│   │   ├── agentic-doc-sync.yml       # Phase 4 — nightly/PR-merge content drift check
-│   │   └── deploy.yml                 # Site build & deploy
-│   └── scripts/
-│       └── doc-sync-prompt.md         # Instructions given to the Phase 4 agent
+│   └── workflows/
+│       ├── sync-tokens.yml            # Regenerates website/tokens/*.json + tokens.css
+│       └── deploy.yml                 # Site build & deploy
 ├── scripts/
 │   ├── transform-figma-tokens.js  # tokens-source/** -> website/tokens/*.json
 │   ├── generate-token-css.js      # website/tokens/*.json -> tokens.css
-│   ├── sync-figma-images.js       # figma-images.json -> static/img/**
+│   ├── sync-figma-images.js       # figma-images.json -> static/img/** (run manually)
 │   ├── figma-images.json          # image registry (see README-figma-images.md)
 │   ├── README-tokens.md
 │   └── README-figma-images.md
