@@ -1,6 +1,5 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
@@ -17,14 +16,6 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/components/buttons/primary-button/overview">
-            Browse Components
-          </Link>
-          <Link className="button button--outline button--secondary button--lg" to="/getting-started/team-and-comms">
-            Getting Started
-          </Link>
-        </div>
       </div>
     </header>
   );

@@ -20,6 +20,9 @@
   justify-content: center;
   padding: 2rem;
   margin: 1.5rem 0;
+  background: #ffffff;
+  border: var(--flamingo-border01) solid var(--flamingo-site-primary-main);
+  border-radius: var(--flamingo-corner-radius03);
 }
 
 .componentImage {
