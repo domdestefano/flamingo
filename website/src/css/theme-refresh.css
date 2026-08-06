@@ -56,6 +56,18 @@
   word-wrap: break-word;
 }
 
+/* Only the sidebar gets a tinted background — the main content area stays
+   Infima's default white/dark so docs content doesn't compete with the
+   brand tint. theme-doc-sidebar-container is a documented, stable
+   Docusaurus ThemeClassNames constant. */
+.theme-doc-sidebar-container {
+  background: var(--flamingo-site-primary-light04);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: var(--flamingo-color-neutral05);
+}
+
 .markdown table th {
   background: var(--ifm-color-emphasis-100);
 }

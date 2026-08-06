@@ -80,7 +80,6 @@ const config: Config = {
   themeConfig: {
     image: 'img/flamingo-social-card.jpg',
     navbar: {
-      title: 'Flamingo',
       logo: {
         alt: 'Flamingo Design System',
         src: 'img/flamingo-logo.png',
@@ -104,26 +103,7 @@ const config: Config = {
           position: 'left',
           label: 'Tokens',
         },
-        {
-          href: 'https://github.com/deliveryhero/flamingo',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Design System',
-          items: [
-            { label: 'Components', to: '/components/buttons/primary-button/overview' },
-            { label: 'Guidelines', to: '/guidelines/getting-started' },
-            { label: 'Tokens', to: '/tokens/overview' },
-          ],
-        },
-      ],
-      copyright: `© ${new Date().getFullYear()} Delivery Hero SE — Flamingo Design System.`,
     },
     prism: {
       theme: prismThemes.github,

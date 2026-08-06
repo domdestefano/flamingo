@@ -15,7 +15,7 @@ export default function ComponentImage({
 }) {
   const url = useBaseUrl(src);
   return (
-    <div className={`${styles.componentImageFrame} flamingo-card flamingo-checkerboard`}>
+    <div className={styles.componentImageFrame}>
       <img
         src={url}
         alt={alt}

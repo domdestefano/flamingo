@@ -8,7 +8,7 @@ function Thumbnail({ item }: { item: (typeof galleryCategories)[number]['items']
   const imageUrl = useBaseUrl(item.image ?? '');
   return (
     <Link to={item.href} className={styles.card}>
-      <div className={`${styles.thumbnail} flamingo-checkerboard`}>
+      <div className={styles.thumbnail}>
         {item.image ? (
           <img src={imageUrl} alt={item.title} loading="lazy" />
         ) : (

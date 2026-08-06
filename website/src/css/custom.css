@@ -7,42 +7,56 @@
 @import './tokens.css';
 @import './theme-refresh.css';
 
-/* Map Flamingo design tokens onto Infima's theme variables so the site
-   reflects the actual brand palette instead of Docusaurus defaults. */
+/* Site chrome (navbar, sidebar accents, links, tab indicators, hero) always
+   uses these fixed Roadrunner-based colours, regardless of whichever brand
+   is selected via BrandSwitcher — the brand switcher previews *content*
+   (token swatches, live Storybook embeds), it must never restyle the site
+   itself. Values copied from tokens.css's [data-brand='roadrunner'] block
+   (that file is auto-generated and reactive to data-brand, so we can't
+   reference it directly here — these are deliberately static). */
+:root {
+  --flamingo-site-primary-main: #3F47CF;
+  --flamingo-site-primary-dark02: #232783;
+  --flamingo-site-primary-light01: #6D80DC;
+  --flamingo-site-primary-light02: #A3B1E9;
+  --flamingo-site-primary-light04: #CDD8FF;
+  --flamingo-site-secondary-main: #FF0061;
+}
+
+[data-theme='dark'] {
+  --flamingo-site-primary-main: #A3B1E9;
+  --flamingo-site-primary-dark02: #CDD8FF;
+  --flamingo-site-primary-light01: #6D80DC;
+  --flamingo-site-primary-light02: #3F47CF;
+  --flamingo-site-primary-light04: #232783;
+  --flamingo-site-secondary-main: #FF7893;
+}
+
+/* Map the fixed site-chrome colours onto Infima's theme variables. */
 :root {
   --ifm-font-family-base: 'Noto Sans', sans-serif;
   --ifm-heading-font-family: 'Noto Sans', sans-serif;
-  --ifm-color-primary: var(--flamingo-primary-main);
-  --ifm-color-primary-dark: var(--flamingo-primary-dark02);
-  --ifm-color-primary-darker: var(--flamingo-primary-dark02);
-  --ifm-color-primary-darkest: var(--flamingo-primary-dark02);
-  --ifm-color-primary-light: var(--flamingo-primary-light01);
-  --ifm-color-primary-lighter: var(--flamingo-primary-light02);
-  --ifm-color-primary-lightest: var(--flamingo-primary-light04);
+  --ifm-color-primary: var(--flamingo-site-primary-main);
+  --ifm-color-primary-dark: var(--flamingo-site-primary-dark02);
+  --ifm-color-primary-darker: var(--flamingo-site-primary-dark02);
+  --ifm-color-primary-darkest: var(--flamingo-site-primary-dark02);
+  --ifm-color-primary-light: var(--flamingo-site-primary-light01);
+  --ifm-color-primary-lighter: var(--flamingo-site-primary-light02);
+  --ifm-color-primary-lightest: var(--flamingo-site-primary-light04);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  /* The site read as very stark/all-white — give the page body a faint
-     brand-tinted background while cards/tables/navbar stay white, so
-     content still pops via contrast instead of everything blending together. */
-  --ifm-background-color: var(--flamingo-primary-light04);
-  --ifm-background-surface-color: #ffffff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: var(--flamingo-primary-main);
-  --ifm-color-primary-dark: var(--flamingo-primary-light01);
-  --ifm-color-primary-darker: var(--flamingo-primary-light01);
-  --ifm-color-primary-darkest: var(--flamingo-primary-light02);
-  --ifm-color-primary-light: var(--flamingo-primary-dark02);
-  --ifm-color-primary-lighter: var(--flamingo-primary-dark02);
-  --ifm-color-primary-lightest: var(--flamingo-primary-dark02);
+  --ifm-color-primary: var(--flamingo-site-primary-main);
+  --ifm-color-primary-dark: var(--flamingo-site-primary-light01);
+  --ifm-color-primary-darker: var(--flamingo-site-primary-light01);
+  --ifm-color-primary-darkest: var(--flamingo-site-primary-light02);
+  --ifm-color-primary-light: var(--flamingo-site-primary-dark02);
+  --ifm-color-primary-lighter: var(--flamingo-site-primary-dark02);
+  --ifm-color-primary-lightest: var(--flamingo-site-primary-dark02);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  /* primary-light04 is a saturated accent colour in dark mode (meant for
-     small highlights), too bold for a full-page background — use a neutral
-     tint instead, same idea as light mode's pale pink but desaturated. */
-  --ifm-background-color: var(--flamingo-color-neutral05);
-  --ifm-background-surface-color: var(--flamingo-color-neutral00);
 }
 
 .flamingo-brand-switcher {
