@@ -1,0 +1,54 @@
+/**
+ * Visual refresh layer on top of tokens.css (which is auto-generated and
+ * must stay hand-edit-free — see its own header comment). Composes the raw
+ * design tokens into things the default Infima theme doesn't provide out of
+ * the box: an elevation/shadow scale, a border-color token, and a shared
+ * card utility used across component docs, tables, and the homepage.
+ */
+
+:root {
+  --flamingo-border-color: var(--flamingo-color-neutral20);
+  --flamingo-shadow-sm: 0 1px 2px var(--flamingo-color-shadow-heavy);
+  --flamingo-shadow-md: 0 4px 12px var(--flamingo-color-shadow-heavy);
+  --flamingo-shadow-lg: 0 8px 24px var(--flamingo-color-shadow-light);
+}
+
+.flamingo-card {
+  border: var(--flamingo-border01) solid var(--flamingo-border-color);
+  border-radius: var(--flamingo-corner-radius03);
+  box-shadow: var(--flamingo-shadow-sm);
+  background: var(--ifm-background-surface-color);
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.flamingo-card:hover {
+  box-shadow: var(--flamingo-shadow-md);
+}
+
+/* A subtle checkerboard behind live/rendered visuals (component screenshots,
+   Storybook embeds), signalling "this is a real rendered asset" rather than
+   flat page background — the same visual cue atlassian.design uses for its
+   live component examples. */
+.flamingo-checkerboard {
+  background-image:
+    linear-gradient(45deg, var(--flamingo-color-neutral05) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--flamingo-color-neutral05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--flamingo-color-neutral05) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--flamingo-color-neutral05) 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+}
+
+/* Markdown tables (props tables, availability table, changelog table, plain
+   prose tables) — Infima's defaults render these with no border/radius/
+   shadow at all. */
+.markdown table {
+  border: var(--flamingo-border01) solid var(--flamingo-border-color);
+  border-radius: var(--flamingo-corner-radius03);
+  box-shadow: var(--flamingo-shadow-sm);
+  overflow: hidden;
+}
+
+.markdown table th {
+  background: var(--ifm-color-emphasis-100);
+}

@@ -5,6 +5,7 @@
  */
 
 @import './tokens.css';
+@import './theme-refresh.css';
 
 /* Map Flamingo design tokens onto Infima's theme variables so the site
    reflects the actual brand palette instead of Docusaurus defaults. */
@@ -36,11 +37,22 @@
 
 .flamingo-brand-switcher {
   margin-right: 0.5rem;
-  padding: 0.3rem 0.5rem;
-  border-radius: var(--ifm-button-border-radius);
-  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--flamingo-corner-radius02);
+  border: var(--flamingo-border01) solid var(--flamingo-border-color);
   background: var(--ifm-navbar-background-color);
   color: var(--ifm-navbar-link-color);
   font-size: 0.85rem;
   cursor: pointer;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.flamingo-brand-switcher:hover {
+  border-color: var(--flamingo-primary-main);
+}
+
+.flamingo-brand-switcher:focus-visible {
+  outline: none;
+  border-color: var(--flamingo-primary-main);
+  box-shadow: 0 0 0 3px var(--flamingo-primary-light04);
 }
