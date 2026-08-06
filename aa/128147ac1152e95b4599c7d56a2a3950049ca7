@@ -1,0 +1,78 @@
+website/docs/components/about/component-status.mdx
+  s_54bf5f254aeba9::t_aecdc40c6264cb 1-42
+website/docs/components/loaders/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/buttons/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/about/_category_.json
+  s_54bf5f254aeba9::t_192802ac078492 1-2,4
+  s_54bf5f254aeba9::t_c794dea57e89d2 3
+website/docs/components/navigation/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/assets/_category_.json
+  s_54bf5f254aeba9::t_20fcfa1d0aae23 1-4
+website/docs/components/assets/graphic-blocks/code-web.mdx
+  s_54bf5f254aeba9::t_fd5c2ac1d12be9 1-32
+website/docs/components/assets/graphic-blocks/overview.mdx
+  s_54bf5f254aeba9::t_d431e91dd0ad81 1-73
+website/docs/components/assets/animations/overview.mdx
+  s_54bf5f254aeba9::t_2910ec240691a6 1-82
+website/docs/components/assets/icons/content.mdx
+  s_54bf5f254aeba9::t_a23399ac35d865 1-51
+website/docs/components/form/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/content-display-and-lists/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/layout/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/assets/graphic-blocks/guidelines.mdx
+  s_54bf5f254aeba9::t_c56d22127264c9 1-64
+website/docs/components/assets/graphic-blocks/content.mdx
+  s_54bf5f254aeba9::t_137385f802f982 1-51
+website/docs/components/assets/graphic-blocks/_category_.json
+  s_54bf5f254aeba9::t_a2da9cf68756ed 1-4
+website/docs/components/assets/animations/_category_.json
+  s_54bf5f254aeba9::t_93630cda34a5cb 1-4
+website/docs/components/assets/icons/guidelines.mdx
+  s_54bf5f254aeba9::t_dd7a68334739c8 1-60
+website/docs/components/assets/icons/code-web.mdx
+  s_54bf5f254aeba9::t_cacd5892760244 1-29
+website/docs/components/feedback/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/assets/icons/change-log.mdx
+  s_54bf5f254aeba9::t_0f70c90c1126b0 1-21
+website/docs/components/assets/animations/change-log.mdx
+  s_54bf5f254aeba9::t_ddcb8a9a2a0ca5 1-21
+website/docs/components/assets/icons/_category_.json
+  s_54bf5f254aeba9::t_65e011078da7af 1-4
+website/docs/components/assets/animations/guidelines.mdx
+  s_54bf5f254aeba9::t_734e83896c65be 1-66
+website/docs/components/overlay/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/assets/animations/content.mdx
+  s_54bf5f254aeba9::t_fb1cebfeff8708 1-40
+website/docs/components/assets/graphic-blocks/change-log.mdx
+  s_54bf5f254aeba9::t_cd92dec0231f21 1-21
+website/docs/components/progressors-and-charts/_category_.json
+  s_54bf5f254aeba9::t_5092a6da97b4ca 3
+website/docs/components/assets/icons/overview.mdx
+  s_54bf5f254aeba9::t_c13b70caaaf1cd 1-66
+website/docs/components/about/component-gallery-apps.mdx
+  s_54bf5f254aeba9::t_97c5bf75c98fc3 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "aa128147ac1152e95b4599c7d56a2a3950049ca7",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
