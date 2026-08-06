@@ -1,0 +1,41 @@
+website/docs/components/assets/animations/overview.mdx
+  s_54bf5f254aeba9::t_9fe3f3b4d6fab0 10
+  s_54bf5f254aeba9::t_bf8036874862cc 27-28
+  s_54bf5f254aeba9::t_ca416821f80c2e 55-56
+website/docs/components/assets/graphic-blocks/overview.mdx
+  s_54bf5f254aeba9::t_d706d5ae29c3ef 52-53
+  s_54bf5f254aeba9::t_1a8d310ed2a97e 10
+  s_54bf5f254aeba9::t_425b143abf9564 27-28
+website/docs/components/assets/graphic-blocks/guidelines.mdx
+  s_54bf5f254aeba9::t_f17a974eb70d41 54,56
+  s_54bf5f254aeba9::t_b8486aab8b63df 42,44
+  s_54bf5f254aeba9::t_06747b81c1ec7f 66,68
+website/docs/components/assets/animations/guidelines.mdx
+  s_54bf5f254aeba9::t_f02f1e519ffe50 56,58
+  s_54bf5f254aeba9::t_46fdef64ed49a8 68,70
+  s_54bf5f254aeba9::t_4df393556a0d86 44,46
+website/docs/components/assets/icons/guidelines.mdx
+  s_54bf5f254aeba9::t_4efb4520cd4829 39,41
+  s_54bf5f254aeba9::t_997d24915a239f 50,52
+  s_54bf5f254aeba9::t_1da031be7da951 62,64
+website/docs/components/assets/icons/overview.mdx
+  s_54bf5f254aeba9::t_9e763b27d23196 27-28
+  s_54bf5f254aeba9::t_9981441736ae74 56-57
+  s_54bf5f254aeba9::t_08d49aacb868ae 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "71148b35d1dbfa621a4bd6be6e7c8b481bd61106",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
