@@ -213,10 +213,15 @@ export default defineConfig({
                   },
                 ],
               },
+              // GraphQL forbids a zero-field input type, so each of these
+              // otherwise-propless components needs at least one field —
+              // this one is inert, purely to satisfy that constraint.
               ...ZERO_PROP_TOKEN_COMPONENTS.map((name) => ({
                 name,
                 label: name,
-                fields: [],
+                fields: [
+                  { type: "string", name: "_unused", label: "(no editable properties)" },
+                ],
               })),
             ],
           },
