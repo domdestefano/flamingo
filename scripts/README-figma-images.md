@@ -2,9 +2,9 @@
 
 Every screenshot/diagram pulled from Figma into this site (corner radius use
 cases, typography examples, component anatomy diagrams, etc.) is tracked in
-`scripts/figma-images.json` and kept up to date automatically.
+`scripts/figma-images.json` and kept up to date via an on-demand script.
 
-## How the automation works
+## How it works
 
 - **`scripts/figma-images.json`** — the source of truth. Each entry maps one
   Figma frame (`fileKey` + `nodeId`) to one local file path.
@@ -12,16 +12,13 @@ cases, typography examples, component anatomy diagrams, etc.) is tracked in
   standard image-rendering API (`GET /v1/images/:file_key`) to re-download
   each frame as a PNG. This is the regular file API, not the Variables API,
   so — unlike design tokens — it works without an Enterprise Figma plan and
-  needs no manual export step.
-- **`.github/workflows/sync-figma-images.yml`** — runs the script:
-  - **Daily**, automatically, so screenshots never drift far from Figma.
-  - **Immediately**, whenever `scripts/figma-images.json` changes on `main`
-    (see below).
-  - **On demand**, via "Run workflow" in the Actions tab.
+  needs no manual export step. Run it manually whenever screenshots need
+  refreshing: `node scripts/sync-figma-images.js`.
 
-  If the re-rendered image differs from what's committed, it opens a PR so
-  a human reviews the visual diff before it goes live — nothing publishes
-  silently.
+  There used to be a daily-cron GitHub Actions workflow running this
+  automatically; it was removed to stop unattended nightly runs. Re-add
+  `.github/workflows/sync-figma-images.yml` if automatic syncing is wanted
+  again — review the re-rendered images before committing either way.
 
 ## Adding a new screen
 
@@ -75,11 +72,4 @@ Instead, when a rule changes or is added in Figma:
    page so far.
 
 This keeps rule text deliberate and reviewed, while screenshots stay
-mechanically fresh without anyone remembering to re-export them.
-
-`.github/workflows/agentic-doc-sync.yml` (see `PHASE3_SETUP.md`) respects
-this too: its nightly/PR-merge run only *drafts* suggested prose changes
-into `DOC_SYNC_SUGGESTIONS.md` for human review — it never edits guideline
-text in place. It does directly fix things that don't need editorial
-judgement (anatomy order, properties tables, stale screenshots), the same
-category of change this file already automates for images.
+mechanically fresh via the on-demand script above.
