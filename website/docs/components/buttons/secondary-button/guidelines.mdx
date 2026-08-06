@@ -1,7 +1,7 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [button, secondary, guidelines]
 ---
 
@@ -37,9 +37,29 @@ primary button. It signals "this matters, but less than the primary action."
   dontText="Don't stack two secondary buttons without a primary button paired to them — with nothing anchoring the hierarchy, neither one reads as the preferred choice."
 />
 
+### Multiple-use on the screen
+
+Secondary buttons should be used once on a screen as they represent the secondary actions of the
+screen. It is quite rare to find secondary actions of equal importance. In most cases, you should
+pair it with a primary action or tertiary.
+
+<CautionTable
+  text="Be careful when you pair secondary action with secondary actions as it might confuse the user on which is more important. Use it only when they are equally important."
+/>
+
 ### Caution: repetition
 
 <CautionTable
   image="/img/components/secondary-button/secondary-button-repetition-caution.png"
   text={<>Avoid using several secondary buttons in a row for similar, repeated actions — at that point none of them reads as more important than the others, which defeats the purpose of a "medium emphasis" button. Consider a list or menu pattern instead.</>}
+/>
+
+### Resizing
+
+Buttons can resize horizontally based on the content. Not vertically. Primary and Secondary buttons
+in Flamingo do not support multi-lines.
+
+<DoDontTable
+  doText="Buttons only resize horizontally and use as few words as possible in sentence case."
+  dontText="Buttons do not resize vertically. Make sure to also check translations when in doubt."
 />

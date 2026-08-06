@@ -1,7 +1,7 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web, ios, android]
 category: buttons
 figma_node: '40000182:6414'
@@ -14,11 +14,18 @@ import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 import StorybookEmbed from '@site/src/components/StorybookEmbed';
 
-# Secondary button <StatusBadge status="stable" />
+# Secondary button <StatusBadge status="in-progress" />
 
 Indicate a supporting action on a screen.
 
 <ComponentTabs basePath="/components/buttons/secondary-button" />
+
+:::warning
+**Last update:** March 2026
+
+**Component available, but** ⚠️ **the latest design updates still need to be
+implemented**
+:::
 
 <AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
@@ -46,6 +53,7 @@ in general, used for actions that are somewhat important.
 | Property | Details |
 | --- | --- |
 | Size | Use according to the relevance of the action on the page — the same two sizes as the primary button. |
+| State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. |
 | Inverse | Use the inverse property only for darker-coloured backgrounds, e.g. an image or a dark section of the UI, so the button stays legible. |
 | Icon | (Optional) Ability to add an icon left or right of the text. |
 
