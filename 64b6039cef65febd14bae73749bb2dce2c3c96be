@@ -1,0 +1,62 @@
+website/docs/components/navigation/tabs/guidelines.mdx
+  s_54bf5f254aeba9::t_ed96019426cc23 1-45
+website/docs/components/navigation/content-header/overview.mdx
+  s_54bf5f254aeba9::t_aaa88f3a903786 26,42-43
+  s_54bf5f254aeba9::t_fe5b31f7b894c9 1-25,27-41,44-47
+website/docs/components/navigation/header/overview.mdx
+  s_54bf5f254aeba9::t_4566fbfc0b8e68 1-51
+website/docs/components/navigation/header/change-log.mdx
+  s_54bf5f254aeba9::t_fa11b2eed04c16 1-23
+website/docs/components/navigation/content-header/change-log.mdx
+  s_54bf5f254aeba9::t_7faf8e61729816 1-23
+website/docs/components/navigation/content-header/_category_.json
+  s_54bf5f254aeba9::t_87b2022f5b2971 1-4
+website/docs/components/navigation/tabs/_category_.json
+  s_54bf5f254aeba9::t_9100d9f782684d 1-4
+website/docs/components/navigation/content-header/guidelines.mdx
+  s_54bf5f254aeba9::t_82650e914634fe 1-39
+website/docs/components/navigation/_category_.json
+  s_54bf5f254aeba9::t_94c09ec53aea65 1-4
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_c0bbf6e9b8cf95 892-926
+  s_54bf5f254aeba9::t_885f7e00995e6b 927-968
+  s_54bf5f254aeba9::t_c63cb99cf145a3 969-971,973,975
+  s_54bf5f254aeba9::t_1baca498e2b640 843-891
+  s_54bf5f254aeba9::t_9c7218639dd8df 972,974
+website/docs/components/navigation/tabs/code-web.mdx
+  s_54bf5f254aeba9::t_bd95da1fd45d7a 1-30
+website/docs/components/navigation/content-header/code-web.mdx
+  s_54bf5f254aeba9::t_eb26108a9d257e 1-32
+website/docs/components/navigation/header/guidelines.mdx
+  s_54bf5f254aeba9::t_cc475ef87f319b 1-39
+website/docs/components/navigation/tabs/content.mdx
+  s_54bf5f254aeba9::t_5a889c6461f3b2 1-16
+website/docs/components/navigation/header/content.mdx
+  s_54bf5f254aeba9::t_655d37d62cba98 1-16
+website/docs/components/navigation/tabs/overview.mdx
+  s_54bf5f254aeba9::t_db6bb9ea721934 1-44
+website/docs/components/navigation/header/_category_.json
+  s_54bf5f254aeba9::t_fed70593fc98cb 1-4
+website/docs/components/navigation/content-header/content.mdx
+  s_54bf5f254aeba9::t_681abae2be6298 1-16
+website/docs/components/navigation/tabs/change-log.mdx
+  s_54bf5f254aeba9::t_1099dc067f82ca 1-23
+website/docs/components/navigation/header/code-web.mdx
+  s_54bf5f254aeba9::t_5a444b3cd60a5c 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "64b6039cef65febd14bae73749bb2dce2c3c96be",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

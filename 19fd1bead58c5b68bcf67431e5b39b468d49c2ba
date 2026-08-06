@@ -1,0 +1,29 @@
+scripts/sync-figma-images.js
+  s_54bf5f254aeba9::t_b938452422ecfc 1-124
+.github/workflows/sync-figma-images.yml
+  s_54bf5f254aeba9::t_b1987aa35b3d05 1-56
+scripts/README-figma-images.md
+  s_54bf5f254aeba9::t_7742a41654bce4 1-78
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_9ee1949d1603f2 8,15,22,29,36,43,50,57,64,71,78,85,92
+  s_54bf5f254aeba9::t_756d9475890974 1-7,10-14,17-21,24-28,31-35,38-42,45-49,52-56,59-63,66-70,73-77,80-84,86-91,93-96
+  s_54bf5f254aeba9::t_cd02c25cb2cb47 9,16,23,30,37,44,51,58,65,72,79
+PHASE3_SETUP.md
+  s_54bf5f254aeba9::t_27502792beaad8 1-45,49,51-56,60,65-67,69-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "19fd1bead58c5b68bcf67431e5b39b468d49c2ba",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

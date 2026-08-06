@@ -1,0 +1,21 @@
+website/scripts/generate-component-mdx-template.md
+  s_54bf5f254aeba9::t_51fbe4faf74fa7 1-178
+website/scripts/agent-generate-component-mdx.md
+  s_54bf5f254aeba9::t_886af74a254293 1-158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "af4c5a05da32d8ab181b479f48ca1c46c1aef2ff",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+website/docs/components/overlay/time-picker/code-web.mdx
+  s_54bf5f254aeba9::t_6d25c1e4222638 1-34
+website/docs/components/overlay/date-picker/code-web.mdx
+  s_54bf5f254aeba9::t_753b2c51056007 1-32
+website/docs/components/overlay/bottom-sheet/guidelines.mdx
+  s_54bf5f254aeba9::t_8ecb17fdd6bd4e 1-39
+website/docs/components/overlay/time-picker/content.mdx
+  s_54bf5f254aeba9::t_e3fe60d14a932f 1-15
+website/docs/components/overlay/date-picker/change-log.mdx
+  s_54bf5f254aeba9::t_273bf0e6eb13dd 1-23
+website/docs/components/overlay/bottom-sheet/change-log.mdx
+  s_54bf5f254aeba9::t_62c49336ab8b70 1-23
+website/docs/components/overlay/option-picker/change-log.mdx
+  s_54bf5f254aeba9::t_171c435fa2df1d 1-23
+website/docs/components/overlay/time-picker/change-log.mdx
+  s_54bf5f254aeba9::t_9002f87e7e4944 1-23
+website/docs/components/overlay/date-picker/_category_.json
+  s_54bf5f254aeba9::t_10381e77123c59 1-4
+website/docs/components/overlay/action-picker/overview.mdx
+  s_54bf5f254aeba9::t_171b53d0dae6f6 1-42
+website/docs/components/overlay/date-picker/content.mdx
+  s_54bf5f254aeba9::t_fbd6b6852ecbee 1-15
+website/docs/components/overlay/option-picker/_category_.json
+  s_54bf5f254aeba9::t_ab132ac86f077f 1-4
+website/docs/components/overlay/action-picker/code-web.mdx
+  s_54bf5f254aeba9::t_60618b1a05c56f 1-15
+website/docs/components/overlay/date-picker/overview.mdx
+  s_54bf5f254aeba9::t_3f424a798e953d 1-47
+website/docs/components/overlay/bottom-sheet/overview.mdx
+  s_54bf5f254aeba9::t_36789c20e2b3f8 1-49
+website/docs/components/overlay/bottom-sheet/content.mdx
+  s_54bf5f254aeba9::t_9e2f14ba390039 1-16
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_edfadde5fecfbd 1480-1521
+  s_54bf5f254aeba9::t_8ed936950b8fbe 1312-1353
+  s_54bf5f254aeba9::t_c87393b0516ef8 1438-1479
+  s_54bf5f254aeba9::t_bace3c96e09512 1354-1395
+  s_54bf5f254aeba9::t_2fae6759bda255 1396-1437
+website/docs/components/overlay/action-picker/change-log.mdx
+  s_54bf5f254aeba9::t_ad513a1b71b939 1-23
+website/docs/components/overlay/time-picker/_category_.json
+  s_54bf5f254aeba9::t_f1cbe80bf01731 1-4
+website/docs/components/overlay/option-picker/overview.mdx
+  s_54bf5f254aeba9::t_0768034b365626 1-47
+website/docs/components/overlay/option-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_2342e6d963f0d6 1-39
+website/docs/components/overlay/option-picker/content.mdx
+  s_54bf5f254aeba9::t_0e7c3701b7123d 1-16
+website/docs/components/overlay/date-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_e6980ff07f4a70 1-38
+website/docs/components/overlay/option-picker/code-web.mdx
+  s_54bf5f254aeba9::t_f5f15bf0c055c9 1-34
+website/docs/components/overlay/action-picker/content.mdx
+  s_54bf5f254aeba9::t_57f7c80fc8219d 1-16
+website/docs/components/overlay/time-picker/overview.mdx
+  s_54bf5f254aeba9::t_4426b153133293 1-44
+website/docs/components/overlay/_category_.json
+  s_54bf5f254aeba9::t_705f97e8c1ef95 1-4
+website/docs/components/overlay/time-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_6e66b7925f0803 1-39
+website/docs/components/overlay/action-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_89ace0ff6b599f 1-38
+website/docs/components/overlay/bottom-sheet/_category_.json
+  s_54bf5f254aeba9::t_c5bf160e816a08 1-4
+website/docs/components/overlay/action-picker/_category_.json
+  s_54bf5f254aeba9::t_747ea4e15df010 1-4
+website/docs/components/overlay/bottom-sheet/code-web.mdx
+  s_54bf5f254aeba9::t_8282e35b032d57 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e4859458f4cda6b2f11effbfdbee0868ea524a07",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

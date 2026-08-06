@@ -1,0 +1,21 @@
+website/tina/config.ts
+  s_54bf5f254aeba9::t_075032961e34fe 3-43,46-47,64-65,69-222,227
+website/tina/tina-lock.json
+  s_54bf5f254aeba9::t_e36be34e1d19bf 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "4f2126e5f98823fab88f6cfec0303581cdfe29f5",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

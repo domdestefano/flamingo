@@ -1,0 +1,24 @@
+scripts/export-component-images.js
+  s_54bf5f254aeba9::t_4dcaadfabba2a4 15-17,19,21-22,25-29,31-32,35-40
+  s_54bf5f254aeba9::t_7039effb301fde 41
+scripts/sync-tokens-from-figma.js
+  s_54bf5f254aeba9::t_7cc2b22909746a 17,25-26,63,93,96-97,100-103
+scripts/generate-component-docs.js
+  s_54bf5f254aeba9::t_96e09b0ff24435 15,28-29,32-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "95b3095b3a773a9f57f5fdb58306cccf59a107c3",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

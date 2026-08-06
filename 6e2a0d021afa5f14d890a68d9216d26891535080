@@ -1,0 +1,41 @@
+scripts/transform-figma-tokens.js
+  s_54bf5f254aeba9::t_9db2572ddc924b 229-232
+  s_54bf5f254aeba9::t_4d32b9973a3f40 78-80
+  s_54bf5f254aeba9::t_672f741e2ce9bf 84-90
+  s_54bf5f254aeba9::t_007ba857d3fc80 156-173
+  s_54bf5f254aeba9::t_0b274d68b41275 155
+website/src/css/tokens.css
+  s_54bf5f254aeba9::t_923399840adde4 67
+  s_54bf5f254aeba9::t_b9de015c47e3c8 81-181,212-213,255-256,301-302,344-345,387-388,430-431,473-474,516-517,559-560,602-603,645-646
+website/tokens/theme.json
+  s_54bf5f254aeba9::t_b9de015c47e3c8 29-30,69-70,109-110,149-150,189-190,229-230,269-270,309-310,349-350,389-390,429-430
+scripts/generate-token-css.js
+  s_54bf5f254aeba9::t_4bfd1c4bfeef93 78-83
+  s_54bf5f254aeba9::t_9194e0abe115df 113,116-117,123
+  s_54bf5f254aeba9::t_29ee872275ddfb 146-147
+website/tokens/semantic.json
+  s_54bf5f254aeba9::t_b9de015c47e3c8 1-100
+website/docs/guidelines/design-tokens.mdx
+  s_54bf5f254aeba9::t_ea1b87bfe81428 1-26
+website/tokens/global.json
+  s_54bf5f254aeba9::t_923399840adde4 63
+website/src/components/DesignTokens/index.tsx
+  s_54bf5f254aeba9::t_1de06e5d127ef7 237
+  s_54bf5f254aeba9::t_21e1bfe8625e59 1-236,238-289
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "6e2a0d021afa5f14d890a68d9216d26891535080",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

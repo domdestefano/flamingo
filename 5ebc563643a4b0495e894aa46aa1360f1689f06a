@@ -1,0 +1,43 @@
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_a5a3d471e68f22 94-135
+  s_54bf5f254aeba9::t_0206101166df5a 136-170
+website/docs/components/buttons/secondary-button/_category_.json
+  s_54bf5f254aeba9::t_d31b6392b3a4c5 1-4
+website/docs/components/buttons/primary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_ace946adadbfe8 29
+  s_54bf5f254aeba9::t_7f3413a5bd168a 27,46,83
+  s_54bf5f254aeba9::t_3244c5b842457e 47
+  s_54bf5f254aeba9::t_bc7e26b71cdbe1 85
+  s_54bf5f254aeba9::t_d37f884309dac4 48
+  s_54bf5f254aeba9::t_74dcf58f1e7882 9,30-31,34,49-50,72,77-78,86-87,92
+  s_54bf5f254aeba9::t_2069e9f298203e 28
+  s_54bf5f254aeba9::t_bca3241943bf2e 84
+website/src/components/ComponentDocs/ComponentImage.tsx
+  s_54bf5f254aeba9::t_ad7328e1004292 6-15,17-24
+website/docs/components/buttons/secondary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_f86613d3dbc8c1 1-39
+website/docs/components/buttons/secondary-button/code-web.mdx
+  s_54bf5f254aeba9::t_6a2d8cf6f3f23a 1-56
+website/docs/components/buttons/secondary-button/content.mdx
+  s_54bf5f254aeba9::t_d747fdfae4e1c0 1-36
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_e5e3b87602db09 1-51
+website/docs/components/buttons/secondary-button/change-log.mdx
+  s_54bf5f254aeba9::t_eec89fbf23d3b5 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "5ebc563643a4b0495e894aa46aa1360f1689f06a",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+website/docs/components/form/chips/_category_.json
+  s_54bf5f254aeba9::t_f13a2ae8873372 1-4
+website/docs/components/form/tile/code-web.mdx
+  s_54bf5f254aeba9::t_b4abe4df1b3f73 1-32
+website/docs/components/form/checkbox/guidelines.mdx
+  s_54bf5f254aeba9::t_7d151ed109c942 1-38
+website/docs/components/form/text-field/change-log.mdx
+  s_54bf5f254aeba9::t_c5e46e10846e88 1-23
+website/docs/components/form/radio-button/content.mdx
+  s_54bf5f254aeba9::t_792998061f3740 1-15
+website/docs/components/form/switch/content.mdx
+  s_54bf5f254aeba9::t_2e0fdc03cf7022 1-16
+website/docs/components/form/checkbox/code-web.mdx
+  s_54bf5f254aeba9::t_a3a58c1a0a8cf5 1-31
+website/docs/components/form/drop-down/content.mdx
+  s_54bf5f254aeba9::t_0a3eedffb90f3f 1-16
+website/docs/components/form/drop-down/code-web.mdx
+  s_54bf5f254aeba9::t_1615bac0702edc 1-35
+website/docs/components/form/checkbox/overview.mdx
+  s_54bf5f254aeba9::t_03d1a47cf5342e 1-43
+website/docs/components/form/text-area/_category_.json
+  s_54bf5f254aeba9::t_61ebcf893e0fde 1-4
+website/docs/components/form/drop-down/_category_.json
+  s_54bf5f254aeba9::t_7abf1b2af9d42b 1-4
+website/docs/components/form/chips/content.mdx
+  s_54bf5f254aeba9::t_22e856f6d7fa68 1-16
+website/docs/components/form/text-field/overview.mdx
+  s_54bf5f254aeba9::t_935007ddf1f4d9 1-56
+website/docs/components/form/text-area/change-log.mdx
+  s_54bf5f254aeba9::t_50e57b76a37065 1-23
+website/docs/components/form/text-field/_category_.json
+  s_54bf5f254aeba9::t_76d27f9d72555e 1-4
+website/docs/components/form/text-field/guidelines.mdx
+  s_54bf5f254aeba9::t_a03bdc65a8a0fe 1-29
+website/docs/components/form/radio-button/_category_.json
+  s_54bf5f254aeba9::t_8128011d5866ca 1-4
+website/docs/components/form/drop-down/change-log.mdx
+  s_54bf5f254aeba9::t_cb3b87c3bbc4e4 1-23
+website/docs/components/form/radio-button/change-log.mdx
+  s_54bf5f254aeba9::t_d4e12e7e13ba37 1-23
+website/docs/components/form/chips/overview.mdx
+  s_54bf5f254aeba9::t_f0aa2d90b964b4 1-49
+website/docs/components/form/switch/guidelines.mdx
+  s_54bf5f254aeba9::t_446b100749e1b9 1-7,9-34,40-41,43
+  s_54bf5f254aeba9::t_df1a35ad32e866 35-39,42
+  s_54bf5f254aeba9::t_664aba2733a2d5 8
+website/docs/components/form/tile/guidelines.mdx
+  s_54bf5f254aeba9::t_e3a105cf96ea95 1-46
+website/docs/components/form/radio-button/overview.mdx
+  s_54bf5f254aeba9::t_666fe7d06754e1 1-43
+website/docs/components/form/chips/guidelines.mdx
+  s_54bf5f254aeba9::t_a922d026dd0636 1-39
+website/docs/components/form/text-area/content.mdx
+  s_54bf5f254aeba9::t_628bc5dd896aef 1-16
+website/docs/components/form/text-area/code-web.mdx
+  s_54bf5f254aeba9::t_7ddb89a1151925 1-34
+website/docs/components/form/tile/overview.mdx
+  s_54bf5f254aeba9::t_a26c1e92d86bd7 1-44
+website/docs/components/form/drop-down/guidelines.mdx
+  s_54bf5f254aeba9::t_5e1eb4c2f5dea9 1-25
+website/docs/components/form/switch/change-log.mdx
+  s_54bf5f254aeba9::t_bdea423ff472d4 1-23
+website/docs/components/form/checkbox/change-log.mdx
+  s_54bf5f254aeba9::t_e110c53c1d8ac7 1-23
+website/docs/components/form/_category_.json
+  s_54bf5f254aeba9::t_d91a16071eee88 1-4
+website/docs/components/form/tile/_category_.json
+  s_54bf5f254aeba9::t_c71dbc5f028fd0 1-4
+website/docs/components/form/switch/_category_.json
+  s_54bf5f254aeba9::t_326c314c4153d1 1-4
+scripts/figma-images.json
+  s_54bf5f254aeba9::t_93ffea73816b12 1186-1227
+  s_54bf5f254aeba9::t_d6ecbe9c9e39fb 1060-1101
+  s_54bf5f254aeba9::t_cf317c59e3e401 1018-1059
+  s_54bf5f254aeba9::t_c81f2e7e450ba0 1228-1269
+  s_54bf5f254aeba9::t_f513444f4c2d8a 1102-1143
+  s_54bf5f254aeba9::t_f333783b3ae744 976-1017
+  s_54bf5f254aeba9::t_8b7afa57b6eb0e 1270-1311
+  s_54bf5f254aeba9::t_43899ff6ac60c0 1144-1185
+website/docs/components/form/checkbox/content.mdx
+  s_54bf5f254aeba9::t_e09d2372b4f3f8 1-15
+website/docs/components/form/switch/overview.mdx
+  s_54bf5f254aeba9::t_9b1c37634e9eca 1-44
+website/docs/components/form/radio-button/guidelines.mdx
+  s_54bf5f254aeba9::t_20cc045760e786 1-38
+website/docs/components/form/radio-button/code-web.mdx
+  s_54bf5f254aeba9::t_1e461cd5315587 1-31
+website/docs/components/form/chips/change-log.mdx
+  s_54bf5f254aeba9::t_f4a6d540646e13 1-23
+website/docs/components/form/text-field/content.mdx
+  s_54bf5f254aeba9::t_21d832f59ea0e6 1-16
+website/docs/components/form/switch/code-web.mdx
+  s_54bf5f254aeba9::t_0b19525d61663f 1-30
+website/docs/components/form/checkbox/_category_.json
+  s_54bf5f254aeba9::t_9798ab24307107 1-4
+website/docs/components/form/text-area/overview.mdx
+  s_54bf5f254aeba9::t_3e751d04a21fbe 1-47
+website/docs/components/form/text-area/guidelines.mdx
+  s_54bf5f254aeba9::t_ff9966f6bc23b3 1-23
+website/docs/components/form/drop-down/overview.mdx
+  s_54bf5f254aeba9::t_fdaadaa00fa56b 1-45
+website/docs/components/form/tile/content.mdx
+  s_54bf5f254aeba9::t_ae62f7c184abf3 1-15
+website/docs/components/form/tile/change-log.mdx
+  s_54bf5f254aeba9::t_55c223c124f6b0 1-23
+website/docs/components/form/text-field/code-web.mdx
+  s_54bf5f254aeba9::t_72547caeac0426 1-40
+website/docs/components/form/chips/code-web.mdx
+  s_54bf5f254aeba9::t_0dd02268147fbc 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e46619a18cb7219b44b70ad01e183c11cffbd2f8",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}

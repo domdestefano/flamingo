@@ -1,0 +1,82 @@
+website/docs/getting-started/processes/flamingo-support/request-form.mdx
+  s_54bf5f254aeba9::t_c35a7903d4099a 1-83
+website/docs/getting-started/onboarding/_category_.json
+  s_54bf5f254aeba9::t_2b2af0da899976 1-4
+website/docs/getting-started/processes/asset-creation-and-implementation/illustrations.mdx
+  s_54bf5f254aeba9::t_3da0edd8c9fe81 1-169
+website/docs/getting-started/processes/_category_.json
+  s_54bf5f254aeba9::t_6318ad3a54b137 1-4
+website/docs/getting-started/processes/contribution/design-guidelines.mdx
+  s_54bf5f254aeba9::t_fbd7d840b1ca27 1-52
+website/docs/getting-started/processes/deprecation-and-update.mdx
+  s_54bf5f254aeba9::t_3a64435491babc 1-17
+website/docs/getting-started/processes/ux-writing-in-flamingo.mdx
+  s_54bf5f254aeba9::t_dba12d2397a100 1-17
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_e0d81f053c9d7a 91-94
+  s_54bf5f254aeba9::t_185ebb219b6a32 89-90
+website/docs/getting-started/processes/flamingo-support/overview.mdx
+  s_54bf5f254aeba9::t_5e594d0be745d1 1-70
+website/docs/getting-started/processes/contribution/_category_.json
+  s_54bf5f254aeba9::t_e2aabd8835f82b 1-4
+website/docs/getting-started/processes/flamingo-support/pairing-session.mdx
+  s_54bf5f254aeba9::t_fea42464c221fa 1-71
+website/docs/getting-started/processes/contribution/qa.mdx
+  s_54bf5f254aeba9::t_b5dbc5c68ff95e 1-43
+website/docs/getting-started/onboarding/index.mdx
+  s_54bf5f254aeba9::t_eef179c2359bd2 1-17
+website/docs/getting-started/processes/flamingo-support/office-hours.mdx
+  s_54bf5f254aeba9::t_f434540204474c 1-72
+website/sidebars.ts
+  s_54bf5f254aeba9::t_f46d618881b391 9-14
+website/src/components/GettingStarted/styles.module.css
+  s_54bf5f254aeba9::t_7c639ad95e5d6c 1-44
+website/src/components/GettingStarted/shared.tsx
+  s_54bf5f254aeba9::t_3cc1086eb8ffae 1-56
+website/docs/getting-started/processes/asset-creation-and-implementation/icons.mdx
+  s_54bf5f254aeba9::t_ba3c4229fd13c9 1-157
+website/docs/getting-started/processes/asset-creation-and-implementation/animations.mdx
+  s_54bf5f254aeba9::t_8275de78651c1a 1-147
+website/src/components/ComponentDocs/styles.module.css
+  s_54bf5f254aeba9::t_a1a61db03d5bca 13-17
+website/docs/getting-started/processes/flamingo-support/_category_.json
+  s_54bf5f254aeba9::t_bc5e445dc14325 1-4
+website/docs/getting-started/_category_.json
+  s_54bf5f254aeba9::t_c5bc051d492e1c 1-4
+website/docs/getting-started/processes/contribution/new-component-vs-variant.mdx
+  s_54bf5f254aeba9::t_720023d86ae5e5 1-59
+website/src/components/ComponentDocs/shared.tsx
+  s_54bf5f254aeba9::t_bcf1a99b5b1780 27,29-40
+website/docs/getting-started/processes/contribution/process.mdx
+  s_54bf5f254aeba9::t_8ff236a5e5d499 1-45
+website/docs/getting-started/processes/contribution/tech-guidelines.mdx
+  s_54bf5f254aeba9::t_999a58c5a47455 1-49
+website/docs/getting-started/processes/contribution/accessibility.mdx
+  s_54bf5f254aeba9::t_397000053492f9 1-50
+website/docs/getting-started/processes/asset-creation-and-implementation/_category_.json
+  s_54bf5f254aeba9::t_f5bae7b54d2b9e 1-4
+website/src/components/ComponentDocs/ComponentTabs.tsx
+  s_54bf5f254aeba9::t_fe296e472e2f60 6-8,17-19,23-26,28-29,31-37,42
+website/docs/getting-started/processes/flamingo-support/slack-channel.mdx
+  s_54bf5f254aeba9::t_1ad929299d1cf4 1-77
+website/docs/getting-started/roadmap.mdx
+  s_54bf5f254aeba9::t_b8450842e105de 1-24
+website/docs/getting-started/team-and-comms.mdx
+  s_54bf5f254aeba9::t_10bbad13b288ba 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "13cf24dc0381c73e600b46e80a1ee57782cb7b76",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
