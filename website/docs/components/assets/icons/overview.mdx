@@ -1,0 +1,66 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: assets
+tags: [icons, assets, pictogram]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+
+# Icons <StatusBadge status="stable" />
+
+Small graphic elements to accompany other UI elements
+
+<ComponentTabs basePath="/components/assets/icons" />
+
+<UpdateBanner date="March 2026" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+There are 5 sizes for icons: XL, L, Default, S, and XS — each with active and
+inactive states.
+
+Icon assets are the UI element you should use whenever you want to add a
+non-interactive icon to your interfaces.
+
+- There are 5 sizes for the icons.
+- Icons have an active and inactive state.
+- The icon UI element has an instance connected to the icon library. This
+  means that the library is inside every icon UI element. In Figma, you can
+  choose from the library by selecting the right icon from the menu on the
+  instance property.
+- If you need to use interactive icons, these are in icon buttons as they
+  trigger interactions.
+
+## Properties
+
+The Icon component has two properties you can choose from:
+
+| Property | Details |
+| --- | --- |
+| Size | Size of the container which scales up or down the pictogram inside. |
+| Active or Inactive | **Active** is used by default. **Inactive** when the icon is used together with other inactive elements. |
+| Icon | Menu to select the pictogram from our asset library. |
+
+## Anatomy
+
+The Icon component is composed of:
+
+1. The pictogram, placed within a container which can scale up or down based
+   on the chosen size.
+
+### Clickable area
+
+The icon component is not clickable. For interactive icons, make sure to use
+the Icon button.
+
+## Useful links
+
+- Request an icon
+- Icon library: Figma, GitHub

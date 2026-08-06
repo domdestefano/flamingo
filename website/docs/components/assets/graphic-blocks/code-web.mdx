@@ -1,0 +1,32 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [graphic-blocks, illustrations, assets]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import { StatusBadge, PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Graphic blocks <StatusBadge status="stable" />
+
+Complex and delightful graphic elements to accompany other UI elements
+
+<ComponentTabs basePath="/components/assets/graphic-blocks" />
+
+## Preview
+
+Storybook calls this component **Illustrations** rather than Graphic blocks —
+same asset, different name between Figma/Zeroheight and the code library.
+
+<StorybookEmbed storyId="assets-illustrations--docs" viewMode="docs" height={900} />
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'illustration', description: 'Choose which illustration to display', type: 'IllustrationName' },
+    { name: 'size', description: 'Size of the illustration container', default: 'medium' },
+  ]}
+/>

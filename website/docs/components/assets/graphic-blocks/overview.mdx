@@ -1,0 +1,73 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: assets
+tags: [graphic-blocks, illustrations, assets]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+
+# Graphic blocks <StatusBadge status="stable" />
+
+Complex and delightful graphic elements to accompany other UI elements
+
+<ComponentTabs basePath="/components/assets/graphic-blocks" />
+
+<UpdateBanner date="March 2026" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+There are 3 sizes for illustrations: L, Default, and S.
+
+Graphic blocks are UI elements you should use whenever you want to add a
+non-interactive and more delightful element to your interfaces.
+
+- There are 3 sizes for the illustrations.
+- Illustration colours change based on the brand.
+- The Graphic block UI element has an instance connected to the illustration
+  library. This means that the library is inside every Graphic block UI
+  element. In Figma, you can choose from the library by selecting the
+  illustration from the menu on the instance property.
+
+## Properties
+
+The Graphic block has two properties you can choose from:
+
+| Property | Details |
+| --- | --- |
+| Size | Size of the container which scales up or down the pictogram inside. |
+| Illustration | Menu to select the pictogram from our asset library. |
+
+## Anatomy
+
+The Graphic block is composed of:
+
+1. The pictogram, placed within a container which can scale up or down based
+   on the chosen size.
+
+### Non branded graphic elements
+
+These elements do not change their colour based on the brand, and can refer
+to:
+
+- Logos from external providers, e.g. _Naver, Nafath_ etc.
+- Neutral assets that don't need to be customised based on the brand, e.g.
+  _Emojis, Sentiment validations, Heat map legends_ etc.
+
+These are stored in the GitHub repository for non-branded assets, while in
+Figma they are usually stored locally.
+
+### Clickable area
+
+The Graphic block is not clickable.
+
+## Useful links
+
+- Request an illustration
+- Illustrations library: Figma, GitHub

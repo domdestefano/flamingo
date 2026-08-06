@@ -1,0 +1,29 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [icons, assets, pictogram]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import { StatusBadge, PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Icons <StatusBadge status="stable" />
+
+Small graphic elements to accompany other UI elements
+
+<ComponentTabs basePath="/components/assets/icons" />
+
+## Preview
+
+<StorybookEmbed storyId="assets-icons--docs" viewMode="docs" height={900} />
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'icon', description: 'Choose which icon to display', type: 'IconName' },
+    { name: 'size', description: 'Size of the icon container', default: 'medium' },
+  ]}
+/>
