@@ -79,7 +79,18 @@ one component at a time.
   in CI. (The DH internal LiteLLM gateway used by some Figma plugins here
   isn't reachable from a hosted Actions runner — it's a localhost-only
   tunnel — so this workflow authenticates directly against the Anthropic
-  API instead.)
+  API instead.) **This requires a funded Anthropic Console API balance** —
+  separate from any Claude.ai/Claude Code subscription usage — under
+  whichever org/workspace the key belongs to.
+
+**If that credit can't be secured**, there's an unverified fallback sketch at
+`.github/workflows/agentic-doc-sync.selfhosted.yml` that routes through the
+DH LiteLLM gateway instead, via a self-hosted runner + a small translation
+proxy (`.github/scripts/anthropic-to-litellm-proxy.js`). It's disabled
+(`workflow_dispatch` only) and explicitly not production-ready — the
+comments at the top of both files spell out what's still unverified
+(tool-call translation, runner setup) before it could replace the
+API-key-based workflow above.
 
 ---
 
