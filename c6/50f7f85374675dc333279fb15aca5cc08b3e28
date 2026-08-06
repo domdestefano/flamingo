@@ -1,0 +1,36 @@
+website/docs/components/buttons/secondary-button/change-log.mdx
+  s_54bf5f254aeba9::t_3fb70cf54bcfa0 18-39
+  s_54bf5f254aeba9::t_7b7514bfb20f94 4
+website/docs/components/buttons/secondary-button/code-web.mdx
+  s_54bf5f254aeba9::t_7b7514bfb20f94 4
+website/docs/components/buttons/primary-button/overview.mdx
+  s_54bf5f254aeba9::t_5acc26952a8f1b 23-29
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_e76f7a512c5d9c 17,23-28
+  s_54bf5f254aeba9::t_5a1d3618fabbef 56
+  s_54bf5f254aeba9::t_5c1ccd7229b719 4
+  s_54bf5f254aeba9::t_370d4c68ed635e 29
+website/docs/components/buttons/secondary-button/content.mdx
+  s_54bf5f254aeba9::t_7b7514bfb20f94 4
+website/docs/components/buttons/secondary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_7b7514bfb20f94 4
+  s_54bf5f254aeba9::t_4218d40fb06eab 40-49,56-65
+website/docs/components/buttons/primary-button/guidelines.mdx
+  s_54bf5f254aeba9::t_6a86693612d0cc 69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c650f7f85374675dc333279fb15aca5cc08b3e28",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
