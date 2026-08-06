@@ -15,29 +15,36 @@
   color: var(--flamingo-color-alert-main);
 }
 
+.componentImageFrame {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin: 1.5rem 0;
+}
+
 .componentImage {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1.5rem auto;
 }
 
 /* --- Inline component tab bar (Overview / Guidelines / Content / ...) --- */
 
 .componentTabs {
   display: flex;
-  gap: 1.5rem;
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--flamingo-border-color);
   margin-bottom: 2rem;
 }
 
 .componentTab,
 .componentTabActive {
-  padding: 0.6rem 0.1rem;
+  padding: 0.6rem 1rem;
   font-size: 0.95rem;
   font-weight: 500;
-  border-bottom: 2px solid transparent;
+  border-radius: var(--flamingo-corner-radius02) var(--flamingo-corner-radius02) 0 0;
   text-decoration: none;
+  transition: background-color 150ms ease, color 150ms ease;
 }
 
 .componentTab {
@@ -46,12 +53,13 @@
 
 .componentTab:hover {
   color: var(--ifm-font-color-base);
+  background: var(--ifm-color-emphasis-100);
   text-decoration: none;
 }
 
 .componentTabActive {
   color: var(--flamingo-primary-main);
-  border-bottom-color: var(--flamingo-primary-main);
+  background: var(--flamingo-primary-light04);
 }
 
 /* --- Stretch a table to fill the content width. Columns keep their

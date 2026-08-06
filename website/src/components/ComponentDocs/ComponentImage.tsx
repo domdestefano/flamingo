@@ -15,11 +15,13 @@ export default function ComponentImage({
 }) {
   const url = useBaseUrl(src);
   return (
-    <img
-      src={url}
-      alt={alt}
-      className={styles.componentImage}
-      style={width ? { maxWidth: width } : undefined}
-    />
+    <div className={`${styles.componentImageFrame} flamingo-card flamingo-checkerboard`}>
+      <img
+        src={url}
+        alt={alt}
+        className={styles.componentImage}
+        style={width ? { maxWidth: width } : undefined}
+      />
+    </div>
   );
 }
