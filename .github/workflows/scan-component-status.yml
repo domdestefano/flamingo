@@ -1,0 +1,39 @@
+name: Scan Component Status
+
+# Manual trigger only. This reaches into three external repositories and the
+# matching is heuristic, so the result is always reviewed in a PR rather than
+# committed straight to main — the same reasoning that removed the old nightly
+# Figma image sync (see scripts/README-figma-images.md).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scan-component-status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Scan platform repos for component symbols
+        env:
+          GH_SCAN_TOKEN: ${{ secrets.GH_SCAN_TOKEN }}
+        run: node scripts/scan-component-status.js
+
+      - name: Open PR with the refreshed table
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GH_SCAN_TOKEN }}
+          commit-message: 'chore(component-status): refresh from platform repos'
+          title: 'chore: refresh component status table'
+          body-path: component-status-pr-body.md
+          branch: automation/component-status-refresh
+          delete-branch: true
+          add-paths: |
+            website/src/components/ComponentStatusTable/data.ts

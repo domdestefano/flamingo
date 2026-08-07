@@ -1,0 +1,76 @@
+{
+  "_comment": "Corrections for scripts/scan-component-status.js. The scanner matches code symbols to documented component names automatically; add entries here only where the names differ so much that no heuristic could connect them. See scripts/README-component-status.md.",
+
+  "force": {
+    "primary-button": {
+      "androidCommonUi": ["ThrottledButton"]
+    },
+    "radio-button": {
+      "ios": ["DS.Radio"],
+      "web": ["Radio"]
+    },
+    "text-field": {
+      "androidCompose": ["TextInputBigV2", "OutlinedTextFieldV2", "PasswordField"],
+      "ios": ["DS.TextInput"],
+      "web": ["TextInput"]
+    },
+    "pie-chart": {
+      "ios": ["DS.Pie"]
+    },
+    "circle-chart": {
+      "androidCompose": [
+        "ProgressorCircleDefault",
+        "ProgressorCircleSuccess",
+        "ProgressorCircleAlert",
+        "ProgressorCircleError",
+        "ProgressorCircleNeutral"
+      ],
+      "ios": ["DS.Circle", "DS.DonutIndicator"]
+    },
+    "horizontal-divider": {
+      "web": ["Divider"]
+    },
+    "vertical-divider": {
+      "web": ["Divider"]
+    },
+    "message-box": {
+      "androidCommonUi": ["OverlayDialog"],
+      "androidCompose": ["MessagePopUp", "MessageDialogContent"]
+    },
+    "message-bar": {
+      "androidCompose": [
+        "MessageBarNeutral",
+        "MessageBarAlert",
+        "MessageBarSuccess",
+        "MessageBarError",
+        "MessageBarStack",
+        "BannerMessageNeutral",
+        "BannerMessageAlert",
+        "BannerMessageSuccess",
+        "BannerMessageError"
+      ]
+    },
+    "empty-screen": {
+      "androidCommonUi": ["ErrorView"],
+      "androidCompose": ["EmptyScreen", "ErrorScreen"]
+    },
+    "switch": {
+      "androidCommonUi": ["ToggleControl", "ToggleWithLabelsView"]
+    }
+  },
+
+  "ignore": [
+    "BadgeStyle",
+    "SnackbarViewType",
+    "MessageDialogViewModel",
+    "GetCalendarWeek",
+    "GetCalendarWeeks",
+    "GetJodaFirstDayOfWeek",
+    "Title",
+    "Scrim",
+    "SmallCircleWithIconDefault",
+    "HeaderIcon",
+    "InputBase",
+    "Typography"
+  ]
+}
