@@ -1,0 +1,22 @@
+.claude/launch.json
+  s_f0c474248bc29b::t_23258c3a6c852e 1-11
+website/docs/components/component-status.mdx
+  s_f0c474248bc29b::t_963bc03378cbc9 3
+  s_f0c474248bc29b::t_5ea578cfb3c1ba 1-2,4-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "9b5776ed9d9998a113a698b1a98a9c60badcf2a4",
+  "prompts": {},
+  "sessions": {
+    "s_f0c474248bc29b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1301f48d-f53f-421e-bd0f-07b35ae28720",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Wioleta Maj <Wioleta.maj@deliveryhero.com>"
+    }
+  }
+}
