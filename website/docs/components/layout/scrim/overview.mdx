@@ -1,0 +1,58 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: layout
+used_in: [shift-details, order-cancellation]
+tags: [scrim, layout, overlay]
+---
+
+import { StatusBadge, AvailabilityTable, DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Scrim <StatusBadge status="stable" />
+
+UI elements used to cover background content.
+
+<AvailabilityTable figma="available" web="not-available" ios="not-available" android="not-available" specs="available" />
+
+## Description
+
+Scrims are temporary cover-elements that can be applied to UI surfaces for the purpose of making
+content on a surface less prominent. They help direct user attention to other parts of the
+screen, away from the surface receiving a scrim.
+
+Scrims in Flamingo are applied by:
+
+- Darkening and reducing the opacity of the surface and its content.
+- Scrims can appear at any elevation, whether in the foreground or background.
+
+Scrims cover only the part of the screen that it needs to be covered, meaning that they are not
+limited to full screen scenarios. **These UI elements prevent the user from interacting with the
+content covered by the scrim itself.**
+
+Scrims are usually used when a modal appears in the UI; they can be used as background also for
+loading elements, like the loading spinner.
+
+## Interactions
+
+### Appear / Disappear
+
+Scrims can only fade in or out of the screen.
+
+## Do's and Dont's
+
+### Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either. If you do, we'll find out and hunt you down and force you to use
+Comic Sans for the rest of your design career.
+
+Jokes aside, please use the components provided by our design system and don't detach them; if
+you need different or improved ones, to cover your use cases, please contact the Flamingo design
+system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the scrim as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us."
+/>
