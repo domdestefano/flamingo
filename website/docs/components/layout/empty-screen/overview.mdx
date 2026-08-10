@@ -1,8 +1,8 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
-platforms: [web, ios, android]
+status: in-progress
+platforms: [web]
 category: layout
 figma_node: '40004045:532'
 used_in: [checkout, order-tracking, rider-onboarding]
@@ -13,21 +13,32 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Empty screen <StatusBadge status="stable" />
+# Empty screen <StatusBadge status="in-progress" />
 
-Communicate that a screen genuinely has nothing to show yet, and what the user can do about it.
+Indicate the primary action you want a user to take.
 
 <ComponentTabs basePath="/components/layout/empty-screen" />
 
-<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="available" />
+:::warning
+**Last update:** June 2026
+
+Component designed, but ⚠️ **latest design needs to be implemented** before updating in Figma
+:::
+
+<AvailabilityTable figma="available" web="not-available" ios="not-available" android="not-available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/empty-screen/empty-screen-overview.png" alt="Empty screen with an illustration, title, and description" />
 
-Use the empty screen when a list, page, or section has no data to show — e.g. no deliveries yet,
-no saved addresses. It pairs an illustration with a short title and description, and can optionally
-include one or two buttons for the next action.
+The Empty Screen is a full-page component designed to communicate to the user when there is no
+content to show.
+
+- **Normal use cases**, such as pages where the user has not added or received any content.
+- **Error cases**, such as when loading has failed due to a server problem or cellular connection.
+
+It pairs an illustration with a short title and description, and can optionally include one or
+two buttons for the next action.
 
 ## Properties
 
