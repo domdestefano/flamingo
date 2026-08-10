@@ -100,6 +100,15 @@
   border-radius: 999px;
 }
 
+/* Wrap the currently-open parent category (and its children) in a darker
+   grouping container, so it's visually obvious which branch of the sidebar
+   is expanded — nests at every level (e.g. Buttons > Primary button). */
+.theme-doc-sidebar-container li.menu__list-item:has(> .menu__list-item-collapsible--active) {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding-bottom: 4px;
+}
+
 /* Infima caps .navbar__logo at a fixed 2rem — override so the logo's own
    configured height (docusaurus.config.ts navbar.logo.height) actually
    takes effect. */
