@@ -1,0 +1,41 @@
+website/docs/components/buttons/automatic-button/change-log.mdx
+  s_54bf5f254aeba9::t_d1431e8a98bb23 1-23
+website/docs/components/buttons/slider-button/overview.mdx
+  s_54bf5f254aeba9::t_0bd65c034da53a 1-41
+website/docs/components/buttons/slider-button/guidelines.mdx
+  s_54bf5f254aeba9::t_e732dc67f3856c 1-40
+website/docs/components/buttons/slider-button/change-log.mdx
+  s_54bf5f254aeba9::t_8d3466b973bc78 1-23
+website/docs/components/buttons/automatic-button/guidelines.mdx
+  s_54bf5f254aeba9::t_b15f370ef5a406 1-60
+website/docs/components/buttons/automatic-button/content.mdx
+  s_54bf5f254aeba9::t_d80cb43f570664 1-22
+website/docs/components/buttons/automatic-button/code-web.mdx
+  s_54bf5f254aeba9::t_282e1d33491efe 1-23
+website/docs/components/buttons/slider-button/_category_.json
+  s_54bf5f254aeba9::t_9cbf789128fd91 1-4
+website/docs/components/buttons/automatic-button/_category_.json
+  s_54bf5f254aeba9::t_1e956c5e683e0f 1-4
+website/docs/components/buttons/slider-button/content.mdx
+  s_54bf5f254aeba9::t_9ab88fb09eb59b 1-21
+website/docs/components/buttons/slider-button/code-web.mdx
+  s_54bf5f254aeba9::t_42d813de147860 1-23
+website/docs/components/buttons/automatic-button/overview.mdx
+  s_54bf5f254aeba9::t_b2bf5e73be5b33 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b8f0f94526beb1cc67b4a7f08179e4657c146829",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
