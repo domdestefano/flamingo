@@ -187,10 +187,10 @@ export const galleryCategories: GalleryCategory[] = [
         "href": "/components/form/text-area/overview"
       },
       {
-        "slug": "text-field",
-        "title": "Text Field",
-        "image": "/img/components/text-field/text-field-overview.png",
-        "href": "/components/form/text-field/overview"
+        "slug": "text-input",
+        "title": "Text input",
+        "image": "/img/components/text-input/text-input-overview.png",
+        "href": "/components/form/text-input/overview"
       },
       {
         "slug": "tile",

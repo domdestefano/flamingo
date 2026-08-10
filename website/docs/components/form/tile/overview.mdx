@@ -2,7 +2,7 @@
 title: Overview
 sidebar_position: 1
 status: stable
-platforms: [web, ios, android]
+platforms: [web]
 category: form
 figma_node: '40000450:2236'
 used_in: [checkout, order-tracking, rider-onboarding]
@@ -19,21 +19,36 @@ A selectable card-style option, combining an icon and a label.
 
 <ComponentTabs basePath="/components/form/tile" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/tile/tile-overview.png" alt="Tile with icon and label" />
 
-Use a Tile to let users pick from a small set of visual options, e.g. a delivery method or a
-vehicle type.
+Tiles are UI elements that help people make selections across different options. They are
+interactive, meaning that they can be tapped and the selection state changes from selected to
+unselected and vice-versa.
+
+- Tiles are always grouped together (min. 2) in a tile group.
+- Tile groups can be displayed horizontally or vertically.
+- Based on the use case you can apply the logic of selecting multiple tiles at once, or select
+  only one at a time. Changing the choice in a single-choice setup will deselect the other tile.
+
+### Tiles vs. checkbox/radio button vs. chips
+
+The main difference between a tile and a chip or checkbox/radio button is the prominence you want
+to give the items to select. Chips are more subtle and smaller in size, meaning that you can
+display more at once but can also be overlooked or skipped through.
+
+Use tiles when you don't want the users to miss on certain options, or when you want to add
+visual support to a selection.
 
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| State | Active / Selected / Inactive. |
-| Text | The tile's label. |
+| State | **Active**: indicating that the tile can be tapped on/interacted with. **Selected**: indicating that the tile has been selected. **Inactive**: indicating that the tile cannot be selected or interacted with. |
+| Icon | Icon type that is being displayed on the tile. |
 
 ## Anatomy
 

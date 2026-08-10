@@ -1,0 +1,52 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: in-progress
+tags: [text-input, form, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/text-input" />
+
+## Placement
+
+To make sure users have enough space to see the whole content of the text field, try to avoid
+placing it on cards.
+
+## Use cases
+
+### Text input vs. Text area
+
+Use text inputs for a single-line or single-word text input.
+
+<DoDontTable
+  doImage="/img/components/text-input/text-input-labeltype-do.png"
+  doText="Be concise."
+  dontImage="/img/components/text-input/text-input-labeltype-dont.png"
+  dontText="Avoid using long text."
+/>
+
+### Icons & Prefix
+
+Whenever beneficial, add visual elements as visual clues. This is especially relevant when
+indicating values such as currencies or temperature.
+
+<DoDontTable
+  doImage="/img/components/text-input/text-input-icons-do.png"
+  doText="Add icons or prefixes to indicate what the field is about, when there might be several alternatives."
+  dontImage="/img/components/text-input/text-input-icons-dont.png"
+  dontText="Don't let users guess what they are filling in."
+/>
+
+### Hint text
+
+Be specific when adding hint text, as it should help the user fill in the field.
+
+<DoDontTable
+  doText={`Explain clearly how to solve a problem — e.g. "Your email misses an @ symbol."`}
+  dontText={`Don't be generic — e.g. "Something is wrong here" doesn't tell the user what to fix.`}
+/>

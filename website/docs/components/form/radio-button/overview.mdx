@@ -19,14 +19,38 @@ Lets the user make one choice among several mutually-exclusive options.
 
 <ComponentTabs basePath="/components/form/radio-button" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/radio-button/radio-button-overview.png" alt="Radio button, selected state" />
 
+A radio button is used when users need to make **one** selection among several options from a
+group of items.
+
+- The options represent **different choices within a category** — for example, selecting a
+  payment method, a shipping speed, or a size.
+- **Typically contained in a list component**: if the user taps on another item from the same
+  list, the previously selected radio changes state to unselected and the other one becomes
+  selected.
+- The selection **might require a confirmation or submission** — need a "Submit" or "Save" button
+  to apply the changes, especially in forms.
+
 For a radio button used alongside text, use the Simple list item and set its prefix to "radio
 button" rather than composing one from scratch.
+
+### Radio vs. Checkbox
+
+- Use a radio button when users can choose exactly **one option** at a time.
+- Use the checkbox when users can select **multiple options**.
+
+### Radio vs. Switch
+
+- Use a switch when the user has exactly two options; a radio selection can have more.
+- Switches are for immediate, binary state changes — they imply an action that happens right away.
+- Radio buttons are for selecting one option from a group, often as part of a form submission or
+  a multi-step process — the selection doesn't necessarily trigger an immediate action.
+- A switch usually enables something.
 
 ## Properties
 
