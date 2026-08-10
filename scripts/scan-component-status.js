@@ -223,10 +223,29 @@ function keyOf(name) {
 // preserved here (unlike keyOf) — sorting would turn "Drop Down" into
 // "downdrop" and never match.
 function squashedKey(name) {
+  return squashedWords(name).join('');
+}
+
+function squashedWords(name) {
   return splitWords(name)
     .map(singularize)
-    .filter((w) => w && !NOISE_WORDS.has(w))
-    .join('');
+    .filter((w) => w && !NOISE_WORDS.has(w));
+}
+
+/**
+ * Does `rowKey` match a whole-word prefix of this symbol? Comparing raw string
+ * prefixes is not enough — "link" is a string prefix of "linkifyphonenumber"
+ * but a different component, so only complete leading words count.
+ */
+function matchesWordPrefix(rowKey, symbolName) {
+  const words = squashedWords(symbolName);
+  let prefix = '';
+  for (const word of words) {
+    prefix += word;
+    if (prefix === rowKey) return true;
+    if (prefix.length > rowKey.length) return false;
+  }
+  return false;
 }
 
 function stripSuffixes(name) {
@@ -268,7 +287,7 @@ function subsetScore(rowName, symbolName) {
       // Fall back to the de-spaced form so "Drop Down" also claims
       // DropdownBig. Scored below a clean word-subset match so a more
       // specific row still wins.
-      if (symbolSquashed.startsWith(rowSquashed)) {
+      if (matchesWordPrefix(rowSquashed, symbolName)) {
         return rowWords.size * 100 - 50 - extra;
       }
       return 0;
@@ -536,9 +555,40 @@ function loadCanonicalRows() {
 }
 
 function loadOverrides() {
-  if (!fs.existsSync(OVERRIDES_FILE)) return { force: {}, ignore: [] };
+  if (!fs.existsSync(OVERRIDES_FILE)) {
+    return { force: {}, ignore: [], extraRows: [] };
+  }
   const parsed = JSON.parse(fs.readFileSync(OVERRIDES_FILE, 'utf8'));
-  return { force: parsed.force || {}, ignore: parsed.ignore || [] };
+  return {
+    force: parsed.force || {},
+    ignore: parsed.ignore || [],
+    extraRows: parsed.extraRows || [],
+  };
+}
+
+/**
+ * Rows for components that exist in code but have no docs page yet, so they
+ * can still be placed in the right category table. Their symbols are listed
+ * explicitly (there is no documented name to match against), which is folded
+ * into `force` so the normal assignment path claims them.
+ */
+function applyExtraRows(rows, overrides) {
+  const PLATFORM_KEYS = ['androidCommonUi', 'androidCompose', 'ios', 'web'];
+
+  for (const extra of overrides.extraRows) {
+    rows.push({
+      id: extra.id,
+      displayName: extra.displayName,
+      category: extra.category,
+      undocumented: true,
+    });
+
+    const forced = (overrides.force[extra.id] ||= {});
+    for (const key of PLATFORM_KEYS) {
+      if (extra[key]) forced[key] = [...(forced[key] || []), ...extra[key]];
+    }
+  }
+  return rows;
 }
 
 // --- Assembly ---------------------------------------------------------------
@@ -640,6 +690,7 @@ function serialize(rows, unmatched, generatedAt) {
     group.rows.push({
       id: row.id,
       displayName: row.displayName,
+      ...(row.undocumented ? { undocumented: true } : {}),
       androidCommonUi: cell(row.androidCommonUi),
       androidCompose: cell(row.androidCompose),
       ios: cell(row.ios),
@@ -658,6 +709,8 @@ export type CodeSymbol = { symbol: string; variants?: VariantGroup[] };
 export type ComponentStatusRow = {
   id: string;
   displayName: string;
+  /** Exists in code but has no docs page yet. */
+  undocumented?: boolean;
   androidCommonUi: CodeSymbol[];
   androidCompose: CodeSymbol[];
   ios: CodeSymbol[];
@@ -761,7 +814,7 @@ async function main() {
   }
 
   const overrides = loadOverrides();
-  const rows = loadCanonicalRows().map((r) => ({
+  const rows = applyExtraRows(loadCanonicalRows(), overrides).map((r) => ({
     ...r,
     androidCommonUi: [],
     androidCompose: [],

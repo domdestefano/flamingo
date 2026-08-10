@@ -9,6 +9,8 @@ export type CodeSymbol = { symbol: string; variants?: VariantGroup[] };
 export type ComponentStatusRow = {
   id: string;
   displayName: string;
+  /** Exists in code but has no docs page yet. */
+  undocumented?: boolean;
   androidCommonUi: CodeSymbol[];
   androidCompose: CodeSymbol[];
   ios: CodeSymbol[];
@@ -407,6 +409,66 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "link",
+        "displayName": "Link",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "LinkBig"
+          },
+          {
+            "symbol": "LinkMedium"
+          },
+          {
+            "symbol": "LinkSmall"
+          }
+        ],
+        "ios": [],
+        "web": []
+      },
+      {
+        "id": "slider-button",
+        "displayName": "Slider button",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "SliderButton"
+          },
+          {
+            "symbol": "SliderButtonWithCountDown"
+          },
+          {
+            "symbol": "SliderHandle"
+          }
+        ],
+        "ios": [],
+        "web": []
+      },
+      {
+        "id": "linkify-text",
+        "displayName": "Linkify text",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "LinkifyPhoneNumberText"
+          },
+          {
+            "symbol": "LinkifyPhoneNumberAndUrlText"
+          },
+          {
+            "symbol": "LinkifyPlaceholder"
+          },
+          {
+            "symbol": "OverFlowLinkifyPhoneNumberText"
+          }
+        ],
+        "ios": [],
+        "web": []
       }
     ]
   },
@@ -427,7 +489,93 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
         "androidCommonUi": [],
         "androidCompose": [],
         "ios": [],
-        "web": []
+        "web": [
+          {
+            "symbol": "ListItem"
+          }
+        ]
+      },
+      {
+        "id": "accordion",
+        "displayName": "Accordion",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "Accordion"
+          }
+        ]
+      },
+      {
+        "id": "action-card",
+        "displayName": "Action card",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "ActionCard"
+          }
+        ]
+      },
+      {
+        "id": "image",
+        "displayName": "Image",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "Image",
+            "variants": [
+              {
+                "group": "size",
+                "values": [
+                  "small",
+                  "medium",
+                  "large"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "uploaded-item",
+        "displayName": "Uploaded item",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "UploadedItem"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "displayName": "List",
+        "undocumented": true,
+        "androidCommonUi": [
+          {
+            "symbol": "FullWidthMultiRowListItemView"
+          },
+          {
+            "symbol": "FullWidthSingleRowListItemView"
+          }
+        ],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "List"
+          }
+        ]
       }
     ]
   },
@@ -647,6 +795,39 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
             ]
           }
         ]
+      },
+      {
+        "id": "inline-message",
+        "displayName": "Inline message",
+        "undocumented": true,
+        "androidCommonUi": [
+          {
+            "symbol": "InlineMessage",
+            "variants": [
+              {
+                "group": "InlineMessageType",
+                "values": [
+                  "Success",
+                  "Alert",
+                  "Error"
+                ]
+              }
+            ]
+          }
+        ],
+        "androidCompose": [
+          {
+            "symbol": "MessageInlineSuccess"
+          },
+          {
+            "symbol": "MessageInlineAlert"
+          },
+          {
+            "symbol": "MessageInlineError"
+          }
+        ],
+        "ios": [],
+        "web": []
       }
     ]
   },
@@ -752,6 +933,12 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
         ],
         "androidCompose": [
           {
+            "symbol": "ToggleCell"
+          },
+          {
+            "symbol": "ToggleBig"
+          },
+          {
             "symbol": "SwitchBig"
           },
           {
@@ -832,6 +1019,74 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
             "symbol": "Tile"
           }
         ]
+      },
+      {
+        "id": "numeric-stepper",
+        "displayName": "Numeric stepper",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "NumericStepper"
+          }
+        ]
+      },
+      {
+        "id": "wheel-picker",
+        "displayName": "Wheel picker",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "WheelPicker"
+          }
+        ]
+      },
+      {
+        "id": "pin-entry",
+        "displayName": "PIN entry",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "PinDigitDisplay"
+          },
+          {
+            "symbol": "PinValidationRow"
+          }
+        ],
+        "ios": [],
+        "web": []
+      },
+      {
+        "id": "phone-prefix-card",
+        "displayName": "Phone prefix card",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "PhonePrefixCard"
+          }
+        ],
+        "ios": [],
+        "web": []
+      },
+      {
+        "id": "password-rules",
+        "displayName": "Password rules",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "PasswordRuleContent"
+          }
+        ],
+        "ios": [],
+        "web": []
       }
     ]
   },
@@ -927,6 +1182,46 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "card",
+        "displayName": "Card",
+        "undocumented": true,
+        "androidCommonUi": [
+          {
+            "symbol": "RoadrunnerCardView"
+          }
+        ],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "Card",
+            "variants": [
+              {
+                "group": "variant",
+                "values": [
+                  "default",
+                  "elevated",
+                  "alternative"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "carousel",
+        "displayName": "Carousel",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "Carousel"
           }
         ]
       }
@@ -1027,6 +1322,89 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "shimmer",
+        "displayName": "Shimmer",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "ShimmeringDots"
+          },
+          {
+            "symbol": "ShimmeringHorizontalBar"
+          },
+          {
+            "symbol": "ShimmeringText"
+          }
+        ],
+        "ios": [],
+        "web": []
+      },
+      {
+        "id": "pull-to-refresh",
+        "displayName": "Pull to refresh",
+        "undocumented": true,
+        "androidCommonUi": [
+          {
+            "symbol": "PullToRefreshLayout"
+          }
+        ],
+        "androidCompose": [
+          {
+            "symbol": "PullToRefresh"
+          }
+        ],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "PullToRefresh"
+          }
+        ]
+      },
+      {
+        "id": "full-screen-loading",
+        "displayName": "Full-screen loading",
+        "undocumented": true,
+        "androidCommonUi": [
+          {
+            "symbol": "LoadingDialogFullScreen"
+          }
+        ],
+        "androidCompose": [
+          {
+            "symbol": "LoadingFullScreen"
+          }
+        ],
+        "ios": [],
+        "web": []
+      },
+      {
+        "id": "spinner",
+        "displayName": "Spinner",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "Spinner",
+            "variants": [
+              {
+                "group": "size",
+                "values": [
+                  "small",
+                  "medium",
+                  "large"
+                ]
+              }
+            ]
+          },
+          {
+            "symbol": "SyncingSpinner"
           }
         ]
       }
@@ -1145,6 +1523,12 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
         "ios": [],
         "web": [
           {
+            "symbol": "DatePickerDay"
+          },
+          {
+            "symbol": "DatePickerMonth"
+          },
+          {
             "symbol": "DatePicker"
           }
         ]
@@ -1164,6 +1548,68 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
         "androidCompose": [],
         "ios": [],
         "web": []
+      },
+      {
+        "id": "tooltip",
+        "displayName": "Tooltip",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "Tooltip"
+          },
+          {
+            "symbol": "TooltipPopup"
+          },
+          {
+            "symbol": "TooltipContent"
+          }
+        ],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "Tooltip",
+            "variants": [
+              {
+                "group": "variant",
+                "values": [
+                  "light",
+                  "dark"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dialog",
+        "displayName": "Dialog",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [
+          {
+            "symbol": "DS.DialogView"
+          }
+        ],
+        "web": [
+          {
+            "symbol": "Dialog"
+          }
+        ]
+      },
+      {
+        "id": "full-screen-modal",
+        "displayName": "Full screen modal",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "FullScreenModal"
+          }
+        ]
       }
     ]
   },
@@ -1249,7 +1695,20 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
         "id": "stepper",
         "displayName": "Stepper",
         "androidCommonUi": [],
-        "androidCompose": [],
+        "androidCompose": [
+          {
+            "symbol": "TaskStatusIndicator"
+          },
+          {
+            "symbol": "CircleWithNumber"
+          },
+          {
+            "symbol": "CircleWithTicks"
+          },
+          {
+            "symbol": "CircleWithContent"
+          }
+        ],
         "ios": [
           {
             "symbol": "DS.StepperView"
@@ -1260,6 +1719,47 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
             "symbol": "Stepper"
           }
         ]
+      },
+      {
+        "id": "progress-bar",
+        "displayName": "Progress bar",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [],
+        "ios": [],
+        "web": [
+          {
+            "symbol": "ProgressBar",
+            "variants": [
+              {
+                "group": "variant",
+                "values": [
+                  "default",
+                  "success",
+                  "error",
+                  "alert",
+                  "neutral"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sectioned-circle-progressor",
+        "displayName": "Sectioned circle progressor",
+        "undocumented": true,
+        "androidCommonUi": [],
+        "androidCompose": [
+          {
+            "symbol": "SmallSectionedCircleProgressorDefault"
+          },
+          {
+            "symbol": "BigSectionedCircleProgressorDefault"
+          }
+        ],
+        "ios": [],
+        "web": []
       }
     ]
   }
@@ -1272,28 +1772,8 @@ export const componentStatusRows: ComponentStatusRow[] =
 export const unmatchedSymbols: UnmatchedSymbol[] = [
   {
     "platform": "Android – common-ui",
-    "symbol": "InlineMessage",
-    "sourcePath": "common-ui/src/main/java/com/ui/common/widget/InlineMessage.kt"
-  },
-  {
-    "platform": "Android – common-ui",
-    "symbol": "LoadingDialogFullScreen",
-    "sourcePath": "common-ui/src/main/java/com/ui/common/widget/LoadingDialogFullScreen.kt"
-  },
-  {
-    "platform": "Android – common-ui",
     "symbol": "PillWrapView",
     "sourcePath": "common-ui/src/main/java/com/ui/common/widget/PillWrapView.kt"
-  },
-  {
-    "platform": "Android – common-ui",
-    "symbol": "PullToRefreshLayout",
-    "sourcePath": "common-ui/src/main/java/com/ui/common/widget/PullToRefreshLayout.kt"
-  },
-  {
-    "platform": "Android – common-ui",
-    "symbol": "RoadrunnerCardView",
-    "sourcePath": "common-ui/src/main/java/com/ui/common/widget/RoadrunnerCardView.kt"
   },
   {
     "platform": "Android – common-ui",
@@ -1317,183 +1797,8 @@ export const unmatchedSymbols: UnmatchedSymbol[] = [
   },
   {
     "platform": "Android – common-ui",
-    "symbol": "FullWidthMultiRowListItemView",
-    "sourcePath": "common-ui/src/main/java/com/ui/common/widget/list/item/FullWidthMultiRowListItemView.kt"
-  },
-  {
-    "platform": "Android – common-ui",
-    "symbol": "FullWidthSingleRowListItemView",
-    "sourcePath": "common-ui/src/main/java/com/ui/common/widget/list/item/FullWidthSingleRowListItemView.kt"
-  },
-  {
-    "platform": "Android – common-ui",
     "symbol": "SummationView",
     "sourcePath": "common-ui/src/main/java/com/ui/common/widget/summation/SummationView.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "LinkBig",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/actions/links/Link.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "LinkMedium",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/actions/links/Link.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "LinkSmall",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/actions/links/Link.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "LinkifyPhoneNumberText",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/actions/links/LinkifyText.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "LinkifyPhoneNumberAndUrlText",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/actions/links/LinkifyText.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "LinkifyPlaceholder",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/actions/links/LinkifyText.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "OverFlowLinkifyPhoneNumberText",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/actions/links/LinkifyText.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "SliderButton",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/buttons/slider/SliderButton.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "SliderButtonWithCountDown",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/buttons/slider/SliderButton.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "SliderHandle",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/buttons/slider/SliderButtonContainer.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "PhonePrefixCard",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/forms/PhonePrefixCard.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "ToggleCell",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/forms/Toggle.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "ToggleBig",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/forms/Toggle.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "LoadingFullScreen",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/forms/pattern/LoadingFullScreen.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "PullToRefresh",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/indicators/loading/PullToRefresh.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "SmallSectionedCircleProgressorDefault",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/indicators/progress/SectionedCircleProgressor.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "BigSectionedCircleProgressorDefault",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/indicators/progress/SectionedCircleProgressor.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "ShimmeringDots",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/indicators/shimmer/ShimmeringDots.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "ShimmeringHorizontalBar",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/indicators/shimmer/ShimmeringHorizontalBar.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "ShimmeringText",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/indicators/shimmer/ShimmeringText.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "MessageInlineSuccess",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/message/InlineMessage.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "MessageInlineAlert",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/message/InlineMessage.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "MessageInlineError",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/message/InlineMessage.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "PasswordRuleContent",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/message/password/PasswordRuleContent.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "PinDigitDisplay",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/pin/PinDigitDisplay.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "PinValidationRow",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/pin/PinValidationRow.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "TaskStatusIndicator",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/stepper/TaskStatusIndicator.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "CircleWithNumber",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/stepper/TaskStatusIndicator.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "CircleWithTicks",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/stepper/TaskStatusIndicator.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "CircleWithContent",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/stepper/TaskStatusIndicator.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "Tooltip",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/tooltip/Tooltip.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "TooltipPopup",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/tooltip/Tooltip.kt"
-  },
-  {
-    "platform": "Android – rrds-compose",
-    "symbol": "TooltipContent",
-    "sourcePath": "rrds-compose/src/main/java/com/roadrunner/rrds/compose/component/tooltip/Tooltip.kt"
   },
   {
     "platform": "iOS",
@@ -1512,11 +1817,6 @@ export const unmatchedSymbols: UnmatchedSymbol[] = [
   },
   {
     "platform": "iOS",
-    "symbol": "DS.DialogView",
-    "sourcePath": "Dependencies/DesignSystem/Sources/Components/Dialog/DialogView.swift"
-  },
-  {
-    "platform": "iOS",
     "symbol": "DS.ParagraphView",
     "sourcePath": "Dependencies/DesignSystem/Sources/Components/ParagraphView/ParagraphView.swift"
   },
@@ -1529,102 +1829,7 @@ export const unmatchedSymbols: UnmatchedSymbol[] = [
     "platform": "iOS",
     "symbol": "DS.TextWithLinks",
     "sourcePath": "Dependencies/DesignSystem/Sources/Components/TextWithLinks/TextWithLinks.swift"
-  },
-  {
-    "platform": "Web",
-    "symbol": "Accordion",
-    "sourcePath": "packages/core/src/components/accordion/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "ActionCard",
-    "sourcePath": "packages/core/src/components/action-card/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "Card",
-    "sourcePath": "packages/core/src/components/card/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "Carousel",
-    "sourcePath": "packages/core/src/components/carousel/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "DatePickerDay",
-    "sourcePath": "packages/core/src/components/date-picker/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "DatePickerMonth",
-    "sourcePath": "packages/core/src/components/date-picker/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "Dialog",
-    "sourcePath": "packages/core/src/components/dialog/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "FullScreenModal",
-    "sourcePath": "packages/core/src/components/full-screen-modal/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "Image",
-    "sourcePath": "packages/core/src/components/image/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "ListItem",
-    "sourcePath": "packages/core/src/components/list-item/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "List",
-    "sourcePath": "packages/core/src/components/list/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "NumericStepper",
-    "sourcePath": "packages/core/src/components/numeric-stepper/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "ProgressBar",
-    "sourcePath": "packages/core/src/components/progress-bar/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "PullToRefresh",
-    "sourcePath": "packages/core/src/components/pull-to-refresh/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "Spinner",
-    "sourcePath": "packages/core/src/components/spinner/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "SyncingSpinner",
-    "sourcePath": "packages/core/src/components/syncing-spinner/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "Tooltip",
-    "sourcePath": "packages/core/src/components/tooltip/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "UploadedItem",
-    "sourcePath": "packages/core/src/components/uploaded-item/"
-  },
-  {
-    "platform": "Web",
-    "symbol": "WheelPicker",
-    "sourcePath": "packages/core/src/components/wheel-picker/"
   }
 ];
 
-export const generatedAt = "2026-08-07";
+export const generatedAt = "2026-08-10";

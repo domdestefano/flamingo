@@ -101,6 +101,16 @@
   color: var(--ifm-color-emphasis-500);
 }
 
+/* Rows added from overrides: the component ships in code but nobody has
+   written its docs page yet. Worth surfacing rather than hiding. */
+.undocumented {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: var(--ifm-color-emphasis-600);
+}
+
 .needsReview {
   margin-top: 1.5rem;
   padding: 0.75rem 1rem;

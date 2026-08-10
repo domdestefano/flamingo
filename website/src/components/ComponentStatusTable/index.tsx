@@ -83,6 +83,11 @@ function CategoryTable({ category }: { category: ComponentStatusCategory }) {
               <tr key={row.id}>
                 <th scope="row" className={styles.rowName}>
                   {row.displayName}
+                  {row.undocumented && (
+                    <span className={styles.undocumented} title="Exists in code but has no docs page yet">
+                      no docs page
+                    </span>
+                  )}
                 </th>
                 <td>
                   <SymbolCell symbols={row.androidCommonUi} />

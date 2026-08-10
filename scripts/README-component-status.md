@@ -88,6 +88,33 @@ Android library; iOS calls the *Text Field* `DS.TextInput`), map it in
 - `ignore` — drop a symbol entirely. Use for helper classes that aren't
   components and would otherwise clutter the unmatched list.
 
+### Adding a component that has no docs page
+
+Some components ship in code before they are documented, so there is no row for
+them. Add one with `extraRows`, choosing the category it belongs in:
+
+```json
+{
+  "extraRows": [
+    {
+      "id": "link",
+      "displayName": "Link",
+      "category": "Buttons",
+      "androidCompose": ["LinkBig", "LinkMedium", "LinkSmall"]
+    }
+  ]
+}
+```
+
+`category` must match one of the category labels the docs already use (Assets,
+Buttons, Content display and Lists, Feedback, Form, Layout, Loaders,
+Navigation, Overlay, Progressors and Charts). Symbols are listed explicitly
+here because there is no documented name to match against.
+
+These rows render with a small **no docs page** marker, so the table doesn't
+imply documentation exists. Once the component gets a docs page it becomes a
+normal row automatically — delete its `extraRows` entry then.
+
 Re-run the scan afterwards to apply it.
 
 ## Caveats
