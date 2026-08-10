@@ -187,11 +187,8 @@
 }
 
 .navbar__brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-}
-
-.navbar__brand {
   margin-right: 0.5rem;
 }
 
