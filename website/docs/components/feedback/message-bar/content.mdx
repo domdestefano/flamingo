@@ -11,7 +11,24 @@ import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 
 <ComponentTabs basePath="/components/feedback/message-bar" />
 
-- **Title**: state the ongoing status plainly — "Location Services Off," not a vague prompt.
-- **Body** (expandable variant): only add detail that helps the user understand or resolve the
-  status — keep it short even when expanded.
-- **Link**: use a short, specific label for the action, like "Turn on" or "Learn more."
+Message components are pieces of information which use text to explain to the user if something
+out of the ordinary has occurred and the user should be communicated about. The text in the title
+should catch the user's attention and describe what the message is about, while the description,
+if present, should explain in further detail the information the user should be aware of. Both
+elements need to be objective-oriented and avoid repetitive expressions. When a button is
+present, this follows the same guidelines as buttons.
+
+**Clarity**: message components should convey their message in a clear and concise manner —
+simple, straightforward language, avoiding jargon or technical terms, providing any necessary
+context or explanations.
+
+## Appearance
+
+The text elements within the message components are always sentence cased and left-aligned. The
+button is also left-aligned. Use appropriate iconography to supplement text and actions.
+
+## Truncation behaviour
+
+The title is always single-lined, meaning the text will be truncated if it goes beyond the text
+label container. The description can be up to 3 lines before truncation happens — remember that
+message bars represent short and subtle information to give to the user.

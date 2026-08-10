@@ -19,31 +19,63 @@ Provide continuous information to the user, stuck right below the navigation bar
 
 <ComponentTabs basePath="/components/feedback/message-bar" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/message-bar/message-bar-overview.png" alt="Message bar types, prominence, and expandable variants" />
 
-Message bars provide continuous information to the user — unlike a Snackbar, they don't
-disappear on their own, and unlike a Message box, they're always anchored right below the
-navigation bar rather than placed within the page's content.
+A message bar is used when you want to inform continuously about an important information that
+needs to be (ideally) resolved.
+
+The content can be either about the state of the app, or of a specific screen:
+
+| State of the app | State of specific screen (or part of the app) |
+| --- | --- |
+| The state affects the whole app (i.e. no internet) | The state affects the user or the app only in some specific parts of the app. |
+
+The message bar disappears when the state that triggered it in the first place goes away (i.e.
+internet was unavailable and is now back). If another state happens while the message bar is
+already in place, the more recent one takes place. When it disappears, the previous one appears
+back on.
+
+### Message bar vs. Message box
+
+The message bar is attached to the header and shows information continuously. This gives it more
+visibility compared to a message box, which is placed in the content part of a page.
 
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| Type | **Neutral**, **Success**, **Alert**, or **Error** — match the nature of the ongoing status. |
-| Prominence | **Pale** or **Bold** — Bold draws more attention. |
-| Expandable | **False**, or **True** (collapsed/expanded) — allows a longer message to be revealed on tap. |
-| Link | (Optional) A text link, shown via `Show Link`. |
+| Type | **Neutral**, used for neutral or not very important information. **Alert**, used for information that should alert the user. **Error**, used for very important information that may lead to errors, dangerous actions, or states negatively impacting the user or the app. **Success**, used to briefly indicate a state change to a positive resolution. |
+| Prominence | **Pale** or **Bold**. |
+| Expandable | **False**: bar cannot be expanded. **True**: bar can be expanded and will show additional information. |
+| Icon | Icon (on the left). |
+| Title | String. |
+| Description | String — only available when expanded. |
+| Button | **No**: no button shown. **Yes**: button visible — only available when expanded. |
+| Button label | String. |
+
+:::info Usage of Success type
+This state is only there to briefly indicate if a global App state changed from a negative (alert
+or error) state to it being resolved (i.e. App had no internet connection to internet available
+again).
+:::
 
 ## Anatomy
 
-<ComponentImage src="/img/components/message-bar/message-bar-anatomy.png" alt="Message bar anatomy: icon, title, body, link, and expand chevron" />
+<ComponentImage src="/img/components/message-bar/message-bar-anatomy.png" alt="Message bar anatomy: icon, title, description, button, and expand chevron" />
+
+**Non expandable**
 
 1. Icon
 2. Title
-3. Body (expandable variant only)
-4. Link (optional)
-5. Expand chevron (expandable variant only)
+
+**Expandable (and expanded)**
+
+1. Icon
+2. Title
+3. Description
+4. Button (optional)
+5. Chevron

@@ -19,7 +19,7 @@ Show a prominent piece of information about something that refers to the user or
 
 <ComponentTabs basePath="/components/feedback/message-box" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
@@ -33,10 +33,11 @@ page's content, not a temporary overlay.
 
 | Property | Details |
 | --- | --- |
-| Type | **Neutral**, **Success**, **Alert**, or **Error** — match the nature of the information being shown. |
-| Prefix | (Optional) An icon or emoji, shown or hidden via `Show Prefix`. |
-| Body | (Optional) Supporting text, shown or hidden via `Show Body`. |
-| Button | (Optional) A single action button, shown or hidden via `Show Button`. |
+| Type | **Neutral**, for information that has not any sort of positive, alerting, or negative connotation. **Success**, for positive information. **Alert**, to convey alert or caution. **Error**, for errors or negative information. **Alternative**, similar to neutral but with a more subtle background. |
+| Size | Size of the component. |
+| Show button | Option to show a button within the component. The regular button is the **secondary** one — use the primary only if you need to draw extra attention. |
+| Show asset | Option to show a graphic asset within the component. |
+| Asset type | Choose among icon or emoji. |
 
 ## Anatomy
 
