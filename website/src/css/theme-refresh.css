@@ -100,15 +100,26 @@
   border-radius: 999px;
 }
 
-/* Wrap the currently-open parent category (and its children) in a lighter
-   grouping container, so it's visually obvious which branch of the sidebar
-   is expanded — nests at every level (e.g. Buttons > Primary button). Extra
+/* Wrap every category that's an ancestor of the current page (and its
+   children) in a lighter grouping container, so it's visually obvious which
+   branches of the sidebar are open — nests at every level (e.g. Buttons >
+   Primary button). Matched by "contains the active link somewhere inside
+   and has its own child list" rather than relying on Infima's own --active
+   modifier on the collapsible header, since that isn't reliably applied to
+   toggle-only categories (ones without their own linked page). Extra
    horizontal padding here (on top of the child pill's own inset margin)
    keeps the child's selection pill from touching the parent box's edges. */
-.theme-doc-sidebar-container li.menu__list-item:has(> .menu__list-item-collapsible--active) {
+.theme-doc-sidebar-container li.menu__list-item:has(> ul.menu__list):has(.menu__link--active) {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 4px 4px 8px;
+}
+
+/* Bold the label of every category in the active page's ancestor chain —
+   a second cue alongside the grouping box above. */
+.theme-doc-sidebar-container li.menu__list-item:has(> ul.menu__list):has(.menu__link--active) > .menu__list-item-collapsible,
+.theme-doc-sidebar-container li.menu__list-item:has(> ul.menu__list):has(.menu__link--active) > a.menu__link--sublist {
+  font-weight: 700;
 }
 
 /* Infima caps .navbar__logo at a fixed 2rem — override so the logo's own
@@ -135,12 +146,20 @@
 .navbar .navbar__link:hover,
 .navbar .navbar__link--active {
   color: #ffffff;
+  font-weight: 700;
 }
 
-/* Left-aligned, vertically centred logo + nav links (Infima's default flex
-   row already centres items vertically) — just pull the links in closer to
-   the logo. */
-.navbar__inner {
+/* Left-aligned, vertically centred logo + nav links — pull the links in
+   closer to the logo, and force centering explicitly on every level of the
+   flex chain (brand, items, inner) so the taller logo doesn't throw off
+   vertical alignment relative to the nav links' text baseline. */
+.navbar__inner,
+.navbar__items {
+  align-items: center;
+}
+
+.navbar__brand {
+  display: flex;
   align-items: center;
 }
 
