@@ -1,0 +1,76 @@
+---
+title: Overview
+sidebar_position: 1
+status: in-progress
+platforms: [web]
+category: form
+figma_node: '40000136:1570'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [text-input, form]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Text input <StatusBadge status="in-progress" />
+
+Allow users to enter texts into the Rider App.
+
+<ComponentTabs basePath="/components/form/text-input" />
+
+:::warning
+**Last update:** Work in progress
+:::
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
+
+## Component
+
+<ComponentImage src="/img/components/text-input/text-input-overview.png" alt="Text input with title, leading icon, prefix, suffix, and trailing icon" />
+
+Text inputs allow users to enter shorter text into a UI. These are UI elements that are used by
+the user to type in pieces of textual information, e.g. the user's email address. They can be
+shown in different formats, depending on the information requested — for example a phone number
+has a different format than a credit card number.
+
+### Text input vs. Text area
+
+The text input is used for single-line text input purposes, meaning that the user should be able
+to only type a word or a very short sentence (e.g. their name or password). If more text is
+needed, use the [text area](/components/form/text-area/overview) instead, as it has more space to
+allow the user to type multi-line sentences.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| State | **Empty**: user has not entered any information yet and sees a placeholder. **Filled**: a text was typed in. These two categories apply to the following states — **Default**: text field hasn't been tapped on by the user/text input is resting. **Focused**: user has tapped on the text input and it is in focus. **Inactive**: the text field is unavailable to the user to tap in — it cannot be edited at the moment or locked. **Error**: an error occurred and we need to visually draw the user's attention to fix the error — without fixing it, it cannot be completed. |
+| Text (Placeholder or Input) | The text which the user has to fill in. |
+| Header | (Optional) Description. |
+| Title | (Optional) Part of the header — describes what the field is about. |
+| Required Label | (Optional) Part of the header — represents that the input it refers to needs to be filled out in order to advance or complete a flow. |
+| Hint text | (Optional) Represents a helper text to explain further what is requested from the user. |
+| Error text | (Recommended for error state) represents the text to explain the error that occurred when validating the text — e.g. the used password is too short. |
+| Icon | (Optional) Visual assistant to the text input — e.g. a mail icon for the email text input. |
+| Affix / Prefix | (Optional) Text elements used as visual assistants to the text input — e.g. the °C to indicate the degree format the user has to put the temperature in. |
+| Icon button | (Optional) Used to display actions within the text input — e.g. a show/hide icon to show or hide the password characters, or a calendar icon for date inputs. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/text-input/text-input-anatomy.png" alt="Text input anatomy: header (field title, required label), leading icon, prefix, suffix, icon button, helper text, error text" />
+
+1. (Header) Field title
+2. (Header) Required label
+3. Leading icon
+4. Prefix
+5. Suffix
+6. Icon button
+7. Helper text
+8. Error text
+
+## Interactions
+
+**Clickable area 1** — users can tap on the field and a keyboard should appear.
+
+**Clickable area 2** — if available, users can tap on an icon button.

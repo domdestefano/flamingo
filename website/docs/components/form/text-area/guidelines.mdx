@@ -6,18 +6,38 @@ tags: [text-area, form, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
 <ComponentTabs basePath="/components/form/text-area" />
 
-## Usage
+## Placement
 
-Use a Text Area for longer, multi-line input — a comment, a description, feedback. Don't use a
-Text Area for a short single value like a name or amount; use a Text Field instead.
+To make sure users have enough space to see the whole content of the text area, try to avoid
+placing it on cards.
 
 ## Use cases
 
-Figma's spec includes "Field type" and "Amount of Information" Do/Dont scenarios, but both use
-identical placeholder content with no visible distinction between the Do and Don't frames — so no
-example is included here rather than guessing at what the distinction was meant to show.
+### Text input vs. Text area
+
+Use text areas for longer text inputs.
+
+<DoDontTable
+  doImage="/img/components/text-area/text-area-fieldtype-do.png"
+  doText="Users should be able to see most of their text, when the input will be longer."
+  dontImage="/img/components/text-area/text-area-fieldtype-dont.png"
+  dontText="Avoid using text areas for short inputs."
+/>
+
+### Added information
+
+Be specific when adding hints, placeholders, and titles. They should help the user fill in the
+field.
+
+<DoDontTable
+  doImage="/img/components/text-area/text-area-amount-do.png"
+  doText="Explain clearly what the user should fill in."
+  dontImage="/img/components/text-area/text-area-amount-dont.png"
+  dontText="Don't let the user guess what they need to fill in."
+/>

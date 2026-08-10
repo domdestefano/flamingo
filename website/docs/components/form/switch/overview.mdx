@@ -19,11 +19,29 @@ Lets the user make one choice between two options.
 
 <ComponentTabs basePath="/components/form/switch" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/switch/switch-overview.png" alt="Switch, selected state" />
+
+A switch lets the user make one choice among only two options — one choice excludes the other.
+Usually the switch is used to enable and disable things and used in a list component.
+
+- **Single, binary choice**: the user is either turning something "on" or "off".
+- Normally, the change **should take effect immediately**. Toggling the switch should
+  instantaneously update the state or setting without requiring an explicit "Save" or "Apply"
+  action — think of a light switch: when you flip it, the light goes on or off right away.
+- Switches **never stand on their own**, but always go in hand with a text (normally within a
+  switch list component).
+
+### Switch vs. Radio
+
+- Use a switch when the user has exactly two options — a radio selection can have more.
+- Switches are for immediate, binary state changes — they imply an action that happens right away.
+- Radio buttons are for selecting one option from a group, often as part of a form submission or
+  a multi-step process — the selection doesn't necessarily trigger an immediate action.
+- A switch is usually enabling something.
 
 For a switch used alongside text, use the Simple list item and set its suffix to "switch" rather
 than composing one from scratch.

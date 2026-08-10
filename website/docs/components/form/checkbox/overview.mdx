@@ -19,21 +19,41 @@ Lets the user make multiple choices among several options.
 
 <ComponentTabs basePath="/components/form/checkbox" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/checkbox/checkbox-overview.png" alt="Checkbox, selected state" />
 
+A checkbox is used when users can make at least one selection among several options from a group
+of items.
+
+- **Typically contained in a list component**: a checkbox is usually part of a list component.
+- **The selection usually requires a confirmation or submission**: add a "Submit" or "Save"
+  button to apply the changes, especially in forms.
+
 For a checkbox used alongside text, use the Simple list item and set its prefix to "checkbox"
 rather than composing one from scratch.
+
+### Checkbox vs. Radio
+
+- Use the checkbox when users can select **multiple options**.
+- Use a radio button when users can choose exactly **one option** at a time.
+
+### Checkbox vs. Switch
+
+- Use a switch when a user has exactly two options — a checkbox selection can have more.
+- Switches are for immediate, binary state changes — they imply an action that happens right away.
+- Checkboxes are for selecting options, often as part of a form submission or a multi-step
+  process — the selection doesn't necessarily trigger an immediate action.
+- A switch is usually enabling something.
 
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| Active | Whether the checkbox is enabled/interactive. |
-| State | Unselected / Selected / Indeterminate. |
+| Active | **True**: the component can be interacted with. **False**: the component cannot be interacted with. |
+| State | **Selected**: the option is selected. **Unselected**: the selection is not selected. **Indeterminate**: min. one of the items in a list is not selected — indeterminate is only a state that can appear on a top level of a list. |
 
 ## Anatomy
 

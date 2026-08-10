@@ -30,7 +30,7 @@ export const componentIcons: Record<string, string> = {
   'radio-button': '🔘',
   switch: '🎚️',
   'text-area': '📝',
-  'text-field': '✏️',
+  'text-input': '✏️',
   tile: '🔳',
   'empty-screen': '🗂️',
   'horizontal-divider': '➖',
