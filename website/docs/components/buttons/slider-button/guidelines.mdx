@@ -1,0 +1,40 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: in-progress
+tags: [button, slider, drag, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/slider-button" />
+
+## Placement
+
+Use the slider button when a meaningful or hard-to-reverse action should require a more
+deliberate gesture than a single tap — dragging the thumb the full length of the track confirms
+intent in a way a tap doesn't.
+
+## Interactions
+
+### Idle
+
+The idle state shows the track and thumb at rest, either with or without a countdown label.
+Dragging the thumb starts the interaction.
+
+### Dragging
+
+As the user drags the thumb toward the end of the track, the track fills in behind it. Releasing
+the thumb before it reaches the end returns it to the idle state.
+
+### Loading
+
+Once the thumb reaches the end of the track, the button enters a loading state while the
+triggered action is processed.
+
+### Complete
+
+Once the action finishes processing, the button shows a complete state confirming the action
+went through.

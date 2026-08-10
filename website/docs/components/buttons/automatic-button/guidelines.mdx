@@ -1,0 +1,60 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: in-progress
+tags: [button, automatic, countdown, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/automatic-button" />
+
+## Placement
+
+- Place only one automatic button per screen, in an easy-to-reach place (e.g. the bottom of the
+  screen).
+- Always provide an action to revert back or cancel, so the user can back out of the
+  automatic-triggering flow — e.g. a decline button alongside an automatically-accepting order.
+
+## Interactions
+
+The user can interact with the button and trigger the action before the countdown ends. When
+pressed, the button turns from `state-active` to `state-pressed`.
+
+The countdown animates the button from the moment it's shown, based on the number of seconds the
+countdown is meant to run for. At the end of the countdown, the action (or a reconfirmation step)
+is automatically triggered. The amount of seconds is decided by the team for each specific use
+case, though it can range up to 30 seconds.
+
+## Do's and Dont's
+
+### Clarity
+
+<DoDontTable
+  doText="It's fine — and encouraged — to also show the consequence of the countdown ending, so users understand what will happen."
+  dontText="Don't leave the consequence of the countdown unclear — lack of clarity can frustrate or confuse users."
+/>
+
+### Time limit
+
+<DoDontTable
+  doText="Automatic actions should give users enough time to make an informed decision — most use cases fall between a few seconds and 30 seconds."
+  dontText="Don't hide the exact number of seconds left — users need to be able to see how much time remains to decide in time."
+/>
+
+### Vertical resizing
+
+<DoDontTable
+  doText="Automatic buttons only resize horizontally, based on content."
+  dontText="Automatic buttons do not resize vertically and don't support multi-line labels."
+/>
+
+### Detach
+
+<DoDontTable
+  doText="Use the automatic button as intended by the design system."
+  dontText="Don't detach or restyle an automatic button instance — if a variant doesn't cover your use case, contact the Flamingo design system team."
+/>

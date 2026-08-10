@@ -1,0 +1,39 @@
+---
+title: Overview
+sidebar_position: 1
+status: in-progress
+platforms: [web]
+category: buttons
+figma_node: '15:70'
+used_in: [order-acceptance, delivery-confirmation]
+tags: [button, automatic, countdown, action, cta, interactive]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Automatic button <StatusBadge status="in-progress" />
+
+Trigger an action in a particular time — the button visually counts down and fires the action
+automatically once the countdown ends, unless the user interacts with it first.
+
+<ComponentTabs basePath="/components/buttons/automatic-button" />
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
+
+## Component
+
+The automatic button is used for actions that the user can trigger within a specified amount of
+time — e.g. the user has 30 seconds to accept an order. It can also be used for actions that will
+be automatically triggered at the end of the countdown, unless the user dismisses it or goes back
+to the previous state or screen — e.g. an order automatically gets accepted if the user doesn't
+decline it before the countdown ends.
+
+1. **Active** and **Pressed** states
+2. A visible countdown that fills or depletes as time passes
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| State | **Active**: the button is clickable. **Pressed**: the button is being pressed. |
