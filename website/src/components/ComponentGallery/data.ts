@@ -220,6 +220,16 @@ export const galleryCategories: GalleryCategory[] = [
         "title": "Vertical divider",
         "image": "/img/components/vertical-divider/vertical-divider-overview.png",
         "href": "/components/layout/vertical-divider/overview"
+      },
+      {
+        "slug": "card",
+        "title": "Card",
+        "href": "/components/layout/card/overview"
+      },
+      {
+        "slug": "scrim",
+        "title": "Scrim",
+        "href": "/components/layout/scrim/overview"
       }
     ]
   },
@@ -237,6 +247,21 @@ export const galleryCategories: GalleryCategory[] = [
         "title": "Skeleton",
         "image": "/img/components/skeleton/skeleton-overview.png",
         "href": "/components/loaders/skeleton/overview"
+      },
+      {
+        "slug": "loading-bar",
+        "title": "Loading bar",
+        "href": "/components/loaders/loading-bar/overview"
+      },
+      {
+        "slug": "loading-screen",
+        "title": "Loading screen",
+        "href": "/components/loaders/loading-screen/overview"
+      },
+      {
+        "slug": "pull-to-refresh",
+        "title": "Pull to refresh",
+        "href": "/components/loaders/pull-to-refresh/overview"
       }
     ]
   },
