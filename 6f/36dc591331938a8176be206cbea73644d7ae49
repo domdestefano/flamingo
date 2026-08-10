@@ -1,0 +1,37 @@
+website/docs/components/loaders/skeleton/content.mdx
+  s_54bf5f254aeba9::t_e8cae23968a64f 4
+website/docs/components/loaders/skeleton-screen/code-web.mdx
+  s_54bf5f254aeba9::t_71471022b09786 4
+website/docs/components/loaders/skeleton-screen/content.mdx
+  s_54bf5f254aeba9::t_71471022b09786 4
+website/docs/components/loaders/skeleton/guidelines.mdx
+  s_54bf5f254aeba9::t_e8cae23968a64f 4
+website/docs/components/loaders/skeleton/code-web.mdx
+  s_54bf5f254aeba9::t_e8cae23968a64f 4
+website/docs/components/loaders/skeleton-screen/overview.mdx
+  s_54bf5f254aeba9::t_f4b27337367beb 4-5,16,23-29,35-42,47-49
+website/docs/components/loaders/skeleton/overview.mdx
+  s_54bf5f254aeba9::t_e2c26484a2e331 4,16,22-28,32,34-40,44-45,48-58,64
+website/docs/components/loaders/skeleton-screen/change-log.mdx
+  s_54bf5f254aeba9::t_71471022b09786 4
+website/docs/components/loaders/skeleton-screen/guidelines.mdx
+  s_54bf5f254aeba9::t_71471022b09786 4
+website/docs/components/loaders/skeleton/change-log.mdx
+  s_54bf5f254aeba9::t_e8cae23968a64f 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "6f36dc591331938a8176be206cbea73644d7ae49",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
