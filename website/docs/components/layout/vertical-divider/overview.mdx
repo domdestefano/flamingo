@@ -19,14 +19,21 @@ Divide content that's stacked horizontally.
 
 <ComponentTabs basePath="/components/layout/vertical-divider" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
-<ComponentImage src="/img/components/vertical-divider/vertical-divider-overview.png" alt="Vertical divider sizes: thin and extra thick" width={400} />
+Dividers are UI elements used to separate content within the interface. **Dividers should only be
+used if elements cannot be separated using white space. They should rather be used to create
+groups.**
 
-1. Thin — the default weight, for separating items placed side by side (e.g. stats in a row).
-2. Extra thick — a heavier weight for a stronger visual break between larger side-by-side sections.
+<ComponentImage src="/img/components/vertical-divider/vertical-divider-overview.png" alt="Vertical divider sizes: thin (regular) and thick" width={400} />
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Size | **Thin (regular)**, used to separate elements of the same category — e.g. vertical list items. **Thick**, used to highlight an important block of text within longer content — e.g. an indented pull quote between two paragraphs. |
 
 This component's Figma spec doesn't include a separate Anatomy section — the divider is a single
 line, described by its size property alone.
