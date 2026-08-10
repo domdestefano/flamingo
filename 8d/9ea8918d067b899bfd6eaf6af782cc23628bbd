@@ -1,0 +1,48 @@
+website/docs/tokens/colours/shadow.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/docs/tokens/colours/primary.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/src/css/custom.css
+  s_54bf5f254aeba9::t_60fabd2c1f9b36 70
+website/docs/tokens/colours/illustration.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/docs/tokens/colours/status.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/src/css/theme-refresh.css
+  s_54bf5f254aeba9::t_5cc4e513ebf201 64-72,76
+website/src/components/PageHeaderWithBrandSwitcher/index.tsx
+  s_54bf5f254aeba9::t_d4a0667bddc75b 1-19
+website/docs/tokens/colours/background.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/docs/tokens/colours/overlay.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/docs/tokens/colours/principles.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/docs/tokens/colours/neutral.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/docs/tokens/colours/transparent.mdx
+  s_54bf5f254aeba9::t_20c9e122b97606 3,10,12
+website/src/pages/index.module.css
+  s_54bf5f254aeba9::t_2b34c77f2b6af3 38
+  s_54bf5f254aeba9::t_2732fcf19f30fb 7,11-37,39-48,53-57
+website/src/components/StorybookEmbed.tsx
+  s_54bf5f254aeba9::t_2856d264504886 112-114
+website/src/components/PageHeaderWithBrandSwitcher/styles.module.css
+  s_54bf5f254aeba9::t_4b0312a696c505 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "8d9ea8918d067b899bfd6eaf6af782cc23628bbd",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
