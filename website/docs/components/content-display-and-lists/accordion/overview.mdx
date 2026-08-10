@@ -1,0 +1,47 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: content-display-and-lists
+figma_node: '17:773'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [list, expandable, accordion, content-display]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Accordion <StatusBadge status="stable" />
+
+An accordion is used when you want to hide/reveal content, without needing to show it with
+prominence.
+
+<ComponentTabs basePath="/components/content-display-and-lists/accordion" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+You can add whatever content you want inside an accordion — but be mindful of length (see the
+[Length of the content](/components/content-display-and-lists/accordion/guidelines#length-of-the-content)
+guideline).
+
+In the collapsed state, you're able to display a title and a brief description to let the user
+know what's hidden inside. An icon can be added for clearer description, a tag to indicate a state
+related to the rider, and an expand/collapse icon button, which cannot be changed.
+
+### Variants
+
+- **Flat**: used on a white or light background, so the accordion's content sits seamlessly in
+  harmony with the rest of the UI and its related content.
+- **Elevated**: used on a darker background, and separates the accordion's content from it with
+  more contrast.
+
+### States
+
+- **Collapsed**: the default view — only the most relevant information is shown, to give the user
+  a sense of what's inside.
+- **Expanded**: the accordion discloses its content when pressed. You can populate the expanded
+  content with the stacks and slots components, or drag the length of the accordion and put your
+  own content on top of it.
