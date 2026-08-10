@@ -1,0 +1,32 @@
+website/docs/components/layout/empty-screen/overview.mdx
+  s_54bf5f254aeba9::t_a0364d88cd7621 4-5,16,18,22-28
+  s_54bf5f254aeba9::t_dceca659e344df 34-41
+website/docs/components/layout/empty-screen/code-web.mdx
+  s_54bf5f254aeba9::t_5c82704595d9a4 4
+website/docs/components/layout/empty-screen/change-log.mdx
+  s_54bf5f254aeba9::t_5c82704595d9a4 4
+website/docs/components/layout/empty-screen/content.mdx
+  s_54bf5f254aeba9::t_5c82704595d9a4 4
+website/docs/components/layout/vertical-divider/overview.mdx
+  s_54bf5f254aeba9::t_db4f016039dbe6 22,26-28,30-36
+website/docs/components/layout/horizontal-divider/overview.mdx
+  s_54bf5f254aeba9::t_5f57014b6f72cf 22,26-29,32-36
+website/docs/components/layout/empty-screen/guidelines.mdx
+  s_54bf5f254aeba9::t_5c82704595d9a4 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "f49d74e4d5dbc29ea64d49f73e3f7d5b4c0152b6",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
