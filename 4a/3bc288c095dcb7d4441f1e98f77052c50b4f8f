@@ -1,0 +1,45 @@
+website/docs/components/content-display-and-lists/simple-list/code-web.mdx
+  s_54bf5f254aeba9::t_b36e0142c9a817 1-38
+website/docs/components/content-display-and-lists/action-cards/guidelines.mdx
+  s_54bf5f254aeba9::t_558525de1106b5 1-52
+website/docs/components/content-display-and-lists/action-cards/_category_.json
+  s_54bf5f254aeba9::t_8a0da16d2971dd 1-4
+website/docs/components/content-display-and-lists/leading-list/guidelines.mdx
+  s_54bf5f254aeba9::t_2ee710fd673fa0 49-50
+website/docs/components/content-display-and-lists/simple-list/change-log.mdx
+  s_54bf5f254aeba9::t_fe90d890e29fd8 1-23
+website/src/components/ComponentGallery/data.ts
+  s_54bf5f254aeba9::t_bc13df064c768c 102-111
+website/docs/components/content-display-and-lists/action-cards/code-web.mdx
+  s_54bf5f254aeba9::t_16447ad5203f42 1-38
+website/docs/components/content-display-and-lists/simple-list/overview.mdx
+  s_54bf5f254aeba9::t_d37dacab06117a 1-62
+website/docs/components/content-display-and-lists/action-cards/change-log.mdx
+  s_54bf5f254aeba9::t_fc319c704d9090 1-23
+website/docs/components/content-display-and-lists/action-cards/content.mdx
+  s_54bf5f254aeba9::t_baf1004788ebd0 1-19
+website/docs/components/content-display-and-lists/action-cards/overview.mdx
+  s_54bf5f254aeba9::t_18fde8c69b60b2 1-60
+website/docs/components/content-display-and-lists/simple-list/content.mdx
+  s_54bf5f254aeba9::t_e06f5d0c83686d 1-19
+website/docs/components/content-display-and-lists/simple-list/_category_.json
+  s_54bf5f254aeba9::t_1fe2a9645f314e 1-4
+website/docs/components/content-display-and-lists/simple-list/guidelines.mdx
+  s_54bf5f254aeba9::t_785e83cd30acbc 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "4a3bc288c095dcb7d4441f1e98f77052c50b4f8f",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
