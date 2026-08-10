@@ -65,9 +65,9 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 0.75rem;
-  margin: 0 0 1rem;
   border-radius: var(--flamingo-corner-radius03);
   background: var(--ifm-color-emphasis-100);
+  flex-shrink: 0;
 }
 
 .flamingo-brand-switcher-label {

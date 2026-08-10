@@ -109,7 +109,9 @@ export default function StorybookEmbed({
 
   return (
     <div style={{ margin: '1.5rem 0' }}>
-      <BrandSwitcher />
+      <div style={{ marginBottom: '0.75rem' }}>
+        <BrandSwitcher />
+      </div>
       <div
         style={{
           border: '1px solid var(--ifm-color-emphasis-300)',
