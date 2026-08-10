@@ -1,0 +1,52 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [list, card, action-card, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/content-display-and-lists/action-cards" />
+
+## Do's and Dont's
+
+### "Show all" cards
+
+Cards are very prominent UI elements; this means that you shouldn't unnecessarily overload the UI
+with them. You can use the "Show all" card in order to avoid UI clutter and lead to a screen
+dedicated to all the listed items you want to link the user to.
+
+<DoDontTable
+  doText='Avoid long and infinite scrolling with cards by having a "Show all" card that leads to all other listed items.'
+  dontText="Don't have a large number of cards in a horizontal scroll view."
+/>
+
+### Buttons in cards
+
+Buttons should follow the general guidelines for buttons: use a primary button only for the most
+important action, and secondary/tertiary for the remaining ones. You can also have a card with only
+a primary button, when showing multiple cards.
+
+<DoDontTable
+  doText="Use a primary button only for the most important action card, secondary/tertiary for the remaining ones."
+  dontText="Don't use multiple primary buttons within cards that follow the same hierarchy as other buttons."
+/>
+
+### Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either. If you do, we'll find out and hunt you down and force you to use
+Comic Sans for the rest of your design career.
+
+Jokes aside, please use the components provided by our design system and don't detach them; if you
+need different or improved ones, to cover your use cases, please contact the Flamingo design
+system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the action cards as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us."
+/>

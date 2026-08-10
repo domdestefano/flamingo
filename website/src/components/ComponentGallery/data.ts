@@ -99,6 +99,16 @@ export const galleryCategories: GalleryCategory[] = [
         "slug": "leading-list",
         "title": "Leading list",
         "href": "/components/content-display-and-lists/leading-list/overview"
+      },
+      {
+        "slug": "action-cards",
+        "title": "Action cards",
+        "href": "/components/content-display-and-lists/action-cards/overview"
+      },
+      {
+        "slug": "simple-list",
+        "title": "Simple list",
+        "href": "/components/content-display-and-lists/simple-list/overview"
       }
     ]
   },

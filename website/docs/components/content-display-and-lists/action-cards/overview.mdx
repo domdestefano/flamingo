@@ -1,0 +1,60 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: content-display-and-lists
+figma_node: '18:2201'
+used_in: [shift-list, order-list, checkout]
+tags: [list, card, action-card, content-display]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Action cards <StatusBadge status="stable" />
+
+List cards are a combination of other UI elements to list items in a card format.
+
+<ComponentTabs basePath="/components/content-display-and-lists/action-cards" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+In mobile interface design, action cards are small, rectangular containers that can be used to
+access different features or content within the app. They're often used to organize content and
+make it easy for users to find what they're looking for. They are usually more appealing than a
+list, as they are elevated and more prominent, but they occupy more space — be mindful of this
+when deciding between lists and cards.
+
+Action cards can be used to display a variety of content, including text, icons, and buttons.
+Action cards are the only interactive element they often use — because content is unusual right
+next to be discovered on any usage. For this reason, we recommend placing the cards in order of
+importance, with the most valuable ones at the beginning and the least ones at the end.
+
+Alternatively, action cards used in a grid layout, with multiple cards displayed on the screen at
+once. This allows users to quickly scan and identify the cards that are relevant to them, and tap
+on them to access the associated feature or content. Having too many cards in a grid layout might
+make the UI look cluttered and hard to navigate; for this reason we recommend covering the grid
+layout when showing a maximum of 6 cards.
+
+### States
+
+- **Active**: its interactive elements can be interacted with.
+- **Pressed**: its interactive elements have been pressed.
+- **Inactive**: its interactive elements cannot be interacted with.
+
+### Properties
+
+Action cards consist of optional and mandatory elements.
+
+**Mandatory**
+
+- **Main label**, given by the title. This is to name the item you're listing.
+- **Button**, to trigger an action, i.e. "Book shift".
+
+**Optional**
+
+- **Caption text**, to give more details about the listed item.
+- **Icon**, to visually assist the description of the listed item.
