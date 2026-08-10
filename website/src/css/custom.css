@@ -30,9 +30,7 @@
   --flamingo-site-primary-light01: #6D80DC;
   --flamingo-site-primary-light02: #3F47CF;
   --flamingo-site-primary-light04: #232783;
-  /* --flamingo-site-secondary-main is intentionally NOT overridden here —
-     it's only used for the sidebar background, which the user wants to
-     stay pinned to its light-mode colour in dark mode too. */
+  --flamingo-site-secondary-main: #E0005C;
 }
 
 /* Map the fixed site-chrome colours onto Infima's theme variables. */
