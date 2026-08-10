@@ -94,31 +94,14 @@
 
 .theme-doc-sidebar-container .menu__link,
 .theme-doc-sidebar-container .menu__list-item-collapsible {
-  margin: 0 0.5rem;
+  margin: 0 1rem 0 0.5rem;
   padding-top: 0.65rem;
   padding-bottom: 0.65rem;
   border-radius: 999px;
 }
 
-/* Wrap every category that's an ancestor of the current page (and its
-   children) in a lighter grouping container, so it's visually obvious which
-   branches of the sidebar are open — nests at every level (e.g. Buttons >
-   Primary button). Matched by "contains the active link somewhere inside
-   and has its own child list" rather than relying on Infima's own --active
-   modifier on the collapsible header, since that isn't reliably applied to
-   toggle-only categories (ones without their own linked page). Edge-to-edge,
-   square-cornered — spans the full sidebar width via negative margin
-   cancelling the menu's own horizontal padding. */
-.theme-doc-sidebar-container li.menu__list-item:has(> ul.menu__list):has(.menu__link--active) {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 0;
-  margin-left: calc(-1 * var(--ifm-menu-link-padding-horizontal, 0.75rem));
-  margin-right: calc(-1 * var(--ifm-menu-link-padding-horizontal, 0.75rem));
-  padding: 4px 0.5rem 8px;
-}
-
 /* Bold the label of every category in the active page's ancestor chain —
-   a second cue alongside the grouping box above. */
+   a lightweight cue for which branch is open, without a wrapping box. */
 .theme-doc-sidebar-container li.menu__list-item:has(> ul.menu__list):has(.menu__link--active) > .menu__list-item-collapsible,
 .theme-doc-sidebar-container li.menu__list-item:has(> ul.menu__list):has(.menu__link--active) > a.menu__link--sublist {
   font-weight: 700;
