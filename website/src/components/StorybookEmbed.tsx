@@ -108,31 +108,24 @@ export default function StorybookEmbed({
   )}&viewMode=${viewMode}&globals=themeName:${themeName};themeMode:${themeMode}`;
 
   return (
-    <div
-      style={{
-        border: '1px solid var(--ifm-color-emphasis-300)',
-        borderRadius: 8,
-        overflow: 'hidden',
-        margin: '1.5rem 0',
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          padding: '0.5rem',
-          borderBottom: '1px solid var(--ifm-color-emphasis-300)',
-          background: 'var(--ifm-background-surface-color)',
-        }}
-      >
+    <div style={{ margin: '1.5rem 0' }}>
+      <div style={{ marginBottom: '0.75rem' }}>
         <BrandSwitcher />
       </div>
-      <iframe
-        src={src}
-        title={`Storybook story: ${storyId}`}
-        loading="lazy"
-        style={{ width: '100%', height, border: 0, display: 'block' }}
-      />
+      <div
+        style={{
+          border: '1px solid var(--ifm-color-emphasis-300)',
+          borderRadius: 8,
+          overflow: 'hidden',
+        }}
+      >
+        <iframe
+          src={src}
+          title={`Storybook story: ${storyId}`}
+          loading="lazy"
+          style={{ width: '100%', height, border: 0, display: 'block' }}
+        />
+      </div>
     </div>
   );
 }

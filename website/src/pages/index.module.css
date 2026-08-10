@@ -4,16 +4,56 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 5rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--flamingo-site-primary-main) 0%,
+    var(--flamingo-site-primary-dark02) 55%,
+    var(--flamingo-site-secondary-main) 130%
+  );
+  isolation: isolate;
+}
+
+/* A soft dot-grid texture over the gradient for a bit of depth. */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  z-index: 0;
+}
+
+/* A large, faint flamingo mark as a decorative watermark. */
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 420px;
+  height: 420px;
+  background-image: url('../../static/img/flamingo-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.12;
+  transform: rotate(-8deg);
+  z-index: 0;
+}
+
+.heroBanner .container {
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3rem 1.5rem;
+  }
+  .heroBanner::after {
+    width: 260px;
+    height: 260px;
   }
 }
-
-

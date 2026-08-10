@@ -21,6 +21,7 @@
   --flamingo-site-primary-light02: #A3B1E9;
   --flamingo-site-primary-light04: #CDD8FF;
   --flamingo-site-secondary-main: #FF0061;
+  --flamingo-site-secondary-light04: #FFD4D9;
 }
 
 [data-theme='dark'] {
@@ -59,13 +60,29 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.flamingo-brand-switcher-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--flamingo-corner-radius03);
+  background: var(--ifm-color-emphasis-100);
+  flex-shrink: 0;
+}
+
+.flamingo-brand-switcher-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+  white-space: nowrap;
+}
+
 .flamingo-brand-switcher {
-  margin-right: 0.5rem;
   padding: 0.4rem 0.7rem;
   border-radius: var(--flamingo-corner-radius02);
   border: var(--flamingo-border01) solid var(--flamingo-border-color);
-  background: var(--ifm-navbar-background-color);
-  color: var(--ifm-navbar-link-color);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
   font-size: 0.85rem;
   cursor: pointer;
   transition: border-color 150ms ease, box-shadow 150ms ease;

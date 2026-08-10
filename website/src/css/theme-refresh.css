@@ -61,11 +61,26 @@
    brand tint. theme-doc-sidebar-container is a documented, stable
    Docusaurus ThemeClassNames constant. */
 .theme-doc-sidebar-container {
-  background: var(--flamingo-site-primary-light04);
+  background: var(--flamingo-site-secondary-main);
+  --ifm-menu-color: rgba(255, 255, 255, 0.85);
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-active: rgba(255, 255, 255, 0.16);
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.1);
+}
+
+.theme-doc-sidebar-container .menu__link--sublist::after {
+  filter: brightness(0) invert(1);
 }
 
 [data-theme='dark'] .theme-doc-sidebar-container {
-  background: var(--flamingo-color-neutral05);
+  background: var(--flamingo-site-secondary-main);
+}
+
+/* Infima caps .navbar__logo at a fixed 2rem — override so the logo's own
+   configured height (docusaurus.config.ts navbar.logo.height) actually
+   takes effect. */
+.navbar__logo {
+  height: 2.5rem;
 }
 
 .markdown table th {
