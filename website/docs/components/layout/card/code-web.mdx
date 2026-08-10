@@ -1,0 +1,48 @@
+---
+title: Code - Web
+sidebar_position: 2
+status: stable
+tags: [card, layout, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs
+  basePath="/components/layout/card"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+## Preview
+
+<StorybookEmbed storyId="components-layout-card--docs" viewMode="docs" height={700} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-layout-card--docs)
+
+## API
+
+```tsx
+import { Card } from '@deliveryhero/flamingo';
+
+export const CardDefault = () => <Card>default</Card>;
+export const CardElevated = () => <Card variant="elevated">elevated</Card>;
+export const CardAlternative = () => <Card variant="alternative">alternative</Card>;
+```
+
+<PropsTable
+  rows={[
+    {
+      name: 'variant',
+      description: 'Visual style of the card.',
+      type: "'default' | 'elevated' | 'alternative' | undefined",
+      default: 'default',
+    },
+    { name: 'children', description: 'Content encapsulated by the card.', type: 'ReactNode' },
+  ]}
+/>

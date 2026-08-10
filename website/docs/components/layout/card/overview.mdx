@@ -1,0 +1,80 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: layout
+used_in: [shift-list, order-history, rider-profile]
+tags: [card, layout, container]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable, DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Card <StatusBadge status="stable" />
+
+UI elements to encapsulate interactive content.
+
+<ComponentTabs
+  basePath="/components/layout/card"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Description
+
+Cards are surfaces that display content and actions on a single topic. They should be easy to
+scan for relevant and actionable information. Elements, like text and images, should be placed on
+them in a way that clearly indicates hierarchy. **A card is identifiable as a single, contained
+unit.**
+
+Cards can be of 3 types:
+
+- **Default**, used as default option to encapsulate content. It has a subtle prominence,
+  especially on white background.
+- **Alternative**, used as an alternative to the default option, when you want to add
+  medium-level prominence to the encapsulated content, especially on white background.
+- **Elevated**, this should be used when the background is `color.background01` (aka
+  background-alternative), and you want to make major prominence to the encapsulated content.
+
+Use cards only when necessary — by default Flamingo recommends a flatter and edge to edge visual
+design. Cards should be used only when necessary, specifically to group relevant and actionable
+information to scan at a glance. When the content is encapsulated in a card, this needs to have
+28px margins all around, while the card is placed at 24px from the edge for the screen. Because of
+this, cards widely favor to avoid truncation and clutter.
+
+## Do's and Dont's
+
+### Card overkill
+
+Cards should be used only when necessary, specifically to group relevant and actionable
+information to scan at a glance. Try using white space to group and separate elements.
+
+<DoDontTable
+  doText="Use cards only when they make sense, to avoid visual heaviness."
+  dontText="Avoid put everything in a card."
+/>
+
+<DoDontTable
+  doText="Use cards to add prominence and separation from other elements."
+  dontText="Do not overwhelm the UI with unnecessary elements."
+/>
+
+### Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either. If you do, we'll find out and hunt you down and force you to use
+Comic Sans for the rest of your design career.
+
+Jokes aside, please use the components provided by our design system and don't detach them; if
+you need different or improved ones, to cover your use cases, please contact the Flamingo design
+system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the cards as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us."
+/>
