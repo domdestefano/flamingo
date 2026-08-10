@@ -145,10 +145,36 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* Hover shows a sidebar-style pill highlight, not a weight change — the
+   bold weight is reserved for the active/selected link, which doesn't get
+   the hover pill. Same treatment on the logo/brand link. */
+.navbar .navbar__link,
+.navbar .navbar__brand {
+  border-radius: 999px;
+  transition: background-color 150ms ease;
+}
+
 .navbar .navbar__link:hover,
+.navbar .navbar__brand:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .navbar .navbar__link--active {
   color: #ffffff;
   font-weight: 700;
+  background: none;
+}
+
+/* The dark-mode toggle's sun/moon icon uses currentColor — on the fixed
+   dark navbar it needs to stay light regardless of the site's light/dark
+   colour-mode variables. */
+.navbar .clean-btn[class*='toggleButton'] {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar .clean-btn[class*='toggleButton']:hover {
+  color: #ffffff;
 }
 
 /* Left-aligned, vertically centred logo + nav links — pull the links in
