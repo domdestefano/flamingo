@@ -1,7 +1,7 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web, ios, android]
 category: loaders
 figma_node: '40004002:14984'
@@ -13,33 +13,54 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Skeleton <StatusBadge status="stable" />
+# Skeleton <StatusBadge status="in-progress" />
 
 A single placeholder shape that hints at the content being loaded, before the real UI appears.
 
 <ComponentTabs basePath="/components/loaders/skeleton" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+:::warning
+**Last update:** June 2026
+
+Component available, but ⚠️ the latest design updates still need to be implemented
+:::
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
-<ComponentImage src="/img/components/skeleton/skeleton-overview.png" alt="Skeleton shapes: square, bar, and circle, in light and dark, big/medium/small" />
+<ComponentImage src="/img/components/skeleton/skeleton-overview.png" alt="Skeleton shapes: square and bar, big/medium/small" />
 
-Skeleton components are UI elements used to provide a visual hint of the content that is loading.
-After loading completes, skeletons are replaced with the actual UI elements of the screen.
+Skeletons are a loading element that help the user predict what to expect when the real UI
+displays.
+
+- In most cases, **designers should not use these individual Skeleton components** — instead use
+  the [Skeleton screen](/components/loaders/skeleton-screen/overview) component.
+- Custom skeleton arrangements should be used only if absolutely necessary. **Consult with the
+  Flamingo design team before attempting this solution.**
 
 ## Properties
 
+The component has several properties, you can choose from:
+
 | Property | Details |
 | --- | --- |
-| Shape | **Square**, **Bar**, or **Circle** — match the shape of the real content this skeleton stands in for (e.g. Circle for an avatar). |
-| Size | **Big**, **Medium**, or **Small** — match the size of the real content. |
-| Type | **Light** or **Dark** — match the surface it sits on. |
+| Size | The skeleton comes in **3 sizes**, depending on the prominence the real UI that designers are trying to approximate. For instance, a line of loading body text is represented by `skeleton.small.bar`. |
+| Shape | **Square**: the skeleton has equal width + height (the updated design renders it circle-shaped). **Bar**: the bar has a set height based on the size, but the width is configurable. |
+| Type (⚠️ Deprecate) | We currently have "Light" and "Dark" variants of skeletons (for use on white and grey backgrounds respectively), but this is no longer needed because we updated to transparent fill colours. Only use the **"light"** variant in your designs ("dark" will be marked as deprecated in Figma). |
+
+### Size and shape
+
+Skeletons are available in 2 shapes and 3 sizes.
+
+- "Square" shape is used to represent images and icons.
+- "Bar" shape is used to represent lines of text or buttons.
+- Big/medium/small sizes allow flexibility to match page hierarchy.
 
 ## Anatomy
 
 <ComponentImage src="/img/components/skeleton/skeleton-anatomy.png" alt="Skeleton anatomy: a single placeholder shape" width={220} />
 
-1. Placeholder shape
+1. Background
 
 A skeleton is a single shape — there's no further breakdown of parts.
