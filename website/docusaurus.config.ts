@@ -83,7 +83,7 @@ const config: Config = {
       logo: {
         alt: 'Flamingo Design System',
         src: 'img/flamingo-logo.png',
-        height: 40,
+        height: 56,
       },
       items: [
         {
