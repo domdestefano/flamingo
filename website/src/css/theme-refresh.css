@@ -75,7 +75,7 @@
 /* Breathing room between rows, and a fully-rounded selection pill that
    floats inset from the sidebar's edges rather than spanning edge-to-edge. */
 .theme-doc-sidebar-container .menu__list .menu__list-item {
-  margin-top: 0.85rem;
+  margin-top: 4px;
 }
 
 .theme-doc-sidebar-container .menu__link,
@@ -90,7 +90,7 @@
    configured height (docusaurus.config.ts navbar.logo.height) actually
    takes effect. */
 .navbar__logo {
-  height: 2.5rem;
+  height: 3.5rem;
 }
 
 /* Navbar always uses the fixed neutral100 chrome colour, regardless of
