@@ -72,11 +72,42 @@
   filter: brightness(0) invert(1);
 }
 
+/* Breathing room between rows, and a fully-rounded selection pill that
+   floats inset from the sidebar's edges rather than spanning edge-to-edge. */
+.theme-doc-sidebar-container .menu__list .menu__list-item {
+  margin-top: 0.5rem;
+}
+
+.theme-doc-sidebar-container .menu__link,
+.theme-doc-sidebar-container .menu__list-item-collapsible {
+  margin: 0 0.5rem;
+  border-radius: 999px;
+}
+
 /* Infima caps .navbar__logo at a fixed 2rem — override so the logo's own
    configured height (docusaurus.config.ts navbar.logo.height) actually
    takes effect. */
 .navbar__logo {
   height: 2.5rem;
+}
+
+/* Navbar always uses the fixed neutral100 chrome colour, regardless of
+   light/dark theme — matches the sidebar being pinned to a fixed colour
+   too (see custom.css). */
+.navbar {
+  background: #171717;
+  --ifm-navbar-link-color: rgba(255, 255, 255, 0.85);
+  --ifm-navbar-link-hover-color: #ffffff;
+}
+
+.navbar .navbar__link,
+.navbar .navbar__brand {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar .navbar__link:hover,
+.navbar .navbar__link--active {
+  color: #ffffff;
 }
 
 .markdown table th {
