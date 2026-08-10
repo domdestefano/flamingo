@@ -1,7 +1,7 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web, ios, android]
 category: buttons
 figma_node: '40001689:14495'
@@ -13,11 +13,18 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Floating button <StatusBadge status="stable" />
+# Floating button <StatusBadge status="in-progress" />
 
-Indicate a prominent action that floats above a layered UI, like a map.
+Floating buttons are elements that trigger actions, placed in layered interfaces — e.g. a map.
 
 <ComponentTabs basePath="/components/buttons/floating-button" />
+
+:::warning
+**Last update:** March 2026
+
+**Component available, but** ⚠️ **the latest design updates still need to be
+implemented**
+:::
 
 <AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="available" />
 
@@ -29,6 +36,11 @@ Use floating buttons for **prominent actions in a UI that consists of multiple l
 each other**, like a map-based interface — e.g. "Start navigation" over a route preview. Unlike the
 floating icon button, it always carries a text label, so use it when the action needs to be
 unambiguous rather than universally recognisable from an icon alone.
+
+A layered UI means the screen or flow consists of multiple layers that overlap on top of each
+other — like a map-based screen, where the main action sheet overlaps the map layer, and actions on
+top of the map need to "float" to ensure high contrast and hierarchy. The floating state also
+shows that when the user interacts with the layer below, the actions keep their position.
 
 ## Properties
 

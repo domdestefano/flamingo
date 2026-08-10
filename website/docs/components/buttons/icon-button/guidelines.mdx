@@ -1,7 +1,7 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [button, icon, guidelines]
 ---
 
@@ -14,19 +14,37 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 ## Usage
 
-Use the icon button for minimal-emphasis, icon-only actions — things like closing a sheet, opening
-a menu, or a header action that's common enough not to need a text label.
+### Icon vs. FAB
+
+Use the **icon button** for minimal emphasis — for actions users could interact with on
+discovery, not need. For instance, when the user taps an info icon to discover which hot shifts
+are available.
+
+Use the **FAB** (floating icon button) for medium emphasis — for important actions that are
+anchored to the top or bottom of the screen. FABs float on the screen as persistent, but subtle,
+actions. For instance, when the user wants to filter results or create a new entry.
+
+### Text-based buttons vs. icon-based buttons
+
+An icon shows, in a visual way, what the content it refers to does — for example, an info icon
+button to discover information about the hot shifts. Text-based buttons are instead more prominent
+actions that users will interact with out of a need — for example, when the user wants to cancel
+an action because they've changed their mind about making a delivery.
 
 ## Placement
 
-1. The icon button can be placed **anywhere, and several times, on the screen** — most commonly in
-   headers, list rows, and toolbars.
-2. It doesn't need to be reachable by default — being the lowest-emphasis, icon-only option, there's
-   no expectation the user needs it immediately.
-3. The icon button **cannot be placed inside a navigation bar** element as a replacement for the
-   nav bar's own dedicated action slots.
+The icon button can be placed generally anywhere on the screen. Because the action it refers to is
+of low importance, reachability isn't an issue, as the actions are not mandatory but chosen by the
+user to perform. The icon button can also be placed inside other UI elements, like nav bars and
+accordions.
 
 ## Use cases
+
+### Icon styling
+
+Basic navigational and UI components should use the **tertiary** type of the icon button. Don't
+add heavy emphasis where it isn't needed, and don't switch button types within other components
+such as headers or lists.
 
 ### Styling
 
