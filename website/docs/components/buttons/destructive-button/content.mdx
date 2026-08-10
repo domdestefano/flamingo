@@ -1,0 +1,28 @@
+---
+title: Content
+sidebar_position: 3
+status: stable
+tags: [button, destructive, content, ux-writing]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+
+# Content
+
+<ComponentTabs basePath="/components/buttons/destructive-button" />
+
+Destructive button labels follow the same writing rules as every other Flamingo button — short,
+clear text in an **action + noun** format (e.g. "Delete profile", "Remove card") — but should also
+make the destructive consequence of the action unambiguous. Avoid vague labels like "Continue" or
+"OK" on a destructive button; the label itself should signal what will be removed or undone.
+
+## Truncation
+
+Truncation behaviour refers to how text is displayed on buttons in mobile interfaces when it is too
+long to fit within the button's dimensions. Multi-line buttons are not supported in Flamingo.
+
+- **Use truncation when necessary**: if the text is too long to fit within the button's dimensions,
+  truncate it to prevent the button from appearing cluttered.
+- **Use ellipsis to indicate truncation**: use an ellipsis (…) at the end of the truncated text.
+- **Avoid truncating important words**: never truncate the part of the label that names what's
+  being deleted or removed — that's the whole point of a destructive button's label.

@@ -1,0 +1,66 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [link, text-link, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/text-link" />
+
+## Placement
+
+Links are used to:
+
+1. Navigate to another page of the app.
+2. Navigate outside of the app.
+
+Links are **placed in texts, never in headlines**. They're treated and work like hyperlinks — part
+of the text body they're placed in. Compared to the rest of the text, they can be interacted with,
+which triggers the user to be taken outside of the current page.
+
+## Style
+
+- Links are **not underlined**.
+- Links have the **same size and text style** as the parent text they're part of.
+
+| State | Link colour |
+| --- | --- |
+| Active | `color.primary.main` |
+| Pressed | `color.primary.dark02` |
+
+## Interactions
+
+When the link is pressed, it turns from `state-active` to `state-pressed` — there's only a change
+of colour, from `color.primary.main` (active) to `color.primary.dark02` (pressed).
+
+## How to apply a text link
+
+1. Select the part of text you want to turn into a link.
+2. Change the colour of the selected part to `color.primary.main`.
+3. Mention and note to the engineers that the element you selected is a link/hyperlink, and detail
+   the screen or app it leads to.
+
+## Do's and Dont's
+
+### Wrong size
+
+<DoDontTable
+  doText="Use the same font style as the surrounding text, and highlight the link through the primary brand colour."
+  dontText="Don't have another font size for text links within a text block."
+/>
+
+### Link used for action
+
+Links can only be used to lead the user outside of the current page, to another or to a different
+app altogether. Buttons instead are used to trigger actions — e.g. confirm a delivery, or show
+more details about a shift.
+
+<DoDontTable
+  doText="Use text links within text blocks."
+  dontText={`Don't use text links outside of a text block, or for things that trigger an action — "Start camera" should use a Button component instead.`}
+/>
