@@ -1,0 +1,41 @@
+---
+title: Overview
+sidebar_position: 1
+status: in-progress
+platforms: [web]
+category: buttons
+figma_node: '15:144'
+used_in: [order-acceptance, delivery-confirmation]
+tags: [button, slider, drag, action, cta, interactive]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Slider button <StatusBadge status="in-progress" />
+
+Trigger an action by dragging the button's thumb across a track, rather than tapping it — used
+when accidental taps need to be prevented for a meaningful or irreversible action.
+
+<ComponentTabs basePath="/components/buttons/slider-button" />
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
+
+## Component
+
+The slider button is used to provide a more deliberate, engaging interaction — the user has to
+actively drag the thumb across the track to trigger the action, which reduces accidental
+triggers compared to a regular tap.
+
+1. **Idle**, with or without a countdown timer
+2. **Dragging** — the thumb follows the user's finger across the track
+3. **Loading** — after the thumb reaches the end, while the action is processed
+4. **Complete** — once the action has finished
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Timer | (Optional) Shows a countdown label on the track, alongside the drag interaction. |
+| Label | The instructional text shown on the track (e.g. "Slide to accept"). |
+| State | **Idle**: the thumb sits at the start of the track, ready to be dragged. **Dragging**: the thumb is being dragged along the track. **Loading**: the thumb has reached the end and the action is being processed. **Complete**: the action has finished. |
