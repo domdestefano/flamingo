@@ -100,13 +100,15 @@
   border-radius: 999px;
 }
 
-/* Wrap the currently-open parent category (and its children) in a darker
+/* Wrap the currently-open parent category (and its children) in a lighter
    grouping container, so it's visually obvious which branch of the sidebar
-   is expanded — nests at every level (e.g. Buttons > Primary button). */
+   is expanded — nests at every level (e.g. Buttons > Primary button). Extra
+   horizontal padding here (on top of the child pill's own inset margin)
+   keeps the child's selection pill from touching the parent box's edges. */
 .theme-doc-sidebar-container li.menu__list-item:has(> .menu__list-item-collapsible--active) {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding-bottom: 4px;
+  padding: 4px 4px 8px;
 }
 
 /* Infima caps .navbar__logo at a fixed 2rem — override so the logo's own
@@ -135,22 +137,11 @@
   color: #ffffff;
 }
 
-/* Centre the logo+links cluster within the navbar (an empty 1fr column on
-   the left balances the dark-mode toggle's column on the right), and pull
-   the nav links in closer to the logo. */
+/* Left-aligned, vertically centred logo + nav links (Infima's default flex
+   row already centres items vertically) — just pull the links in closer to
+   the logo. */
 .navbar__inner {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-}
-
-.navbar__items:not(.navbar__items--right) {
-  grid-column: 2;
-}
-
-.navbar__items--right {
-  grid-column: 3;
-  justify-self: end;
 }
 
 .navbar__brand {
