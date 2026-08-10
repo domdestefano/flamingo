@@ -1,0 +1,62 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web, ios, android]
+category: content-display-and-lists
+figma_node: '18:449'
+used_in: [shift-list, order-list, settings]
+tags: [list, simple-list, content-display]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Simple list <StatusBadge status="stable" />
+
+A list UI element used in mobile interfaces to display a list of items or options to the user.
+
+<ComponentTabs basePath="/components/content-display-and-lists/simple-list" />
+
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
+
+## Component
+
+Simple lists can contain text, icons, tags, or other interactive elements such as buttons. They're
+used to display a list of options or items, such as shifts, transactions, orders, etc. The only
+interactive element is the button, if present, which can trigger an action or the appearance of a
+bottom sheet or modal. If a list leads to another screen, use the
+[leading list](/components/content-display-and-lists/leading-list/overview) instead.
+
+Simple lists can be either single or multi-lined, depending on the use case. Lists are usually
+separated by [horizontal thin dividers](/components/layout/horizontal-divider/overview). Lists can
+be contained in cards, when you need to make these elements more prominent.
+
+### States
+
+- **Active**: its interactive elements can be interacted with.
+- **Pressed**: its interactive elements have been pressed.
+- **Inactive**: its interactive elements cannot be interacted with.
+
+### Properties
+
+Simple lists consist of optional and mandatory elements.
+
+**Mandatory**
+
+- **Main label**, given by the title. This is to name the item you're listing.
+
+**Optional**
+
+- **Description text**, to give more details about the listed item.
+- **Icon**, to visually assist the description of the listed item — the icon can be replaced with
+  an emoji.
+- **Tag**, to represent the status or state of the listed item.
+- **Button**, to trigger an action, i.e. "Book shift".
+
+The order of the text elements can be inverted, depending on the use case — in Figma, go to the
+menu on the right side and select "Title top".
+
+Tags can be either on the right side, before the button (if present), or below the text elements.
+
+Buttons are always tertiary style, small.

@@ -1,0 +1,38 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [list, card, action-card, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/content-display-and-lists/action-cards" />
+
+## Preview
+
+The Figma spec calls this component "Action card" — in code it's the `ActionCard` component.
+
+<StorybookEmbed storyId="components-content-display-and-lists-action-card--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-content-display-and-lists-action-card--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'Main title content of the action card.', type: 'ReactNode' },
+    { name: 'caption', description: 'Small text shown above the icon and title.', type: 'ReactNode' },
+    { name: 'icon', description: 'Icon displayed between caption and title.', type: 'ReactNode' },
+    {
+      name: 'action',
+      description: 'Bottom action content — better to use Button with size="small" for best results.',
+      type: 'ReactNode',
+    },
+    { name: 'disabled', description: 'Disabled state.', type: 'boolean | undefined', default: 'false' },
+  ]}
+/>

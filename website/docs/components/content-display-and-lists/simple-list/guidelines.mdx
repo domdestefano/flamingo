@@ -1,0 +1,49 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [list, simple-list, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/content-display-and-lists/simple-list" />
+
+## Simple list with action vs. leading list
+
+The difference between a simple list with an action element (button) and a leading list is what
+happens next: a simple list's button triggers something to appear in place — like a modal or a
+bottom sheet — while a leading list slides to another screen entirely (from the right, or from the
+left if the user's settings are RTL).
+
+## Do's and Dont's
+
+### Action trigger vs. screen to screen
+
+A simple list with an action element (button) triggers something to appear, like a modal or a
+bottom sheet, meaning that it cannot lead to another screen. Use a leading list instead when you
+want to navigate to another screen, sliding from the right side (or from the left if the user's
+settings are RTL).
+
+<DoDontTable
+  doText="Use simple lists to trigger actions."
+  dontText="If a list leads to another screen, use the leading list."
+/>
+
+### Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either. If you do, we'll find out and hunt you down and force you to use
+Comic Sans for the rest of your design career.
+
+Jokes aside, please use the components provided by our design system and don't detach them; if you
+need different or improved ones, to cover your use cases, please contact the Flamingo design
+system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the simple list as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us."
+/>

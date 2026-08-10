@@ -1,0 +1,38 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [list, simple-list, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/content-display-and-lists/simple-list" />
+
+## Preview
+
+The Figma spec calls this component "Simple list" — in code it's the `SimpleListItem` component.
+
+<StorybookEmbed storyId="components-content-display-and-lists-simple-list-item--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-content-display-and-lists-simple-list-item--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'Title to be rendered inside the list item.', type: 'ReactNode' },
+    { name: 'icon', description: 'Icon to be rendered inside the list item.', type: 'ReactNode' },
+    { name: 'actions', description: 'Actions to be rendered inside the list item.', type: 'ReactNode' },
+    {
+      name: 'clickable',
+      description: 'If true, the entire list item will be clickable and will have hover effects.',
+      type: 'boolean | undefined',
+    },
+    { name: 'disabled', description: 'If true, the list item will be disabled.', type: 'boolean | undefined' },
+  ]}
+/>
