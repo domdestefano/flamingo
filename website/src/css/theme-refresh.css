@@ -72,10 +72,6 @@
   filter: brightness(0) invert(1);
 }
 
-[data-theme='dark'] .theme-doc-sidebar-container {
-  background: var(--flamingo-site-secondary-main);
-}
-
 /* Infima caps .navbar__logo at a fixed 2rem — override so the logo's own
    configured height (docusaurus.config.ts navbar.logo.height) actually
    takes effect. */
