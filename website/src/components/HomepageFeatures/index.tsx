@@ -13,6 +13,17 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
+    title: 'About',
+    icon: '🚀',
+    description: (
+      <>
+        Team &amp; comms, contribution process, asset creation — everything you
+        need to start working with Flamingo.
+      </>
+    ),
+    to: '/getting-started/team-and-comms',
+  },
+  {
     title: 'Components',
     icon: '🧩',
     description: (
@@ -33,17 +44,6 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     to: '/tokens/overview',
-  },
-  {
-    title: 'Getting Started',
-    icon: '🚀',
-    description: (
-      <>
-        Team &amp; comms, contribution process, asset creation — everything you
-        need to start working with Flamingo.
-      </>
-    ),
-    to: '/getting-started/team-and-comms',
   },
 ];
 
