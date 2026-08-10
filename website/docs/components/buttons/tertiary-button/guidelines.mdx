@@ -6,26 +6,40 @@ tags: [button, tertiary, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
 <ComponentTabs basePath="/components/buttons/tertiary-button" />
 
-## Usage
-
-Use the tertiary button for low emphasis — the last or least important action on a screen, or for
-repetitive actions that would be too visually heavy as a Secondary button repeated many times.
-
 ## Placement
 
-1. The tertiary button can be placed **anywhere, and several times, on the screen** — like the
-   secondary button, it isn't limited to one per screen.
-2. It doesn't need to be reachable by default — being the lowest-emphasis action, there's no
-   expectation the user needs it immediately.
-3. The tertiary button **cannot be placed inside a navigation bar** element.
+The tertiary button can be placed generally anywhere on the screen. Because the action it refers
+to is of low importance, reachability isn't an issue, as the actions are not mandatory but chosen
+by the user to perform. The tertiary button can also be placed inside other UI elements, like nav
+bars and accordions.
 
-## Use cases
+## Do's and Dont's
 
-No Do/Don't examples are registered from Figma for this component yet. When usage examples are
-added to the Figma spec, register their frames in `scripts/figma-images.json` and add them here
-using `<DoDontTable>` — see Primary or Secondary button's `guidelines.mdx` for the pattern.
+### Shelf
+
+When the tertiary button is combined with another action to express the dualism of a choice, we
+recommend stacking the actions vertically — this avoids issues with long labels (some languages
+have longer words than English). For the `button.small` size, you can horizontally stack it with
+other elements, as the size is small enough to accommodate longer labels — but always be mindful
+of the length of the text.
+
+<DoDontTable
+  doText="Use vertical shelves, to avoid unreadable text in buttons."
+  dontText="Avoid horizontal stacks, as they might create issues when being translated."
+/>
+
+### Repeating actions
+
+Repeating actions, such as in lists, can often be covered through chevron icons, to decrease
+visual clutter.
+
+<DoDontTable
+  doText="For many repeating actions, chevrons can be used to indicate the next step."
+  dontText={`When using tertiary buttons on repeating actions, ensure that they actually have an action attached to them. "Book" (for a session booking list) is fine, while "See more" would not bring any value.`}
+/>

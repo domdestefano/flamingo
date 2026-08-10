@@ -1,7 +1,7 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [button, floating, icon, fab, guidelines]
 ---
 
@@ -12,21 +12,56 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 <ComponentTabs basePath="/components/buttons/floating-icon-button" />
 
-## Usage
+## Description
 
-Use the floating icon button for subtle actions on top of a layered UI — most commonly a map —
-where the action needs to stay accessible regardless of what's underneath it.
+Floating buttons are used to communicate actions that users can take. A layered UI means the
+screen or flow consists of multiple layers that overlap on top of each other, like a map-based
+interface — where the main action sheet overlaps the map layer, and actions on top of the map need
+to be "floating" to ensure high contrast and hierarchy. The floating state also shows that when
+the user interacts with the layer below, the actions keep their position.
+
+### Floating vs. Flat
+
+You should use the floating icon button when the UI you're designing consists of multiple layers
+on top of each other, like a map-based interface. The floating state is necessary to establish
+high contrast between the background and the action, and to show the user that the layer will be
+interacted with regardless of the position of the layer below.
+
+### Icon floating buttons vs. header floating buttons
+
+Icon floating buttons can be used everywhere in the interface, as they are not anchored to the top
+part of the screen and are not used in place of, or as a replacement of, actions within header
+components in non-layered UIs.
+
+### Text-based buttons vs. icon-based buttons
+
+Text-based buttons are more prominent actions that users will interact with for a need — for
+example, users want to cancel an action because they've changed their mind about ordering. Icon
+buttons are cleaner than text-based ones, because text labels take up more space in the interface.
+They can also be placed in a shelf, to group similar actions.
+
+### Icon clarity
+
+Icon buttons rely only on iconography to convey the message of the action they trigger. For this
+reason, we recommend using icon-based buttons only for clear and established actions — like
+"go back to refresh". For anything else, using confusing or too-complex icons risks leaving more
+room for interpretation, and potentially prevents the user from interacting with the button itself.
 
 ## Placement
 
-1. Floating icon buttons are anchored to the **viewport, not the scrolling content** — they float
-   in a fixed position (typically bottom-right) above whatever is underneath.
-2. They should always be **reachable**, since floating actions exist specifically to stay
-   accessible while the rest of the screen scrolls or changes.
-3. Don't place a floating icon button where it can permanently obscure content the user needs to
-   read or interact with.
+The floating icon button can be placed anywhere on the screen, as it is not limited to Material
+Design's FAB positioning patterns. Flamingo recommends placing the button in the vicinity of the
+element it refers to — for example, anchoring it should be close to the top of the screen because
+it refers to the "pull to refresh" pattern. **The floating button does not overlap other UI
+elements.**
 
-## Use cases
+## Do's and Dont's
+
+### Placement/overlap
+
+Floating buttons should be "blocked" with other sticky components (which typically have elevation).
+There should be no partial or complete overlap between a floating button and components such as
+headers, footers, bottom sheets, or dialogs.
 
 ### Styling
 

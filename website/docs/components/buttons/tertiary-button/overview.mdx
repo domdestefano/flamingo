@@ -37,7 +37,13 @@ what the action does.
 | Property | Details |
 | --- | --- |
 | State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. **Loading**: the button is showing that an action is being triggered. |
-| Icon | (Optional) Ability to add an icon left or right of the text. |
+| Icon (position) | **No icon**. **Left**: use when you want to draw the user's attention to the icon first, or when the action represents a backward flow. **Right**: use when the action represents a forward flow or the next step. Avoid using an icon in tertiary buttons unless explicitly needed. |
+
+:::warning Size deprecated (Nov 2025)
+The tertiary button used to come in 3 sizes — Small, Medium, Large — depending on the prominence
+designers wanted to give the action and the size of the element it refers to. As of Nov 2025, the
+different sizes are deprecated — use the **Medium** size in Figma and code.
+:::
 
 ## Anatomy
 
