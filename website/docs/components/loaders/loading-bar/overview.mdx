@@ -1,0 +1,96 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: loaders
+used_in: [order-list, checkout]
+tags: [loading-bar, loaders, progress]
+---
+
+import { StatusBadge, AvailabilityTable, DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Loading bar <StatusBadge status="stable" />
+
+Indicate a linear, determinate loading process.
+
+<AvailabilityTable figma="available" web="not-available" ios="not-available" android="not-available" specs="available" />
+
+## Description
+
+The loading bar is a UI element used to indicate a linear determinate loading process within the
+UI. Loading bars, because they are determinate indicators, display how long a process will take.
+They should be used when the process completion rate can be detected, showing progress along the
+length of a fixed, invisible track.
+
+There are 2 types of loading bars:
+
+- **Default**, indicating a regular loading process of new content, which represent an
+  improvement or an updated version of the current content.
+- **Alert**, indicating the edge cases of an alerting loading, where the current content will be
+  replaced by indicating the loading of a deletion.
+
+The loading bars can go in 2 directions:
+
+- **Forward**, going from 0% to 100%, this is the default behaviour when loading new and updated
+  content.
+- **Backward**, going from 100% to 0%, this works similarly to a linear countdown; this can be
+  used particularly for undo processes, meaning that you want to give the user the chance to
+  prevent the loading of new content.
+
+## Interactions
+
+### Forward loading
+
+The loading bar **increases** in length, according to the time of the loading that's taking
+place.
+
+### Backward loading
+
+The loading bar **decreases** in length, according to the time of the loading that's taking
+place.
+
+## Placement
+
+If they sit:
+
+- **At the top of the screen**, they should be right below the header, and they indicate the
+  loading of all the screen content or the fetching of new data.
+- **Attached to a container**, such as a card or a bottom sheet, they indicate that the loading
+  process applies to that particular item (and that interaction with the rest of the UI is
+  possible).
+
+### Loading bar vs. Progress bar
+
+At their name suggest, the loading bar indicates a loading process within the UI or the fetching
+of new/different data. The progress bar, instead, shows a progression within a flow, most of the
+time triggered by actions performed by the user.
+
+## Do's and Dont's
+
+### Loading bars in buttons
+
+Do not place loading bars within buttons, to indicate the loading of the action triggered by the
+buttons. For these cases, use the loading button or automatic button instead. The loading variant
+shows an indeterminate loading spinner inside the button itself, while the automatic button uses
+the countdown to let the user perform an action before the countdown is over.
+
+<DoDontTable
+  doText="Primary buttons that trigger actions, which require a loading process have a specific variant for this state."
+  dontText="Avoid relying on the loading bar for button-triggered actions, as the label and the spinner inside the variants shows much more clearly the loading state than a loading bar."
+/>
+
+### Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either. If you do, we'll find out and hunt you down and force you to use
+Comic Sans for the rest of your design career.
+
+Jokes aside, please use the components provided by our design system and don't detach them; if
+you need different or improved ones, to cover your use cases, please contact the Flamingo design
+system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the loading bar as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us."
+/>

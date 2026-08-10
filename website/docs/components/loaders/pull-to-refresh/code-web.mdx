@@ -1,0 +1,43 @@
+---
+title: Code - Web
+sidebar_position: 2
+status: stable
+tags: [pull-to-refresh, loaders, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs
+  basePath="/components/loaders/pull-to-refresh"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+## Preview
+
+<StorybookEmbed storyId="components-loaders-pull-to-refresh--docs" viewMode="docs" height={700} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-loaders-pull-to-refresh--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    {
+      name: 'onRefresh',
+      description: 'Called when the user completes the pull gesture, to trigger the refresh.',
+      type: '() => Promise<void>',
+    },
+    {
+      name: 'ref',
+      description: 'Forwarded ref to the underlying container element.',
+      type: 'RefObject<HTMLDivElement> | undefined',
+    },
+  ]}
+/>
