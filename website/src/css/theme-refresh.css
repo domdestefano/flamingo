@@ -94,10 +94,18 @@
 
 .theme-doc-sidebar-container .menu__link,
 .theme-doc-sidebar-container .menu__list-item-collapsible {
-  margin: 0 1rem 0 0.5rem;
+  margin: 0 0.5rem;
   padding-top: 0.65rem;
   padding-bottom: 0.65rem;
   border-radius: 999px;
+}
+
+/* Extra right-side breathing room on the active leaf's own pill only —
+   applied here (not on the shared rule above) so it doesn't drag category
+   toggle chevrons out of alignment with the "All components" category's
+   separate .menu__caret button, which sits further right by default. */
+.theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) {
+  margin-right: 1rem;
 }
 
 /* Bold the label of every category in the active page's ancestor chain —
