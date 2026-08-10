@@ -28,17 +28,22 @@ export default function BrandSwitcher(): React.ReactElement {
   }
 
   return (
-    <select
-      value={brand}
-      onChange={handleChange}
-      aria-label="Preview a different brand"
-      className="flamingo-brand-switcher"
-    >
-      {brands.map(({ slug, name }) => (
-        <option key={slug} value={slug}>
-          {name}
-        </option>
-      ))}
-    </select>
+    <div className="flamingo-brand-switcher-wrapper">
+      <span className="flamingo-brand-switcher-label" aria-hidden="true">
+        🎨 Preview brand
+      </span>
+      <select
+        value={brand}
+        onChange={handleChange}
+        aria-label="Preview a different brand"
+        className="flamingo-brand-switcher"
+      >
+        {brands.map(({ slug, name }) => (
+          <option key={slug} value={slug}>
+            {name}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }
