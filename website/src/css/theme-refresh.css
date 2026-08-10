@@ -100,12 +100,16 @@
   border-radius: 999px;
 }
 
-/* Extra right-side breathing room on the active leaf's own pill only —
-   applied here (not on the shared rule above) so it doesn't drag category
-   toggle chevrons out of alignment with the "All components" category's
-   separate .menu__caret button, which sits further right by default. */
+/* Extra right-side breathing room on the active leaf's own pill only. */
 .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) {
   margin-right: 1rem;
+}
+
+/* Category toggle rows (the ones with a chevron) are a bit shorter than
+   leaf link rows. */
+.theme-doc-sidebar-container .menu__link--sublist {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
 }
 
 /* Bold the label of every category in the active page's ancestor chain —
@@ -124,9 +128,14 @@
 
 /* Navbar always uses the fixed neutral100 chrome colour, regardless of
    light/dark theme — matches the sidebar being pinned to a fixed colour
-   too (see custom.css). */
+   too (see custom.css). Infima's default --ifm-navbar-height (3.75rem) is
+   shorter than our enlarged logo (3.5rem) plus its own vertical offset,
+   so the logo was overflowing the navbar's box and throwing off vertical
+   centering — taller navbar gives it room to actually centre. */
 .navbar {
+  height: 4.5rem;
   background: #171717;
+  --ifm-navbar-height: 4.5rem;
   --ifm-navbar-link-color: rgba(255, 255, 255, 0.85);
   --ifm-navbar-link-hover-color: #ffffff;
 }
@@ -136,10 +145,36 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* Hover shows a sidebar-style pill highlight, not a weight change — the
+   bold weight is reserved for the active/selected link, which doesn't get
+   the hover pill. Same treatment on the logo/brand link. */
+.navbar .navbar__link,
+.navbar .navbar__brand {
+  border-radius: 999px;
+  transition: background-color 150ms ease;
+}
+
 .navbar .navbar__link:hover,
+.navbar .navbar__brand:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .navbar .navbar__link--active {
   color: #ffffff;
   font-weight: 700;
+  background: none;
+}
+
+/* The dark-mode toggle's sun/moon icon uses currentColor — on the fixed
+   dark navbar it needs to stay light regardless of the site's light/dark
+   colour-mode variables. */
+.navbar .clean-btn[class*='toggleButton'] {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar .clean-btn[class*='toggleButton']:hover {
+  color: #ffffff;
 }
 
 /* Left-aligned, vertically centred logo + nav links — pull the links in
@@ -152,11 +187,8 @@
 }
 
 .navbar__brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-}
-
-.navbar__brand {
   margin-right: 0.5rem;
 }
 
