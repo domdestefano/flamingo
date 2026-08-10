@@ -64,6 +64,26 @@ export const galleryCategories: GalleryCategory[] = [
         "title": "Tertiary button",
         "image": "/img/components/tertiary-button/tertiary-button-overview.png",
         "href": "/components/buttons/tertiary-button/overview"
+      },
+      {
+        "slug": "destructive-button",
+        "title": "Destructive button",
+        "href": "/components/buttons/destructive-button/overview"
+      },
+      {
+        "slug": "automatic-button",
+        "title": "Automatic button",
+        "href": "/components/buttons/automatic-button/overview"
+      },
+      {
+        "slug": "slider-button",
+        "title": "Slider button",
+        "href": "/components/buttons/slider-button/overview"
+      },
+      {
+        "slug": "text-link",
+        "title": "Text link",
+        "href": "/components/buttons/text-link/overview"
       }
     ]
   },
@@ -71,15 +91,13 @@ export const galleryCategories: GalleryCategory[] = [
     "label": "Content display and Lists",
     "items": [
       {
-        "slug": "expandable-list",
-        "title": "Expandable list",
-        "image": "/img/components/expandable-list/expandable-list-detach-do.png",
-        "href": "/components/content-display-and-lists/expandable-list/overview"
+        "slug": "accordion",
+        "title": "Accordion",
+        "href": "/components/content-display-and-lists/accordion/overview"
       },
       {
         "slug": "leading-list",
         "title": "Leading list",
-        "image": "/img/components/leading-list/leading-list-detach-do.png",
         "href": "/components/content-display-and-lists/leading-list/overview"
       }
     ]

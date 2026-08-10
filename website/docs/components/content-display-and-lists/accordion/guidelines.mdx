@@ -1,0 +1,37 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [list, expandable, accordion, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/content-display-and-lists/accordion" />
+
+## Length of the content
+
+Accordions are used when you want to hide/reveal content, so it's not necessary to show it with
+prominence. Even though content is accessed on discovery, be mindful of the content's text length,
+and clear about the user's experience with content. Remember that the user digests content in a
+fast environment and looking at a phone screen.
+
+<DoDontTable
+  doText="Concise and clear content will give the user the important information they want to discover while revealing the content of the accordion."
+  dontText="Too lengthy content might dissuade the user from reading all of it, and potentially prevent them from opening other accordions."
+/>
+
+## Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either — please use the components provided by our design system and don't
+detach them. If you need a different or improved variant to cover your use case, please contact
+the Flamingo design system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the accordion as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us instead of detaching or building your own."
+/>

@@ -12,27 +12,61 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 <ComponentTabs basePath="/components/content-display-and-lists/leading-list" />
 
-## Usage
+## Description
 
-Use the leading list for rows that navigate somewhere else on tap — e.g. a settings menu — not for
-rows that reveal more detail in place (use the expandable list for that instead).
+A leading list is a UI element used to list items that lead to an action or a screen. It helps
+users navigate through the app, most commonly on Settings-style screens.
+
+Leading lists have 3 states:
+
+- **Active**, its interactive elements can be interacted with.
+- **Pressed**, its interactive elements have been pressed.
+- **Inactive**, its interactive elements cannot be interacted with.
+
+### Default leading list
+
+The default leading list consists of a **main label** (mandatory) and, optionally, a **description
+text**, an **icon**, and a **trailing chevron** to signal that the row leads somewhere else.
+
+### Complex leading list
+
+A complex leading list can also show a **subtitle**, a **status text**, and a **caption** —
+useful when a row needs to communicate more information before the user taps into it (for
+example, a row summarising the current value of a setting).
+
+### Compact leading list
+
+A compact leading list keeps only the elements strictly required — main label and, optionally, a
+chevron icon or a value on the right — for dense settings screens where space is limited.
 
 ## Use cases
+
+### Leading list vs. simple list with action
+
+The difference between a leading list and a simple list with an action element (button) is how
+they navigate: a simple list's button triggers something to appear in place — like a modal or a
+bottom sheet — while a leading list slides to another screen entirely (from the right, or from the
+left if the user's settings are RTL). Use the simple list (with an action) when the action
+shouldn't leave the current screen.
+
+### Leading list vs. accordion
+
+Leading lists navigate to another screen; the [accordion](/components/content-display-and-lists/accordion/overview)
+reveals more content in place, without navigating away. Use a leading list only when tapping the
+row should take the user somewhere else.
+
+## Do's and Dont's
 
 ### Chevron icon
 
 <DoDontTable
-  doImage="/img/components/leading-list/leading-list-chevron-icon-do.png"
-  doText="Use the standard trailing chevron to signal that a row navigates to another screen."
-  dontImage="/img/components/leading-list/leading-list-chevron-icon-dont.png"
-  dontText="Don't replace the chevron with a different icon (like an arrow or a plus) — it breaks the shared visual convention users rely on to recognise a navigational row."
+  doText="Use one consistent trailing element (the chevron) across a list to signal that every row has the same kind of destination or behaviour."
+  dontText="Don't mix different trailing elements or styles within the same list — it implies rows behave differently when they don't, and breaks the shared visual convention users rely on to recognise a navigational row."
 />
 
 ### Detach
 
 <DoDontTable
-  doImage="/img/components/leading-list/leading-list-detach-do.png"
-  doText="Keep row titles in the standard text colour and weight, even when a title needs two lines."
-  dontImage="/img/components/leading-list/leading-list-detach-dont.png"
-  dontText="Don't detach a row's title and restyle its colour or weight — recolouring it (e.g. to an accent colour) makes it read as a link or an error rather than a normal navigational row."
+  doText="Use the leading list as intended by the design system."
+  dontText="Don't detach or restyle a leading list instance — if you need a variant to cover your use case, contact the Flamingo design system team instead of creating your own."
 />

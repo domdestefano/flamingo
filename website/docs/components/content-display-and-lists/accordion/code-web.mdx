@@ -1,0 +1,40 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [list, expandable, accordion, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/content-display-and-lists/accordion" />
+
+## Preview
+
+<StorybookEmbed storyId="components-content-display-and-lists-accordion--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-content-display-and-lists-accordion--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: 'The accordion title, always visible.', type: 'ReactNode' },
+    { name: 'subtitle', description: 'A short description shown below the title while collapsed.', type: 'ReactNode' },
+    { name: 'icon', description: 'An optional icon shown alongside the title.', type: 'ReactNode' },
+    { name: 'toggleIcon', description: 'Overrides the default expand/collapse icon.', type: 'ReactNode' },
+    { name: 'open', description: 'Controls whether the accordion is expanded, for controlled usage.', type: 'boolean | undefined' },
+    { name: 'onToggle', description: 'Called when the accordion is expanded or collapsed.', type: '() => void' },
+    { name: 'disabled', description: 'A boolean indicating whether the accordion is disabled.', type: 'boolean | undefined', default: 'false' },
+    {
+      name: 'variant',
+      description: "'default' maps to the Flat design variant, 'elevated' to the Elevated design variant. A third code-only variant, 'alternative', also exists — check with the design system team before using it, as it isn't documented in the current Figma spec.",
+      type: "'default' | 'elevated' | 'alternative' | undefined",
+    },
+    { name: 'id', description: 'DOM id applied to the accordion.', type: 'string | undefined' },
+  ]}
+/>
