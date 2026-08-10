@@ -4,56 +4,55 @@
  */
 
 .heroBanner {
-  padding: 5rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 0 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    var(--flamingo-site-primary-main) 0%,
-    var(--flamingo-site-primary-dark02) 55%,
-    var(--flamingo-site-secondary-main) 130%
-  );
-  isolation: isolate;
+  background-image: url('../../static/img/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-/* A soft dot-grid texture over the gradient for a bit of depth. */
+/* Dark scrim over the photo so white title/tagline text stays legible. */
 .heroBanner::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1.5px, transparent 1.5px);
-  background-size: 28px 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(35, 39, 131, 0.55) 0%,
+    rgba(255, 0, 97, 0.45) 100%
+  );
   z-index: 0;
 }
 
-/* A large, faint flamingo mark as a decorative watermark. */
-.heroBanner::after {
-  content: '';
+.heroLogo {
   position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 420px;
-  height: 420px;
-  background-image: url('../../static/img/flamingo-logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.12;
-  transform: rotate(-8deg);
-  z-index: 0;
+  top: 1.5rem;
+  right: 1.5rem;
+  height: 64px;
+  width: auto;
+  z-index: 2;
 }
 
-.heroBanner .container {
+.heroContent {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 3rem 1.5rem;
+    padding: 5rem 1.5rem 2rem;
   }
-  .heroBanner::after {
-    width: 260px;
-    height: 260px;
+  .heroLogo {
+    height: 44px;
   }
 }
