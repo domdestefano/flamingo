@@ -100,12 +100,16 @@
   border-radius: 999px;
 }
 
-/* Extra right-side breathing room on the active leaf's own pill only —
-   applied here (not on the shared rule above) so it doesn't drag category
-   toggle chevrons out of alignment with the "All components" category's
-   separate .menu__caret button, which sits further right by default. */
+/* Extra right-side breathing room on the active leaf's own pill only. */
 .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) {
   margin-right: 1rem;
+}
+
+/* Category toggle rows (the ones with a chevron) are a bit shorter than
+   leaf link rows. */
+.theme-doc-sidebar-container .menu__link--sublist {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
 }
 
 /* Bold the label of every category in the active page's ancestor chain —
@@ -124,9 +128,14 @@
 
 /* Navbar always uses the fixed neutral100 chrome colour, regardless of
    light/dark theme — matches the sidebar being pinned to a fixed colour
-   too (see custom.css). */
+   too (see custom.css). Infima's default --ifm-navbar-height (3.75rem) is
+   shorter than our enlarged logo (3.5rem) plus its own vertical offset,
+   so the logo was overflowing the navbar's box and throwing off vertical
+   centering — taller navbar gives it room to actually centre. */
 .navbar {
+  height: 4.5rem;
   background: #171717;
+  --ifm-navbar-height: 4.5rem;
   --ifm-navbar-link-color: rgba(255, 255, 255, 0.85);
   --ifm-navbar-link-hover-color: #ffffff;
 }
