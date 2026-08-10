@@ -1,0 +1,40 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: buttons
+figma_node: '15:700'
+used_in: [rider-profile, order-cancellation, account-settings]
+tags: [button, destructive, danger, action, cta, interactive]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Destructive button <StatusBadge status="stable" />
+
+Trigger a destructive or dangerous action — one that permanently removes data or can't easily be
+undone.
+
+<ComponentTabs basePath="/components/buttons/destructive-button" />
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
+
+## Component
+
+Destructive buttons reuse the same underlying `Button` component as Primary and Tertiary button,
+with `color="destructive"` — there's no separate component in code.
+
+1. Active, pressed, and inactive states
+2. **Prominent** size — resembles the Primary button, for when the danger of the action should be
+   visually obvious and easy to notice.
+3. **Subtle** size — resembles the Tertiary button, for when the destructive action is less
+   desired or should draw less attention.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Size | **Prominent**: resembles the primary style button — use when you want the danger/destructive nature of the action to be visually important and easy to notice. **Subtle**: resembles the tertiary style button — use when the danger/destructive action is a less desired or less important action. |
+| State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. |

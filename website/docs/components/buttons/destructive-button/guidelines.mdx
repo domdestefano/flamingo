@@ -1,0 +1,56 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [button, destructive, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/buttons/destructive-button" />
+
+## Placement
+
+Use the destructive button for destructive or dangerous actions — for instance deleting the
+user's profile.
+
+- Let the user **always understand the consequences of a destructive action**, and if necessary,
+  add a confirmation modal for extra safety.
+- The destructive button should usually be placed at the bottom of the screen, or close to the
+  content it refers to.
+
+## Do's and Dont's
+
+### Prominent vs. subtle
+
+Destructive/dangerous actions are not the standard choice for riders or something they do often.
+Because of this, the button shouldn't be overused in the app. In most cases you can use the
+subtle variant so that the component doesn't draw too much attention to these actions.
+
+<DoDontTable
+  doText="Dangerous actions such as Profile deletion are usually something riders do rarely — a subtle Destructive button is the right choice here."
+  dontText="Don't use the Prominent-looking Destructive button in a section where it would draw too much attention to a rarely-used action."
+/>
+
+### Multiple use on the screen
+
+Destructive buttons can only be used once on a screen, as they represent the destructive or
+dangerous action of the screen. Use secondary or tertiary buttons for less important actions.
+
+<DoDontTable
+  doText="The user should know which action will be destructive."
+  dontText="Having 2 or more destructive actions will confuse users, especially if they want to cancel or revert back to a previous state."
+/>
+
+### Vertical resizing
+
+Buttons can resize horizontally based on the content. Not vertically. Destructive buttons in
+Flamingo do not support multi-line labels — be mindful when writing labels for buttons.
+
+<DoDontTable
+  doText="Destructive buttons only resize horizontally."
+  dontText="Destructive buttons do not resize vertically."
+/>

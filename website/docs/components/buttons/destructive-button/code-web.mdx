@@ -1,0 +1,55 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [button, destructive, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/buttons/destructive-button" />
+
+## Preview
+
+Destructive button shares the same underlying `Button` component and Storybook docs page as
+Primary button — scroll to the "Destructive Button" section below.
+
+<StorybookEmbed storyId="components-buttons-button--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-buttons-button--docs)
+
+## API
+
+Same `Button` component API as Primary button — set `color="destructive"` and use `variant="primary"`
+for the **Prominent** size or `variant="tertiary"` for the **Subtle** size. See the shared
+[Button API](/components/buttons/primary-button/code-web#api) for the full prop table, or below:
+
+<PropsTable
+  rows={[
+    {
+      name: 'color',
+      description: 'Color of button — set to "destructive" for a destructive/dangerous action.',
+      type: "'default' | 'destructive' | undefined",
+      default: 'default',
+    },
+    {
+      name: 'disabled',
+      description: 'A boolean indicating whether the button is disabled. If isLoading is true then disabled will be true as well.',
+      type: 'boolean | undefined',
+      default: 'false',
+    },
+    { name: 'endIcon', description: 'An optional icon to be displayed at the end of the button.', type: 'ReactNode' },
+    { name: 'loading', description: 'A boolean indicating loading state.', type: 'boolean | undefined', default: 'false' },
+    { name: 'startIcon', description: 'An optional icon to be displayed at the start of the button.', type: 'ReactNode' },
+    {
+      name: 'variant',
+      description: "Variant of button — 'primary' for the Prominent destructive size, 'tertiary' for Subtle.",
+      type: "'primary' | 'secondary' | 'tertiary' | undefined",
+      default: 'primary',
+    },
+  ]}
+/>

@@ -1,0 +1,34 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: buttons
+used_in: [onboarding, terms-and-privacy, checkout]
+tags: [link, text-link, hyperlink, interactive]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Text link <StatusBadge status="stable" />
+
+Bring the user outside of the app page they're in, or outside of the whole app.
+
+<ComponentTabs basePath="/components/buttons/text-link" />
+
+<AvailabilityTable figma="not-available" web="available" ios="not-available" android="not-available" specs="available" />
+
+## Component
+
+A text link **isn't a Figma component** — there's no reusable instance to place. It's applied
+directly to a run of text within a text block, the same way a hyperlink works on the web. See
+[How to apply a text link](/components/buttons/text-link/guidelines#how-to-apply-a-text-link) on
+the Guidelines tab.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Size | The size of the link depends on the size of the text it's part of. |
+| State | **Active**: the link is clickable. **Pressed**: the link is being pressed. |
