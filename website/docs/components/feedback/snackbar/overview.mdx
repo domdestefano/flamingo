@@ -19,15 +19,44 @@ Briefly inform the user of a process the app has performed, or will perform.
 
 <ComponentTabs basePath="/components/feedback/snackbar" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/snackbar/snackbar-overview.png" alt="Snackbar types (success, alert, error) and with an action button" />
 
-Snackbars inform users of a process the app has performed or will perform. They appear
-temporarily, anchored to the bottom of the screen, then dismiss on their own — unlike a Message
-box, which is a persistent part of the page.
+Snackbars are a key component for contextual communication without interrupting the user's flow.
+The snackbar opens up from the bottom of the screen to the top, after it gets triggered by an
+action performed by the user or by the system — e.g. updating an information such as their name.
+
+Main purposes:
+
+- **Informational feedback**: they communicate a status update, such as the successful completion
+  of a task ("Email sent", "Settings saved") or the arrival of new data.
+- **Temporary and unobtrusive**: they appear temporarily (usually near the bottom of the screen)
+  and automatically disappear after 4 seconds if they don't have a button without requiring user
+  input to be dismissed.
+- **Offer a single, optional action**: a key feature is that they can include one, non-critical
+  action button, allowing the user to take an immediate follow-up step. The most common example is
+  an "Undo" action for a recent change (e.g., after archiving an item).
+
+### Snackbar vs. Message box
+
+Use the message box when you want to give great prominence to the user about any sort of
+information, e.g. the rider score is low and it shows some tips to improve it. The snackbar is
+instead a short message to notify the user that something happened or has been triggered, e.g.
+the documents have not been uploaded successfully.
+
+### Snackbar vs. Message bar
+
+The snackbar can be considered a short notification for the user about something that happened
+or has been triggered, e.g. the order has been successfully selected. The snackbar disappears if
+not interacted with or if dismissed by the user.
+
+The message bar instead is used for continuous information — continuous because the bar is
+locked to the navigation bar, so the content scrolls right beneath it. The message bar disappears
+only when the state that triggered the message changes, e.g. the message bar appears to inform
+the user that the documents are about to expire and it disappears when these are updated.
 
 ## Properties
 
