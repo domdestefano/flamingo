@@ -106,13 +106,15 @@
    Primary button). Matched by "contains the active link somewhere inside
    and has its own child list" rather than relying on Infima's own --active
    modifier on the collapsible header, since that isn't reliably applied to
-   toggle-only categories (ones without their own linked page). Extra
-   horizontal padding here (on top of the child pill's own inset margin)
-   keeps the child's selection pill from touching the parent box's edges. */
+   toggle-only categories (ones without their own linked page). Edge-to-edge,
+   square-cornered — spans the full sidebar width via negative margin
+   cancelling the menu's own horizontal padding. */
 .theme-doc-sidebar-container li.menu__list-item:has(> ul.menu__list):has(.menu__link--active) {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 4px 4px 8px;
+  border-radius: 0;
+  margin-left: calc(-1 * var(--ifm-menu-link-padding-horizontal, 0.75rem));
+  margin-right: calc(-1 * var(--ifm-menu-link-padding-horizontal, 0.75rem));
+  padding: 4px 0.5rem 8px;
 }
 
 /* Bold the label of every category in the active page's ancestor chain —
