@@ -1,0 +1,273 @@
+{
+  "_comment": "Corrections for scripts/scan-component-status.js. The scanner matches code symbols to documented component names automatically; add entries here only where the names differ so much that no heuristic could connect them. See scripts/README-component-status.md.",
+
+  "force": {
+    "primary-button": {
+      "androidCommonUi": ["ThrottledButton"]
+    },
+    "radio-button": {
+      "ios": ["DS.Radio"],
+      "web": ["Radio"]
+    },
+    "text-field": {
+      "androidCompose": ["TextInputBigV2", "OutlinedTextFieldV2", "PasswordField"],
+      "ios": ["DS.TextInput"],
+      "web": ["TextInput"]
+    },
+    "pie-chart": {
+      "ios": ["DS.Pie"]
+    },
+    "circle-chart": {
+      "androidCompose": [
+        "ProgressorCircleDefault",
+        "ProgressorCircleSuccess",
+        "ProgressorCircleAlert",
+        "ProgressorCircleError",
+        "ProgressorCircleNeutral"
+      ],
+      "ios": ["DS.Circle", "DS.DonutIndicator"]
+    },
+    "horizontal-divider": {
+      "web": ["Divider"]
+    },
+    "vertical-divider": {
+      "web": ["Divider"]
+    },
+    "message-box": {
+      "androidCommonUi": ["OverlayDialog"],
+      "androidCompose": ["MessagePopUp", "MessageDialogContent"]
+    },
+    "message-bar": {
+      "androidCompose": [
+        "MessageBarNeutral",
+        "MessageBarAlert",
+        "MessageBarSuccess",
+        "MessageBarError",
+        "MessageBarStack",
+        "BannerMessageNeutral",
+        "BannerMessageAlert",
+        "BannerMessageSuccess",
+        "BannerMessageError"
+      ]
+    },
+    "empty-screen": {
+      "androidCommonUi": ["ErrorView"],
+      "androidCompose": ["EmptyScreen", "ErrorScreen"]
+    },
+    "switch": {
+      "androidCommonUi": ["ToggleControl", "ToggleWithLabelsView"],
+      "androidCompose": ["ToggleBig", "ToggleCell"]
+    },
+    "badge": {
+      "androidCompose": ["BadgedBox"]
+    },
+    "stepper": {
+      "androidCompose": [
+        "TaskStatusIndicator",
+        "CircleWithNumber",
+        "CircleWithTicks",
+        "CircleWithContent"
+      ]
+    },
+    "date-picker": {
+      "web": ["DatePickerDay", "DatePickerMonth"]
+    },
+    "leading-list": {
+      "web": ["ListItem"]
+    }
+  },
+
+  "_extraRowsComment": "Components that exist in code but have no docs page yet. Listed here so they still show up in the right category table; they render with a 'no docs page' marker. Symbols are explicit because there is no documented name to match against.",
+
+  "extraRows": [
+    {
+      "id": "link",
+      "displayName": "Link",
+      "category": "Buttons",
+      "androidCompose": ["LinkBig", "LinkMedium", "LinkSmall"]
+    },
+    {
+      "id": "slider-button",
+      "displayName": "Slider button",
+      "category": "Buttons",
+      "androidCompose": ["SliderButton", "SliderButtonWithCountDown", "SliderHandle"]
+    },
+    {
+      "id": "inline-message",
+      "displayName": "Inline message",
+      "category": "Feedback",
+      "androidCommonUi": ["InlineMessage"],
+      "androidCompose": [
+        "MessageInlineSuccess",
+        "MessageInlineAlert",
+        "MessageInlineError"
+      ]
+    },
+    {
+      "id": "tooltip",
+      "displayName": "Tooltip",
+      "category": "Overlay",
+      "androidCompose": ["Tooltip", "TooltipPopup", "TooltipContent"],
+      "web": ["Tooltip"]
+    },
+    {
+      "id": "accordion",
+      "displayName": "Accordion",
+      "category": "Content display and Lists",
+      "web": ["Accordion"]
+    },
+    {
+      "id": "numeric-stepper",
+      "displayName": "Numeric stepper",
+      "category": "Form",
+      "web": ["NumericStepper"]
+    },
+    {
+      "id": "wheel-picker",
+      "displayName": "Wheel picker",
+      "category": "Form",
+      "web": ["WheelPicker"]
+    },
+    {
+      "id": "progress-bar",
+      "displayName": "Progress bar",
+      "category": "Progressors and Charts",
+      "web": ["ProgressBar"]
+    },
+
+    {
+      "_comment": "Grouped by the folder each one sits in inside rrds-compose / rrds-compose-app, which is the Android team's own categorisation.",
+      "id": "linkify-text",
+      "displayName": "Linkify text",
+      "category": "Buttons",
+      "androidCompose": [
+        "LinkifyPhoneNumberText",
+        "LinkifyPhoneNumberAndUrlText",
+        "LinkifyPlaceholder",
+        "OverFlowLinkifyPhoneNumberText"
+      ]
+    },
+    {
+      "id": "shimmer",
+      "displayName": "Shimmer",
+      "category": "Loaders",
+      "androidCompose": ["ShimmeringDots", "ShimmeringHorizontalBar", "ShimmeringText"]
+    },
+    {
+      "id": "pull-to-refresh",
+      "displayName": "Pull to refresh",
+      "category": "Loaders",
+      "androidCommonUi": ["PullToRefreshLayout"],
+      "androidCompose": ["PullToRefresh"],
+      "web": ["PullToRefresh"]
+    },
+    {
+      "id": "full-screen-loading",
+      "displayName": "Full-screen loading",
+      "category": "Loaders",
+      "androidCommonUi": ["LoadingDialogFullScreen"],
+      "androidCompose": ["LoadingFullScreen"]
+    },
+    {
+      "id": "pin-entry",
+      "displayName": "PIN entry",
+      "category": "Form",
+      "androidCompose": ["PinDigitDisplay", "PinValidationRow"]
+    },
+    {
+      "id": "phone-prefix-card",
+      "displayName": "Phone prefix card",
+      "category": "Form",
+      "androidCompose": ["PhonePrefixCard"]
+    },
+    {
+      "id": "password-rules",
+      "displayName": "Password rules",
+      "category": "Form",
+      "androidCompose": ["PasswordRuleContent"]
+    },
+    {
+      "id": "sectioned-circle-progressor",
+      "displayName": "Sectioned circle progressor",
+      "category": "Progressors and Charts",
+      "androidCompose": [
+        "SmallSectionedCircleProgressorDefault",
+        "BigSectionedCircleProgressorDefault"
+      ]
+    },
+
+    {
+      "_comment": "Categories below taken from the rrds-web Storybook (deliveryhero.github.io/rrds-web), which uses the same category names as these docs.",
+      "id": "action-card",
+      "displayName": "Action card",
+      "category": "Content display and Lists",
+      "web": ["ActionCard"]
+    },
+    {
+      "id": "image",
+      "displayName": "Image",
+      "category": "Content display and Lists",
+      "web": ["Image"]
+    },
+    {
+      "id": "uploaded-item",
+      "displayName": "Uploaded item",
+      "category": "Content display and Lists",
+      "web": ["UploadedItem"]
+    },
+    {
+      "id": "list",
+      "displayName": "List",
+      "category": "Content display and Lists",
+      "androidCommonUi": ["FullWidthSingleRowListItemView", "FullWidthMultiRowListItemView"],
+      "web": ["List"]
+    },
+    {
+      "id": "card",
+      "displayName": "Card",
+      "category": "Layout",
+      "androidCommonUi": ["RoadrunnerCardView"],
+      "web": ["Card"]
+    },
+    {
+      "id": "carousel",
+      "displayName": "Carousel",
+      "category": "Layout",
+      "web": ["Carousel"]
+    },
+    {
+      "id": "dialog",
+      "displayName": "Dialog",
+      "category": "Overlay",
+      "ios": ["DS.DialogView"],
+      "web": ["Dialog"]
+    },
+    {
+      "id": "full-screen-modal",
+      "displayName": "Full screen modal",
+      "category": "Overlay",
+      "web": ["FullScreenModal"]
+    },
+    {
+      "id": "spinner",
+      "displayName": "Spinner",
+      "category": "Loaders",
+      "web": ["Spinner", "SyncingSpinner"]
+    }
+  ],
+
+  "ignore": [
+    "BadgeStyle",
+    "SnackbarViewType",
+    "MessageDialogViewModel",
+    "GetCalendarWeek",
+    "GetCalendarWeeks",
+    "GetJodaFirstDayOfWeek",
+    "Title",
+    "Scrim",
+    "SmallCircleWithIconDefault",
+    "HeaderIcon",
+    "InputBase",
+    "Typography"
+  ]
+}

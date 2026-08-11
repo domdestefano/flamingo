@@ -1,0 +1,3 @@
+# Transient PR body written by scripts/scan-component-status.js and consumed
+# by .github/workflows/scan-component-status.yml — never committed.
+component-status-pr-body.md

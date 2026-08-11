@@ -1,0 +1,24 @@
+---
+title: Component Status
+sidebar_position: 0.5
+status: stable
+tags: [components, status]
+---
+
+import ComponentStatusTable from '@site/src/components/ComponentStatusTable';
+
+# Component Status
+
+What each component is actually called in code on every platform, and how it's
+built there. Several symbols in one cell means that platform ships the
+component as separate variants; a single symbol with options listed underneath
+means one component parameterised by props or enums.
+
+:::info
+1. This table is generated from the platform source repositories — see
+   `scripts/README-component-status.md` to refresh it or correct a mapping.
+2. iOS is not yet representing the correct components, will be updated soon.
+3. An auto update of this table will be added soon.
+:::
+
+<ComponentStatusTable />
