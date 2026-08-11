@@ -11,9 +11,7 @@ function Thumbnail({ item }: { item: (typeof galleryCategories)[number]['items']
   return (
     <Link to={item.href} className={`${styles.card} flamingo-card`}>
       {iconImage ? (
-        <span className={styles.iconTile}>
-          <img src={iconImageUrl} alt="" className={styles.iconImage} />
-        </span>
+        <img src={iconImageUrl} alt="" className={styles.iconImage} />
       ) : (
         <span className={styles.icon} aria-hidden="true">
           {componentIcons[item.slug] ?? '🧩'}
