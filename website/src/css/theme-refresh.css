@@ -98,11 +98,20 @@
   padding-left: 1.25rem;
 }
 
-.theme-doc-sidebar-container .menu__link,
-.theme-doc-sidebar-container .menu__list-item-collapsible {
+.theme-doc-sidebar-container .menu__link {
   margin: 0 0.5rem;
   padding-top: 0.65rem;
   padding-bottom: 0.65rem;
+  border-radius: 999px;
+}
+
+/* .menu__list-item-collapsible wraps the category link + its separate caret
+   button — it must only set horizontal margin, never vertical padding: the
+   inner .menu__link--sublist already carries its own vertical padding
+   below, and padding on both stacks, making every category row ~15px
+   taller than a plain leaf row and breaking the sidebar's row rhythm. */
+.theme-doc-sidebar-container .menu__list-item-collapsible {
+  margin: 0 0.5rem;
   border-radius: 999px;
 }
 
@@ -112,8 +121,13 @@
 }
 
 /* Category toggle rows (the ones with a chevron) are a bit shorter than
-   leaf link rows. */
+   leaf link rows. Margin is zeroed here because .menu__link--sublist is
+   always nested inside a .menu__list-item-collapsible, which already
+   carries the 0.5rem horizontal margin — without this the two margins
+   stack and shift every category label ~8px further right than a leaf
+   link at the same nesting level. */
 .theme-doc-sidebar-container .menu__link--sublist {
+  margin: 0;
   padding-top: 0.45rem;
   padding-bottom: 0.45rem;
 }

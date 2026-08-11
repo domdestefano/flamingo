@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
         Flamingo component with live examples, guidelines, and code.
       </>
     ),
-    to: '/components/buttons/primary-button/overview',
+    to: '/components/about/all-components',
   },
   {
     title: 'Tokens',
