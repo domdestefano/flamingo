@@ -27,6 +27,12 @@
   text-decoration: none;
 }
 
+/* Higher specificity than the shared .flamingo-card border rule so the
+   gallery tile gets a blue stroke instead of the default neutral one. */
+.card:global(.flamingo-card) {
+  border-color: var(--flamingo-color-primary-main);
+}
+
 .card:hover {
   color: var(--ifm-font-color-base);
   text-decoration: none;
