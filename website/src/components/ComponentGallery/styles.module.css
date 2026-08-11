@@ -36,6 +36,21 @@
   line-height: 1;
 }
 
+.iconTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--flamingo-corner-radius03);
+  background: var(--flamingo-site-secondary-main);
+}
+
+.iconImage {
+  width: 2rem;
+  height: 2rem;
+}
+
 .cardTitle {
   display: block;
   font-size: 0.9rem;

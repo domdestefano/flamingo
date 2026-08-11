@@ -56,3 +56,12 @@ export const componentIcons: Record<string, string> = {
   'specs-bar-chart': '📊',
   stepper: '🪜',
 };
+
+// Real icon images (Google Material Rounded), replacing the emoji
+// placeholder above where available — rendered on a secondary.main tile
+// with the icon in primary.dark. Add more slugs here as icons are made.
+export const componentIconImages: Record<string, string> = {
+  animations: '/img/gallery-icons/animations.png',
+  'graphic-blocks': '/img/gallery-icons/graphic-blocks.png',
+  icons: '/img/gallery-icons/icons.png',
+};
