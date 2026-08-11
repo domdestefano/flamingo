@@ -1,0 +1,102 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [dialog, overlay, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/overlay/dialog" />
+
+## Interactions
+
+### Appear / Disappear
+
+The dialog appears sliding in from the bottom of the screen and reaching the centre of it. It's
+usually paired with a scrim, which fades in as the dialog is appearing. The dialog slides back
+down towards the bottom of the screen when it is dismissed; the scrim fades out as it disappears.
+The dialog can only be dismissed by tapping a dismissing button.
+
+### Interaction properties
+
+These are the interaction properties for both when the dialog appears and disappears:
+
+| Duration | Easing function |
+| --- | --- |
+| `duration06` | `easingFunction01` |
+
+## Usage
+
+### Number of buttons
+
+The maximum number of buttons a dialog can have is 3, and the minimum is 1. Avoid unclear button
+labels, and always include a dismissing action — like "Got it," "Dismiss," or "Cancel" — so the
+user can cancel the action that triggered the dialog or go back to the previous state. This
+dismissing action should always use the `button.tertiary.big` type and be the last action (at the
+bottom).
+
+When there is only one action in the dialog, its button type should be `button.primary.big`. For
+every other case, follow the basic principles of action prominence:
+
+- The most important action uses `button.primary.big`, at the top.
+- A lesser-important action uses `button.secondary.big`, in the middle.
+- The least important — and dismissing — action uses `button.tertiary.big`, at the bottom.
+- A `button.destructive.big` action is always placed at the top, as it represents danger and
+  should get the user's attention first.
+
+### How to dismiss dialogs
+
+Dialogs may be dismissed by:
+
+- Tapping a "Cancel," "Got it," or "Dismiss" button.
+- Tapping the scrim.
+- Tapping the Android system "back" button.
+- Using another standard "cancel" or "escape" action, such as iOS' VoiceOver escape gesture.
+
+## Placement
+
+Dialogs appear centred on screen, sliding up from the bottom and scrimming the content behind
+them. Because they block all app interaction until resolved, use them sparingly — only for
+critical information or a decision the user must make before continuing.
+
+## Do's and Dont's
+
+### Size
+
+The dialog should give quick information to the user and let them make a decision quickly. Dialogs
+should not be overcrowded with content, and the content inside is not scrollable, so be mindful of
+vertical spacing. The maximum height is 480px.
+
+<DoDontTable
+  doText="Be concise and clear when creating content for the dialog."
+  dontText="Too long dialogs will look overcrowded, as the space real estate is limited."
+/>
+
+### Are you sure?
+
+Avoid using the phrase "Are you sure...?" or any other sentence that might undermine the user's
+capacity to make a decision. Instead, state clearly the consequences of the user's action — e.g.
+"This action will erase all your data."
+
+<DoDontTable
+  doText={<>Clarity will help the user make a decision faster and better — e.g. "This will cancel the raise of your issue."</>}
+  dontText={<>A condescending tone in the content, or unclear labels, will confuse and frustrate the user — e.g. "Are you sure you want to cancel your issue?"</>}
+/>
+
+### Type of buttons
+
+<DoDontTable
+  doText="From the top down, start with the most important action, while the dismissing action is always the last one."
+  dontText="Not following a logical hierarchy might confuse the user."
+/>
+
+### Dismiss label
+
+<DoDontTable
+  doText={<>When there's only one button, the action should always be dismissing — e.g. "Got it," "Dismiss," or "Cancel."</>}
+  dontText="Avoid forcing the user to tap an action that might trigger something they might not want."
+/>

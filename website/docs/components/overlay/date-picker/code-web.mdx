@@ -1,7 +1,7 @@
 ---
 title: Code - Web
 sidebar_position: 5
-status: stable
+status: in-progress
 tags: [date-picker, overlay, code, web, api]
 ---
 
@@ -19,14 +19,31 @@ import { PropsTable } from '@site/src/components/ComponentDocs/shared';
 
 [View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-date-picker--docs)
 
+**Important:** this component requires the peer dependency `dayjs` to be installed. To avoid
+bundling issues when not using it, import it directly:
+
+```tsx
+import { DatePicker } from '@deliveryhero/flamingo/dist/components/date-picker';
+```
+
 ## API
 
 <PropsTable
   rows={[
-    { name: 'value', description: 'Selected date, or a { start, end } range in range mode.', type: 'Date | { start: Date; end: Date }' },
-    { name: 'rangeMode', description: 'Enables selecting a date range instead of a single date.', type: 'boolean' },
-    { name: 'locale', description: 'Locale used for month/weekday labels (supports RTL locales, e.g. Arabic).', type: 'string' },
-    { name: 'onChange', description: 'Called when the selection changes.', type: '(value: Date | { start: Date; end: Date }) => void' },
-    { name: 'onConfirm', description: 'Called when the confirm action is pressed.', type: '() => void' },
+    { name: 'value', description: 'The value of the date picker.', type: 'DatePickerValue' },
+    { name: 'defaultValue', description: 'The default value of the date picker.', type: 'DatePickerValue' },
+    { name: 'mode', description: "The mode of the date picker.", type: 'string', default: "'single'" },
+    { name: 'onChange', description: 'Called when the selection changes.', type: '(value: DatePickerValue) => void' },
+    { name: 'minDate', description: 'The minimum date of the date picker.', type: 'Date', default: 'new Date() - 3 months' },
+    { name: 'maxDate', description: 'The maximum date of the date picker.', type: 'Date', default: 'new Date()' },
+    { name: 'disabledDays', description: 'Predicate used to disable individual days.', type: '(date: Date) => boolean' },
+    { name: 'selectedRangeMaxDays', description: 'The maximum number of days in the selected range.', type: 'number', default: '30' },
+    { name: 'navigationMode', description: 'The type of month navigation.', type: 'string', default: "'wheel'" },
+    { name: 'locale', description: 'Locale used for month/weekday labels (supports RTL locales, e.g. Arabic).', type: 'LocalesArgument', default: "'en-US'" },
+    { name: 'numberingSystem', description: 'The numbering system of the date picker.', type: 'string', default: "'auto'" },
+    { name: 'showOtherDatesInCurrentMonth', description: 'If true, dates from adjacent months are shown within the current month grid.', type: 'boolean', default: 'false' },
+    { name: 'todayLabel', description: 'The label for the Today button.', type: 'string', default: "'Today'" },
+    { name: 'doneLabel', description: 'The label for the Done button, shown only in the month/year wheel-navigation screen.', type: 'string', default: "'Done'" },
+    { name: 'now', description: "Current timestamp. If your app uses timezones, provide a zoned timestamp.", type: '() => Date', default: 'new Date()' },
   ]}
 />

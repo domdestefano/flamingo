@@ -1,39 +1,73 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [bottom-sheet, overlay, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
 <ComponentTabs basePath="/components/overlay/bottom-sheet" />
 
-## Usage
+## Placement & usage
 
-Use a Bottom sheet for supplemental content or a custom set of actions that doesn't fit the
-Action picker's plain list-of-actions pattern. Don't use it just to show a simple list of actions
-with icons — see below.
+The bottom sheet sits always at the bottom of the screen. **You cannot have a bottom sheet on
+top of another, they don't stack.**
+
+Bottom sheets are purposefully interruptive, so they should be used sparingly. To express that
+the rest of the app is inaccessible, and to focus attention on the bottom sheet, surfaces behind
+it are scrimmed.
+
+### Slots
+
+Bottom sheets in Flamingo let teams insert other UI elements between the title + description and
+the action area (buttons). This is done with slots, which are placeholders for other Flamingo
+components.
+
+### Types of bottom sheets
+
+Flamingo has 3 types of bottom sheets:
+
+- **Confirming**, to confirm actions
+- **Informing**, to profile informative content to the user
+- **Selecting**, to let the user select options or actions that have different priority
 
 ## Use cases
 
 ### Type of buttons and Hierarchy
 
+The maximum number of buttons that a bottom sheet can have is 3, and the minimum is 1. Avoid
+using unclear buttons, and remind to always have a dismissing action, like "Got it", "Dismiss"
+or "Cancel", so that the user can always cancel the action that triggered the bottom sheet; this
+action should always be the button type `tertiary` and it's the last action, meaning it is at the
+bottom. When the action inside the bottom sheet is only one, the button type should be `primary`.
+For all other use cases, follow the basic principles of action prominence, i.e. the most
+important action is in `primary` at the top, the lesser important in `secondary` in the middle,
+the least one in `tertiary` at the bottom. The `destructive` style is always at the top, as it
+represents danger and the user should pay the most attention to it.
+
 <DoDontTable
   doImage="/img/components/bottom-sheet/bottom-sheet-hierarchy-do1.png"
-  doText="Style the Primary action as a filled button and the Secondary/dismissing action as a plain text link, so the hierarchy is unambiguous."
+  doText="Primary action should be in primary style and at the top; in some cases, due to prominence, the secondary action can be in secondary style instead of tertiary."
   dontImage="/img/components/bottom-sheet/bottom-sheet-hierarchy-dont.png"
-  dontText="Don't invert the hierarchy — a filled Secondary action next to a flat/grey Primary action reads backwards."
+  dontText="Avoid inverting the order of the actions, as this goes against our established patterns."
 />
 
-### Bottom sheet vs Action picker
+<CautionTable text="Having 3 actions can lead to information overload — use when needed." />
 
-<DoDontTable
-  doImage="/img/components/bottom-sheet/bottom-sheet-vsactionpicker-do.png"
-  doText="Use the Action picker component for a plain list of actions (icon + label rows, with Cancel)."
-  dontImage="/img/components/bottom-sheet/bottom-sheet-vsactionpicker-dont.png"
-  dontText="Don't rebuild a list of actions out of generic Bottom sheet buttons — use the Action picker, which already has the right list-item structure."
-/>
+## Interactions
+
+### Dismiss
+
+The bottom sheet can be dismissed by tapping the Scrim area outside the bottom sheet, the X
+button when in scrolled state, or the dismissing button at the bottom, if present.
+
+### Appear / Disappear
+
+The bottom sheet, in both states, slides from the bottom of the screen; it's anchored to the
+bottom of the screen. Its interaction is usually paired with a scrim, which fades in as the
+bottom sheet slides up. The bottom sheet can be dismissed by tapping outside of the bottom sheet
+(the scrim) or by tapping a dismissing button.

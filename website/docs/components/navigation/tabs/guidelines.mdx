@@ -14,12 +14,31 @@ import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/sh
 
 ## Usage
 
-Use tabs to switch between distinct views of the same screen — e.g. "Daily / Weekly / Monthly."
-Don't use tabs for a multi-step flow; use a different navigation pattern for that.
+- Use tabs for navigating to different pages or sections within a page.
+- Place tabs in the sticky header if switching tabs changes the entire scrolling area.
+- Place tabs in the scrolling area if switching tabs changes only one section of content.
+- Don't display tabs if there is only one to show.
+- Don't use tabs for any other type of selection/interaction (strictly for navigation).
+
+## Placement
+
+Tabs can be placed as a "stack" in the header component (to change the entire scrolling area), or
+within the scrolling area (to change one section of content).
+
+## Interactions
+
+### Clickable area
+
+The whole pill-shaped tab is the clickable area for unselected tabs, not just the label text.
+
+### Scrolling area
+
+Tabs are non-scrollable when the tab bar is narrower than the maximum width. If the tab bar's
+content is wider than the screen, the whole tab bar becomes horizontally scrollable.
 
 ## Use cases
 
-### Sizing
+### Fill/hug behavior
 
 <DoDontTable
   doImage="/img/components/tabs/tabs-fillhug-do.png"
@@ -28,13 +47,27 @@ Don't use tabs for a multi-step flow; use a different navigation pattern for tha
   dontText="Don't force tabs to stretch or fill unevenly — keep their width consistent with their content."
 />
 
-### Color
+### Default colors
 
 <DoDontTable
   doImage="/img/components/tabs/tabs-color-do.png"
-  doText="Use the standard neutral colour for the selected tab's background."
+  doText="Tabs are only available in one color style, as they are a global navigational element in the Rider App and should appear the same throughout."
   dontImage="/img/components/tabs/tabs-color-dont.png"
-  dontText="Don't recolour the selected tab with a custom brand accent colour — it breaks visual consistency with every other tab set in the product."
+  dontText="Do not customize the colors of tabs."
+/>
+
+### Max width behavior
+
+<DoDontTable
+  doText="Tabs are designed to only display in a single row. When the maximum width is exceeded, the tabs become horizontally scrollable."
+  dontText="Don't customize tabs to wrap onto multiple lines."
+/>
+
+### Sticky header placement
+
+<DoDontTable
+  doText={<>When used as a "stack" in a sticky header, tabs should be the bottommost element.</>}
+  dontText="Don't sandwich tabs between the title bar and a date/range selector."
 />
 
 ### Label length

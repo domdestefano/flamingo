@@ -1,16 +1,27 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [option-picker, overlay, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
 <ComponentTabs basePath="/components/overlay/option-picker" />
+
+## Placement & usage
+
+The option picker sits always at the bottom of the screen. You cannot have an option picker on
+top of another — they don't stack.
+
+## Trigger point
+
+Option pickers can be triggered usually by a dropdown or chip, where the selection represents a
+preference the user is making. Flamingo recommends showing the choice made by the user through
+the triggering element as well, after the option has been selected.
 
 ## Usage
 
@@ -22,18 +33,25 @@ confirming — this mode requires an explicit confirm and Cancel action.
 
 ### Single select main button
 
+When the option picker is single select, the interaction should be fast; therefore the picker
+doesn't need a confirmation button — once the option has been selected, the picker disappears.
+
 <DoDontTable
   doImage="/img/components/option-picker/option-picker-mainbutton-do.png"
-  doText="In single-select mode, let tapping an option confirm and dismiss immediately — no separate confirm button needed."
-  dontImage="/img/components/option-picker/option-picker-mainbutton-dont.png"
-  dontText="Don't add a redundant Confirm button to a single-select list — selecting an option already confirms it."
+  doText="The dismissing button should cancel the option selection flow."
+  dontText="Not having a dismissing action can lead to confusion on how to dismiss the picker. (No reference screenshot is available for this case — the source asset in Figma is a broken placeholder; please request an updated one from the Flamingo design system team.)"
 />
+
+<CautionTable text="Only in rare cases, a confirmation button can be placed on a single-select picker, when it needs to provide extra feedback before confirming the option — e.g. letting the user preview a ringtone before confirming their selection." />
 
 ### Cancel action
 
+The dismissing action should always be present in any option picker, as this serves to cancel the
+option selection flow.
+
 <DoDontTable
   doImage="/img/components/option-picker/option-picker-cancel-do.png"
-  doText="In multi-select mode, always pair the confirm action with a Cancel action."
+  doText="The dismissing action should always be placed below the confirmation action."
   dontImage="/img/components/option-picker/option-picker-cancel-dont.png"
-  dontText="Don't omit Cancel on a multi-select picker — without it, users can't back out without confirming a selection."
+  dontText="Avoid hiding the dismissing action — this can lead to user confusion."
 />

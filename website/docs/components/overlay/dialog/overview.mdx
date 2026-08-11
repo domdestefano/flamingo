@@ -1,0 +1,109 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: overlay
+figma_node: '36:1086'
+used_in: [order-tracking, checkout, issue-reporting]
+tags: [dialog, overlay]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Dialog <StatusBadge status="stable" />
+
+Dialogs are used for actions or information that sit on top of the main UI.
+
+<ComponentTabs basePath="/components/overlay/dialog" />
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=36-1086" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-overlay-dialog--docs" />
+
+## Description
+
+Dialogs are a type of modal window that appears in front of app content to inform users about a
+task, and can contain critical information, require decisions, or involve multiple tasks. Dialogs
+disable all app functionality while they appear, and remain on screen until confirmed, dismissed,
+or a required action has been taken.
+
+Dialogs are purposefully interruptive, so they should be used sparingly. To express that the rest
+of the app is inaccessible, and to focus attention on the dialog, surfaces behind it are scrimmed.
+
+Dialogs should focus user attention to ensure their content is addressed, be direct in
+communicating information, and be dedicated to completing a task. They should appear in response
+to a user action or system event, with relevant, contextual information.
+
+Dialogs should be used for:
+
+- Errors that block the app's normal operation.
+- Critical information that requires a specific user task, decision, or acknowledgement.
+
+The main components of a simple dialog in Flamingo are:
+
+- **Title**, always mandatory to show — draws the user's attention and quickly explains what the
+  dialog is about.
+- **Description** — provides further details on the action required or the information provided.
+- **Actions** — trigger an action or dismiss the dialog.
+
+## Types of dialogs
+
+There are **3** main types of dialogs:
+
+- **Alert**, which interrupt users with urgent information, errors, details, or actions.
+- **Selective**, used for the user to make a selection before triggering an action.
+- **Confirming**, which give users the ability to provide final confirmation of a choice before
+  committing to it, so they have a chance to change their mind if necessary.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Title | Mandatory. Draws the user's attention and quickly explains what the dialog is about. |
+| Description | Optional. Provides further details on the action required or the information provided. |
+| Slot(s) | Optional. Placeholder(s) for other Flamingo components between the description and the actions — can be a single slot or a stack of multiple, each replaced with the UI element needed. |
+| Actions | 1 to 3 buttons that trigger an action or dismiss the dialog. |
+
+### Slots
+
+Dialogs in Flamingo are flexible enough to allow teams to add other UI elements between the
+Title + Description and the action area. This is done using slots, which are placeholders for
+other Flamingo components, replaced by selecting the slot and swapping it for another UI element
+in Figma. By default a dialog has 1 slot, but it can be replaced with a stack of multiple slots.
+
+### Size
+
+The dialog should give the user quick information and let them make a decision quickly. It should
+not be overcrowded with content, and the content inside is not scrollable — be mindful of vertical
+spacing. The maximum height is 480px. Its width changes based on the screen width, with 24px
+margins from the edges of the screen at all times.
+
+## Dialog vs. Bottom sheet
+
+Dialogs block app usage until the user takes a dialog action or exits the dialog — interacting
+with the dialog is required to go on within the flow. They're used for high-priority information
+or confirmation.
+
+Bottom sheets serve as an alternative when more room is needed for additional items, longer
+descriptions, and iconography. Like dialogs, they present a set of choices while blocking
+interaction with the rest of the screen, but they must be dismissed in order to interact with the
+underlying content.
+
+The main differences between the two are:
+
+- **Content** — for longer content, Flamingo recommends a bottom sheet due to its scrollable
+  functionality, which allows more content than a dialog.
+- **Focus** — a dialog stays in the centre of the view and grabs all the user's attention. This is
+  relevant for high-priority error messages, or for actions/information that are absolutely
+  required to be interacted with in order to continue within the user's flow.
+
+## Dialog vs. Snackbar
+
+Snackbars can be considered a short notification for the user about something that happened or
+has been triggered — for instance, "the order has been successfully selected." A snackbar
+disappears if not interacted with or if dismissed by the user. They're used for the lowest
+priority of information or confirmation, and lack a selective action.
+
+Dialogs, by contrast, block app usage until the user takes a dialog action or exits the dialog,
+and are used for a high priority of information or confirmation.

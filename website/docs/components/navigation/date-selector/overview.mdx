@@ -1,0 +1,84 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: navigation
+figma_node: '35:1048'
+used_in: [shift-calendar, availability, earnings-history]
+tags: [date-selector, navigation]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Date selector <StatusBadge status="stable" />
+
+Lets the user select a specific date in a week view, and move through weeks by swiping.
+
+<ComponentTabs
+  basePath="/components/navigation/date-selector"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+  ]}
+/>
+
+<AvailabilityTable figma="available" web="not-available" ios="not-available" android="not-available" specs="not-available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=34-1230" />
+
+## Description
+
+Date selectors are commonly used in mobile interfaces to allow users to select a specific date in
+a week view. The user can select a specific date by tapping on the corresponding day on the
+weekly view, and move through weeks by swiping on the UI element.
+
+Date selectors are commonly used in mobile interfaces because the data of the whole screen shown
+to the user changes based on the date selected. The Date selector is usually part of the header,
+meaning that its position is fixed when scrolling, though it collapses into a "Collapsed" state as
+the user scrolls up (and returns to "Default" scrolling back down). The elevation covers the whole
+header group, and when the user pulls to refresh, the spinner UI element appears beneath the whole
+group.
+
+## Component
+
+The Date selector has two states as a whole:
+
+- **Default** — the full week view, showing the month label, the Today button, and all 7 calendar
+  cells.
+- **Collapsed** — a condensed state the calendar transitions into when the user scrolls up.
+
+Each calendar cell can also be shown individually in one of its three states — **Active**,
+**Selected**, and **Inactive** — described in Anatomy below.
+
+## Anatomy
+
+A Date selector consists of:
+
+1. **Month picker** — a button (e.g. "Jun 2021") that triggers the Date picker bottom sheet, with
+   the month selection view, to appear and allow the user to select the month of choice.
+2. **Today button** — jumps back to the current day, no matter which day is selected. It's
+   inactive if the selected day is already the current one.
+3. **7 calendar cells** — one per day of the week.
+
+Each calendar cell is made up of:
+
+- A **day letter**, representing which day it refers to, e.g. "M" for "Monday".
+- A **date value**, representing the actual date, e.g. 24.
+- A **badge**, indicating notifications — e.g. the available shifts for that day.
+
+Each calendar cell can be:
+
+- **Active**, meaning the day can be interacted with.
+- **Selected**, showing that the day has been tapped by the user and is the current selection.
+- **Inactive**, meaning the day cannot be interacted with.
+
+## Date selector vs. Date picker
+
+The Date selector's month picker button doesn't just display the current month — tapping it opens
+the [Date picker](/components/overlay/date-picker/overview) as a bottom sheet, following the
+guidelines of the bottom sheet component, and lands directly on the month/year selection view.
+
+In practice: the **Date selector** is the persistent, always-visible week strip used to pick a
+single day within the visible week; the **Date picker** is the full calendar overlay it opens into
+when the user needs to jump to a month that isn't currently on screen.

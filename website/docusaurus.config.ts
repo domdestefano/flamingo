@@ -63,11 +63,10 @@ const config: Config = {
         docs: {
           routeBasePath: '/', // serve docs at the site root (no /docs prefix)
           sidebarPath: './sidebars.ts',
-          // Points the "Edit this page" link at the repo. Update the branch/path
-          // once you know where this site sits inside the repo.
-          editUrl:
-            'https://github.com/deliveryhero/flamingo/tree/main/website/',
-             exclude: ['**/admin/**'], 
+          // No editUrl: content changes go through the Claude interface, not
+          // GitHub's inline editor — omitting this removes the "Edit this
+          // page" link sitewide.
+             exclude: ['**/admin/**'],
         },
         blog: false, // a design system doesn't need the blog preset
         theme: {

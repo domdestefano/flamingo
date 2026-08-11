@@ -1,0 +1,65 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [date-selector, navigation, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs
+  basePath="/components/navigation/date-selector"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+  ]}
+/>
+
+## Interactions
+
+### Selection
+
+The user can select one date at a time, meaning that if they select another one, the previously
+selected one becomes unselected. The interaction is a change of colour of the text from
+`color.neutral700` to `color.neutral00`, and of the background from transparent to
+`color.primary.dark02`.
+
+### Swipe
+
+The calendar is swipeable. Users can swipe to switch between calendar weeks. After swiping from
+the current week to another, the same weekday should be selected. For example, imagine today is
+Friday 20th — after they swipe left, they should see Friday 13th being selected.
+
+### Collapse
+
+The calendar should transition to the "Collapsed" state when the user scrolls up. By scrolling
+down, it should transition back to "Default".
+
+### Date picker
+
+When the user taps on the button that refers to the month (e.g. "Jun 2021"), the date picker
+appears from the bottom, following the guidelines of the bottom sheet. The date picker opens
+directly showing the month selection view.
+
+### Today
+
+When the user has selected a day different from today, the Today button becomes active, and if the
+user taps on it, the current day becomes selected again. If the week in view is different from the
+current one, it automatically animates back to the current week and the current day becomes
+selected.
+
+## Do's and Dont's
+
+### Date format
+
+Due to space limitations, the letter used to represent the days in each calendar cell is always
+single-character based. This is to match what the most common apps and operating systems do when
+handling date formats in calendars.
+
+<DoDontTable
+  doText="It's a standardized pattern the user is already familiar with."
+  dontText="This adds discrepancies among languages and adds visual clutter."
+/>

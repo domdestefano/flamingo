@@ -1,7 +1,7 @@
 ---
 title: Content
 sidebar_position: 3
-status: stable
+status: in-progress
 tags: [header, navigation, content, ux-writing]
 ---
 
@@ -11,6 +11,42 @@ import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 
 <ComponentTabs basePath="/components/navigation/header" />
 
-- Keep the title to one or two words wherever possible — it must fit on one line without truncating.
-- Use sentence case for titles and subtitles.
-- The subtitle should add context the title doesn't already cover — don't restate the title.
+A header in a mobile interface is a section at the top of the screen that typically contains the
+name of the app or page, as well as buttons for navigation and other actions. It is a prominent
+feature that allows users to quickly access important information and navigate the app.
+
+The header can only be of 2 types:
+
+| Type | Navigation |
+| --- | --- |
+| Default | Menu button, to access other elements of the app, or a Back arrow, to go back to the previous screen. |
+| Full Screen Modal | Can have a back arrow (see guidelines) and always has the closing action on the right. |
+
+## Content specs
+
+- The header cannot be resized in height.
+- There's a margin of 16px (spacing04) between the text area and the icon buttons — if the text
+  goes beyond that, it needs to be truncated.
+- Headers cannot have 2 lines of title/description text.
+
+## Labels
+
+The header should concisely tell the user where they are in a specific screen or flow. The label
+should be concise and clear, e.g. "Shift status" or "Payments history". Avoid long labels, as the
+header doesn't allow vertical resizing or multiline titles. The description, if present, adds extra
+information related to the title — e.g. if the title is "Order pickup", the description could tell
+what order the user is picking up: "Order #245". Headers should be objective-oriented and avoid
+repetitive expressions.
+
+## Appearance
+
+The text labels, title and description, are always sentence-cased and centre-aligned. The icon
+buttons for navigation are placed at the sides of the text labels — there can only be one icon
+button on the left (mostly a back arrow or a hamburger menu), while there can be up to 2 icon
+buttons on the right.
+
+## Truncation behaviour
+
+Headers' text labels are always single-lined, as the component doesn't vertically adjust or resize
+based on the content inside. Truncation happens when the text goes beyond the text label container,
+using an ellipsis (…) at the end of the truncated text.

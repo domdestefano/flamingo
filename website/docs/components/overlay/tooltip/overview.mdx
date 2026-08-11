@@ -1,0 +1,78 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: overlay
+figma_node: '37:937'
+used_in: [shift-list, order-acceptance, rider-onboarding]
+tags: [tooltip, overlay]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Tooltip <StatusBadge status="stable" />
+
+A brief, informative message that appears when a user interacts with an element in the UI.
+
+<ComponentTabs basePath="/components/overlay/tooltip" />
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=37-937" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-overlay-tooltip--docs" />
+
+## Description
+
+A tooltip is a brief, informative message that appears when a user interacts with an element in a
+graphical user interface. Use it to show very brief information to the user — for instance, "Hot
+shifts make you earn more money" when tapping an info button in the shifts section.
+
+**The tooltip can only be 1 line long.** If more space is needed, use a bottom sheet or a message
+banner above the content it refers to instead.
+
+The tooltip can be triggered by different elements:
+
+- **Icon button** — for instance, an info icon button.
+- **Camera and sensors** — for instance, when the user needs to position their face for a selfie
+  and the tooltip shows whether the face is in view.
+- **Loading elements** — for instance, when an order acceptance timer is about to end and the user
+  needs to be told to hurry up.
+- **Screen visited for the first time** — for instance, informing the user they can "pull to
+  refresh" the first time they land on a screen.
+
+Other trigger points are possible if they make sense for the use case, but should be checked with
+the Flamingo design system team first.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Type | `Default` — used by default, especially on light backgrounds. `Light` — used when the tooltip appears on a dark background, to increase contrast and readability. |
+| Facing downwards | Whether the tooltip's tail points down (content below) or up (content above). |
+| Tail | `Left`, `Centre`, or `Right` — horizontal position of the tail relative to the trigger point. |
+| With icon | Optional — adds a trailing chevron to visually assist the label, or to indicate the tooltip leads somewhere or triggers an action. |
+| Text | The tooltip's message. Limited to a single line. |
+
+A tooltip can face **2 directions**:
+
+- **Downwards**, used in the majority of cases — when the content it refers to is below the
+  tooltip and there's enough space to show it (i.e. it's not obstructed by the nav bar).
+- **Upwards**, used when the content it refers to is above the tooltip and there's enough space to
+  show it (i.e. it's not obstructed by the bottom bar), or in edge cases like: the trigger point is
+  in the nav bar (no space above it), or the tooltip informs about "pull to refresh," where the
+  tail facing upwards indicates the hidden pull-to-refresh mechanism.
+
+## Tooltip vs. Snack bar vs. Message bar vs. Status bar
+
+- Use the **tooltip** to show informative content only at the user's command — for instance, when
+  they tap an info icon button to learn about hot shifts.
+- Use the **snack bar** to inform the user about a positive, alerting, or dangerous message
+  triggered by an action performed by the user or the system — for instance, when a document
+  submission fails.
+- Use the **status bar** to inform the user about something affecting the app globally — for
+  instance, if the app is offline or the rider is suspended and cannot work.
+- Use the **message bar** to inform the user about something affecting only a specific part of the
+  app where the message bar appears — for instance, "your documents will expire soon" in the
+  profile tab.
+
+In general, use the tooltip when you want the user to discover neutral information.

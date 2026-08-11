@@ -1,7 +1,7 @@
 ---
 title: Code - Web
 sidebar_position: 5
-status: stable
+status: in-progress
 tags: [option-picker, overlay, code, web, api]
 ---
 
@@ -25,10 +25,13 @@ import { PropsTable } from '@site/src/components/ComponentDocs/shared';
   rows={[
     { name: 'title', description: 'The picker\'s title.', type: 'string' },
     { name: 'description', description: 'Optional supporting text below the title.', type: 'string' },
-    { name: 'options', description: 'The list of selectable options.', type: 'Array<{ label: string; value: string }>' },
-    { name: 'multiSelect', description: 'Enables selecting multiple options with a confirm/Cancel action.', type: 'boolean' },
-    { name: 'searchable', description: 'Shows a search field to filter long option lists.', type: 'boolean' },
-    { name: 'onChange', description: 'Called when the selection changes.', type: '(value: string | string[]) => void' },
-    { name: 'onCancel', description: 'Called when Cancel is pressed (multi-select mode).', type: '() => void' },
+    { name: 'options', description: 'The list of selectable options.', type: 'OptionType[]' },
+    { name: 'value', description: 'The selected option value(s).', type: 'string | number | (string | number)[]' },
+    { name: 'multiSelect', description: 'Enables selecting multiple options with a confirm/dismiss action.', type: 'boolean' },
+    { name: 'enableSearch', description: 'Shows a search field to filter long option lists.', type: 'boolean' },
+    { name: 'searchPlaceHolder', description: 'Placeholder text for the search input.', type: 'string' },
+    { name: 'hideRadioBoxes', description: 'Hides the radio/checkbox indicators next to each option.', type: 'boolean' },
+    { name: 'onChange', description: 'Called when the selection changes.', type: '(value: OptionType | OptionType[]) => void' },
+    { name: 'actions', description: 'Actions to render in the bottom sheet footer (e.g. confirm/dismiss). Can be a node or a function receiving a close helper.', type: 'ReactNode | ((helpers: { close: () => void }) => ReactNode)' },
   ]}
 />

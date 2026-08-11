@@ -1,7 +1,7 @@
 ---
 title: Content
 sidebar_position: 3
-status: stable
+status: in-progress
 tags: [content-header, navigation, content, ux-writing]
 ---
 
@@ -11,6 +11,21 @@ import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 
 <ComponentTabs basePath="/components/navigation/content-header" />
 
-- Keep titles short and specific to the section — avoid generic labels like "Info" or "Details."
-- Use sentence case for titles and descriptions.
-- The description should add context the title alone doesn't cover — don't restate the title.
+A Content header is a component that appears at the top of a page, section, or subsection. It
+typically includes the page/section name, a description, and an optional action or graphic. It's a
+prominent feature that lets users quickly get an idea of what the content below is about.
+
+The Content header can appear above a content section, but doesn't have to.
+
+## Appearance
+
+| Element | Guidance |
+| --- | --- |
+| Title | Always sentence case. Typically the name of the page — can also be used to highlight content or set the mood (e.g. *"Welcome to your rider journey, Andrea"*). |
+| Description (optional) | Always sentence case. Keep it concise. Describes what the content below is about, or provides more context. |
+| Action (optional) | Either a chevron, a tertiary button, or an icon button. The chevron is always Neutral50. |
+| Graphic (optional) | An alternative to the action. |
+
+## Truncation behaviour
+
+The component has no truncation.

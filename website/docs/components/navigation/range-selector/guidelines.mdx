@@ -1,0 +1,57 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [range-selector, navigation, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs
+  basePath="/components/navigation/range-selector"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+## Interactions
+
+### Move through ranges
+
+The user can only use the arrows to move from range to range. No swipes nor scrolls are envisioned
+at the moment, to avoid performance issues. The text instantly updates. The icon buttons follow the
+interaction properties of the standard icon button component.
+
+### Current week/month/day jump
+
+The user can also tap on the current week/month/day button to jump to the current range in the
+interface. If the current week/month/day has already been selected, the button is inactive.
+
+### Responsiveness of the component
+
+The range (arrow buttons + range text, e.g. "14/01/2022 - 16/01/2022") is always centered in the
+interface, even when resizing the component, while the current week/month/day button is anchored
+to the left side as the UI stretches and the component width changes.
+
+### Going compact
+
+When the default Range selector is within a navigation bar and the user starts scrolling the
+content, the Range selector collapses into its compact view.
+
+## Do's and Dont's
+
+### Date format
+
+In order to make the selected range as clear as possible, Flamingo recommends using date formats
+based on the user's region settings, and standardised date formats like `DD/MM/YYYY - DD/MM/YYYY`
+as a fallback if the app cannot access the user's region settings. Avoid customising date formats.
+
+<DoDontTable
+  doText="Date and data formats are unified in Flamingo, in order to drive consistency and avoid confusion."
+  dontText="Customised date and data formats will create confusion across the app."
+/>
