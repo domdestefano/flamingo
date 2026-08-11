@@ -1,10 +1,10 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web]
 category: overlay
-figma_node: '40001808:54495'
+figma_node: '37:1155'
 used_in: [checkout, order-tracking, rider-onboarding]
 tags: [date-picker, overlay]
 ---
@@ -13,35 +13,59 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Date picker <StatusBadge status="stable" />
+# Date picker <StatusBadge status="in-progress" />
 
 Lets the user select a single date or a date range.
 
 <ComponentTabs basePath="/components/overlay/date-picker" />
 
-<AvailabilityTable figma="available" web="available" ios="in-progress" android="in-progress" specs="in-progress" />
+:::warning
+**Last update:** April 2026
 
-Per Figma's own spec, this component is currently **web only**.
+**Component available, but** ⚠️ **the latest design updates still need to be
+implemented**
+:::
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/date-picker/date-picker-overview.png" alt="Date picker showing a month grid and a Select date action" />
 
+## Description
+
+- Lives inside a bottom sheet and follows the same appear/disappear and dismiss behaviour —
+  it slides up from the bottom, and can be dismissed by tapping the Scrim (the area outside
+  the sheet).
+- Month and year scroll in separate columns: month scrolls in a loop (December → January),
+  year does not.
+- Tapping the **Today** button sets the day, month, and year to the current date; the button
+  becomes inactive once today is already selected.
+- Users must confirm their selection for the date to be saved.
+- The day view is a 7-column grid with 4, 5, or 6 rows, depending on the number of days in
+  the month.
+- Date ranges are created by selecting a start day and an end day, auto-highlighting the days
+  in between; selecting a new day resets the previous range.
+- Users can switch between the Day view and the Month and Year view via the top-left button,
+  and move between months by tapping the arrow buttons or swiping the calendar view.
+
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| View | Date / Month and Years — switches between the day grid and a month/year selector. |
-| Date selection | None / Single (a range mode is also supported per the component description). |
-| Show Stack | Optional — toggles an extra content slot below the calendar grid. |
+| View | **Day**, to show days. **Month and Year**, to show scrollable lists of months and years. |
+| Date mode | **Single**, lets the user select a single date only. **Range**, lets the user select a range of dates. |
+| Day state | **Today**, **Default**, **Disabled** (weekends, holidays, or a day that cannot be selected), **In range**, **Selected**. |
+| Stack | To show slots and replace them with other components. |
+| Action container | To show or hide the action of the Bottom sheet. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/date-picker/date-picker-anatomy.png" alt="Date picker anatomy: Month/Year label, Month navigation, Calendar view toggle, Calendar grid, Optional content slot, Confirm action" />
+<ComponentImage src="/img/components/date-picker/date-picker-anatomy.png" alt="Date picker anatomy: Month button, arrow buttons, Today button, calendar view, Stack container, Confirm button" />
 
-1. **Month/Year label**
-2. **Month navigation** — previous/next
-3. **Calendar view toggle** — switches to the Month and Years view
-4. **Calendar grid**
-5. **Optional content slot** — extra content below the grid
-6. **Confirm action**
+1. **Month button** — to switch between views
+2. **Arrow buttons** — to move between months
+3. **Today button** — to jump to today's date
+4. **Day or Month and Year view**
+5. **Stack container**
+6. **Confirm button**

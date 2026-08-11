@@ -1,0 +1,74 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: navigation
+figma_node: '35:1504'
+used_in: [earnings-history, order-history, shift-calendar]
+tags: [range-selector, navigation]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Range selector <StatusBadge status="stable" />
+
+Lets the user move range by range — day, week, or month — using arrow icon buttons.
+
+<ComponentTabs
+  basePath="/components/navigation/range-selector"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="not-available" />
+
+## Description
+
+A Range selector is a UI element that allows the user to select a range of dates; this means that
+the user can only move range by range (as intended by the use case) by tapping on the arrow icon
+buttons on the side of the UI element. Range selectors are navigational elements because the data
+of the whole screen changes based on the range selected by the user.
+
+The Range selector is usually part of the header, meaning that its position is fixed when
+scrolling, but it collapses into a compact view when some of its parts are hidden. The elevation
+covers the whole header group, and when the user pulls to refresh, the spinner UI element appears
+beneath the whole group.
+
+The range (arrow buttons + range text, e.g. "14/01/2022 - 16/01/2022") is always centered in the
+interface, even when resizing the component, while the current week/month/day button is anchored
+to the left side as the UI stretches and the component width changes.
+
+The current ranges supported in Flamingo are:
+
+- **Day** — the range goes day by day, and the user moves through the days by clicking the arrow
+  icon buttons. The sub-label indicates the year.
+- **Week** — the range the user can select is based on the numeration of the calendar weeks; for
+  example, the first week of January 2023 is from the 2nd through the 8th, and it's called
+  "Week 1".
+- **Month** — the user moves month by month. The sub-label indicates the year the range is in.
+
+Each range also has a **Compact** variant, used when the default Range selector is within a
+navigation bar and the user starts scrolling the content.
+
+## Anatomy
+
+The Range selector consists of:
+
+1. A **button** — "current week", "current month", or "today" — which brings the range selection
+   back to the current week/month/day if clicked. When the current range is already in view, the
+   button is inactive.
+2. A **sub-label**, e.g. "Week 2", informing which week has been selected. It follows the
+   numeration of the calendar week — week 1 is the first week of the year — and for the month and
+   day ranges, it usually indicates the year the ranges are in.
+3. **2 icon buttons** (`>` and `<`) to move backwards and forwards through the days/weeks/months.
+4. A **main label**, e.g. "10/01/2022 - 16/01/2022", informing of the range of dates that are part
+   of the current selection.
+
+Only the button that jumps to the current day/week/month and the two icon buttons are interactive.
+The other text-based elements aren't interactive — their text simply updates as the user moves
+through the range.

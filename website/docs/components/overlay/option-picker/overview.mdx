@@ -1,10 +1,10 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web, ios, android]
 category: overlay
-figma_node: '40001856:25466'
+figma_node: '37:5414'
 used_in: [checkout, order-tracking, rider-onboarding]
 tags: [option-picker, overlay]
 ---
@@ -13,14 +13,14 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Option picker <StatusBadge status="stable" />
+# Option picker <StatusBadge status="in-progress" />
 
 A selection list, e.g. picking a country or a reason for editing a price. Supports selecting a
 single option or multiple.
 
 <ComponentTabs basePath="/components/overlay/option-picker" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
@@ -30,18 +30,22 @@ single option or multiple.
 
 | Property | Details |
 | --- | --- |
-| Selection type | Single option / Multi option. |
-| Scrolled state | Whether the option list has been scrolled (changes elevation/header treatment). |
-| Show Body | Optional — toggles the description below the title. |
-| Show 2nd Button | Optional — toggles the Cancel action. |
+| Selection type | Single, to let the user choose only one option / Multiple, to let the user choose multiple options. |
+| Scrolled state | True, when the Bottom sheet's content is scrolling and the header appears / False, when the content is not scrolling or scrollable. |
+| Enable Search input | To show or hide the search input. |
+| Dismiss button | To dismiss the Option picker. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/option-picker/option-picker-anatomy.png" alt="Option picker anatomy: Title, Description, Search field, Options list, Confirm action, Cancel" />
+<ComponentImage src="/img/components/option-picker/option-picker-anatomy.png" alt="Option picker anatomy: Title, Description, Search input, Option selection area, Confirmation button, Dismissing button" />
 
 1. **Title**
 2. **Description** — optional
-3. **Search field** — optional, for filtering long lists
-4. **Options list**
-5. **Confirm action**
-6. **Cancel**
+3. **Search input** — optional, for filtering long lists
+4. **Option selection area**
+5. **Confirmation button** — only needed for the multi selection picker
+6. **Dismissing button**
+
+## Action picker vs. Option picker
+
+The action picker lets the user select an action that will trigger something, e.g. "take a photo" will trigger the camera interface to appear. The option picker, instead, lets the user select an option that represents a preference, e.g. choosing a ringtone among multiple tones, without immediately triggering anything else.

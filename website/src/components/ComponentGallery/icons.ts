@@ -55,6 +55,10 @@ export const componentIcons: Record<string, string> = {
   'sectioned-progress-bar': '📶',
   'specs-bar-chart': '📊',
   stepper: '🪜',
+  'date-selector': '📆',
+  'range-selector': '📊',
+  tooltip: 'ℹ️',
+  dialog: '💭',
 };
 
 // Real icon images — the first 3 are user-supplied Google Material Rounded
@@ -116,4 +120,8 @@ export const componentIconImages: Record<string, string> = {
   'sectioned-progress-bar': '/img/gallery-icons/sectioned-progress-bar.svg',
   'specs-bar-chart': '/img/gallery-icons/specs-bar-chart.svg',
   stepper: '/img/gallery-icons/stepper.svg',
+  'date-selector': '/img/gallery-icons/date-selector.svg',
+  'range-selector': '/img/gallery-icons/range-selector.svg',
+  tooltip: '/img/gallery-icons/tooltip.svg',
+  dialog: '/img/gallery-icons/dialog.svg',
 };

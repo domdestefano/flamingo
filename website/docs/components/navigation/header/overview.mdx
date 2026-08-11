@@ -1,10 +1,10 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web, ios, android]
 category: navigation
-figma_node: '40001333:7781'
+figma_node: '34:836'
 used_in: [checkout, order-tracking, rider-onboarding]
 tags: [header, navigation]
 ---
@@ -13,39 +13,64 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Header <StatusBadge status="stable" />
+# Header <StatusBadge status="in-progress" />
 
-Provides content and actions related to the current screen. Appears at the top of every screen.
+Core element of the app's UI, for navigation elements, title display and optional interactive components.
 
 <ComponentTabs basePath="/components/navigation/header" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/header/header-overview.png" alt="Header with hamburger menu, title, and action" />
 
+The header provides content and actions related to the current screen. Its main purpose is to
+establish a clear navigational anchor and information hierarchy for the user. It serves three
+primary functions:
+
+| | |
+| --- | --- |
+| Orientation & Context | Confirms where the user is, and can provide additional information related to a section. |
+| Navigation Control | The essential "wayfinding" tools — a back arrow for hierarchical navigation, a menu icon for top-level navigation, or a close ("X") icon to dismiss temporary full-screen pages. |
+| Functional Entry Points & filters | A dedicated space for view controls that affect the entire page content, via buttons or attached content blocks. |
+
 The Header appears at the top of every screen and adapts its leading action — Hamburger menu, Back
-button, or none — depending on where the screen sits in the navigation hierarchy.
+button, or Close (on full-screen modals) — depending on where the screen sits in the navigation
+hierarchy.
 
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| Navigation type | Hamburger menu / Back button / Full screen modal (close). |
-| With elevation | Whether the header casts a shadow over the content beneath it. |
+| Navigation type | Hamburger menu / Back button / Full Screen Modal (Close button on the right). |
+| Elevation | Whether the header casts a shadow ("elevated") over the content beneath it. |
+| Show Background | Only applicable when the user is at the top of the page. Once they scroll, the background is always the default (white) background. |
 | Show Title | Optional — toggles the title. |
-| Show Subtitle | Optional — toggles the subtitle line below the title. |
-| Show (R) actions | Optional — toggles the first trailing action. |
-| Show 2nd (R) action | Optional — toggles a second trailing action. |
-| Show 2nd Block / Show 3rd Block | Optional — toggles extra content rows below the title row (e.g. tabs, search, status). |
-| Show Status indicator | Optional — toggles a status indicator. |
-| Show Background | Optional — toggles a background fill. |
+| Title (optional) | String to provide users information on where they are or what they're looking at (usually a page or section name). |
+| Description (optional) | String to add additional information. Use with caution, as it adds cognitive load. |
+| Show Right action(s) | Optional — toggles the trailing action(s). |
+| Right action(s) (optional) | Property to show 1 or 2 icon buttons, or a tertiary button. |
+| Content Block(s) (optional) | Property to add any kind of content to the header — e.g. tabs, a search field, a progress bar, or a date picker. Max. 2 blocks. |
+
+The header is sticky, so ensure to only add content blocks with the most important actions, to
+minimise the non-scrollable area on the screen.
+
+The header can also show a variety of information on scroll (triggered through the Utils on Web) —
+see [Guidelines](/components/navigation/header/guidelines) for best practices.
 
 ## Anatomy
 
-1. **Back button** (or Hamburger menu / close, depending on Navigation type)
-2. **Title**
-3. **Subtitle** — optional
-4. **Actions** — trailing, up to two
-5. **Additional blocks** — optional extra rows below the title (e.g. tabs, search, status)
+**Regular header**
+
+1. **Back button** (or Hamburger menu, depending on Navigation type)
+2. **Title** — optional
+3. **Description** — optional
+4. **Actions** — trailing, up to two, or a tertiary button
+5. **Content block(s)** — optional, up to two extra rows below the title (e.g. tabs, search, status)
+
+**Overlay header** — a lightweight variant used on Full Screen Modals
+
+1. **Title** — optional
+2. **Description** — optional
+3. **Close button**

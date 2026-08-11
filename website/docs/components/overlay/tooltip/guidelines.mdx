@@ -1,0 +1,76 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [tooltip, overlay, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/overlay/tooltip" />
+
+## Interactions
+
+### Tooltip appears / disappears
+
+The tooltip is usually triggered on tap. The user taps the trigger point and the tooltip appears.
+It disappears when the user taps either:
+
+- anywhere else in the UI, or
+- on the tooltip again.
+
+The tooltip can also disappear automatically after 4 seconds of inactivity — this needs to be
+specified per use case, based on the importance of the message.
+
+### Interaction properties
+
+All interactions share the same properties. The tooltip appears with a fade from the trigger
+point:
+
+| Step | Easing function | Duration |
+| --- | --- | --- |
+| Appear (fade in from trigger point) | `easingFunction02` | `duration03` |
+| Expand (content revealed inside) | `easingFunction02` | `duration16` |
+
+## Usage
+
+The tooltip can have the tail in **3 directions**:
+
+- **Left**, used when the trigger point is on the left side of the UI screen.
+- **Centre**, used when the trigger point is in the centre of the UI screen.
+- **Right**, used when the trigger point is on the right side of the UI screen.
+
+The **With icon** variant is used as a visual assist to the label, helping the user understand the
+action faster, or to show that the tooltip leads somewhere or triggers an action.
+
+## Placement
+
+The tooltip is always anchored to its trigger element (an icon button, a camera overlay, a loading
+element, etc.) rather than placed independently on screen. Its tail points toward the trigger, and
+its facing direction (downwards by default, upwards when needed) adapts so the tooltip is never
+obstructed by the nav bar or bottom bar.
+
+## Do's and Dont's
+
+### One-line
+
+Tooltips should consist of only one line, as they convey a piece of very brief information for the
+user.
+
+<DoDontTable
+  doText="Be concise with the information provided."
+  dontText="Do not add unnecessary pieces of information — don't use a multi-line tooltip."
+/>
+
+### Facing direction
+
+In general, when the content the tooltip refers to is below it and there's enough space to show
+it, use the tooltip facing downwards. If not, use the upwards-facing tooltip.
+
+<DoDontTable
+  doText="If the tooltip might be covered by elements above it, use the upwards-facing tooltip."
+  dontText="The nav bar always covers the tooltip, so use the upwards-facing tooltip to avoid visibility issues."
+/>

@@ -1,30 +1,38 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web, ios, android]
 category: overlay
-figma_node: '40001797:31591'
+figma_node: '36:1574'
 used_in: [checkout, order-tracking, rider-onboarding]
 tags: [bottom-sheet, overlay]
 ---
 
 import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+import { StatusBadge, AvailabilityTable, DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
-# Bottom sheet <StatusBadge status="stable" />
+# Bottom sheet <StatusBadge status="in-progress" />
 
-A container that rises from the bottom of the screen to provide supplemental information, menus,
-or other functionality — elevated above the screen's content to convey clear hierarchy.
+Bottom sheets provide contextual information and selections.
 
 <ComponentTabs basePath="/components/overlay/bottom-sheet" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/bottom-sheet/bottom-sheet-overview.png" alt="Bottom sheet with title, description, content, and two actions" />
+
+## Description
+
+- You cannot have a bottom sheet on top of another bottom sheet.
+- You can plug any element in the bottom sheet, excluding other overlay elements, except for the
+  tooltip.
+- They are elevated higher than the screen's content underneath to convey a clear hierarchy to
+  the user.
+- Can be dismissed by tapping the area outside (Scrim).
 
 ## Properties
 
@@ -47,3 +55,27 @@ or other functionality — elevated above the screen's content to convey clear h
 4. **Primary action**
 5. **Secondary or dismissing action** — optional
 6. **Graphic block** — optional, leading illustration
+
+## Bottom sheet vs. Dialog
+
+Like the dialog, bottom sheets present a set of choices while blocking interaction with the
+rest of the screen. The main difference between the two is:
+
+- **Content** — for longer content, Flamingo recommends using a bottom sheet, since it allows
+  the sheet to have more content than a dialog thanks to its scrollable functionality.
+- **Focus** — a dialog stays in the centre of the view and grabs all of the user's attention.
+  This is relevant for high priority error messages or for actions/information that are
+  absolutely required to be interacted with in order to continue within the user's flow.
+
+## Bottom sheet vs. Action picker
+
+When you want the user to select among different actions of the same prominence, use the Action
+picker. Use the bottom sheet when the actions are of different importance or when it requires
+contextual information on top of the actions.
+
+<DoDontTable
+  doImage="/img/components/bottom-sheet/bottom-sheet-vsactionpicker-do.png"
+  doText="Use the action picker when the actions refer to the same category or are of the same prominence."
+  dontImage="/img/components/bottom-sheet/bottom-sheet-vsactionpicker-dont.png"
+  dontText="Avoid using the bottom sheet for similar actions — use the Action picker instead."
+/>

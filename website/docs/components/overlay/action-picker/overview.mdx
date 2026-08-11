@@ -1,10 +1,10 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
-platforms: [web, ios, android]
+status: in-progress
+platforms: [web]
 category: overlay
-figma_node: '40001852:22670'
+figma_node: '37:8277'
 used_in: [checkout, order-tracking, rider-onboarding]
 tags: [action-picker, overlay]
 ---
@@ -13,30 +13,54 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Action picker <StatusBadge status="stable" />
+# Action picker <StatusBadge status="in-progress" />
 
 Lets the user pick one action among a few to trigger in the app.
 
 <ComponentTabs basePath="/components/overlay/action-picker" />
 
-<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
+
+Per Figma's own spec, this component is currently **web only**.
 
 ## Component
 
 <ComponentImage src="/img/components/action-picker/action-picker-overview.png" alt="Action picker with title, description, actions list, and Cancel" />
 
+Action pickers let the user select an action and live inside bottom sheets, following the same
+interaction patterns.
+
+- Actions can be of default type or destructive.
+- Title and dismissing button should be always there, while the description is optional.
+- They should be used when actions refer to the same category or have equal prominence.
+- Actions should never be more than 4, to avoid information overload.
+
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| # of Actions | The number of actions listed. |
-| Show Body | Optional — toggles the description below the title. |
+| Number of actions | The range should be from 2 to 4. |
+| Action type | Default, for regular actions / Destructive, for actions that delete, remove, or destroy. |
+| Dismiss button | To dismiss the Action picker. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/action-picker/action-picker-anatomy.png" alt="Action picker anatomy: Title, Description, Actions list, Cancel" />
+<ComponentImage src="/img/components/action-picker/action-picker-anatomy.png" alt="Action picker anatomy: Title, Description, Action area, Dismissing button" />
 
 1. **Title**
 2. **Description** — optional
-3. **Actions list**
-4. **Cancel**
+3. **Action area**
+4. **Dismissing button**
+
+## Action picker vs. Bottom sheet
+
+Action pickers are used for actions of equal prominence or when they refer to a similar category.
+Bottom sheets can instead provide more graphic information and apply a different hierarchy to the
+actions within them.
+
+## Action picker vs. Option picker
+
+The Action picker lets the user select an action that will trigger something, e.g. "take a photo"
+will trigger the camera interface to appear. The Option picker instead lets the user select an
+option that represents a preference, e.g. choosing a ringtone among multiple tones, without
+immediately triggering anything else.

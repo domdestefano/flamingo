@@ -1,7 +1,7 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [date-picker, overlay, guidelines]
 ---
 
@@ -12,27 +12,58 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 <ComponentTabs basePath="/components/overlay/date-picker" />
 
-## Usage
+## Placement & usage
 
-Use the Date picker whenever the user needs to choose a specific date or date range from a
-calendar, rather than typing one in freehand.
+The date picker sits always at the bottom of the screen. **You cannot have a date picker on
+top of another, they don't stack.**
+
+### Slots
+
+Date pickers in Flamingo let teams insert other UI elements between the Date view and the
+action area. This is done with slots, which are placeholders for other Flamingo components.
+We recommend only using slots short enough that provide contextual information, like Message
+boxes or Tags.
+
+### Trigger point
+
+Date pickers can be triggered by several elements, the most common ones are buttons, text
+inputs, or icon buttons. Flamingo recommends using a calendar icon to indicate that the
+action will trigger a Date picker to appear.
+
+When using text inputs, Flamingo advises to also enable the functionality to type in the date
+values with the keyboard, plus relying on the icon button (with a calendar icon) to trigger
+the Time picker. This way, the user will use the input method of their choice.
+
+### Disabled dates, months and years
+
+When you want to show that a date cannot be selected, we recommend relying on an informative
+message in the Stack area. Furthermore, days can be greyed out, while months and years can be
+hidden if they cannot be selected.
 
 ## Use cases
 
 ### Stack usage
 
+Use the Stack to add an informative message to the date selection flow. Be mindful of not
+adding too much text to the Message box, in order to avoid scrolling issues — a Tag can also
+be used in the Stack to highlight quick, glanceable information about the dates.
+
 <DoDontTable
   doImage="/img/components/date-picker/date-picker-stack-do.png"
-  doText="Use the optional content slot for short supporting text, e.g. explaining that a range can be selected."
+  doText="Be mindful of not adding too much text to the Message box, in order to avoid scrolling issues."
   dontImage="/img/components/date-picker/date-picker-stack-dont.png"
-  dontText="Don't put a second action button in the content slot — it competes with the primary confirm action below it."
+  dontText="Avoid using the Stack to add other actions. The date picker is to select a date or a range only."
 />
 
 ### Date format
 
+Due to space limitations, the letter to represent the days in the date at the top of the Date
+picker is always single character based. This is to match also what the most common apps and
+operating systems do, when handling date formats in calendars.
+
 <DoDontTable
   doImage="/img/components/date-picker/date-picker-format-do.png"
-  doText="Use single-letter weekday abbreviations (M T W T F S S) to match the rest of the calendar's compact format."
+  doText="Single letter days are easier to scan and follow global standards."
   dontImage="/img/components/date-picker/date-picker-format-dont.png"
-  dontText="Don't mix abbreviation lengths — two-letter weekday labels (Mo Tu We Th Fr Sa Su) read inconsistently next to the rest of the format."
+  dontText="Using a custom label can create spacing issues."
 />

@@ -1,0 +1,33 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [tooltip, overlay, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/overlay/tooltip" />
+
+## Preview
+
+<StorybookEmbed storyId="components-overlay-tooltip--docs" viewMode="docs" height={700} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-overlay-tooltip--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'text', description: "The tooltip's message. Should be a single line.", type: 'string' },
+    { name: 'type', description: 'Visual style of the tooltip.', type: "'default' | 'light'", default: 'default' },
+    { name: 'facingDownwards', description: "Whether the tooltip's tail points down (content below) or up (content above).", type: 'boolean', default: 'true' },
+    { name: 'tail', description: "Horizontal position of the tail relative to the trigger point.", type: "'left' | 'centre' | 'right'", default: 'centre' },
+    { name: 'icon', description: 'Optional trailing icon shown after the text.', type: 'ReactNode' },
+    { name: 'onDismiss', description: 'Called when the tooltip is dismissed (tap elsewhere, tap again, or after the inactivity timeout).', type: '() => void' },
+  ]}
+/>

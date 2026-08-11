@@ -23,8 +23,8 @@ import { PropsTable } from '@site/src/components/ComponentDocs/shared';
 
 <PropsTable
   rows={[
-    { name: 'tabs', description: 'Array of tab labels (and optional icons).', type: 'Array<{ label: string; icon?: ReactNode }>' },
-    { name: 'selectedIndex', description: 'Index of the currently selected tab.', type: 'number' },
-    { name: 'onChange', description: 'Called when a different tab is selected.', type: '(index: number) => void' },
+    { name: 'onChange', description: 'The function to call when the tab changes.', type: '((selectedTabKey: string) => void) | undefined' },
+    { name: 'tabs', description: 'The tabs to render.', type: 'TabItem[]' },
+    { name: 'value', description: 'The current tab key.', type: 'string | undefined' },
   ]}
 />

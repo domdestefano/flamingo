@@ -12,27 +12,51 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 <ComponentTabs basePath="/components/overlay/action-picker" />
 
+## Interactions
+
+### Dismiss
+
+The Action picker can be dismissed by tapping the Scrim (the area outside the bottom sheet).
+
+### Appear / Disappear
+
+The Action picker follows the behaviour of the Bottom sheet — it appears from the bottom of the
+screen, and disappears to the bottom. The animation is linear.
+
 ## Usage
 
-Use the Action picker for a plain list of actions the user can pick from — not for custom
-supplemental content, which belongs in a Bottom sheet instead.
+The Action picker sits always at the bottom of the screen. You cannot have an Action picker on
+top of another one — they don't stack.
+
+### Trigger point
+
+Action pickers are typically triggered when you need to bury multiple actions in a menu, e.g.
+when the user needs to upload a photo, which can happen via taking a photo, choosing a photo from
+the gallery, or choosing a photo from a file. Flamingo recommends using a 3-dot icon to indicate
+that the action will trigger an Action picker to appear.
 
 ## Use cases
 
 ### Destructive actions
 
+Due to the nature of destructive actions, we recommend having only one per Action picker,
+positioned last.
+
 <DoDontTable
   doImage="/img/components/action-picker/action-picker-destructive-do.png"
-  doText="Style only the genuinely destructive action (e.g. delete) in red, and place it last."
+  doText="Having one destructive action makes the picker easier to scan."
   dontImage="/img/components/action-picker/action-picker-destructive-dont.png"
-  dontText="Don't style every action as destructive — it dilutes the warning and makes nothing stand out."
+  dontText="Having multiple destructive actions can give a negative connotation to the choices the user can trigger."
 />
 
 ### Number of actions
 
+Due to space limitations and the risk of cognitive overload, we recommend using a maximum of 4
+actions. Avoid scrolling.
+
 <DoDontTable
   doImage="/img/components/action-picker/action-picker-numberofactions-do1.png"
-  doText="Keep the list to a small, manageable number of actions."
+  doText="A limited amount of actions is easier to read and understand."
   dontImage="/img/components/action-picker/action-picker-numberofactions-dont.png"
-  dontText="Don't list so many actions that the sheet requires excessive scrolling — group or simplify instead."
+  dontText="Too many actions can lead to confusion and cognitive overload."
 />

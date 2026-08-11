@@ -1,0 +1,32 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [dialog, overlay, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/overlay/dialog" />
+
+## Preview
+
+<StorybookEmbed storyId="components-overlay-dialog--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-overlay-dialog--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'title', description: "The dialog's title. Always mandatory.", type: 'string' },
+    { name: 'description', description: 'Optional supporting text below the title.', type: 'string' },
+    { name: 'slot', description: 'Optional Flamingo component (or stack of components) rendered between the description and the actions.', type: 'ReactNode | ReactNode[]' },
+    { name: 'actions', description: 'Between 1 and 3 buttons that trigger an action or dismiss the dialog. The last action should always be the dismissing one.', type: "Array<{ label: string; variant: 'primary' | 'secondary' | 'tertiary' | 'destructive'; onClick: () => void }>" },
+    { name: 'onDismiss', description: 'Called when the dialog is dismissed (scrim tap, Android back button, or an escape gesture).', type: '() => void' },
+  ]}
+/>

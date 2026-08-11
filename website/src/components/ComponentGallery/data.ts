@@ -285,6 +285,16 @@ export const galleryCategories: GalleryCategory[] = [
         "title": "Tabs",
         "image": "/img/components/tabs/tabs-overview.png",
         "href": "/components/navigation/tabs/overview"
+      },
+      {
+        "slug": "date-selector",
+        "title": "Date selector",
+        "href": "/components/navigation/date-selector/overview"
+      },
+      {
+        "slug": "range-selector",
+        "title": "Range selector",
+        "href": "/components/navigation/range-selector/overview"
       }
     ]
   },
@@ -320,6 +330,16 @@ export const galleryCategories: GalleryCategory[] = [
         "title": "Time picker",
         "image": "/img/components/time-picker/time-picker-overview.png",
         "href": "/components/overlay/time-picker/overview"
+      },
+      {
+        "slug": "tooltip",
+        "title": "Tooltip",
+        "href": "/components/overlay/tooltip/overview"
+      },
+      {
+        "slug": "dialog",
+        "title": "Dialog",
+        "href": "/components/overlay/dialog/overview"
       }
     ]
   },

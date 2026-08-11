@@ -1,7 +1,7 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [header, navigation, guidelines]
 ---
 
@@ -14,9 +14,14 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 ## Usage
 
-Use the Header at the top of every screen. Match its leading action to the screen's place in the
-navigation hierarchy — a Hamburger menu (or no leading action) on entry-level pages, a Back button
-on any page reached by navigating forward.
+- Headers are visible on nearly all screens in an app, including Full Screen Modals. They're
+  excluded on map-based pages, which use floating actions instead.
+- The header doesn't disappear on scroll, but it can change its content.
+- It has a consistent position at the top of the screen and cannot be resized in height — titles
+  and descriptions are always single-lined, never wrapped across two lines.
+
+Match its leading action to the screen's place in the navigation hierarchy — a Hamburger menu (or
+no leading action) on entry-level pages, a Back button on any page reached by navigating forward.
 
 ## Use cases
 
@@ -24,16 +29,43 @@ on any page reached by navigating forward.
 
 <DoDontTable
   doImage="/img/components/header/header-hierarchy-do.png"
-  doText="Show the Hamburger menu on the entry-level page, and switch to a Back button on pages reached by navigating deeper."
+  doText="Show the Hamburger menu on the entry-level page, and switch to a Back button on pages reached by navigating deeper. When both are available, show the menu button first, then a back button."
   dontImage="/img/components/header/header-hierarchy-dont.png"
-  dontText="Don't show a Back button on the entry-level page — there's nowhere for it to go back to."
+  dontText="Don't show a Back button on the entry-level page, or a back button when the user can open the menu instead — there's nowhere for it to go back to."
+/>
+
+### Full Screen Modals
+
+<DoDontTable
+  doText="When entering a Full Screen Modal, show only a close button. Add a back button once the user moves forward within the modal, to indicate they can step back to a previous page inside it."
+  dontText="Don't show a back button on the first screen of a Full Screen Modal."
 />
 
 ### Label length
 
 <DoDontTable
   doImage="/img/components/header/header-labellength-do.png"
-  doText="Keep the title short enough to fit on one line."
+  doText="Keep the title short enough to fit on one line — use the description to add extra information instead."
   dontImage="/img/components/header/header-labellength-dont.png"
-  dontText="Don't use a title so long it gets truncated — shorten it instead."
+  dontText="Don't use a title so long it gets truncated, and don't rely on the header to wrap or resize — it doesn't support multiple lines."
 />
+
+### Page titles
+
+<DoDontTable
+  doText="On entering a screen, the title can show the actual page name or a delightful message. On scroll, show the page title for context, so users always know where they are."
+  dontText="Don't use a non-descriptive title that stays the same on scroll — it won't give users context as they move through the screen."
+/>
+
+### Adding content blocks
+
+<DoDontTable
+  doText="Add up to two content blocks that help the user understand or interact with the page (e.g. tabs, a progress bar, a date picker). When using two blocks, make sure they directly relate to each other, or add a divider between them."
+  dontText="Don't add content blocks with information that isn't actually helpful — they're sticky to the top of the page and add cognitive load."
+/>
+
+### Background
+
+The header normally has a white background. It can be switched to transparent while the user is at
+the top of the page, to let content show through behind it — but once the user scrolls, the
+background is always shown (white).

@@ -1,7 +1,7 @@
 ---
 title: Guidelines
 sidebar_position: 2
-status: stable
+status: in-progress
 tags: [content-header, navigation, guidelines]
 ---
 
@@ -12,28 +12,72 @@ import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/sh
 
 <ComponentTabs basePath="/components/navigation/content-header" />
 
-## Usage
+## Placement
 
-Use a Content header at the start of every distinct section of a page — Page, Section, or Subsection
-level — to establish a clear hierarchy. Don't skip levels or use headers decoratively where no new
-section actually begins.
+This component can be placed on every interface. Make sure to use the correct type for each
+hierarchy level.
+
+1. **Page header** — used to show the page name, a greeting, overview, or most relevant information.
+2. **Section header** — used to name a section of a page.
+3. **Subsection header** — used to name a subsection of a page.
 
 ## Use cases
 
-### Hierarchy
+### Hierarchy & sequential sizing
+
+Always use Content headers in a logical, descending order.
 
 <DoDontTable
   doImage="/img/components/content-header/content-header-hierarchy-do.png"
-  doText="Nest headers in order — Page title, then Section title, then Subsection title — so the hierarchy reads top to bottom."
+  doText="Place headers in descending order — Page, then Section, then Subsection — so the hierarchy always reads top to bottom without skipping levels."
   dontImage="/img/components/content-header/content-header-hierarchy-dont.png"
-  dontText="Don't place a Subsection header above the Section header it belongs to — it breaks the reading order and confuses the hierarchy."
+  dontText="Don't place a Subsection header at the top of a page without a Page or Section header above it."
 />
 
-### Page titles
+### Page title: combination of Content header and Header component
+
+When the user is at the top of a page, avoid displaying the page title twice — once in the
+[Header](/components/navigation/header/overview) and again in the Content header. However, when
+both components are used together, consider adding contextual information instead of repeating the
+same text — for example, the Header can show a shortened version of the name (e.g. "Personal
+information"), while the Content header shows the full detail (e.g. "Name & surname").
 
 <DoDontTable
   doImage="/img/components/content-header/content-header-pagetitles-do.png"
-  doText="Show the page title once, in the Content header."
+  doText="When the user is at the top of a page, the Content header can display the page title, or contextual information related to it."
   dontImage="/img/components/content-header/content-header-pagetitles-dont.png"
-  dontText="Don't repeat the same title in both the navigation bar and the Content header — it's redundant."
+  dontText="Don't repeat the exact same title in both the Header and the Content header when the user has scrolled all the way up — it's redundant."
 />
+
+### Long page titles
+
+When the page title is long, use the Page or Page/Section level. Never use the Subsection level for
+a long title, as it isn't meant to carry that much visual weight.
+
+<DoDontTable
+  doText="Use the Page or Page/Section variant for long page headers."
+  dontText="Never use the Subsection header as a stand-in for a Page title, even if the title is long."
+/>
+
+### Background color
+
+The Content header has no background of its own — it can be placed on any surface.
+
+<CautionTable text="Ensure the contrast between text/icons and the background meets at least the minimum AA accessibility standard (4.5:1 for normal text, 3:1 for large text). If you need an inverted version of the component, request one from the Flamingo design system team." />
+
+When using the Content header directly below a [Header](/components/navigation/header/overview),
+keep both components on the same background color.
+
+<CautionTable text="Giving the Header and the Content header different background colors creates a stronger visual differentiation and adds more visual noise. This is fine if the differentiation is intentional." />
+
+### Centred alignment (of page titles)
+
+The component defaults to a left-aligned title (or right-aligned on RTL interfaces). It also
+supports a centred alignment option for visually centred layouts.
+
+<DoDontTable
+  doText="Use a centred aligned header when the rest of the page is mostly full-width, centred content."
+  dontText="Never place a centred aligned header directly above a left-aligned one — it creates visual imbalance, especially when the two sit right next to each other."
+/>
+
+<CautionTable text="You can combine centred and left-aligned title items on the same page, but make sure to add enough visual balance between them so the mix doesn't feel accidental." />
