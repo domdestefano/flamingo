@@ -1,0 +1,22 @@
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_dee7cec78643d2 66-69
+website/src/components/ComponentDocs/styles.module.css
+  s_54bf5f254aeba9::t_89d8f95a6768da 88-97
+  s_54bf5f254aeba9::t_46b5ce09c7df2d 22-23,29-33,36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "07245719ec7713f8757b9bc659b3e2f4bf1d6b16",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
