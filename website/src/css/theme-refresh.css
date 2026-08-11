@@ -92,6 +92,12 @@
   margin-top: 4px;
 }
 
+/* Extra indentation per nesting level, so child items read more clearly as
+   nested under their parent category. */
+.theme-doc-sidebar-container .menu__list .menu__list {
+  padding-left: 1.25rem;
+}
+
 .theme-doc-sidebar-container .menu__link,
 .theme-doc-sidebar-container .menu__list-item-collapsible {
   margin: 0 0.5rem;
