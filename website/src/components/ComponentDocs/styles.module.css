@@ -19,14 +19,21 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  max-width: 600px;
   background: #ffffff;
   border: var(--flamingo-border01) solid var(--flamingo-site-primary-main);
   border-radius: var(--flamingo-corner-radius03);
 }
 
+/* Source screenshots range from ~75px (small anatomy call-outs) to ~2200px
+   (wide multi-state comparisons) wide, so unconstrained images rendered
+   wildly inconsistent sizes. min-width brings tiny assets up to a legible
+   floor; the frame's own max-width (above) caps oversized ones — the
+   explicit `width` prop on <ComponentImage> still overrides both when set. */
 .componentImage {
   max-width: 100%;
+  min-width: min(240px, 100%);
   height: auto;
   display: block;
 }
@@ -76,6 +83,16 @@
 .stretchTable {
   width: 100%;
   table-layout: auto;
+}
+
+/* Higher specificity than the global .markdown table rule (theme-refresh.css),
+   which forces table-layout: fixed + overflow: hidden on every table — with
+   5 equal-width fixed columns, the longest labels ("Not available") got
+   clipped instead of wrapping. auto layout + visible overflow lets each
+   column size to its own content. */
+:global(.markdown) table.stretchTable {
+  table-layout: auto;
+  overflow: visible;
 }
 
 /* --- Do / Don't (and Caution) comparison table --- */
