@@ -1,0 +1,22 @@
+website/src/components/ComponentGallery/styles.module.css
+  s_54bf5f254aeba9::t_cfc362b74dfb4c 26,31,40-42,44,47-55
+website/src/components/ComponentGallery/index.tsx
+  s_54bf5f254aeba9::t_b4113387b470ab 14-19
+  s_54bf5f254aeba9::t_d4e00e06a372f4 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "53fb16bcd29291926aa83b64efd5afbe95ae7a13",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
