@@ -1,0 +1,42 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [scrim, layout, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs
+  basePath="/components/layout/scrim"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+  ]}
+/>
+
+## Interactions
+
+### Appear / Disappear
+
+Scrims can only fade in or out of the screen.
+
+## Do's and Dont's
+
+### Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either. If you do, we'll find out and hunt you down and force you to use
+Comic Sans for the rest of your design career.
+
+Jokes aside, please use the components provided by our design system and don't detach them; if
+you need different or improved ones, to cover your use cases, please contact the Flamingo design
+system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the scrim as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us."
+/>

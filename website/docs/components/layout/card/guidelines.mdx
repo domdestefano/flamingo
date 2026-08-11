@@ -1,0 +1,52 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [card, layout, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs
+  basePath="/components/layout/card"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+## Do's and Dont's
+
+### Card overkill
+
+Cards should be used only when necessary, specifically to group relevant and actionable
+information to scan at a glance. Try using white space to group and separate elements.
+
+<DoDontTable
+  doText="Use cards only when they make sense, to avoid visual heaviness."
+  dontText="Avoid put everything in a card."
+/>
+
+<DoDontTable
+  doText="Use cards to add prominence and separation from other elements."
+  dontText="Do not overwhelm the UI with unnecessary elements."
+/>
+
+### Detach
+
+Absolutely avoid detaching our components or creating your own ones. Do not adopt components from
+other design systems either. If you do, we'll find out and hunt you down and force you to use
+Comic Sans for the rest of your design career.
+
+Jokes aside, please use the components provided by our design system and don't detach them; if
+you need different or improved ones, to cover your use cases, please contact the Flamingo design
+system team and we will provide support and help.
+
+<DoDontTable
+  doText="Use the cards as intended by the design system."
+  dontText="If you need a variant to cover your use case, please contact us."
+/>
