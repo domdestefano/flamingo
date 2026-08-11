@@ -23,20 +23,12 @@
   justify-content: center;
   gap: 0.75rem;
   padding: 1.5rem 1rem;
-  border-radius: var(--flamingo-corner-radius03);
-  color: #232783;
+  color: var(--ifm-font-color-base);
   text-decoration: none;
 }
 
-/* Higher specificity than the shared .flamingo-card rule (which sets its
-   own neutral surface background) so the gallery tile stays pink
-   regardless of stylesheet load order. */
-.card:global(.flamingo-card) {
-  background: var(--flamingo-site-secondary-main);
-}
-
 .card:hover {
-  color: #232783;
+  color: var(--ifm-font-color-base);
   text-decoration: none;
 }
 
@@ -45,9 +37,22 @@
   line-height: 1;
 }
 
+/* The source PNGs are opaque navy icons — recolor via mask instead of a
+   plain <img> so they render in the brand blue regardless of the source
+   pixel color. */
 .iconImage {
+  display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
+  background-color: var(--flamingo-color-primary-main);
+  -webkit-mask-image: var(--icon-mask-url);
+  mask-image: var(--icon-mask-url);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
 .cardTitle {

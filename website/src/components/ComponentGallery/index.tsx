@@ -11,7 +11,12 @@ function Thumbnail({ item }: { item: (typeof galleryCategories)[number]['items']
   return (
     <Link to={item.href} className={`${styles.card} flamingo-card`}>
       {iconImage ? (
-        <img src={iconImageUrl} alt="" className={styles.iconImage} />
+        <span
+          className={styles.iconImage}
+          style={{ ['--icon-mask-url' as string]: `url(${iconImageUrl})` }}
+          role="img"
+          aria-label=""
+        />
       ) : (
         <span className={styles.icon} aria-hidden="true">
           {componentIcons[item.slug] ?? '🧩'}
@@ -27,7 +32,7 @@ function Thumbnail({ item }: { item: (typeof galleryCategories)[number]['items']
  * in the navbar, for quick visual browsing instead of hunting through the
  * sidebar tree. Icons are emoji placeholders until a proper icon set is
  * designed for this gallery, except for slugs in `componentIconImages`,
- * which use real Material Rounded icons on a secondary.main tile. */
+ * which use real Material Rounded icons recolored blue via CSS mask. */
 export default function ComponentGallery(): React.ReactElement {
   return (
     <div className={styles.gallery}>
