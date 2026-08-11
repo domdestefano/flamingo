@@ -42,7 +42,10 @@ export function StatusBadge({
 
 /**
  * The Figma / Web / iOS / Android / Specs availability row shown at the top
- * of every component's Overview page.
+ * of every component's Overview page. Figma/Web/Specs link out to the real
+ * source (Figma Components file, Storybook, Figma Specs file) when a href
+ * is supplied — only pass one when the platform is genuinely available;
+ * there's nothing useful to link to otherwise.
  */
 export function AvailabilityTable({
   figma,
@@ -50,19 +53,25 @@ export function AvailabilityTable({
   ios,
   android,
   specs,
+  figmaHref,
+  webHref,
+  specsHref,
 }: {
   figma: Availability;
   web: Availability;
   ios: Availability;
   android: Availability;
   specs: Availability;
+  figmaHref?: string;
+  webHref?: string;
+  specsHref?: string;
 }) {
   const platforms = [
-    { label: 'Figma', value: figma },
-    { label: 'Web', value: web },
+    { label: 'Figma', value: figma, href: figmaHref },
+    { label: 'Web', value: web, href: webHref },
     { label: 'iOS', value: ios },
     { label: 'Android', value: android },
-    { label: 'Specs', value: specs },
+    { label: 'Specs', value: specs, href: specsHref },
   ];
   return (
     <table className={styles.stretchTable}>
@@ -77,7 +86,15 @@ export function AvailabilityTable({
         <tr>
           {platforms.map((p) => (
             <td key={p.label}>
-              {AVAILABILITY_ICON[p.value]} {AVAILABILITY_LABEL[p.value]}
+              {p.href ? (
+                <a href={p.href} target="_blank" rel="noopener noreferrer">
+                  {AVAILABILITY_ICON[p.value]} {AVAILABILITY_LABEL[p.value]}
+                </a>
+              ) : (
+                <>
+                  {AVAILABILITY_ICON[p.value]} {AVAILABILITY_LABEL[p.value]}
+                </>
+              )}
             </td>
           ))}
         </tr>

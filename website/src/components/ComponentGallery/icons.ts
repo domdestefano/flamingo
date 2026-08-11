@@ -69,7 +69,7 @@ export const componentIcons: Record<string, string> = {
 export const componentIconImages: Record<string, string> = {
   animations: '/img/gallery-icons/animations.png',
   'graphic-blocks': '/img/gallery-icons/graphic-blocks.png',
-  icons: '/img/gallery-icons/icons.png',
+  icons: '/img/gallery-icons/icons.svg',
   'floating-button': '/img/gallery-icons/floating-button.svg',
   'floating-icon-button': '/img/gallery-icons/floating-icon-button.svg',
   'icon-button': '/img/gallery-icons/icon-button.svg',
