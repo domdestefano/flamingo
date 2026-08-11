@@ -366,7 +366,7 @@ export const galleryCategories: GalleryCategory[] = [
       },
       {
         "slug": "specs-bar-chart",
-        "title": "Specs Bar Chart",
+        "title": "Bar chart",
         "image": "/img/components/specs-bar-chart/specs-bar-chart-overview.png",
         "href": "/components/progressors-and-charts/specs-bar-chart/overview"
       },
