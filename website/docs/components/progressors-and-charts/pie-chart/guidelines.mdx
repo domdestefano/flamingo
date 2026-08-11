@@ -6,24 +6,43 @@ tags: [pie-chart, progressors-and-charts, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
 <ComponentTabs basePath="/components/progressors-and-charts/pie-chart" />
 
-## Usage
+## Placement
 
-Use the pie chart when progress is naturally counted in discrete steps (e.g. "6 of 7 tasks done"),
-not a continuous percentage — use the Circle Chart for that instead.
+- The component can be placed on the background, on cards, overlays, or bottom sheets.
+- Ensure there is enough space.
 
 ## Use cases
 
-### Amount of segments
+### Location
+
+The Pie Chart is a highly visual component. Ensure it has enough space.
+
+**Do:** Place it left aligned or when possible centered.
+
+<CautionTable text="When placing it besides another element, ensure there is still enough white space." />
+
+### Amount
+
+The Pie Chart can have a minimum of 3 up to a maximum of 15 milestones, including the beginning and the end. This is to avoid visual clutter and frustration for the user.
 
 <DoDontTable
   doImage="/img/components/pie-chart/pie-chart-amount-do.png"
-  doText="Keep the number of segments small enough to distinguish at a glance."
+  doText="An appropriate number of milestones can engage the user in the challenge or quest to achieve completion and receive a reward."
   dontImage="/img/components/pie-chart/pie-chart-amount-dont.png"
-  dontText="Don't use so many segments (e.g. 20) that individual sections become indistinguishable."
+  dontText="Too many milestones can give the user a sense of frustration from the excessive length of the challenge or quest, and can ultimately lead to giving up."
+/>
+
+### Content
+
+Ensure the type of the chart matches the message (see the Overview tab) and the content explains what the chart is displaying.
+
+<DoDontTable
+  doText="The upper label explains what the bar is about and the lower one shows the actual value."
+  dontText="Avoid ambiguous language, and don't display the chart without context."
 />

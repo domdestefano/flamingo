@@ -366,7 +366,7 @@ export const galleryCategories: GalleryCategory[] = [
       },
       {
         "slug": "specs-bar-chart",
-        "title": "Specs Bar Chart",
+        "title": "Bar chart",
         "image": "/img/components/specs-bar-chart/specs-bar-chart-overview.png",
         "href": "/components/progressors-and-charts/specs-bar-chart/overview"
       },
@@ -375,6 +375,11 @@ export const galleryCategories: GalleryCategory[] = [
         "title": "Stepper",
         "image": "/img/components/stepper/stepper-overview.png",
         "href": "/components/progressors-and-charts/stepper/overview"
+      },
+      {
+        "slug": "progress-bar",
+        "title": "Progress Bar",
+        "href": "/components/progressors-and-charts/progress-bar/overview"
       }
     ]
   }

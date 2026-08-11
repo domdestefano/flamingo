@@ -59,6 +59,7 @@ export const componentIcons: Record<string, string> = {
   'range-selector': '📊',
   tooltip: 'ℹ️',
   dialog: '💭',
+  'progress-bar': '📶',
 };
 
 // Real icon images — the first 3 are user-supplied Google Material Rounded
@@ -124,4 +125,5 @@ export const componentIconImages: Record<string, string> = {
   'range-selector': '/img/gallery-icons/range-selector.svg',
   tooltip: '/img/gallery-icons/tooltip.svg',
   dialog: '/img/gallery-icons/dialog.svg',
+  'progress-bar': '/img/gallery-icons/progress-bar.svg',
 };

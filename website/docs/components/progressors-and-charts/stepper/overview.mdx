@@ -15,33 +15,82 @@ import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDo
 
 # Stepper <StatusBadge status="stable" />
 
-Conveys progress through logical or numbered steps. Use it when the user needs to complete a task
-divided into smaller, sequential steps — mandatory or optional.
+Shows progression through steps, in a vertical layout.
 
 <ComponentTabs basePath="/components/progressors-and-charts/stepper" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress"
-  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-7812" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-stepper--docs" />
+:::warning
+**Last update:** June 2026
+
+**Component available, but** 🚧 **the latest design updates still need to be
+implemented**
+:::
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-7812" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-stepper--docs" specsHref="https://www.figma.com/design/VuBl4ugiWKRiGROf3zglzb/Components-Specs?node-id=40004076-6960" />
 
 ## Component
 
 <ComponentImage src="/img/components/stepper/stepper-overview.png" alt="Stepper with numbered steps, titles, subtitles, and a suffix area" />
 
+## Description
+
+Steppers convey progress through steps and should be used when you want the user to complete a
+task divided into smaller logical steps, or progress through multiple locations (e.g. a rider
+delivery journey). You can use the stepper to guide the user through a series of information to
+fill in or actions to take — for instance, to guide the user through adding their phone number and
+confirming their identity: (1) provide a new phone number, (2) confirm their identity.
+
+- They can be mandatory or optional. If optional, the user needs to have the option to skip them.
+- They can present icons or numbers.
+- They can encapsulate further content inside through the stack.
+
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| # of Steps | The number of steps shown. |
-| Step indicator | Number / Icon. |
+| # of Steps | Varies from 2 to 9 — the number of steps the user can go through. |
+| Step indicator | Icons or numbers, to represent the steps. |
+| State | **Completed/Past** — the step is completed by the user. **Available/Present** — the step is available for the user to interact with. **Unavailable/Future** — the step is not available for the user to interact with yet. |
+| Suffix | The elements on the right side. |
+| Stack | The container where you can place further content within the Stepper. |
+| Title | Can be either text or a Tag. |
+| Subtitle | Secondary text element. |
+| Caption | Tertiary text element. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/stepper/stepper-anatomy.png" alt="Stepper anatomy: Step indicator, Connector line, Title, Subtitle, Caption, Slot, Suffix" />
+<ComponentImage src="/img/components/stepper/stepper-anatomy.png" alt="Stepper anatomy: Step indicator, Step progress bar, Title, Subtitle, Caption, Stack, Suffix" />
 
 1. **Step indicator**
-2. **Connector line**
-3. **Title**
-4. **Subtitle**
-5. **Caption**
-6. **Slot** — optional custom content
-7. **Suffix** — optional trailing text/tag/icon
+2. **Step progress bar**
+3. **Title** — text or Tag
+4. **Subtitle** — secondary text element
+5. **Caption** — tertiary text element
+6. **Stack** — encapsulates further content
+7. **Suffix** — accommodates more components or additional text information
+
+## Variations
+
+### Step indicator
+
+The step indicator communicates the status of each step. Use numbers to display the sequential
+step order, or icons to use visual state icons. While you can choose whichever icons make sense
+for your use case, we recommend a checkmark for Completed and a lock for Unavailable steps.
+
+1. Numbers
+2. Icons
+
+### # of Steps
+
+Choose between 2 and 9 steps to match the complexity of your user flow. The Stepper height scales
+automatically — use fewer steps for simpler flows, more steps for multi-stage processes.
+
+1. Few-step process
+2. Multi-step process
+
+### Step states
+
+Each step has one of three distinct states: **Completed** — the step was finished by the user,
+**Available** — the current active step the user is on, **Unavailable** — a future step that is
+locked and not yet accessible.

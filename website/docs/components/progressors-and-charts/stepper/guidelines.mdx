@@ -6,7 +6,7 @@ tags: [stepper, progressors-and-charts, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
@@ -14,15 +14,68 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 ## Usage
 
-Use the Stepper for a task broken into sequential steps the user completes one at a time.
+You can use icons to hint visually what the steps consist of — an icon-based approach may make the
+stepper flow feel easier to complete for the user, since it doesn't show a strict progression
+divided into numbers.
+
+Numbered steps are used mostly when you want to clearly show an ordered progression. Number-based
+steppers give a clear sense of order and help the user focus more on the task.
+
+The advance through progressive steps should always be triggered by UI elements such as buttons.
+Depending on the prominence of the progressive action, you can use secondary buttons. For
+regressive actions, we recommend tertiary or icon buttons.
+
+Some steps might be locked because the user needs to complete the previous steps first. You can
+use a tooltip to explain why a step is locked.
+
+## Placement
+
+Steppers can be placed freely in the interface, or inside other container-like components, e.g.
+cards, bottom sheets, or main sheets. When placed within components, it's recommended to keep a
+few steps to avoid UI clutter.
 
 ## Use cases
+
+### # of Steps
+
+Avoid having too many steps when the user's tasks are quite extensive. This helps avoid cognitive
+overload and the fear that content wouldn't be saved if all the tasks aren't completed.
+
+<DoDontTable
+  doText="Group steps that refer to the same thing."
+  dontText="Long and numerous steps can overwhelm the user."
+/>
+
+### Step indicator
+
+Steppers can use either icons or numbers. Avoid mixing the two together, as they can create
+confusion.
+
+<DoDontTable
+  doText="Use clear iconography to avoid visually mixing indicator types."
+  dontText="Mixing icons and numbers makes understanding the progression harder."
+/>
 
 ### Step states
 
 <DoDontTable
   doImage="/img/components/stepper/stepper-states-do.png"
-  doText="Show states in logical order — completed, then the active step, then upcoming steps."
+  doText="Having a clear logic helps the user understand where they are."
   dontImage="/img/components/stepper/stepper-states-dont.png"
-  dontText="Don't show states out of order — a later step appearing resolved while an earlier one still looks upcoming breaks the sequence."
+  dontText="Mixing states out of order can confuse the user about which step they're at."
 />
+
+<CautionTable text="Depending on the use case, some steps can be available at the same time." />
+
+### Back and forth
+
+In order to move through steps, present trigger elements that allow the user to progress, and
+regress if needed. We recommend relying on the back button in the header to regress, and a primary
+button at the bottom to progress.
+
+<DoDontTable
+  doText="Use a primary button to advance the main action of the flow. When steps are available at the same time, provide the trigger action with each step."
+  dontText="Don't place multiple actions within the same step."
+/>
+
+<CautionTable text="You can have progressive actions stacked horizontally, but be mindful of content and layout." />

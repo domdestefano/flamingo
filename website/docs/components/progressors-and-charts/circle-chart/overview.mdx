@@ -19,10 +19,33 @@ Indicates a continuous progression in a circular shape.
 
 <ComponentTabs basePath="/components/progressors-and-charts/circle-chart" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress"
-  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-3442" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-circle-progress--docs" />
+<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-3442" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-circle-progress--docs" specsHref="https://www.figma.com/design/VuBl4ugiWKRiGROf3zglzb/Components-Specs?node-id=40000887-3200" />
 
 Note: in Storybook and code, this component is named **Circle Progress**.
+
+## Description
+
+The Circle Chart is used to indicate a value in a more visual way. Circle Charts are for showing
+**parts of a whole** or **progress toward a goal**, when that "whole" is clearly defined and
+limited. The progression is continuous, meaning that it's not sectioned in fractions.
+
+### Circle vs. Pie
+
+The main difference is that the progression is continuous in the circle, while it's sectioned in
+fractions in the pie. We recommend using the circle when the progression happens indeterminately
+in a continuous way; use the pie when the progression is predefined in a series of steps that the
+user has to go through in order to achieve completion.
+
+### Circle vs. Progress Bar
+
+Circle Chart and Progress Bar serve different mental models and UX contexts.
+
+| Criterion | Circle Chart | Progress Bar |
+| --- | --- | --- |
+| Core purpose | Visualizes progress toward a goal or portion of a whole in a compact, symbolic way | Shows linear progression along a defined path or process |
+| Mental model | Feels cyclical, looped, or holistic — completion "closes the circle" | Feels sequential or directional — progress "moves forward" |
+| Use when... | You want to show progress as a single, self-contained metric (e.g. Battery 80%); you're comparing few, independent progress values | You need precise readability and users care about the actual numeric progress; you want to provide more context through labels |
 
 ## Component
 
@@ -32,14 +55,15 @@ Note: in Storybook and code, this component is named **Circle Progress**.
 
 | Property | Details |
 | --- | --- |
-| Type | Neutral / Default / Success / Alert / Error / Branded — color of the ring. |
-| Main label | The primary value shown, e.g. a number or percentage. |
-| Secondary label | Supporting text below the main label, e.g. "Value." |
+| Type | Default / Branded / Success / Alert / Error / Neutral — color of the ring. Default is generic progression with no positive/negative feeling; Branded is an alternative to Default; Success shows a positive completion feeling; Alert signals a possible stall; Error shows negative progress; Neutral is the inactive or locked state of the progression. |
+| Secondary label | String explaining what the main label shows. |
+| Main label | String showing the bar's value. |
+| Progression | Value — how much progress the bar should display. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/circle-chart/circle-chart-anatomy.png" alt="Circle chart anatomy: Ring, Secondary label, Main label" />
+<ComponentImage src="/img/components/circle-chart/circle-chart-anatomy.png" alt="Circle chart anatomy: Bar, Secondary label, Main label" />
 
-1. **Ring**
-2. **Secondary label**
-3. **Main label**
+1. **Bar**
+2. **Secondary label** — describing what is visible
+3. **Main label** — showing the value

@@ -23,8 +23,14 @@ import { PropsTable } from '@site/src/components/ComponentDocs/shared';
 
 <PropsTable
   rows={[
-    { name: 'steps', description: 'Step data: title, subtitle, caption, state.', type: "Array<{ title: string; subtitle?: string; caption?: string; state: 'completed' | 'active' | 'upcoming' }>" },
-    { name: 'indicator', description: 'How each step is represented.', type: "'number' | 'icon'" },
-    { name: 'suffix', description: 'Optional trailing content per step (text, tag, icon).', type: 'ReactNode' },
+    { name: 'steps', description: 'Step definitions for the stepper. Required.', type: 'StepperStep[]' },
+    { name: 'currentStep', description: 'Controlled active step index.', type: 'number' },
+    { name: 'defaultCurrentStep', description: 'Initial active step index for uncontrolled mode.', type: 'number', default: '0' },
+    { name: 'onChange', description: 'Called when the active step changes.', type: '(currentStep: number) => void' },
+    { name: 'previousStepsExpanded', description: 'Whether to expand previous, completed steps.', type: 'boolean', default: 'false' },
+    { name: 'lastStepConnector', description: "Whether to show a connector after the last step.", type: 'boolean', default: 'true' },
+    { name: 'icon', description: 'Generic icon used for upcoming/active steps.', type: 'ReactNode' },
+    { name: 'successIcon', description: 'Generic icon used for completed steps.', type: 'ReactNode' },
+    { name: 'blockedIcon', description: 'Generic icon used for blocked steps.', type: 'ReactNode' },
   ]}
 />

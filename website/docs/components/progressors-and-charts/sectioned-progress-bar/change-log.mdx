@@ -15,9 +15,56 @@ import { ChangelogTable } from '@site/src/components/ComponentDocs/shared';
 <ChangelogTable
   rows={[
     {
-      date: '—',
-      version: '—',
-      description: "No entries yet. This table isn't sourced from Figma — update it here (or ask Claude to, pointed at the component's Zeroheight change log) whenever Sectioned Progress Bar changes.",
+      date: 'Jun 2026',
+      version: '2.1',
+      description: (
+        <>
+          Lumified.
+          <ul>
+            <li>Added variant to show numbers instead of icons.</li>
+            <li>Added Figma variant to show mid progression.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      date: 'Nov 2025',
+      version: '2.0',
+      description: (
+        <>
+          Added functionalities.
+          <ul>
+            <li>
+              Added new property called <em>Type</em>, with options "Default", "Alert", "Error",
+              "Success", "Inactive".
+            </li>
+            <li>Added possibility to only have 1 milestone (before the min. was 2).</li>
+            <li>
+              Added new property called <em>All Milestones have Icons</em>, to display icons for
+              all milestones (not just beginning and end).
+            </li>
+            <li>Changed the colours (to fit our new design).</li>
+            <li>
+              Figma only:
+              <ul>
+                <li>
+                  Fixed the labels logic: the Figma component was implemented differently to what
+                  we have in code, which is more generic. Now it matches code logic.
+                </li>
+                <li>
+                  Added a new progression option called "0 (inactive)", so you can choose whether
+                  the first marker should be branded or neutral.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      date: '2020',
+      version: '1.0',
+      description: 'Sectioned Progress Bar was released.',
     },
   ]}
 />

@@ -1,0 +1,100 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: progressors-and-charts
+figma_node: '38:2917'
+used_in: [wallet, challenges, order-tracking]
+tags: [progress-bar, progressors-and-charts]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Progress Bar <StatusBadge status="stable" />
+
+Indicates a continuous progression within a flow or a user's activity — the progression is not
+sectioned into fractions.
+
+<ComponentTabs
+  basePath="/components/progressors-and-charts/progress-bar"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="not-available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=38-2917" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-progress-bar--docs" />
+
+## Description
+
+The progress bar is a UI element used to indicate a progression within a flow or within a user's
+activity, i.e. their performance in a quest or batch. The progression is continuous, meaning it is
+not sectioned in fractions — it progresses in a pillow shape. Its height is fixed.
+
+The difference between the circle chart and the progress bar is how visually to represent a
+progression — this is left up to the designer and their judgement.
+
+The progress bar is made of different elements:
+
+- **The progression background** — represents the background of the progression itself; it is
+  static.
+- **The progression foreground** — the dynamic part of the progression; it moves linearly from 0%
+  to 100%.
+- **Left main text** — sits on the left hand side and is usually used to represent the initial
+  value that the progression refers to, i.e. the batch number at the beginning of the challenge.
+- **Left value text** — a secondary text used as a label to indicate what the left main text is,
+  i.e. day or hour etc.
+- **Right main text** — sits on the right hand side and represents the final value that the
+  progression refers to, i.e. the batch number at the end of the challenge.
+- **Right value text** — a secondary text used as a label to indicate what the right main text is,
+  i.e. day or hour etc.
+
+The text values are optional, but Flamingo recommends showing at least one on each side.
+
+The progress bar has 5 states:
+
+- **Default** — a generic progression towards the goal. Use when the progression is not meant to
+  show either a positive or negative feeling for any increment or completion.
+- **Success** — a successful progression towards the goal. Use when the progression shows a
+  positive feeling for any increment or completion.
+- **Alert** — an alert in the progression towards the goal. Use when the progression shows a
+  possible risk far from completion.
+- **Error** — an unsuccessful progression towards the goal. Use when the progression shows a
+  negative feeling for any increment or completion.
+- **Neutral** — an inactive or locked state of the progression itself.
+
+## Properties
+
+| Property | Details |
+| --- | --- |
+| Progression background | The static background of the progression. |
+| Progression foreground | The dynamic part of the progression — moves linearly from 0% to 100%. |
+| Left main text | Optional — the initial value the progression refers to. |
+| Left value text | Optional — a secondary label for the left main text, i.e. day or hour. |
+| Right main text | Optional — the final value the progression refers to. |
+| Right value text | Optional — a secondary label for the right main text, i.e. day or hour. |
+| Variant | Default / Success / Alert / Error / Neutral. |
+
+## Progress bar vs. Sectioned progress bar
+
+The **sectioned progress bar** shows progress in segments, letting the user understand they must
+go through a series of milestones to achieve completion.
+
+The **progress bar**, instead, shows general progress in a continuous way — the user doesn't have
+to reach individual milestones to achieve completion.
+
+## Progress bar vs. Stepper
+
+The **progression element** (progress bar or sectioned progress bar) is used to show progress
+within a user's activity, i.e. the progression of their performance in a quest or batch.
+Alternatively, use the progression element to guide the user through a series of tasks to complete
+a flow on multiple screens — for instance, accepting, picking up and dropping off an order to
+deliver food.
+
+Use the **stepper** to guide the user through a series of smaller actions to complete a task on a
+single screen — for instance, providing a new phone number and identifying themself in order to
+edit the current phone number.

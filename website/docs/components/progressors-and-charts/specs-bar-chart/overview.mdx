@@ -13,13 +13,21 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Specs Bar Chart <StatusBadge status="stable" />
+# Bar chart <StatusBadge status="stable" />
 
-Compares different numerical values to one another.
+A chart to visually compare numerical values across an axis.
 
-<ComponentTabs basePath="/components/progressors-and-charts/specs-bar-chart" />
+<ComponentTabs
+  basePath="/components/progressors-and-charts/specs-bar-chart"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Content', slug: 'content' },
+    { label: 'Change log', slug: 'change-log' },
+  ]}
+/>
 
-<AvailabilityTable figma="available" web="in-progress" ios="available" android="available" specs="in-progress"
+<AvailabilityTable figma="available" web="not-available" ios="not-available" android="not-available" specs="not-available"
   figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-7944" />
 
 ## Component
@@ -30,16 +38,26 @@ Compares different numerical values to one another.
 
 | Property | Details |
 | --- | --- |
-| # of Bars | The number of bars shown. |
-| Selected bar | Which bar (if any) is tapped/highlighted. |
-| Show Tooltip | Optional — shows a value tooltip above the selected bar. |
-| Show Goal line | Optional — shows a dashed reference line across the chart. |
+| # of bars | The overall amount of bars the chart should display. |
+| Selected bar | A bar, which is tapped. If this is "none" it means that no bar is being currently tapped. |
+| Showing a tooltip | Option to show a tooltip above a bar to indicate the value of the bar. |
+| Showing a goal line | Option to show a goal line across the graph. |
+| Bar amount | The amount each bar should display. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/specs-bar-chart/specs-bar-chart-anatomy.png" alt="Bar chart anatomy: Tooltip, Selected bar, Bars, Axis labels" />
+<ComponentImage src="/img/components/specs-bar-chart/specs-bar-chart-anatomy.png" alt="Bar chart anatomy: Tooltip, Bars, Goal line, Labels" />
 
-1. **Tooltip** — shown above the selected bar, optional.
-2. **Selected bar**
-3. **Bars**
-4. **Axis labels**
+1. **Tooltip** — it displays the current value of the bar that the user tapped on.
+2. **Bars** — can be resting or tapped on. Each bar can have a unique value.
+3. **Goal line** — it describes what the goal amount is.
+4. **Labels** — explain what each bar shows.
+
+## Interactions
+
+### Tapping a bar
+
+The whole height of the bar can be tapped on. When tapping on a bar is enabled, the bar is:
+
+- highlighted
+- displays a tooltip (optional)

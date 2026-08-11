@@ -12,12 +12,43 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 <ComponentTabs basePath="/components/progressors-and-charts/sectioned-progress-bar" />
 
+## Interactions
+
+### Progression
+
+The sectioned progress bar's progression advances milestone by milestone, as shown in the video
+or prototype: once the progression reaches the next milestone, the previous milestone turns into
+the completed state and the new current one turns to active. The current milestone can have
+whichever icon is chosen to display. When needed, the progression can be shown midway between
+stops.
+
 ## Usage
 
 Use the sectioned progress bar for a journey with a small number of distinct, nameable
 milestones — e.g. delivery stages or a multi-step reward program.
 
+Placement depends on the use case:
+
+- When the sectioned progress bar is used for a main flow, place it above the flow's content, so
+  it stays visible as users go through it.
+- When it's used to display a progress overview on a single page, it can be placed within the
+  content instead of pinned to the top.
+
 ## Use cases
+
+### Location for multi page flows
+
+<DoDontTable
+  doText="Stick the sectioned progress bar into the header when you have a flow with multiple steps. This way, it's always visible for users going through the flow."
+  dontText="Don't place the sectioned progress bar in the content area — as users move through multiple pages, they may not notice it if it isn't part of the persistent layout."
+/>
+
+### Adding context
+
+<DoDontTable
+  doText="Give the sectioned progress bar a caption or accompanying copy explaining what the progression represents, especially when it appears on its own (e.g. as a card)."
+  dontText="Don't rely on the progress bar alone with no surrounding copy — users may not understand what they're progressing toward."
+/>
 
 ### Number of milestones
 
@@ -26,4 +57,25 @@ milestones — e.g. delivery stages or a multi-step reward program.
   doText="Keep the number of milestones small enough that each can be labeled and read at a glance."
   dontImage="/img/components/sectioned-progress-bar/sectioned-progress-bar-milestones-dont.png"
   dontText="Don't cram in so many milestones that most go unlabeled and become indistinguishable dots."
+/>
+
+### Labels
+
+<DoDontTable
+  doText="Label milestones clearly, with short, direct wording so each one is readable at a glance."
+  dontText="Don't use vague or overly long milestone labels — they're harder to scan and can crowd the layout."
+/>
+
+### Icons or numbers
+
+<DoDontTable
+  doText="Use numbered milestones when you want to guide the user through a more prominent, quantified sense of progression."
+  dontText="Don't rely on icons alone when a precise sense of progression matters — icons don't convey how many steps remain."
+/>
+
+### The type should have a meaning
+
+<DoDontTable
+  doText="Choose the bar's Type (Default, Alert, Error, Success, Inactive) to match the real state of the progression."
+  dontText="Don't pick a Type at random for visual variety — a mismatched type (e.g. Error) sends a false signal about the progression's status."
 />

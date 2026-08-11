@@ -10,14 +10,32 @@ import { ChangelogTable } from '@site/src/components/ComponentDocs/shared';
 
 # Change log
 
-<ComponentTabs basePath="/components/progressors-and-charts/specs-bar-chart" />
+<ComponentTabs
+  basePath="/components/progressors-and-charts/specs-bar-chart"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Content', slug: 'content' },
+    { label: 'Change log', slug: 'change-log' },
+  ]}
+/>
 
 <ChangelogTable
   rows={[
     {
-      date: '—',
-      version: '—',
-      description: "No entries yet. This table isn't sourced from Figma — update it here (or ask Claude to, pointed at the component's Zeroheight change log) whenever Specs Bar Chart changes.",
+      date: '07/05/25',
+      version: '1.0',
+      description: (
+        <ul>
+          <li>Released component in Figma's Foundations library</li>
+          <li>Updated the documentation for the component</li>
+        </ul>
+      ),
+    },
+    {
+      date: '2023',
+      version: '1.0',
+      description: 'Bar chart added to Web library (iOS, Android not available).',
     },
   ]}
 />
