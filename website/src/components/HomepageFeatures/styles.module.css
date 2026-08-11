@@ -18,6 +18,17 @@
   text-decoration: none;
 }
 
+/* Solid white (from the shared .flamingo-card rule) reads too heavy sitting
+   on the hero photo — frosted glass instead, so the animated background
+   stays visible through the cards. Higher specificity than .flamingo-card
+   so it wins regardless of stylesheet load order. */
+.featureCard:global(.flamingo-card) {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
 .featureIcon {
   display: block;
   font-size: 2.5rem;
