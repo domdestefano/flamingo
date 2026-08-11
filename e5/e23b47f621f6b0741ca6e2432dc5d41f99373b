@@ -1,0 +1,41 @@
+website/docs/components/layout/scrim/guidelines.mdx
+  s_54bf5f254aeba9::t_628956213742b0 1-42
+website/docs/components/layout/scrim/overview.mdx
+  s_54bf5f254aeba9::t_dfdc40ea487b0c 11-12,18-25
+website/docs/components/loaders/loading-screen/guidelines.mdx
+  s_54bf5f254aeba9::t_62648a73db438c 1-70
+website/docs/components/loaders/loading-bar/guidelines.mdx
+  s_54bf5f254aeba9::t_91faca95359ad6 1-70
+website/docs/components/loaders/loading-screen/overview.mdx
+  s_54bf5f254aeba9::t_7714a71009c4ee 12,18-25,37-39
+website/docs/components/loaders/pull-to-refresh/code-web.mdx
+  s_54bf5f254aeba9::t_460140a62172ed 3,18
+website/docs/components/layout/card/overview.mdx
+  s_54bf5f254aeba9::t_26242715f6db59 12,22
+website/docs/components/loaders/pull-to-refresh/overview.mdx
+  s_54bf5f254aeba9::t_2f106746f41ab7 12,22,29,36-39,46
+website/docs/components/loaders/loading-bar/overview.mdx
+  s_54bf5f254aeba9::t_278514a70c402f 11-12,18-25,50
+website/docs/components/loaders/pull-to-refresh/guidelines.mdx
+  s_54bf5f254aeba9::t_288b3f6ee6fca2 1-87
+website/docs/components/layout/card/guidelines.mdx
+  s_54bf5f254aeba9::t_e5bc9614bf6626 1-52
+website/docs/components/layout/card/code-web.mdx
+  s_54bf5f254aeba9::t_c5fe61f880039c 3,18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e5e23b47f621f6b0741ca6e2432dc5d41f99373b",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
