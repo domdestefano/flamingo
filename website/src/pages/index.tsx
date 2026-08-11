@@ -11,8 +11,20 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   const logoUrl = useBaseUrl('img/flamingo-logo-white.png');
+  const videoUrl = useBaseUrl('video/hero-background.mp4');
+  const posterUrl = useBaseUrl('img/hero-background.jpg');
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <video
+        className={styles.heroVideo}
+        src={videoUrl}
+        poster={posterUrl}
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden="true"
+      />
       <img className={styles.heroLogo} src={logoUrl} alt="" aria-hidden="true" />
       <div className={clsx('container', styles.heroContent)}>
         <Heading as="h1" className="hero__title">

@@ -23,7 +23,7 @@
   max-width: 600px;
   background: #ffffff;
   border: var(--flamingo-border01) solid var(--flamingo-site-primary-main);
-  border-radius: var(--flamingo-corner-radius03);
+  border-radius: var(--flamingo-corner-radius05);
 }
 
 /* Source screenshots range from ~75px (small anatomy call-outs) to ~2200px

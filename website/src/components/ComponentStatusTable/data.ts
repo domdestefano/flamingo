@@ -1685,7 +1685,7 @@ export const componentStatusCategories: ComponentStatusCategory[] = [
       },
       {
         "id": "specs-bar-chart",
-        "displayName": "Specs Bar Chart",
+        "displayName": "Bar chart",
         "androidCommonUi": [],
         "androidCompose": [],
         "ios": [],
