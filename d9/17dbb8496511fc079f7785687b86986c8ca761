@@ -1,0 +1,83 @@
+website/docs/components/loaders/loading-screen/overview.mdx
+  s_54bf5f254aeba9::t_333864ae3226fe 7
+website/docs/components/form/text-area/overview.mdx
+  s_54bf5f254aeba9::t_34d045940b1e31 7
+website/docs/components/loaders/loading-bar/overview.mdx
+  s_54bf5f254aeba9::t_c77046fdd95293 7
+website/docs/components/buttons/tertiary-button/overview.mdx
+  s_54bf5f254aeba9::t_277303297e6633 7
+website/docs/components/layout/vertical-divider/overview.mdx
+  s_54bf5f254aeba9::t_3c9dc8a92079d1 7
+website/docs/components/progressors-and-charts/sectioned-progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_6521336c2ff55b 7
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_893481d16a6fa9 7
+website/docs/components/buttons/primary-button/overview.mdx
+  s_54bf5f254aeba9::t_bde423d687ac10 7
+website/docs/components/form/text-input/overview.mdx
+  s_54bf5f254aeba9::t_1b396e1315db03 7
+website/docs/components/progressors-and-charts/circle-chart/overview.mdx
+  s_54bf5f254aeba9::t_19b9de65fd7683 7
+website/docs/components/feedback/tag/overview.mdx
+  s_54bf5f254aeba9::t_bb1eb135c34f49 7
+website/docs/components/progressors-and-charts/stepper/overview.mdx
+  s_54bf5f254aeba9::t_4ec7c75285903c 7
+website/docs/components/form/checkbox/overview.mdx
+  s_54bf5f254aeba9::t_3f375b806303c8 7
+website/docs/components/layout/horizontal-divider/overview.mdx
+  s_54bf5f254aeba9::t_c2ba94245540ce 7
+website/docs/components/form/chips/overview.mdx
+  s_54bf5f254aeba9::t_5009ad8dacf713 7
+website/docs/components/feedback/message-box/overview.mdx
+  s_54bf5f254aeba9::t_e62763b60dc83f 7
+website/docs/components/form/tile/overview.mdx
+  s_54bf5f254aeba9::t_0c8bcb4fbf67ad 7
+website/docs/components/buttons/floating-icon-button/overview.mdx
+  s_54bf5f254aeba9::t_d1915754fe4cb1 7
+website/docs/components/layout/empty-screen/overview.mdx
+  s_54bf5f254aeba9::t_5bacf93371aa15 7
+website/docs/components/layout/scrim/overview.mdx
+  s_54bf5f254aeba9::t_b18583632a4845 7
+website/docs/components/buttons/floating-button/overview.mdx
+  s_54bf5f254aeba9::t_4c821fe849d5a8 7
+website/docs/components/feedback/badge/overview.mdx
+  s_54bf5f254aeba9::t_5fc24bba1df385 7
+website/docs/components/form/switch/overview.mdx
+  s_54bf5f254aeba9::t_b38762b83b6469 7
+website/docs/components/buttons/icon-button/overview.mdx
+  s_54bf5f254aeba9::t_5a3280601efcc1 7
+website/docs/components/progressors-and-charts/pie-chart/overview.mdx
+  s_54bf5f254aeba9::t_52447c7d688eb2 7
+website/docs/components/progressors-and-charts/specs-bar-chart/overview.mdx
+  s_54bf5f254aeba9::t_8a405e1a35205e 7
+website/docs/components/feedback/snackbar/overview.mdx
+  s_54bf5f254aeba9::t_65fee66f042132 7
+website/docs/components/feedback/message-bar/overview.mdx
+  s_54bf5f254aeba9::t_36959375d1a4d6 7
+website/docs/components/form/drop-down/overview.mdx
+  s_54bf5f254aeba9::t_ef0833760205ee 7
+website/docs/components/layout/card/overview.mdx
+  s_54bf5f254aeba9::t_55fc48e941b397 7
+website/docs/components/form/radio-button/overview.mdx
+  s_54bf5f254aeba9::t_7975c4dd80bd51 7
+website/docs/components/loaders/skeleton/overview.mdx
+  s_54bf5f254aeba9::t_eb7d6cea46e092 7
+website/docs/components/loaders/pull-to-refresh/overview.mdx
+  s_54bf5f254aeba9::t_93376d523589bd 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d917dbb8496511fc079f7785687b86986c8ca761",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
