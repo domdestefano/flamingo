@@ -15,7 +15,7 @@
 
 .flamingo-card {
   border: var(--flamingo-border01) solid var(--flamingo-border-color);
-  border-radius: var(--flamingo-corner-radius03);
+  border-radius: var(--flamingo-corner-radius05);
   box-shadow: var(--flamingo-shadow-sm);
   background: var(--ifm-background-surface-color);
   transition: box-shadow 150ms ease, transform 150ms ease;
@@ -46,7 +46,7 @@
   width: 100%;
   table-layout: fixed;
   border: var(--flamingo-border01) solid var(--flamingo-border-color);
-  border-radius: var(--flamingo-corner-radius03);
+  border-radius: var(--flamingo-corner-radius05);
   box-shadow: var(--flamingo-shadow-sm);
   overflow: hidden;
 }

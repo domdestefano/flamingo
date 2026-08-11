@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
@@ -14,7 +15,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'About',
-    icon: '🚀',
+    icon: '/img/homepage-icons/about.svg',
     description: (
       <>
         Team &amp; comms, contribution process, asset creation — everything you
@@ -25,7 +26,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Components',
-    icon: '🧩',
+    icon: '/img/homepage-icons/components.svg',
     description: (
       <>
         Buttons, form controls, feedback, navigation, overlays, and more — every
@@ -36,7 +37,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Tokens',
-    icon: '🎨',
+    icon: '/img/homepage-icons/tokens.svg',
     description: (
       <>
         Color, typography, spacing, and other foundational tokens that keep every
@@ -48,12 +49,16 @@ const FeatureList: FeatureItem[] = [
 ];
 
 function Feature({title, icon, description, to}: FeatureItem) {
+  const iconUrl = useBaseUrl(icon);
   return (
     <div className={clsx('col col--4')}>
       <Link to={to} className={clsx(styles.featureCard, 'flamingo-card')}>
-        <span className={styles.featureIcon} aria-hidden="true">
-          {icon}
-        </span>
+        <span
+          className={styles.featureIcon}
+          style={{['--icon-mask-url' as string]: `url(${iconUrl})`}}
+          role="img"
+          aria-label=""
+        />
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </Link>
