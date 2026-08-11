@@ -1,0 +1,119 @@
+website/src/components/ComponentGallery/icons.ts
+  s_54bf5f254aeba9::t_9e673cf7559234 60-64,69-118
+website/static/img/gallery-icons/accordion.svg
+  s_54bf5f254aeba9::t_78702e5ccfb1e3 1
+website/static/img/gallery-icons/action-cards.svg
+  s_54bf5f254aeba9::t_2189f7966fec15 1
+website/static/img/gallery-icons/action-picker.svg
+  s_54bf5f254aeba9::t_bdd3a427ec2aa8 1
+website/static/img/gallery-icons/automatic-button.svg
+  s_54bf5f254aeba9::t_eab073d972629b 1
+website/static/img/gallery-icons/badge.svg
+  s_54bf5f254aeba9::t_b11567a2886900 1
+website/static/img/gallery-icons/bottom-sheet.svg
+  s_54bf5f254aeba9::t_44c0335eea6149 1
+website/static/img/gallery-icons/card.svg
+  s_54bf5f254aeba9::t_0eea37ef49d291 1
+website/static/img/gallery-icons/checkbox.svg
+  s_54bf5f254aeba9::t_67cea5400f1dc8 1
+website/static/img/gallery-icons/chips.svg
+  s_54bf5f254aeba9::t_3b0eee61c8394d 1
+website/static/img/gallery-icons/circle-chart.svg
+  s_54bf5f254aeba9::t_aae05d98bd98a3 1
+website/static/img/gallery-icons/content-header.svg
+  s_54bf5f254aeba9::t_bea82cdb70b6bc 1
+website/static/img/gallery-icons/date-picker.svg
+  s_54bf5f254aeba9::t_2f1681fd7ac537 1
+website/static/img/gallery-icons/destructive-button.svg
+  s_54bf5f254aeba9::t_3e3e314e460c7b 1
+website/static/img/gallery-icons/drop-down.svg
+  s_54bf5f254aeba9::t_d445da5613331f 1
+website/static/img/gallery-icons/empty-screen.svg
+  s_54bf5f254aeba9::t_b0d8a53036309a 1
+website/static/img/gallery-icons/floating-button.svg
+  s_54bf5f254aeba9::t_88fde6dae7bf2c 1
+website/static/img/gallery-icons/floating-icon-button.svg
+  s_54bf5f254aeba9::t_38fd18a17e0c5e 1
+website/static/img/gallery-icons/header.svg
+  s_54bf5f254aeba9::t_98152d9b4f975c 1
+website/static/img/gallery-icons/horizontal-divider.svg
+  s_54bf5f254aeba9::t_cf6b7199b65f0f 1
+website/static/img/gallery-icons/icon-button.svg
+  s_54bf5f254aeba9::t_0ab316f623e67c 1
+website/static/img/gallery-icons/leading-list.svg
+  s_54bf5f254aeba9::t_c56e25f73dcdbe 1
+website/static/img/gallery-icons/loading-bar.svg
+  s_54bf5f254aeba9::t_9517c793620d27 1
+website/static/img/gallery-icons/loading-screen.svg
+  s_54bf5f254aeba9::t_d8f59252021ed3 1
+website/static/img/gallery-icons/message-bar.svg
+  s_54bf5f254aeba9::t_4e57afa15be241 1
+website/static/img/gallery-icons/message-box.svg
+  s_54bf5f254aeba9::t_7fcd78a9ba7b3d 1
+website/static/img/gallery-icons/option-picker.svg
+  s_54bf5f254aeba9::t_eccbc512374c8c 1
+website/static/img/gallery-icons/pie-chart.svg
+  s_54bf5f254aeba9::t_5b5daec987482f 1
+website/static/img/gallery-icons/primary-button.svg
+  s_54bf5f254aeba9::t_d8b54a7f82829a 1
+website/static/img/gallery-icons/pull-to-refresh.svg
+  s_54bf5f254aeba9::t_d48932ae1cc0c8 1
+website/static/img/gallery-icons/radio-button.svg
+  s_54bf5f254aeba9::t_2bea75273e2658 1
+website/static/img/gallery-icons/scrim.svg
+  s_54bf5f254aeba9::t_bcb40e68fd844c 1
+website/static/img/gallery-icons/secondary-button.svg
+  s_54bf5f254aeba9::t_eb5ed990f582c3 1
+website/static/img/gallery-icons/sectioned-progress-bar.svg
+  s_54bf5f254aeba9::t_863daecc4a2313 1
+website/static/img/gallery-icons/simple-list.svg
+  s_54bf5f254aeba9::t_dc7345505f8061 1
+website/static/img/gallery-icons/skeleton-screen.svg
+  s_54bf5f254aeba9::t_9d02fc0a47fa8a 1
+website/static/img/gallery-icons/skeleton.svg
+  s_54bf5f254aeba9::t_8a1596fee7bd10 1
+website/static/img/gallery-icons/slider-button.svg
+  s_54bf5f254aeba9::t_8645b21b2b5025 1
+website/static/img/gallery-icons/snackbar.svg
+  s_54bf5f254aeba9::t_b78f52566bf737 1
+website/static/img/gallery-icons/specs-bar-chart.svg
+  s_54bf5f254aeba9::t_10c5d6ad50201e 1
+website/static/img/gallery-icons/stepper.svg
+  s_54bf5f254aeba9::t_a73c0f7c9bae2a 1
+website/static/img/gallery-icons/switch.svg
+  s_54bf5f254aeba9::t_6578fd2ad7c0bd 1
+website/static/img/gallery-icons/tabs.svg
+  s_54bf5f254aeba9::t_ad2b21bb5bc13b 1
+website/static/img/gallery-icons/tag.svg
+  s_54bf5f254aeba9::t_91d7e9054fa724 1
+website/static/img/gallery-icons/tertiary-button.svg
+  s_54bf5f254aeba9::t_a41937f124c403 1
+website/static/img/gallery-icons/text-area.svg
+  s_54bf5f254aeba9::t_09add3f98ae5c3 1
+website/static/img/gallery-icons/text-input.svg
+  s_54bf5f254aeba9::t_7907ec09cd423b 1
+website/static/img/gallery-icons/text-link.svg
+  s_54bf5f254aeba9::t_f9a4381e717436 1
+website/static/img/gallery-icons/tile.svg
+  s_54bf5f254aeba9::t_dc235bf857c893 1
+website/static/img/gallery-icons/time-picker.svg
+  s_54bf5f254aeba9::t_6b64ac4e0aba2b 1
+website/static/img/gallery-icons/vertical-divider.svg
+  s_54bf5f254aeba9::t_3d9dcc96b1e64d 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "4f3fad25e5f858e113aee1089831dc547860d8f7",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
