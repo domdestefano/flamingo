@@ -23,9 +23,15 @@ import { PropsTable } from '@site/src/components/ComponentDocs/shared';
 
 <PropsTable
   rows={[
-    { name: 'milestones', description: 'Labels for each milestone.', type: 'string[]' },
-    { name: 'activeIndex', description: 'Index of the currently active milestone.', type: 'number' },
-    { name: 'indicator', description: 'How each milestone is represented.', type: "'icon' | 'number'" },
-    { name: 'showLabels', description: 'Whether to show labels below each milestone.', type: 'boolean' },
+    { name: 'milestones', description: 'The milestones of the sectioned progress bar. You should not include the start and end milestones in this array.', type: 'SectionedProgressBarMilestone[]' },
+    { name: 'startMilestone', description: "The start milestone of the sectioned progress bar. The value of the start milestone is taken from the min prop.", type: 'Omit<SectionedProgressBarMilestone, "value">' },
+    { name: 'endMilestone', description: "The end milestone of the sectioned progress bar. The value of the end milestone is taken from the max prop.", type: 'Omit<SectionedProgressBarMilestone, "value">' },
+    { name: 'min', description: 'The minimum value of the sectioned progress bar.', type: 'number', default: '0' },
+    { name: 'max', description: 'The maximum value of the sectioned progress bar.', type: 'number' },
+    { name: 'value', description: 'The current value/progress of the sectioned progress bar.', type: 'number', default: '0' },
+    { name: 'variant', description: 'The variant of the sectioned progress bar.', type: "'default' | 'neutral' | 'success' | 'error' | 'alert'", default: "'default'" },
+    { name: 'iconsToShow', description: "The icons to show for the milestones. Set to true to show icons for all milestones, false to show none, or an array of 'start' | 'current' | 'end' to show icons for specific milestones.", type: "boolean | ('start' | 'current' | 'end')[]", default: "['current', 'end']" },
+    { name: 'labelsToShow', description: "The labels to show for the milestones. Set to true to show labels for all milestones, false to show none, or an array of 'start' | 'current' | 'end' to show labels for specific milestones.", type: "boolean | ('start' | 'current' | 'end')[]", default: 'true' },
+    { name: 'defaultMilestoneIcon', description: "The default icon for the milestones. It'll be used if the milestone doesn't have an icon.", type: 'ReactNode' },
   ]}
 />

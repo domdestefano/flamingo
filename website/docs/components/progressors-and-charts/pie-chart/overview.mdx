@@ -15,12 +15,12 @@ import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDo
 
 # Pie Chart <StatusBadge status="stable" />
 
-Indicates a sectioned progression in a circular shape, e.g. tasks completed out of a total.
+Showing progress through steps.
 
 <ComponentTabs basePath="/components/progressors-and-charts/pie-chart" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress"
-  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-3547" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-pie-progress--docs" />
+<AvailabilityTable figma="available" web="available" ios="available" android="not-available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-3547" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-pie-progress--docs" specsHref="https://www.figma.com/design/VuBl4ugiWKRiGROf3zglzb/Components-Specs?node-id=40000898-2654" />
 
 Note: in Storybook and code, this component is named **Pie Progress**.
 
@@ -28,18 +28,35 @@ Note: in Storybook and code, this component is named **Pie Progress**.
 
 <ComponentImage src="/img/components/pie-chart/pie-chart-overview.png" alt="Pie chart showing a fraction and discrete progress segments" />
 
+The Pie Chart is used to indicate a fraction of something, i.e. the progress on a goal or activity. The user has to go through a series of stops in order to achieve completion.
+
+## Pie vs. Circle
+
+The main difference is that the progression is continuous in the circle, while it's sectioned in fractions in the pie. We recommend using the pie when the progression is predefined in a series of stops that the user has to go through in order to achieve completion.
+
+## Pie vs. Progress Bar
+
+Pie Chart and Progress Bar serve different mental models and UX contexts.
+
+| Criterion | Pie Chart | Progress Bar |
+| --- | --- | --- |
+| Core purpose | Visualizes a fraction of something. | Shows linear progression along a defined path or process. |
+| Mental model | Feels cyclical, looped, or holistic — completion "closes the circle." | Feels sequential or directional — progress "moves forward." |
+| Use when... | You want to show a fraction of something (i.e. 3/6 steps done); you're comparing few, independent progress values. | You need precise readability and users care about the actual numeric progress; you want to provide more context through labels. |
+
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| Type | Neutral / Default / Success / Alert / Error / Branded — color of the segments. |
-| Main label | The primary value, e.g. a fraction like "6/7." |
-| Secondary label | Supporting text below the main label, e.g. "Value." |
+| Type | Default / Branded / Success / Alert / Error / Neutral — color of the segments. **Default** is generic progression used when the increment or completion isn't meant to show a positive or negative feeling. **Branded** is an alternative to Default. **Success** shows a positive feeling for any increment or completion. **Alert** shows a possible stall for the completion. **Error** shows a negative feeling for any increment or lack of completion. **Neutral** is the inactive or locked state of the progression itself. |
+| Secondary label | String explaining what the main label shows. |
+| Main label | String showing the bar value. |
+| Progression | Value determining how much progress the pie should display. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/pie-chart/pie-chart-anatomy.png" alt="Pie chart anatomy: Segments, Secondary label, Main label" />
+<ComponentImage src="/img/components/pie-chart/pie-chart-anatomy.png" alt="Pie chart anatomy: Bar, Secondary label, Main label" />
 
-1. **Segments**
-2. **Secondary label**
-3. **Main label**
+1. **Bar**
+2. **Secondary label** describing what is visible
+3. **Main label** showing the value

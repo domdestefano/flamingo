@@ -375,6 +375,11 @@ export const galleryCategories: GalleryCategory[] = [
         "title": "Stepper",
         "image": "/img/components/stepper/stepper-overview.png",
         "href": "/components/progressors-and-charts/stepper/overview"
+      },
+      {
+        "slug": "progress-bar",
+        "title": "Progress Bar",
+        "href": "/components/progressors-and-charts/progress-bar/overview"
       }
     ]
   }

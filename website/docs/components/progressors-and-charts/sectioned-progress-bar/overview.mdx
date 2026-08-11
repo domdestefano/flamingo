@@ -15,35 +15,71 @@ import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDo
 
 # Sectioned Progress Bar <StatusBadge status="stable" />
 
-Represents a progression fractioned into milestones — each milestone is a stop the progression
-must pass through to reach completion.
+Shows progression through steps, in a horizontal layout.
 
 <ComponentTabs basePath="/components/progressors-and-charts/sectioned-progress-bar" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress"
-  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-3650" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-sectioned-progress-bar--docs" />
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=39-3650" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-sectioned-progress-bar--docs" specsHref="https://www.figma.com/design/VuBl4ugiWKRiGROf3zglzb/Components-Specs?node-id=40000987-15365" />
 
 ## Component
 
 <ComponentImage src="/img/components/sectioned-progress-bar/sectioned-progress-bar-overview.png" alt="Sectioned progress bar with 4 milestones and labels" />
 
+## Description
+
+The sectioned progress bar is used to represent a progression, fractioned in milestones. Each
+milestone represents a stop the progression needs to go through in order to achieve completion.
+
+It's usually used to:
+
+1. Show progress on a challenge (i.e. quest).
+2. Show progress in a multi page flow (i.e. sign up flow).
+
+When using this component in your design, think about the behaviour in three states:
+
+| State | Details |
+| --- | --- |
+| Start | The user is still at the starting point. Ask yourself if the start should be part of the progression or not. |
+| Ongoing | The user has made some progress. Decide whether you want to keep a neutral character or indicate whether they're on or off track. |
+| Completed | The user finished. Decide whether you want to keep a neutral character or indicate success. |
+
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| # of Milestones | The number of milestones in the bar. |
-| Progression | Which milestone is currently active. |
-| Milestone indicator | Icon / Number — how each milestone is represented. |
-| All Milestones with Icons | Optional — whether every milestone gets an icon, not just the active one. |
-| Show Labels | Optional — toggles labels below each milestone. |
-| Mid progress | Whether progress is shown partway between two milestones. |
+| Type | **Default**: visually a neutral character, used in most cases. **Alert**: use to indicate something needs attention. **Error**: use to indicate something is not on track or needs attention. **Success**: use to indicate something is on track or finished. **Inactive**: use to indicate that it's over or currently not working. |
+| # of Milestones | Amount of milestones displayed (1–10). |
+| Progression | Amount of progress, from 0–100%. |
+| Start Marker Active | **No**: marker displayed in the color of an inactive bar, to indicate progress is exactly 0. **Yes**: marker displayed in the color of an active bar, to indicate something has already been reached or the user is on a particular step. |
+| Show All Icons | **No**: only the current and final milestone have an icon. **Yes**: all milestones display an icon. |
+| Mid Progress | Shows a progression continuing over the milestone marker. |
+| Icons or Numbers | Choose numbers or icons to show progression. |
+| Display Labels | **No**: labels hidden. **Yes**: labels visible. |
+| Labels | String — the label of each milestone. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/sectioned-progress-bar/sectioned-progress-bar-anatomy.png" alt="Sectioned progress bar anatomy: Track segments, Start dot, Active milestone, Upcoming milestone, Completed milestone" />
+<ComponentImage src="/img/components/sectioned-progress-bar/sectioned-progress-bar-anatomy.png" alt="Sectioned progress bar anatomy: Progress bar, Labels, Progress Marker, Finish Marker, Milestone Markers" />
 
-1. **Track segments** — filled between completed milestones, unfilled ahead.
-2. **Start dot**
-3. **Active milestone**
-4. **Upcoming milestone**
-5. **Completed milestone**
+1. **Progress bar**
+2. **Labels**
+3. **Progress Marker**
+4. **Finish Marker**
+5. **Milestone Markers**
+
+## Sectioned progress bar vs. Progress bar
+
+The sectioned progress bar shows progress in milestones, letting the user understand that they
+have to go through a series of steps to reach completion. It's providing more visual clues.
+
+The progress bar, instead, shows general progress in a continuous way, meaning the user doesn't
+have to reach any milestones in order to achieve completion.
+
+## Sectioned progress bar vs. Stepper
+
+Steppers are an interactive element that users can interact with. They display content attached
+to each step that a user needs to do.
+
+The sectioned progress bar is an element the user cannot directly interact with. It only gives an
+indicator on the progress.

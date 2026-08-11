@@ -1,0 +1,41 @@
+---
+title: Code - Web
+sidebar_position: 3
+status: stable
+tags: [progress-bar, progressors-and-charts, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+
+# Code - Web
+
+<ComponentTabs
+  basePath="/components/progressors-and-charts/progress-bar"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+## Preview
+
+<StorybookEmbed storyId="components-progressors-and-charts-progress-bar--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-progressors-and-charts-progress-bar--docs)
+
+## API
+
+<PropsTable
+  rows={[
+    { name: 'value', description: 'The amount of segments that need to be colored.', type: 'number', default: '0' },
+    { name: 'max', description: 'The amount of segments that need to be calculated.', type: 'number', default: '100' },
+    { name: 'variant', description: 'The variant of the progress bar.', type: "'default' | 'success' | 'alert' | 'error' | 'neutral'", default: 'default' },
+    { name: 'startLabel', description: 'The left title of the progress bar.', type: 'ReactNode' },
+    { name: 'startCaption', description: 'The left content of the progress bar.', type: 'ReactNode' },
+    { name: 'endLabel', description: 'The right title of the progress bar.', type: 'ReactNode' },
+    { name: 'endCaption', description: 'The right content of the progress bar.', type: 'ReactNode' },
+  ]}
+/>

@@ -11,5 +11,32 @@ import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 
 <ComponentTabs basePath="/components/progressors-and-charts/sectioned-progress-bar" />
 
-- Keep milestone labels to one or two words.
-- Use parallel phrasing across all milestone labels in the same bar.
+## Amount of milestones
+
+The sectioned progress bar should have a maximum of 10 milestones, including the ending one. This
+is to avoid visual clutter in the progress bar, but also to avoid frustration in the user. If you
+need to show more than 10 milestones, please evaluate other options or reach out to the Flamingo
+team for ad hoc cases.
+
+Every milestone should be equally distanced from the previous and the upcoming one.
+
+## Iconography
+
+- You can choose freely the icons for the milestones. Be mindful of the small size of the icon and
+  the clarity of the message you want to convey.
+- Do not overwhelm the user with too many additional visuals.
+- Never mix styles (i.e. icons & illustrations).
+
+## Labels
+
+Every milestone can have a label to indicate what the milestone is about.
+
+If a sectioned progress bar has more than 5 milestones, we suggest to only display:
+
+- **the starting one**, to show where the user's challenge or quest has begun
+- **the current one**, to reference the current status of the user's challenge or quest
+- **the ending one**, to give a glimpse of what the user will achieve on completion
+
+## Truncation behaviour
+
+The labels don't truncate.

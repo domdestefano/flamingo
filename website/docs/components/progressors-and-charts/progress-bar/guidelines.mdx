@@ -1,0 +1,58 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [progress-bar, progressors-and-charts, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs
+  basePath="/components/progressors-and-charts/progress-bar"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+## Usage
+
+Use the progress bar for a continuous progression that doesn't need to be broken down into
+distinct, nameable milestones — e.g. a rider's earnings progressing toward a cash-out threshold,
+or a batch/challenge progressing toward completion.
+
+## Interactions
+
+### Loading
+
+The progress bar is made of two elements: the background and the foreground progression. Only the
+foreground progression animates, moving linearly from 0% to 100% according to the time the
+progression takes.
+
+Another possible interaction can take place on top of the default one: the text values can
+update, meaning the text changes its values according to the progression — i.e. if the text
+values reflect the percentage of the progression, when the progression is at half completion the
+text would say 50% or 1/2 or similar.
+
+**Interaction properties for the progression**
+
+| Property | Value |
+| --- | --- |
+| Easing function | easingFunction01 |
+| Duration | duration06 |
+
+**Interaction properties for the text value changes**
+
+| Property | Value |
+| --- | --- |
+| Easing function | easingFunction01 |
+| Duration | duration01 |
+
+## Do's and Dont's
+
+There are no Do's/Don'ts examples for this component at the moment — please request them from the
+Flamingo design system team.

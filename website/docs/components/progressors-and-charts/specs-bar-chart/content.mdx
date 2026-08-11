@@ -9,7 +9,24 @@ import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 
 # Content
 
-<ComponentTabs basePath="/components/progressors-and-charts/specs-bar-chart" />
+<ComponentTabs
+  basePath="/components/progressors-and-charts/specs-bar-chart"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Content', slug: 'content' },
+    { label: 'Change log', slug: 'change-log' },
+  ]}
+/>
 
-- Keep axis labels short — long labels may wrap or get clipped, especially in translated locales.
-- Label the tooltip with the unit being measured, e.g. "Amount," not just the raw number.
+## Guidelines
+
+The bar chart uses copy in the **tooltip** and in the **labels**:
+
+- The tooltip is always one line.
+- Each label can display several lines. However, keep the number of lines consistent across all labels in the graph.
+- The space of labels is very limited, esp. if there are many bars. Try to write as short as possible labels and consider how they would get translated (e.g. instead of January, February, March, … you could use J, F, M).
+
+## Truncation behaviour
+
+There's currently no truncation behaviour.
