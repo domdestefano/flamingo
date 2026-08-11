@@ -1,0 +1,258 @@
+website/docs/components/navigation/header/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,17-24,32,34-41,48,50,52-71
+website/docs/components/overlay/dialog/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-109
+website/static/img/gallery-icons/icons.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/navigation/date-selector/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-84
+website/docs/components/navigation/range-selector/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-29
+website/docs/components/loaders/skeleton/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,28-29
+website/docs/components/navigation/header/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,26-31
+website/static/img/gallery-icons/primary-button.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/navigation/header/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,14-52
+website/docs/components/overlay/action-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 15-25,28-36,42-44,47,49,54-56,59,61
+website/docs/components/feedback/tag/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/static/img/gallery-icons/leading-list.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/src/components/ComponentDocs/shared.tsx
+  s_54bf5f254aeba9::t_a649453a3ac853 45-48,56-58,65-67,70-71,74,89-97
+website/docs/components/buttons/floating-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,29-30
+website/docs/components/content-display-and-lists/accordion/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 22-23
+website/static/img/gallery-icons/date-selector.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/buttons/destructive-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 22-23
+website/static/img/gallery-icons/secondary-button.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/overlay/time-picker/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 14-15
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_a649453a3ac853 66-69
+website/docs/components/overlay/date-picker/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,22-28,33-47
+website/docs/components/overlay/date-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,15,17-41,47-50,53,55,60-63,66,68
+website/docs/components/navigation/date-selector/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-65
+website/src/components/ComponentGallery/data.ts
+  s_54bf5f254aeba9::t_a649453a3ac853 288-297,333-342
+website/docs/components/progressors-and-charts/stepper/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,23-24
+website/docs/components/navigation/header/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,18,20
+website/docs/components/overlay/date-picker/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,18-30
+website/docs/components/overlay/option-picker/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,18-20
+website/docs/components/progressors-and-charts/sectioned-progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,23-24
+website/docs/components/assets/graphic-blocks/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 23-24
+website/docs/components/buttons/slider-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 22-23
+website/docs/components/overlay/option-picker/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,7,16,23-24,34-37,41,45-52
+website/static/img/gallery-icons/floating-icon-button.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/loaders/loading-bar/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,27-28
+website/docs/components/buttons/icon-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,29-30
+website/docs/components/layout/empty-screen/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,28-29
+website/docs/components/navigation/tabs/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,18-19,23-24,30-33,39-40,42,46,48-52
+website/static/img/gallery-icons/skeleton.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/overlay/tooltip/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-78
+website/docs/components/overlay/tooltip/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-19
+website/docs/components/layout/card/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,28-29
+website/docs/components/feedback/badge/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/overlay/action-picker/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 14-15
+website/static/img/gallery-icons/floating-button.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/navigation/range-selector/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-57
+website/docs/components/overlay/time-picker/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 18-28
+website/docs/components/layout/horizontal-divider/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/buttons/tertiary-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/static/img/gallery-icons/skeleton-screen.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/overlay/bottom-sheet/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4
+website/docs/components/overlay/option-picker/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,28-35
+website/static/img/gallery-icons/badge.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/assets/animations/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 23-24
+website/docs/components/form/text-area/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/overlay/option-picker/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4
+website/docs/components/overlay/bottom-sheet/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,29-30
+website/src/components/ComponentDocs/styles.module.css
+  s_54bf5f254aeba9::t_a649453a3ac853 22-23,29-33,36,88-95
+  s_54bf5f254aeba9::t_db734df4f160d3 96-97
+website/docs/components/loaders/loading-screen/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,27-28
+website/docs/components/feedback/message-box/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/src/pages/index.module.css
+  s_54bf5f254aeba9::t_a649453a3ac853 15-31,35-51,54-55,61-79
+website/docs/components/loaders/pull-to-refresh/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,28-29
+website/docs/components/overlay/bottom-sheet/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,9,15,17-36,42-51,54,56,59,61-73
+website/docs/components/overlay/dialog/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-32
+website/docs/components/overlay/option-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,9,15-25,36-38,41-42,45-46,49-51,54,56
+website/docs/components/content-display-and-lists/action-cards/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 21-22
+website/docs/components/form/text-input/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,26-27
+website/docs/components/overlay/tooltip/_category_.json
+  s_54bf5f254aeba9::t_a649453a3ac853 1-4
+website/docs/components/progressors-and-charts/specs-bar-chart/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/content-display-and-lists/simple-list/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 21-22
+website/docs/components/navigation/content-header/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,14-31
+website/docs/components/navigation/tabs/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 18-25
+website/docs/components/progressors-and-charts/circle-chart/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/navigation/content-header/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,30-32
+website/docs/components/loaders/skeleton-screen/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 29-30
+website/docs/components/feedback/message-bar/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/form/tile/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/layout/scrim/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,27-28
+website/docs/components/overlay/date-picker/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,7,16,22-23,25-30,36-52,57-61,65,67-72
+website/static/img/gallery-icons/dialog.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/overlay/bottom-sheet/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,14-40
+website/docs/components/overlay/action-picker/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 18-20
+website/docs/components/layout/vertical-divider/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/overlay/dialog/_category_.json
+  s_54bf5f254aeba9::t_a649453a3ac853 1-4
+website/docs/components/feedback/snackbar/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/navigation/content-header/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,18-20
+website/docs/components/navigation/range-selector/_category_.json
+  s_54bf5f254aeba9::t_a649453a3ac853 1-4
+website/docs/components/overlay/tooltip/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-23
+website/docs/components/navigation/header/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,7,16,18,22-23,29-38,40-41,47-49,51-61,65-77
+website/docs/components/overlay/dialog/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-20
+website/static/img/gallery-icons/tertiary-button.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/form/chips/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/overlay/bottom-sheet/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,7,14,16,18,22-23,29-37,59-82
+website/docs/components/overlay/dialog/change-log.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-23
+website/docs/components/navigation/date-selector/_category_.json
+  s_54bf5f254aeba9::t_a649453a3ac853 1-4
+website/docs/components/content-display-and-lists/leading-list/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 21-22
+website/docs/components/form/switch/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/navigation/content-header/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,15,17-22,26-28,32,34,37-43,47,49-59,61-83
+website/docs/components/navigation/tabs/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 26-28
+website/docs/components/buttons/floating-icon-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,28-29
+website/docs/components/overlay/tooltip/code-web.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-33
+website/docs/components/progressors-and-charts/pie-chart/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/overlay/date-picker/content.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,14-15
+website/static/img/gallery-icons/tooltip.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/overlay/action-picker/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4-5,7,16,22-25,31-38,43-45,49,53-67
+website/docs/components/navigation/tabs/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 17-37,41,50,54,56-70
+website/docs/components/overlay/time-picker/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,7,16,18,22-30,38-46,51-55,59,61-64
+website/src/components/ComponentGallery/icons.ts
+  s_54bf5f254aeba9::t_a649453a3ac853 58-61,72,123-126
+website/docs/components/overlay/time-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 15,17-47,51-59,64,66,69,72-73
+website/docs/components/form/drop-down/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/buttons/automatic-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 22-23
+website/docs/components/assets/icons/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 23-24
+website/docs/components/overlay/tooltip/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-76
+website/docs/components/navigation/content-header/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 4,16,18,22-30,39-44,49-54,58,62-71
+website/docs/components/navigation/range-selector/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-75
+website/static/img/gallery-icons/range-selector.svg
+  s_54bf5f254aeba9::t_a649453a3ac853 1
+website/docs/components/buttons/primary-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,29-30
+website/docs/components/form/radio-button/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/form/checkbox/overview.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 7,22-23
+website/docs/components/overlay/dialog/guidelines.mdx
+  s_54bf5f254aeba9::t_a649453a3ac853 1-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "ccd82011e4a596a61e9df6f8acfd4ed3d352e0da",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
