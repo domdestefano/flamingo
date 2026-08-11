@@ -57,11 +57,63 @@ export const componentIcons: Record<string, string> = {
   stepper: '🪜',
 };
 
-// Real icon images (Google Material Rounded), replacing the emoji
-// placeholder above where available — rendered on a secondary.main tile
-// with the icon in primary.dark. Add more slugs here as icons are made.
+// Real icon images — the first 3 are user-supplied Google Material Rounded
+// PNGs; the rest are Google Material Symbols Rounded SVGs (same open-source
+// icon family, fonts.google.com/icons, Apache-2.0) picked per component and
+// recolored via CSS mask in styles.module.css. Replaces the emoji
+// placeholder above wherever a slug has an entry here.
 export const componentIconImages: Record<string, string> = {
   animations: '/img/gallery-icons/animations.png',
   'graphic-blocks': '/img/gallery-icons/graphic-blocks.png',
   icons: '/img/gallery-icons/icons.png',
+  'floating-button': '/img/gallery-icons/floating-button.svg',
+  'floating-icon-button': '/img/gallery-icons/floating-icon-button.svg',
+  'icon-button': '/img/gallery-icons/icon-button.svg',
+  'primary-button': '/img/gallery-icons/primary-button.svg',
+  'secondary-button': '/img/gallery-icons/secondary-button.svg',
+  'tertiary-button': '/img/gallery-icons/tertiary-button.svg',
+  'destructive-button': '/img/gallery-icons/destructive-button.svg',
+  'automatic-button': '/img/gallery-icons/automatic-button.svg',
+  'slider-button': '/img/gallery-icons/slider-button.svg',
+  'text-link': '/img/gallery-icons/text-link.svg',
+  accordion: '/img/gallery-icons/accordion.svg',
+  'leading-list': '/img/gallery-icons/leading-list.svg',
+  'action-cards': '/img/gallery-icons/action-cards.svg',
+  'simple-list': '/img/gallery-icons/simple-list.svg',
+  badge: '/img/gallery-icons/badge.svg',
+  'message-bar': '/img/gallery-icons/message-bar.svg',
+  'message-box': '/img/gallery-icons/message-box.svg',
+  snackbar: '/img/gallery-icons/snackbar.svg',
+  tag: '/img/gallery-icons/tag.svg',
+  checkbox: '/img/gallery-icons/checkbox.svg',
+  chips: '/img/gallery-icons/chips.svg',
+  'drop-down': '/img/gallery-icons/drop-down.svg',
+  'radio-button': '/img/gallery-icons/radio-button.svg',
+  switch: '/img/gallery-icons/switch.svg',
+  'text-area': '/img/gallery-icons/text-area.svg',
+  'text-input': '/img/gallery-icons/text-input.svg',
+  tile: '/img/gallery-icons/tile.svg',
+  'empty-screen': '/img/gallery-icons/empty-screen.svg',
+  'horizontal-divider': '/img/gallery-icons/horizontal-divider.svg',
+  'vertical-divider': '/img/gallery-icons/vertical-divider.svg',
+  card: '/img/gallery-icons/card.svg',
+  scrim: '/img/gallery-icons/scrim.svg',
+  'skeleton-screen': '/img/gallery-icons/skeleton-screen.svg',
+  skeleton: '/img/gallery-icons/skeleton.svg',
+  'loading-bar': '/img/gallery-icons/loading-bar.svg',
+  'loading-screen': '/img/gallery-icons/loading-screen.svg',
+  'pull-to-refresh': '/img/gallery-icons/pull-to-refresh.svg',
+  'content-header': '/img/gallery-icons/content-header.svg',
+  header: '/img/gallery-icons/header.svg',
+  tabs: '/img/gallery-icons/tabs.svg',
+  'action-picker': '/img/gallery-icons/action-picker.svg',
+  'bottom-sheet': '/img/gallery-icons/bottom-sheet.svg',
+  'date-picker': '/img/gallery-icons/date-picker.svg',
+  'option-picker': '/img/gallery-icons/option-picker.svg',
+  'time-picker': '/img/gallery-icons/time-picker.svg',
+  'circle-chart': '/img/gallery-icons/circle-chart.svg',
+  'pie-chart': '/img/gallery-icons/pie-chart.svg',
+  'sectioned-progress-bar': '/img/gallery-icons/sectioned-progress-bar.svg',
+  'specs-bar-chart': '/img/gallery-icons/specs-bar-chart.svg',
+  stepper: '/img/gallery-icons/stepper.svg',
 };
