@@ -1,0 +1,19 @@
+website/src/pages/index.module.css
+  s_54bf5f254aeba9::t_d99588bee8719f 22,24-26,30,35,43,48-49,54-55,61-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b9b75f658cf0c7785291a34082c80814e3d0e91f",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
