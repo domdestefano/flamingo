@@ -1,0 +1,31 @@
+website/src/components/ComponentGallery/icons.ts
+  s_54bf5f254aeba9::t_cdc2fea6a751eb 58-61
+  s_54bf5f254aeba9::t_47325757102218 123-126
+website/src/components/ComponentGallery/data.ts
+  s_54bf5f254aeba9::t_ef37d533ca8411 288-297
+  s_54bf5f254aeba9::t_03af9750bbe266 333-342
+website/static/img/gallery-icons/date-selector.svg
+  s_54bf5f254aeba9::t_fd485f1a3d232e 1
+website/static/img/gallery-icons/dialog.svg
+  s_54bf5f254aeba9::t_b9052f6af5448e 1
+website/static/img/gallery-icons/range-selector.svg
+  s_54bf5f254aeba9::t_7dbf6824896071 1
+website/static/img/gallery-icons/tooltip.svg
+  s_54bf5f254aeba9::t_d8bbc638a4d281 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "597a8cae380c05a33bcd7dac5592bed85fa357da",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
