@@ -1,0 +1,52 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [loading-screen, loaders, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+
+# Guidelines
+
+<ComponentTabs
+  basePath="/components/loaders/loading-screen"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+  ]}
+/>
+
+## Interactions
+
+### Loading
+
+The loading screen appears when a content is loading, or when after an action triggered the
+whole UI to load a new state or new content. The loading interaction is made of:
+
+- The scrim and the title, which both fade in/out.
+- The loading spinner, which spins during the loading process.
+
+The scrim appears as soon as the loading starts, and the loading spinner spins until the content
+is loaded. When the content is loaded, both the scrim and the spinner fade out.
+
+## Usage
+
+**Loading screens** are used when the whole UI is loading new content or a complex action. The
+loading UI prevents the user from interacting with the app until the loading is complete. Loading
+screens need to be clear for the user, therefore the title has to clearly describe what the app
+is doing.
+
+That's why every loading screen must be made of:
+
+- **Title**, to draw the user's attention and quickly describe what the app is loading.
+- **Loading spinner**, to visually show that the app is running and loading.
+
+Both elements are mandatory because the lack of them would frustrate the user, who will be
+waiting for something to happen without having a clue about what the loading is doing or that is
+even happening.
+
+Loading screens fill the whole UI as the user is prevented from interacting with any element of
+the app while the loading is happening; this includes navigation elements. **The loading screen
+sits on top of the current screen; after the loading is complete, the loading screen fades out
+and the new content appears right beneath it.**

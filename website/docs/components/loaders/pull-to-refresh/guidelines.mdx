@@ -1,0 +1,73 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [pull-to-refresh, loaders, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs
+  basePath="/components/loaders/pull-to-refresh"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+    { label: 'Code - Web', slug: 'code-web' },
+  ]}
+/>
+
+## Interactions
+
+### Refreshing with no content
+
+When the user drags down to refresh the content, the pull to refresh UI element starts from where
+the header right below the bottom margin of the header, until it's width (as a 1:1 or 1.5x
+ratio). As the pull to refresh UI element emerges from beneath the header, it starts to scale up
+to reach the original size (48x48px), until it reaches the storage margin at the top of the
+screen. After that point, the size remains 48x48px, and the user can drag it down or lose to
+frictions of having its margin on the top of the header of 48px. The spinner starts rotating only
+after the user has dragged the trigger pull point.
+
+When loading is finished, or if an error occurs, the component goes back to its starting point.
+
+### Refreshing with content
+
+When refreshing with content in the interface, everything is the same as the refreshing with no
+content interaction. The only difference is that when dragging and while the spinner is rotating,
+the content the pull to refresh UI element refers to is pushed down, to show the interaction
+without abstractions.
+
+### Refreshing with a complex Header
+
+The pull to refresh UI element emerges from below the Header. If the header is complex, meaning
+that there are other elements attached to it, like a name or date selector, or a tab-bar, the
+pull to refresh UI element emerges from beneath the whole header.
+
+## Usage
+
+### Refresh time
+
+Give immediate visual feedback as soon as the pull-to-refresh gesture is triggered, so the user
+knows the request was received. Keep the refresh itself within a reasonable timeframe — this
+keeps the user engaged and avoids confusion about whether anything is happening.
+
+### Placement
+
+The pull to refresh UI element emerges from below the Header. If the header is complex, meaning
+that there are other elements attached to it, like a name or date selector, or a tab-bar, the
+pull to refresh UI element emerges from beneath the whole header.
+
+## Do's and Dont's
+
+<DoDontTable
+  doText="Pull to refresh has to be reliable and shown that the content is being reloaded."
+  dontText="Placing the pull to refresh UI element in between elements makes the element not visible enough and can create confusion about what's getting reloaded."
+/>
+
+<DoDontTable
+  doText="Avoid placing the pull to refresh UI element on top of the header as it will not indicate enough, due to high contrast between the UI element and the background."
+/>
+

@@ -10,7 +10,7 @@ tags: [pull-to-refresh, loaders, gesture]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import { StatusBadge, AvailabilityTable, DoDontTable } from '@site/src/components/ComponentDocs/shared';
+import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
 # Pull to refresh <StatusBadge status="stable" />
 
@@ -20,6 +20,7 @@ Let users manually refresh a view or updated data by dragging.
   basePath="/components/loaders/pull-to-refresh"
   tabs={[
     { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
     { label: 'Code - Web', slug: 'code-web' },
   ]}
 />
@@ -27,99 +28,25 @@ Let users manually refresh a view or updated data by dragging.
 <AvailabilityTable figma="available" web="available" ios="available" android="available" specs="available"
   figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=32-1223" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-loaders-pull-to-refresh--docs" />
 
-## Interactions
-
-### Refreshing with no content
-
-When the user drags down to refresh the content, the pull to refresh UI element starts from where
-the header right below the bottom margin of the header, until it's width (as a 1:1 or 1.5x
-ratio). As the pull to refresh UI element emerges from beneath the header, it starts to scale up
-to reach the original size (48x48px), until it reaches the storage margin at the top of the
-screen. After that point, the size remains 48x48px, and the user can drag it down or lose to
-frictions of having its margin on the top of the header of 48px. The spinner starts rotating only
-after the user has dragged the trigger pull point.
-
-When loading is finished, or if an error occurs, the component goes back to its starting point.
-
-### Refreshing with content
-
-When refreshing with content in the interface, everything is the same as the refreshing with no
-content interaction. The only difference is that when dragging and while the spinner is rotating,
-the content, the pull to refresh UI elements refers to, is pushed down to show the interaction
-without abstractions.
-
-### Refreshing with a complex Header
-
-The pull to refresh UI element emerges from below the Header. If the header is complex, meaning
-that there are other elements attached to it, like a name or date selector, or a tab-bar, the
-pull to refresh UI elements emerge from beneath the whole header.
-
-## Guidelines
-
-### Description
+## Component
 
 The pull-to-refresh or swipe-to-refresh UI element lets a user pull down on a list of data being
 viewed in order to retrieve more data or refresh the UI. The refresh indicator uses **only in
 conjunction with a refresh gesture** or action.
 
 Pull to refresh works well for lists and card collections where content is updated frequently, or
-when the collection usually requires constantly-updating stream of items, and the pull to refresh
-gives the user the impression that new content will always appear when refreshing the UI. It's
-safety mechanism because it's loading even preserves the loading of new content, the user can
-pull to refresh to restart the loading process.
+when the collection usually requires a constantly-updating stream of items — the pull to refresh
+gives the user the impression that new content will always appear when refreshing the UI. It's a
+safety mechanism because even if the loading of new content fails, the user can pull to refresh to
+restart the loading process.
 
 Appropriate use cases for pull-to-refresh are:
 
 - Content feeds
 - Inbox messages
 
-### Refresh time
-
-The user won't take time to become aware of what they keep the timeline of an action.
-Immediately, the system should give some visual feedback that it has received the request. The
-system's confidence in the refresh happened already needs to be at a representable timeframe.
-This engages the user and prevents confusion.
-
-### Placement
-
-The pull to refresh UI element emerges from below the Header. If the header is complex, meaning
-that there are other elements attached to it, like a name or date selector, or a tab-bar, the
-pull to refresh UI elements emerge from beneath the whole header.
-
-### Pull to refresh vs. loading bar
+## Pull to refresh vs. loading bar
 
 Pull to refresh uses a manual gesture triggered by the user to force the loading of new and
 updated content. Loading bars, instead, are used when the loading is triggered by an action
 performed by the system (not the user), for content different from a manual gesture.
-
-## Do's and Dont's
-
-### Placement
-
-The pull to refresh UI element emerges from below the Header. If the header is complex, meaning
-that there are other elements attached to it, like a name or date selector, or a tab-bar, the
-pull to refresh UI elements emerge from beneath the whole header.
-
-<DoDontTable
-  doText="Pull to refresh has to be reliable and shown that the content is being reloaded."
-  dontText="Placing the pull to refresh UI element in between elements makes the element not visible enough and can create confusion about what's getting reloaded."
-/>
-
-<DoDontTable
-  doText="Avoid placing the pull to refresh UI element on top of the header as it will not indicate enough, due to high contrast between the UI element and the background."
-/>
-
-### Detach
-
-Absolutely avoid detaching our components or creating your own ones. Do not adopt components
-from other design systems either. If you do, we'll find out and hunt you down and force you to
-use Comic Sans for the rest of your design career.
-
-Jokes aside, please use the components provided by our design system and don't detach them; if
-you need different or improved ones, to cover your use cases, please contact the Flamingo design
-system team and we will provide support and help.
-
-<DoDontTable
-  doText="Use the pull to refresh as intended by the design system."
-  dontText="If you need a variant to cover your use case, please contact us."
-/>

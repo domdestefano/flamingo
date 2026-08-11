@@ -10,10 +10,19 @@ tags: [loading-screen, loaders, full-screen]
 ---
 
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 
 # Loading screen <StatusBadge status="stable" />
 
 A full-screen state shown while content is loading.
+
+<ComponentTabs
+  basePath="/components/loaders/loading-screen"
+  tabs={[
+    { label: 'Overview', slug: 'overview' },
+    { label: 'Guidelines', slug: 'guidelines' },
+  ]}
+/>
 
 <AvailabilityTable figma="available" web="not-available" ios="not-available" android="not-available" specs="available"
   figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=32-1291" />
@@ -27,36 +36,6 @@ loading screen when arriving at the vendor and the app is loading the new vendor
 Screen states need to be particularly clear for the user, as they are not regular screens the
 user consumes but, instead, bridge the gap between steps in a flow or different flows together.
 
-## Interactions
-
-### Loading
-
-The loading screen appears when a content is loading, or when after an action triggered the
-whole UI to load a new state or new content. The loading interaction is made of:
-
-- The scrim and the title, which both fade in/out.
-- The loading spinner, which spins during the loading process.
-
-The scrim appears as soon as the loading starts, and the loading spinner spins until the content
-is loaded. When the content is loaded, both the scrim and the spinner fade out.
-
-## Guidelines
-
-**Loading screens** are used when the whole UI is loading new content or a complex action. The
-loading UI prevents the user from interacting with the app until the loading is complete. Loading
-screens need to be clear for the user, therefore the title has to clearly describe what the app
-is doing.
-
-That's why every loading screen must be made of:
-
-- **Title**, to draw the user's attention and quickly describe what the app is loading.
-- **Loading spinner**, to visually show that the app is running and loading.
-
-Both elements are mandatory because the lack of them would frustrate the user, who will be
-waiting for something to happen without having a clue about what the loading is doing or that is
-even happening.
-
-Loading screens fill the whole UI as the user is prevented from interacting with any element of
-the app while the loading is happening; this includes navigation elements. **The loading screen
-sits on top of the current screen; after the loading is complete, the loading screen fades out
-and the new content appears right beneath it.**
+Note this is distinct from the [Skeleton screen](/components/loaders/skeleton-screen/overview)
+component — the Loading screen is a full-screen scrim + spinner + title state shown before any
+layout is known, while the Skeleton screen previews the upcoming layout with placeholder shapes.
