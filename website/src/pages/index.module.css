@@ -12,9 +12,40 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* Establishes a local stacking context so the ::after layer's negative
+     z-index stays scoped inside this element instead of leaking behind
+     page content outside it (e.g. the navbar). */
+  z-index: 0;
+}
+
+/* Ken Burns effect: a slow, looping zoom + pan on the hero photo, isolated
+   onto its own ::before layer (rather than animating the header's own
+   background) so the animated transform never affects layout or the
+   content sitting on top of it. */
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  inset: -5%;
+  z-index: -1;
   background-image: url('../../static/img/hero-background.jpg');
   background-size: cover;
   background-position: center;
+  animation: heroKenBurns 30s ease-in-out infinite alternate;
+}
+
+@keyframes heroKenBurns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-1.5%, -1.5%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroBanner::after {
+    animation: none;
+  }
 }
 
 /* Dark scrim over the photo so white title/tagline text stays legible. */
