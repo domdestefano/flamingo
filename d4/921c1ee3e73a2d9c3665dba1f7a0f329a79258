@@ -1,0 +1,39 @@
+website/static/img/gallery-icons/badge.svg
+  s_54bf5f254aeba9::t_d469f2e819d2af 1
+website/static/img/gallery-icons/icons.svg
+  s_54bf5f254aeba9::t_d469f2e819d2af 1
+website/static/img/gallery-icons/tertiary-button.svg
+  s_54bf5f254aeba9::t_d469f2e819d2af 1
+website/static/img/gallery-icons/secondary-button.svg
+  s_54bf5f254aeba9::t_d469f2e819d2af 1
+website/static/img/gallery-icons/leading-list.svg
+  s_54bf5f254aeba9::t_d469f2e819d2af 1
+website/static/img/gallery-icons/primary-button.svg
+  s_54bf5f254aeba9::t_d469f2e819d2af 1
+website/src/components/ComponentGallery/icons.ts
+  s_54bf5f254aeba9::t_fc934ed258b9e0 72
+website/static/img/gallery-icons/floating-button.svg
+  s_54bf5f254aeba9::t_5ff92ab44630c1 1
+website/static/img/gallery-icons/floating-icon-button.svg
+  s_54bf5f254aeba9::t_bbab35656a1218 1
+website/static/img/gallery-icons/skeleton-screen.svg
+  s_54bf5f254aeba9::t_5eac7ffb51e97d 1
+website/static/img/gallery-icons/skeleton.svg
+  s_54bf5f254aeba9::t_b3465b49b5dc7f 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d4921c1ee3e73a2d9c3665dba1f7a0f329a79258",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
