@@ -1,0 +1,148 @@
+website/docs/components/navigation/header/overview.mdx
+  s_54bf5f254aeba9::t_bc6a80aa4dde16 4,7,16,18,22,28-37,39-40,46-48,50-60,64-76
+website/docs/components/overlay/dialog/overview.mdx
+  s_54bf5f254aeba9::t_8a1b6ce85712b2 1-108
+website/docs/components/navigation/content-header/change-log.mdx
+  s_54bf5f254aeba9::t_886dd86e041c09 4,18-20
+website/docs/components/overlay/action-picker/change-log.mdx
+  s_54bf5f254aeba9::t_fcde14966cfdc7 18-20
+website/docs/components/overlay/dialog/code-web.mdx
+  s_54bf5f254aeba9::t_a35db481d81621 1-32
+website/docs/components/navigation/content-header/overview.mdx
+  s_54bf5f254aeba9::t_6e0d2dd5495c4f 4,16,18,22-29,38-43,48-53,57,61-70
+website/docs/components/overlay/date-picker/overview.mdx
+  s_54bf5f254aeba9::t_b9af5159715e49 4,7,16,22-23,25-29,35-51,56-60,64,66-71
+website/docs/components/navigation/content-header/content.mdx
+  s_54bf5f254aeba9::t_d3e71b316e5b61 4,14-31
+website/docs/components/overlay/bottom-sheet/overview.mdx
+  s_54bf5f254aeba9::t_56c8a474cd4ee4 58-75
+  s_54bf5f254aeba9::t_0b9020fb1912d0 76-81
+  s_54bf5f254aeba9::t_7c2862db91438c 4,7,16,18,22,28-35
+  s_54bf5f254aeba9::t_4d6f80275164c3 14
+  s_54bf5f254aeba9::t_0443529cbb8293 36
+website/docs/components/overlay/date-picker/code-web.mdx
+  s_54bf5f254aeba9::t_aef02261782259 4,22-28,33-47
+website/docs/components/overlay/tooltip/_category_.json
+  s_54bf5f254aeba9::t_f129d571351606 1-4
+website/docs/components/overlay/action-picker/code-web.mdx
+  s_54bf5f254aeba9::t_7a1eb8b03d9e8d 14-15
+website/docs/components/overlay/bottom-sheet/content.mdx
+  s_54bf5f254aeba9::t_4ed7d25e7d0335 4
+  s_54bf5f254aeba9::t_ce9e7db6eb2e62 14-40
+website/docs/components/navigation/header/guidelines.mdx
+  s_54bf5f254aeba9::t_505862ea80c326 4
+  s_54bf5f254aeba9::t_135ad0fec6ed0d 17-24,32,34-41,48,50,52-71
+website/docs/components/overlay/time-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_158a78a5f99832 15,17-47,51-59,64,66,69,72-73
+website/docs/components/overlay/option-picker/content.mdx
+  s_54bf5f254aeba9::t_40b8eb074c1268 4
+website/docs/components/overlay/action-picker/overview.mdx
+  s_54bf5f254aeba9::t_4636f07fbbe590 4-5,7,16,22-24,30-37,42-44,48,52-66
+website/docs/components/overlay/tooltip/change-log.mdx
+  s_54bf5f254aeba9::t_f69c46acb5470b 1-23
+website/docs/components/navigation/content-header/code-web.mdx
+  s_54bf5f254aeba9::t_95971e1f2f0a11 30-32
+  s_54bf5f254aeba9::t_75389674951e07 4
+website/docs/components/navigation/range-selector/_category_.json
+  s_54bf5f254aeba9::t_8cab2ea58a2e30 1-4
+website/docs/components/overlay/dialog/_category_.json
+  s_54bf5f254aeba9::t_f65bc983733f0e 1-4
+website/docs/components/overlay/bottom-sheet/guidelines.mdx
+  s_54bf5f254aeba9::t_342f425f91bcc1 9,15,17-36,42-51,54,56,59,61-73
+  s_54bf5f254aeba9::t_4ed7d25e7d0335 4
+website/docs/components/overlay/option-picker/overview.mdx
+  s_54bf5f254aeba9::t_c7e7038d49f1ee 33-36,40,44-51
+  s_54bf5f254aeba9::t_038b2bd16dcece 4,7,16
+  s_54bf5f254aeba9::t_e17552138aa7b3 23
+website/docs/components/overlay/time-picker/overview.mdx
+  s_54bf5f254aeba9::t_cbd3a0ddb42fa5 4,7,16,18,22-29,37-45,50-54,58,60-63
+website/docs/components/overlay/option-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_f104006f9ad66a 4,9,15-25,36-38,41-42,45
+  s_54bf5f254aeba9::t_2c89451c6678c6 49-51,54,56
+  s_54bf5f254aeba9::t_328a59af185045 46
+website/docs/components/overlay/action-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_94ba7dd7048fd2 15-25,28-36,42-44,47,49,54-56,59,61
+website/docs/components/navigation/range-selector/overview.mdx
+  s_54bf5f254aeba9::t_4e3b4c452fda86 1-74
+website/docs/components/overlay/option-picker/change-log.mdx
+  s_54bf5f254aeba9::t_2d3042bfef30c7 4
+  s_54bf5f254aeba9::t_c38a7275077093 18-20
+website/docs/components/overlay/date-picker/guidelines.mdx
+  s_54bf5f254aeba9::t_5564dfeaeded5d 35
+  s_54bf5f254aeba9::t_9c8ce7cf900af9 4,15,17-34,36-41,47-50,53,55,60-63,66,68
+website/docs/components/navigation/tabs/code-web.mdx
+  s_54bf5f254aeba9::t_b2d7e49892ce24 26-28
+website/docs/components/overlay/tooltip/code-web.mdx
+  s_54bf5f254aeba9::t_b7b9bb420b303c 1-33
+website/docs/components/navigation/tabs/overview.mdx
+  s_54bf5f254aeba9::t_11569810ae8a34 18-19,23,29-32,38-39,41,45,47-51
+  s_54bf5f254aeba9::t_99a768129d0852 7
+website/docs/components/navigation/header/code-web.mdx
+  s_54bf5f254aeba9::t_505862ea80c326 4
+  s_54bf5f254aeba9::t_581aac484e3cc0 26-31
+website/docs/components/overlay/tooltip/overview.mdx
+  s_54bf5f254aeba9::t_ab518dac8e253b 1-77
+website/docs/components/overlay/time-picker/change-log.mdx
+  s_54bf5f254aeba9::t_a5dd8798f6bbf5 18-28
+website/docs/components/overlay/dialog/content.mdx
+  s_54bf5f254aeba9::t_6565bf30ffdb7a 1-20
+website/docs/components/navigation/content-header/guidelines.mdx
+  s_54bf5f254aeba9::t_145fdfc51223b0 4,15,17-22,26-28,32,34,37-43,47,49-59,61-83
+website/docs/components/navigation/tabs/guidelines.mdx
+  s_54bf5f254aeba9::t_2909adde389d22 17-37,41,50,54,56-70
+website/docs/components/navigation/tabs/change-log.mdx
+  s_54bf5f254aeba9::t_17ac79f9b5971a 18-25
+website/docs/components/overlay/tooltip/content.mdx
+  s_54bf5f254aeba9::t_a1e02ae4c04a75 1-19
+website/docs/components/navigation/header/change-log.mdx
+  s_54bf5f254aeba9::t_d71a406806f06d 18,20
+  s_54bf5f254aeba9::t_505862ea80c326 4
+website/docs/components/navigation/header/content.mdx
+  s_54bf5f254aeba9::t_505862ea80c326 4
+  s_54bf5f254aeba9::t_8b9a9b7bdd956b 14-52
+website/docs/components/navigation/range-selector/guidelines.mdx
+  s_54bf5f254aeba9::t_5755741005374d 1-57
+website/docs/components/overlay/date-picker/content.mdx
+  s_54bf5f254aeba9::t_32bfa94836b791 4,14-15
+website/docs/components/overlay/option-picker/code-web.mdx
+  s_54bf5f254aeba9::t_dbfa286a87245d 4
+  s_54bf5f254aeba9::t_2caf9d07f93026 28-35
+website/docs/components/overlay/tooltip/guidelines.mdx
+  s_54bf5f254aeba9::t_d6c3993642acae 1-76
+website/docs/components/overlay/dialog/change-log.mdx
+  s_54bf5f254aeba9::t_360dfa8ee7038b 1-23
+website/docs/components/navigation/date-selector/_category_.json
+  s_54bf5f254aeba9::t_8d10cbe572721e 1-4
+website/docs/components/overlay/date-picker/change-log.mdx
+  s_54bf5f254aeba9::t_a8c4967c1bc54e 4,18-30
+website/docs/components/navigation/date-selector/overview.mdx
+  s_54bf5f254aeba9::t_18ecbefb7ac121 1-83
+website/docs/components/navigation/date-selector/guidelines.mdx
+  s_54bf5f254aeba9::t_3659307a0bddda 1-65
+website/docs/components/overlay/bottom-sheet/code-web.mdx
+  s_54bf5f254aeba9::t_4ed7d25e7d0335 4
+website/docs/components/navigation/range-selector/code-web.mdx
+  s_54bf5f254aeba9::t_a6dfdec2b78ac1 1-29
+website/docs/components/overlay/dialog/guidelines.mdx
+  s_54bf5f254aeba9::t_2b690fb5f15e98 1-102
+website/docs/components/overlay/bottom-sheet/change-log.mdx
+  s_54bf5f254aeba9::t_4ed7d25e7d0335 4
+website/docs/components/overlay/time-picker/content.mdx
+  s_54bf5f254aeba9::t_7c485518a8ef84 14-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d3f185092b51f8d01042a27d528248c0aae09311",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
