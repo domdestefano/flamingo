@@ -1,7 +1,7 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web, ios, android]
 category: navigation
 figma_node: '40001313:4024'
@@ -13,13 +13,20 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Content header <StatusBadge status="stable" />
+# Content header <StatusBadge status="in-progress" />
 
-Divide page content into sections, guiding users through the interface and creating structure.
+To divide the content into structured sections.
 
 <ComponentTabs basePath="/components/navigation/content-header" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+:::warning
+**Last update:** Jan 2025
+
+**Available in Figma and specs, but** ⚠️ **the Web, iOS, and Android implementations are still in
+progress — expected end of Q3 '26**
+:::
+
+<AvailabilityTable figma="available" web="not-available" ios="not-available" android="not-available" specs="available" />
 
 ## Component
 
@@ -28,20 +35,36 @@ Divide page content into sections, guiding users through the interface and creat
 Use the Content header to divide your page content into sections. This will guide users through the
 interface and create structure.
 
+The component can be used on three levels:
+
+1. **Page header** — used to show the page name, a greeting, overview, or most relevant information.
+2. **Section header** — used to name a section of a page.
+3. **Subsection header** — used to name a subsection of a page.
+
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| Level | Page / Section / Subsection — sets the hierarchy the header represents. |
-| Alignment | Default (left-aligned) / Centred. |
-| Type | Default / Illustration-Animation. |
-| Show description | Optional — toggles the description line. |
-| Show action | Optional — toggles the trailing action (e.g. a tertiary button). |
+| Level | **Page**: used to display the page name. **Page/Section**: used to display the page or section name. **Subsection**: used to display a subsection — this should only be used if a Page or Section header was also used on the same page. |
+| Alignment | **Default**: content is aligned LTR or RTL depending on the interface direction. **Centred**. |
+| Type | **Empty**: nothing is displayed on the right-hand side. **Action**: displays a button or chevron on the right-hand side. **Illustration/Animation**: displays an illustration or animation on the right-hand side. |
+| Action | If Type = Action, choose from: **None** (no action), **Chevron**, **Text button**, **Icon button**. |
+| Title | The title of the section/page. |
+| Description (optional) | Description of the section/page. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/content-header/content-header-anatomy.png" alt="Content header anatomy: Title, Description, Action" />
+<ComponentImage src="/img/components/content-header/content-header-anatomy.png" alt="Content header anatomy: Title, Description, and an optional trailing button" />
 
 1. **Title** — the section's name.
 2. **Description** — optional supporting text.
-3. **Action** — optional trailing control, e.g. a tertiary button.
+3. **Button or asset** — optional, e.g. a tertiary button, chevron, icon button, or illustration/animation.
+
+## Interactions
+
+**Non-clickable** — when the component has no action, nothing is clickable.
+
+**With chevron** — when the component displays a chevron, the whole component is clickable.
+
+**With a button** — when the component displays a tertiary button or icon button, that control is
+the clickable element rather than the whole header.

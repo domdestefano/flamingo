@@ -1,7 +1,7 @@
 ---
 title: Code - Web
 sidebar_position: 5
-status: stable
+status: in-progress
 tags: [content-header, navigation, code, web, api]
 ---
 
@@ -27,6 +27,8 @@ import { PropsTable } from '@site/src/components/ComponentDocs/shared';
     { name: 'description', description: 'Optional supporting text shown below the title.', type: 'string' },
     { name: 'level', description: 'Hierarchy level the header represents.', type: "'page' | 'section' | 'subsection'" },
     { name: 'align', description: 'Text alignment.', type: "'default' | 'centred'" },
-    { name: 'action', description: 'Optional trailing action, e.g. a tertiary button.', type: 'ReactNode' },
+    { name: 'type', description: 'What is shown on the right-hand side.', type: "'empty' | 'action' | 'illustration-animation'" },
+    { name: 'action', description: "Optional trailing action when type is 'action' — a chevron, tertiary button, or icon button.", type: 'ReactNode' },
+    { name: 'graphic', description: "Optional illustration or animation shown instead of an action, when type is 'illustration-animation'.", type: 'ReactNode' },
   ]}
 />

@@ -12,28 +12,63 @@ import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
 
 <ComponentTabs basePath="/components/overlay/time-picker" />
 
-## Usage
+## Placement & usage
 
-Use the Time picker whenever the user needs to choose a specific time, e.g. a delivery slot.
-Disable hours/minutes outside a valid range (like business hours) rather than letting the user
-pick an invalid time and error out afterward.
+The time picker sits always at the bottom of the screen. **You cannot have a time picker on top
+of another, they don't stack.**
+
+## Slots
+
+Time pickers in Flamingo let teams insert other UI elements between the Time view and the action
+area. This is done via slots, which are placeholders for other Flamingo components. By default we
+recommend using only slot content that provides contextual information, like Message boxes or Tags.
+
+## Trigger point
+
+Time pickers can be triggered by several elements, the most common ones are buttons, text inputs,
+or icon buttons. Flamingo recommends using a click icon to indicate that the action will trigger a
+Time picker to appear. When using text inputs, Flamingo advises to also enable the functionality to
+type in the time values with the keyboard, plus relying on the icon button (with a click icon) to
+trigger the action with the input user's method of their choice.
+
+## AM/PM
+
+The Time picker consists of 2 or 3 columns of vertically stacked time values. The number of columns
+changes because the time picker can show the time in either a 24h or 12h format. The default view
+should be based on the user's settings; the user can scroll through the columns (hours, minutes,
+AM/PM) individually. If the user's settings cannot be accessed, the default format of the Time
+picker is 24h.
+
+## Disabled hours, minutes, and intervals
+
+When you want to show that time cannot be selected, we recommend relying on an informative message
+on the Stack area. Furthermore, hours and minutes can be hidden if they cannot be selected. This
+applies when you want to show only intervals of times — Flamingo recommends using standardised time
+intervals of 10/15/30 minutes, so that the user interactions are at a minimum.
 
 ## Use cases
-
-### Intervals
-
-<DoDontTable
-  doImage="/img/components/time-picker/time-picker-intervals-do1.png"
-  doText="Use a consistent, common minute interval (e.g. every 10 minutes)."
-  dontImage="/img/components/time-picker/time-picker-intervals-dont.png"
-  dontText="Don't use an unusual interval (e.g. every 2 minutes on odd numbers) — it's slower to scan and scroll to."
-/>
 
 ### Stack usage
 
 <DoDontTable
   doImage="/img/components/time-picker/time-picker-stack-do1.png"
-  doText="Use the content slot for short supporting text, e.g. stating the valid business hours."
+  doText="Be mindful of not adding too much text to the Message box, in order to avoid scrolling issues. A Tag should be used to highlight quick and glanceable information about the time."
   dontImage="/img/components/time-picker/time-picker-stack-dont.png"
-  dontText="Don't put a second action button in the content slot — it competes with the primary confirm action below it."
+  dontText="Avoid using the Stack to add other actions. The time picker is to select time only."
+/>
+
+### Intervals
+
+<DoDontTable
+  doImage="/img/components/time-picker/time-picker-intervals-do1.png"
+  doText="Standardised time intervals (e.g. 10/15/30 minutes) are easier to understand."
+  dontImage="/img/components/time-picker/time-picker-intervals-dont.png"
+  dontText="Uneven or uncommon time intervals might lead to confusion."
+/>
+
+### Disabled times
+
+<DoDontTable
+  doText="An informative message can help users understand which times are hidden."
+  dontText="Avoid greying out times, as they can lead to confusion in this type of interface."
 />

@@ -1,7 +1,7 @@
 ---
 title: Content
 sidebar_position: 3
-status: stable
+status: in-progress
 tags: [bottom-sheet, overlay, content, ux-writing]
 ---
 
@@ -11,6 +11,30 @@ import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 
 <ComponentTabs basePath="/components/overlay/bottom-sheet" />
 
-- Keep the title short and specific to what the sheet is for.
-- Use the description for context the title doesn't cover — don't restate the title.
-- Label the primary action with the specific action it takes, not a generic "OK" or "Confirm."
+## Overview
+
+Bottom sheets are UI elements that interrupt the user's flow in order to make a decision. Since
+mobile screens are smaller, they should be concise and focused on the task at hand. Avoid using
+long blocks of text or complex visuals that could overwhelm the user. Use language that is easy
+to understand and that doesn't require the user to think too hard.
+
+Limit the number of buttons or options to choose from. This helps the user focus on the task at
+hand and reduces the likelihood of confusion or indecision.
+
+## Appearance
+
+Title and description are used to clearly describe the task the user has to do or the decision
+they have to make, and the consequences of that action — i.e. to describe the gravity of
+deleting one's account, the confirmation bottom sheet should read "Delete your account? This
+will erase all of your data and you will need to reapply in order to work as a rider again."
+
+Bottom sheets have at least a title and a button. The title is always sentence cased and left
+aligned. A description, if present, resides right below the title, and is always sentence cased
+and left aligned. Buttons should always provide a clear option to dismiss the bottom sheet.
+
+## Truncation
+
+For the textual element, there's no truncation behaviour for this UI element, as the height of
+the text container dynamically changes based on the content of the message; it's important to
+be always mindful of text length, as people tend to not read long text or skip text elements
+altogether.

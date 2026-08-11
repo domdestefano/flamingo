@@ -4,7 +4,7 @@ sidebar_position: 1
 status: stable
 platforms: [web, ios, android]
 category: navigation
-figma_node: '40000560:2984'
+figma_node: '34:991'
 used_in: [checkout, order-tracking, rider-onboarding]
 tags: [tabs, navigation]
 ---
@@ -15,30 +15,37 @@ import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDo
 
 # Tabs <StatusBadge status="stable" />
 
-Switch between distinct sections of content within the same screen.
+Tabs are used to create internal navigation within a screen. Depending on their usage, they can
+switch the content of one section or an entire page.
 
 <ComponentTabs basePath="/components/navigation/tabs" />
 
-<AvailabilityTable figma="available" web="available" ios="available" android="available" specs="in-progress" />
+<AvailabilityTable figma="available" web="available" ios="in-progress" android="in-progress" specs="available" />
 
 ## Component
 
 <ComponentImage src="/img/components/tabs/tabs-overview.png" alt="Tabs, selected and unselected" />
 
-Sticky tabs should contain content that is genuinely distinct from other tabs in the same set —
-each tab represents a different view of the same screen, not a separate flow.
+- Tabs are used for all cases of internal page navigation.
+- Use tabs in a sticky header if you want to switch the content of the entire scrolling area.
+- Use tabs in the scrolling area if you want to switch the content of only one section.
+- Add up to 6 tabs.
 
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| # of Tabs | The number of tabs in the set. |
-| Selected Tab | Which tab is currently active. |
+| Number of tabs | 2 tabs / 3 tabs / 4 tabs / 5 tabs / 6 tabs. |
+| Selected tab | 1st tab / 2nd tab / 3rd tab / 4th tab / 5th tab / 6th tab. |
 | Icon | (Optional) Shown or hidden per tab. |
+| Fill/hug | Whether tabs stretch to fill the available width or hug their own label. |
 
 ## Anatomy
 
-Each tab item has two states:
+<ComponentImage src="/img/components/tabs/tabs-anatomy.png" alt="Tabs anatomy, numbered" />
 
-- **Selected** — filled background, indicating the currently active section.
-- **Unselected** — a lighter, unfilled background.
+1. **Grouped component container** — full width.
+2. **Tab group container** — pill shaped.
+3. **Selected tab container** — pill shaped.
+4. **Icon** — optional.
+5. **Label**

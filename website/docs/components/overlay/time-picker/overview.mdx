@@ -1,10 +1,10 @@
 ---
 title: Overview
 sidebar_position: 1
-status: stable
+status: in-progress
 platforms: [web]
 category: overlay
-figma_node: '40001834:13685'
+figma_node: '37:2442'
 used_in: [checkout, order-tracking, rider-onboarding]
 tags: [time-picker, overlay]
 ---
@@ -13,13 +13,20 @@ import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { StatusBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
-# Time picker <StatusBadge status="stable" />
+# Time picker <StatusBadge status="in-progress" />
 
-Lets the user select a time using scrolling hour/minute wheels.
+Time pickers are used to select time.
 
 <ComponentTabs basePath="/components/overlay/time-picker" />
 
-<AvailabilityTable figma="available" web="available" ios="in-progress" android="in-progress" specs="in-progress" />
+:::warning
+**Last update:** April 2026
+
+**Component available, but** ⚠️ **the latest design updates still need to be
+implemented**
+:::
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available" />
 
 Per Figma's own spec, this component is currently **web only**.
 
@@ -27,18 +34,30 @@ Per Figma's own spec, this component is currently **web only**.
 
 <ComponentImage src="/img/components/time-picker/time-picker-overview.png" alt="Time picker with hour/minute wheels and a Select time action" />
 
+Time pickers let users select a specific time and live inside bottom sheets, following the same interaction patterns as other overlay components.
+
+- Time pickers let users select a specific time (e.g. filtering sessions in a day).
+- Time is selected via scrollable columns for hours, minutes, and AM/PM (for 12h format).
+- Hours and minutes scroll in a loop (e.g. after 12 → 00, after 59 → 00); AM/PM does not loop.
+- Unavailable hours and minutes can be hidden.
+- Tapping the **Now** button scrolls hours and minutes to the current time; when the current time is already selected, the Now button is inactive.
+- Users must confirm their selection for the time value to be saved.
+
 ## Properties
 
 | Property | Details |
 | --- | --- |
-| Format | 24h (a 12h format is also supported per the component's variants). |
-| Show Stack | Optional — toggles a content slot below the wheels. |
+| Time format | 24h, to show 00 to 23 hours, in a 2 column layout / 12h, to show 01 to 12 hours in a 3 column format, where the third column is used to select AM or PM. |
+| Time intervals | To show intervals of minutes. |
+| Time state | **Now**, to show the current time / **Default**, any selectable minute or hour / **Selected**, a time that is currently selected. |
+| Stack | To show slots and replace them with other components. |
+| Action container | To show or hide the action of the Bottom sheet. |
 
 ## Anatomy
 
-<ComponentImage src="/img/components/time-picker/time-picker-anatomy.png" alt="Time picker anatomy: View toggle, Hour/minute wheels, Content slot, Confirm action" />
+<ComponentImage src="/img/components/time-picker/time-picker-anatomy.png" alt="Time picker anatomy: Now button, Time selection view, Stack container, Confirm button" />
 
-1. **View toggle** — switches between wheel and keyboard entry.
-2. **Hour/minute wheels**
-3. **Content slot** — optional, for supporting text.
-4. **Confirm action**
+1. **Now button** — jumps to the current time.
+2. **Time selection view** — the hour/minute (and AM/PM) wheels.
+3. **Stack container** — optional, for supporting content.
+4. **Confirm button**
