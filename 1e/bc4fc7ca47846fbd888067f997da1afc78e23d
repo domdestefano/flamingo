@@ -1,0 +1,84 @@
+website/docs/components/progressors-and-charts/circle-chart/overview.mdx
+  s_54bf5f254aeba9::t_38594d07d53328 22-23,27-49,58-61,65,67-69
+website/docs/components/progressors-and-charts/pie-chart/overview.mdx
+  s_54bf5f254aeba9::t_0c2ea0bf688539 18,22-23,31-46,51-54,58,60-62
+website/docs/components/progressors-and-charts/pie-chart/change-log.mdx
+  s_54bf5f254aeba9::t_3744f60574fe3b 18-33
+website/docs/components/progressors-and-charts/sectioned-progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_cb320f2689f94c 18,22-23,29-46,51-59,63-82,84-85
+website/docs/components/progressors-and-charts/circle-chart/change-log.mdx
+  s_54bf5f254aeba9::t_369bb956abf761 18-33
+website/docs/components/progressors-and-charts/pie-chart/guidelines.mdx
+  s_54bf5f254aeba9::t_cbf28c6e3a840d 9,15,17-18,22-32,36,38-47
+website/docs/components/progressors-and-charts/specs-bar-chart/content.mdx
+  s_54bf5f254aeba9::t_40055146bdbaec 12-20
+  s_54bf5f254aeba9::t_4c13616bf3d3b7 22-32
+website/docs/components/progressors-and-charts/progress-bar/guidelines.mdx
+  s_54bf5f254aeba9::t_e4acb3bfdb3420 1-58
+website/docs/components/progressors-and-charts/specs-bar-chart/guidelines.mdx
+  s_54bf5f254aeba9::t_35832388f7474d 8,10,26-33,37-40,43-60
+  s_54bf5f254aeba9::t_9faa6fe3766455 14-22
+website/docs/components/progressors-and-charts/sectioned-progress-bar/guidelines.mdx
+  s_54bf5f254aeba9::t_b048770f64e129 15-24,30-36,39-52,61-81
+website/docs/components/progressors-and-charts/circle-chart/guidelines.mdx
+  s_54bf5f254aeba9::t_dcbaebbfb92950 10,16,18-19,25,27-29,33-45,47-58
+website/docs/components/progressors-and-charts/stepper/content.mdx
+  s_54bf5f254aeba9::t_312921be77b36d 14-15
+website/docs/components/progressors-and-charts/stepper/overview.mdx
+  s_54bf5f254aeba9::t_c7028d6159f7f1 18,22-30,36-47,52-59,63,66-96
+website/docs/components/progressors-and-charts/sectioned-progress-bar/code-web.mdx
+  s_54bf5f254aeba9::t_8c9d2f8e16b8e7 26-35
+website/docs/components/progressors-and-charts/stepper/change-log.mdx
+  s_54bf5f254aeba9::t_71be5821a5e24c 18-27
+website/docs/components/progressors-and-charts/progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_20739a36a9f64e 1-100
+website/docs/components/progressors-and-charts/stepper/code-web.mdx
+  s_54bf5f254aeba9::t_a5472ddcd99413 26-34
+website/docs/components/progressors-and-charts/progress-bar/_category_.json
+  s_54bf5f254aeba9::t_d15ddd47b16063 1-4
+website/docs/components/progressors-and-charts/specs-bar-chart/overview.mdx
+  s_54bf5f254aeba9::t_342621929cfbdf 55-60,62-63
+  s_54bf5f254aeba9::t_18b5fe9107c477 18,30
+  s_54bf5f254aeba9::t_5fc1d7b4e00e48 20-28
+  s_54bf5f254aeba9::t_9f1f0407671b76 41-45,49-54
+  s_54bf5f254aeba9::t_933f78c7b791e1 19,29
+website/docs/components/progressors-and-charts/circle-chart/content.mdx
+  s_54bf5f254aeba9::t_8d077c2c43c371 14-22
+website/docs/components/progressors-and-charts/progress-bar/code-web.mdx
+  s_54bf5f254aeba9::t_6ec15d05c595e7 1-41
+website/docs/components/progressors-and-charts/sectioned-progress-bar/content.mdx
+  s_54bf5f254aeba9::t_7a5e012ebe2111 14-42
+website/src/components/ComponentGallery/icons.ts
+  s_54bf5f254aeba9::t_ddfbaf5a68bbe6 62
+  s_54bf5f254aeba9::t_e6b45e41f0d1eb 128
+website/docs/components/progressors-and-charts/specs-bar-chart/change-log.mdx
+  s_54bf5f254aeba9::t_7c843f16724ad8 13-21
+  s_54bf5f254aeba9::t_b5e875eef9491f 26-38
+website/docs/components/progressors-and-charts/stepper/guidelines.mdx
+  s_54bf5f254aeba9::t_d94d1d4e220389 9,17-35,39-58,63,65,67-76,78-80
+  s_54bf5f254aeba9::t_2312b72fd8512d 77,81
+website/docs/components/progressors-and-charts/sectioned-progress-bar/change-log.mdx
+  s_54bf5f254aeba9::t_14cb161169872a 18-67
+website/docs/components/progressors-and-charts/pie-chart/content.mdx
+  s_54bf5f254aeba9::t_41f4f6fe981e08 14-22
+website/src/components/ComponentGallery/data.ts
+  s_54bf5f254aeba9::t_b36e3279ffaabd 378-382
+website/static/img/gallery-icons/progress-bar.svg
+  s_54bf5f254aeba9::t_54e71c12c5a1d4 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "1ebc4fc7ca47846fbd888067f997da1afc78e23d",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
