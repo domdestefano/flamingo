@@ -74,7 +74,7 @@ export function AvailabilityTable({
     { label: 'Specs', value: specs, href: specsHref },
   ];
   return (
-    <table className={styles.stretchTable}>
+    <table className={styles.availabilityTable}>
       <thead>
         <tr>
           {platforms.map((p) => (
