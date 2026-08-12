@@ -17,9 +17,12 @@
    title/header — `.container.padding-top--md` is theme-classic's own
    hardcoded DocRoot/Layout/Main wrapper class combo (confirmed in
    node_modules/@docusaurus/theme-classic), not a generic utility reused
-   elsewhere, so this is safely scoped to doc pages only. */
+   elsewhere, so this is safely scoped to doc pages only. Needs
+   `!important`: Infima's own `.padding-top--md` utility rule
+   (node_modules/infima) sets `padding-top: 1rem !important`, which beats
+   any plain override regardless of specificity. */
 .container.padding-top--md {
-  padding-top: calc(var(--ifm-spacing-vertical) * 2);
+  padding-top: calc(var(--ifm-spacing-vertical) * 2) !important;
 }
 
 .flamingo-card {
