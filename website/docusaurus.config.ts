@@ -67,6 +67,39 @@ const config: Config = {
           // GitHub's inline editor — omitting this removes the "Edit this
           // page" link sitewide.
              exclude: ['**/admin/**'],
+          breadcrumbs: false,
+          // Powers the header's LastUpdatedBadge (ComponentDocs/shared.tsx)
+          // via each file's git history, replacing the old hand-set
+          // StatusBadge. The default theme's own EditMetaRow would also
+          // start showing this in the page footer once enabled — that's
+          // suppressed by ejecting theme/LastUpdated to return null.
+          showLastUpdateTime: true,
+          // Collapses every component's 5 tab docs (Overview/Guidelines/
+          // Content/Change log/Code-Web) into a single sidebar link to its
+          // Overview page — the tabs are still reachable via the inline
+          // <ComponentTabs> bar on the page itself. Only fires for
+          // category nodes whose children are ALL docs and include one
+          // ending in "/overview" (every component folder), so
+          // non-component categories (Assets itself, About, Tokens,
+          // Getting Started's differently-shaped tab groups) are
+          // untouched.
+          sidebarItemsGenerator: async ({ defaultSidebarItemsGenerator, ...args }) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            function collapse(items: typeof items): typeof items {
+              return items.map((item) => {
+                if (item.type !== 'category') return item;
+                const allDocs = item.items.every((c) => c.type === 'doc');
+                const overviewDoc = item.items.find(
+                  (c) => c.type === 'doc' && c.id.endsWith('/overview'),
+                );
+                if (allDocs && overviewDoc && overviewDoc.type === 'doc') {
+                  return { type: 'doc' as const, id: overviewDoc.id, label: item.label };
+                }
+                return { ...item, items: collapse(item.items) };
+              });
+            }
+            return collapse(items);
+          },
         },
         blog: false, // a design system doesn't need the blog preset
         theme: {
@@ -102,6 +135,11 @@ const config: Config = {
           sidebarId: 'tokensSidebar',
           position: 'left',
           label: 'Tokens',
+        },
+        {
+          href: 'https://deliveryhero.atlassian.net/servicedesk/customer/portal/899',
+          label: 'Make a request',
+          position: 'right',
         },
       ],
     },

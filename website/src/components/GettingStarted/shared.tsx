@@ -2,24 +2,9 @@ import React from 'react';
 import styles from './styles.module.css';
 
 // --- Reusable pieces for the Getting Started section ----------------------
-// Mirrors the visual pattern used across Zeroheight's Getting Started pages:
-// a colored "Last update" banner under the tab bar, and a grid of
-// name/role cards for "Team & comms" and "Designers in charge of X" sections.
-
-/**
- * The teal "Last update: <date>" banner shown under the tab bar on every
- * Zeroheight Getting Started page. For pages still in progress, Zeroheight
- * uses an amber "This page is currently WIP" variant instead — use a plain
- * `:::warning` MDX admonition for that rather than a second component, since
- * it's a one-off message, not a repeating date field.
- */
-export function UpdateBanner({ date }: { date: string }) {
-  return (
-    <div className={styles.updateBanner}>
-      <strong>Last update:</strong> {date}
-    </div>
-  );
-}
+// A grid of name/role cards for "Team & comms" and "Designers in charge of
+// X" sections, mirroring the visual pattern used across Zeroheight's
+// Getting Started pages.
 
 export type Person = { name: string; role?: string };
 
