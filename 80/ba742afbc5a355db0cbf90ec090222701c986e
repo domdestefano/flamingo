@@ -1,0 +1,19 @@
+website/docs/components/about/component-status.mdx
+  s_54bf5f254aeba9::t_08e8eb24ebaa43 2-3,6,9,11,13-16,19-22,24-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "80ba742afbc5a355db0cbf90ec090222701c986e",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
