@@ -1,0 +1,55 @@
+website/docs/components/layout/scrim/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 27
+website/docs/components/buttons/automatic-button/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 22
+website/docs/components/buttons/slider-button/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 22
+website/docs/components/content-display-and-lists/simple-list/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 21
+website/docs/components/loaders/loading-screen/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 27
+website/docs/components/loaders/skeleton-screen/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 29
+website/docs/components/navigation/content-header/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 29
+website/docs/components/overlay/action-picker/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 22
+website/docs/components/buttons/text-link/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 20
+website/docs/components/buttons/destructive-button/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 22
+website/docs/components/assets/animations/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 23-24
+website/docs/components/overlay/tooltip/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 21
+website/docs/components/assets/icons/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 24
+website/docs/components/content-display-and-lists/action-cards/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 21
+website/docs/components/layout/card/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 28
+website/docs/components/assets/graphic-blocks/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 24
+website/docs/components/loaders/loading-bar/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 27
+website/docs/components/loaders/pull-to-refresh/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 28
+website/docs/components/overlay/dialog/overview.mdx
+  s_54bf5f254aeba9::t_f6e1037ba5e74b 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b622d7dfaae6362861ec741310c37b939d739c17",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
