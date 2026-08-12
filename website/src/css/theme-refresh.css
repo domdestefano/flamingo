@@ -13,6 +13,15 @@
   --flamingo-shadow-lg: 0 8px 24px var(--flamingo-color-shadow-light);
 }
 
+/* Extra breathing room between the fixed navbar and a doc page's own
+   title/header — `.container.padding-top--md` is theme-classic's own
+   hardcoded DocRoot/Layout/Main wrapper class combo (confirmed in
+   node_modules/@docusaurus/theme-classic), not a generic utility reused
+   elsewhere, so this is safely scoped to doc pages only. */
+.container.padding-top--md {
+  padding-top: calc(var(--ifm-spacing-vertical) * 2);
+}
+
 .flamingo-card {
   border: var(--flamingo-border01) solid var(--flamingo-border-color);
   border-radius: var(--flamingo-corner-radius05);
