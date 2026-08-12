@@ -1,0 +1,303 @@
+website/docs/components/layout/vertical-divider/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/layout/scrim/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/docusaurus.config.ts
+  s_54bf5f254aeba9::t_58812fa70a0449 139-143
+  s_54bf5f254aeba9::t_a86dbca0bc5299 70-102
+website/docs/components/progressors-and-charts/specs-bar-chart/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/buttons/floating-button/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/feedback/badge/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/form/checkbox/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/assets/animations/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 12
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 14
+website/docs/components/assets/icons/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 14
+  s_54bf5f254aeba9::t_184582f38cf779 12
+website/docs/getting-started/processes/contribution/tech-guidelines.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/loaders/pull-to-refresh/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 13
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/components/form/chips/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/assets/animations/change-log.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/assets/icons/guidelines.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+  s_54bf5f254aeba9::t_184582f38cf779 9
+website/docs/components/layout/card/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/docs/components/navigation/header/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/getting-started/processes/asset-creation-and-implementation/icons.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 12
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_88af808900df8a 10
+website/docs/getting-started/team-and-comms.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 8
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 10
+website/docs/components/assets/icons/content.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/content-display-and-lists/simple-list/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 13
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/components/assets/graphic-blocks/content.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/static/img/availability-icons/web.svg
+  s_54bf5f254aeba9::t_056ab830dc04cb 1
+website/docs/components/navigation/tabs/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/loaders/loading-screen/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 12
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/components/buttons/secondary-button/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/content-display-and-lists/action-cards/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/docs/components/progressors-and-charts/stepper/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/src/theme/DocItem/Paginator/index.tsx
+  s_54bf5f254aeba9::t_92662110fb33b0 1,3-4,6
+  s_54bf5f254aeba9::t_8cc55d8e4dcca6 2,5,7
+website/docs/getting-started/processes/asset-creation-and-implementation/illustrations.mdx
+  s_54bf5f254aeba9::t_88af808900df8a 10
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 12
+website/docs/components/progressors-and-charts/sectioned-progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/static/img/availability-icons/android.svg
+  s_54bf5f254aeba9::t_056ab830dc04cb 1
+website/docs/components/progressors-and-charts/progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 13
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/getting-started/processes/contribution/design-guidelines.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+  s_54bf5f254aeba9::t_184582f38cf779 9
+website/docs/getting-started/processes/flamingo-support/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/form/text-area/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/getting-started/processes/flamingo-support/slack-channel.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+  s_54bf5f254aeba9::t_184582f38cf779 9
+website/docs/getting-started/processes/contribution/new-component-vs-variant.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/feedback/tag/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/about/component-gallery-apps.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 8
+website/docs/components/feedback/message-box/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/feedback/snackbar/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/getting-started/processes/contribution/qa.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/src/components/GettingStarted/shared.tsx
+  s_54bf5f254aeba9::t_a3b5d22cf167b6 5-7
+website/docs/components/overlay/option-picker/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/loaders/loading-bar/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 12
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/components/buttons/automatic-button/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 13
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/components/overlay/action-picker/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/buttons/slider-button/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 13
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/getting-started/roadmap.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 8
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 10
+website/docs/components/loaders/skeleton-screen/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/navigation/content-header/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/buttons/primary-button/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/content-display-and-lists/leading-list/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/static/img/availability-icons/ios.svg
+  s_54bf5f254aeba9::t_056ab830dc04cb 1
+website/docs/getting-started/processes/flamingo-support/request-form.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/feedback/message-bar/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/assets/animations/guidelines.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/overlay/bottom-sheet/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/assets/graphic-blocks/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 12
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 14
+website/docs/components/loaders/skeleton/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/buttons/floating-icon-button/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/buttons/text-link/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 14
+  s_54bf5f254aeba9::t_184582f38cf779 12
+website/docs/components/content-display-and-lists/accordion/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/docs/getting-started/processes/asset-creation-and-implementation/animations.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_88af808900df8a 10
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 12
+website/docs/getting-started/processes/flamingo-support/office-hours.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+  s_54bf5f254aeba9::t_184582f38cf779 9
+website/docs/components/overlay/date-picker/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/src/components/ComponentDocs/styles.module.css
+  s_54bf5f254aeba9::t_805bc1200307b3 93-101,104-115,118-170
+  s_54bf5f254aeba9::t_6797f987fc5381 1,7-8
+website/docs/components/form/drop-down/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/form/tile/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/assets/icons/code-web.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 12
+  s_54bf5f254aeba9::t_184582f38cf779 10
+website/src/components/ComponentDocs/shared.tsx
+  s_54bf5f254aeba9::t_05ab6ec750b110 3,19-57,59-61,63-85,122-126
+website/docs/components/buttons/destructive-button/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 13
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+website/docs/components/assets/animations/content.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+  s_54bf5f254aeba9::t_184582f38cf779 9
+website/docs/components/progressors-and-charts/circle-chart/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/progressors-and-charts/pie-chart/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/overlay/time-picker/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/overlay/tooltip/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/docs/getting-started/processes/contribution/accessibility.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/getting-started/processes/contribution/process.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/layout/horizontal-divider/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/src/theme/LastUpdated/index.tsx
+  s_54bf5f254aeba9::t_a0b4506ebd53c1 1-7
+  s_54bf5f254aeba9::t_a7262d840a7cae 8
+website/docs/components/assets/icons/change-log.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+  s_54bf5f254aeba9::t_184582f38cf779 9
+website/docs/components/form/switch/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/docs/components/form/text-input/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/assets/graphic-blocks/guidelines.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/navigation/date-selector/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/docs/components/navigation/range-selector/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/docs/components/assets/graphic-blocks/code-web.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 10
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 12
+website/docs/components/layout/empty-screen/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+website/static/img/availability-icons/figma.svg
+  s_54bf5f254aeba9::t_056ab830dc04cb 1
+website/docs/components/overlay/dialog/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 15
+  s_54bf5f254aeba9::t_184582f38cf779 13
+website/static/img/availability-icons/specs.svg
+  s_54bf5f254aeba9::t_056ab830dc04cb 1
+website/docs/components/buttons/icon-button/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/getting-started/processes/flamingo-support/pairing-session.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/assets/graphic-blocks/change-log.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 9
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 11
+website/docs/components/buttons/tertiary-button/overview.mdx
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+  s_54bf5f254aeba9::t_184582f38cf779 14
+website/docs/components/form/radio-button/overview.mdx
+  s_54bf5f254aeba9::t_184582f38cf779 14
+  s_54bf5f254aeba9::t_0c1c3bc0cd8fee 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "70a14ed5b41cd8b29cc81a05443bb37615dbf22f",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
