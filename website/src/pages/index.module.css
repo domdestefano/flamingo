@@ -76,7 +76,7 @@
 .heroLogo {
   position: absolute;
   bottom: calc(18% - 40px);
-  right: 0.75rem;
+  right: 2.5rem;
   height: 80px;
   width: auto;
   z-index: 2;

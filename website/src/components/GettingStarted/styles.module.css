@@ -1,11 +1,3 @@
-.updateBanner {
-  background: var(--flamingo-color-success-light);
-  color: var(--ifm-font-color-base);
-  padding: 0.85rem 1.25rem;
-  border-radius: 8px;
-  margin: 1.5rem 0;
-}
-
 .peopleList {
   display: flex;
   flex-wrap: wrap;

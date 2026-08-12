@@ -1,5 +1,6 @@
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { useDoc } from '@docusaurus/plugin-content-docs/client';
 import styles from './styles.module.css';
 
 // --- Reusable pieces for component documentation pages -------------------
@@ -9,35 +10,79 @@ import styles from './styles.module.css';
 
 export type Availability = 'available' | 'in-progress' | 'not-available';
 
-const AVAILABILITY_ICON: Record<Availability, string> = {
-  available: '✅',
-  'in-progress': '🚧',
-  'not-available': '⬜',
-};
-
 const AVAILABILITY_LABEL: Record<Availability, string> = {
   available: 'Available',
   'in-progress': 'In progress',
   'not-available': 'Not available',
 };
 
-export function StatusBadge({
-  status = 'stable',
+const AVAILABILITY_STYLE: Record<Availability, string> = {
+  available: styles.availabilityAvailable,
+  'in-progress': styles.availabilityInProgress,
+  'not-available': styles.availabilityNotAvailable,
+};
+
+/**
+ * Replaces the old hand-set StatusBadge ("Ready" / "In progress") next to a
+ * page's H1 — that went stale the moment someone edited the page without
+ * remembering to bump it. This reads the real git commit date for the
+ * current file instead (`docs.showLastUpdateTime: true` in
+ * docusaurus.config.ts populates `metadata.lastUpdatedAt`), so it updates
+ * itself. Renders nothing if the date isn't available yet (e.g. a brand
+ * new, uncommitted file in local dev).
+ */
+export function LastUpdatedBadge() {
+  const { metadata } = useDoc();
+  if (!metadata.lastUpdatedAt) return null;
+  const formatted = new Intl.DateTimeFormat('en', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(metadata.lastUpdatedAt));
+  return <span className={styles.lastUpdatedBadge}>Updated {formatted}</span>;
+}
+
+const PLATFORM_ICON: Record<string, string> = {
+  Figma: 'img/availability-icons/figma.svg',
+  Web: 'img/availability-icons/web.svg',
+  iOS: 'img/availability-icons/ios.svg',
+  Android: 'img/availability-icons/android.svg',
+  Specs: 'img/availability-icons/specs.svg',
+};
+
+function AvailabilityPill({
+  label,
+  value,
+  href,
 }: {
-  status?: 'draft' | 'in-review' | 'stable' | 'deprecated' | 'in-progress';
+  label: string;
+  value: Availability;
+  href?: string;
 }) {
-  const label = {
-    draft: 'Draft',
-    'in-review': 'In review',
-    stable: 'Ready',
-    deprecated: 'Deprecated',
-    'in-progress': 'In progress',
-  }[status];
-  const className =
-    status === 'in-progress'
-      ? `${styles.statusBadge} ${styles.statusBadgeInProgress}`
-      : styles.statusBadge;
-  return <span className={className}>{label}</span>;
+  const iconUrl = useBaseUrl(PLATFORM_ICON[label]);
+  const content = (
+    <>
+      <span
+        className={styles.availabilityIcon}
+        style={{ ['--icon-mask-url' as string]: `url(${iconUrl})` }}
+        role="img"
+        aria-label=""
+      />
+      <span className={styles.availabilityText}>
+        <span className={styles.availabilityLabel}>{label}</span>
+        <span className={styles.availabilityStatus}>{AVAILABILITY_LABEL[value]}</span>
+      </span>
+    </>
+  );
+  const className = `${styles.availabilityPill} ${AVAILABILITY_STYLE[value]}`;
+  return href ? (
+    <a className={className} href={href} target="_blank" rel="noopener noreferrer">
+      {content}
+    </a>
+  ) : (
+    <div className={className}>{content}</div>
+  );
 }
 
 /**
@@ -74,32 +119,11 @@ export function AvailabilityTable({
     { label: 'Specs', value: specs, href: specsHref },
   ];
   return (
-    <table className={styles.availabilityTable}>
-      <thead>
-        <tr>
-          {platforms.map((p) => (
-            <th key={p.label}>{p.label}</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          {platforms.map((p) => (
-            <td key={p.label}>
-              {p.href ? (
-                <a href={p.href} target="_blank" rel="noopener noreferrer">
-                  {AVAILABILITY_ICON[p.value]} {AVAILABILITY_LABEL[p.value]}
-                </a>
-              ) : (
-                <>
-                  {AVAILABILITY_ICON[p.value]} {AVAILABILITY_LABEL[p.value]}
-                </>
-              )}
-            </td>
-          ))}
-        </tr>
-      </tbody>
-    </table>
+    <div className={styles.availabilityRow}>
+      {platforms.map((p) => (
+        <AvailabilityPill key={p.label} label={p.label} value={p.value} href={p.href} />
+      ))}
+    </div>
   );
 }
 

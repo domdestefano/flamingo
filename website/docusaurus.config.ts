@@ -67,6 +67,67 @@ const config: Config = {
           // GitHub's inline editor — omitting this removes the "Edit this
           // page" link sitewide.
              exclude: ['**/admin/**'],
+          breadcrumbs: false,
+          // Powers the header's LastUpdatedBadge (ComponentDocs/shared.tsx)
+          // via each file's git history, replacing the old hand-set
+          // StatusBadge. The default theme's own EditMetaRow would also
+          // start showing this in the page footer once enabled — that's
+          // suppressed by ejecting theme/LastUpdated to return null.
+          showLastUpdateTime: true,
+          // Collapses every "tab group" folder — a component's Overview/
+          // Guidelines/Content/Change log/Code-Web docs, or a Getting
+          // Started process's docs (Contribution, Asset creation and
+          // implementation, Flamingo support) — down to a single visible
+          // sidebar link, landing on the first tab (already sorted by
+          // sidebar_position by defaultSidebarItemsGenerator, so item[0] is
+          // always the right one regardless of what it's named). The rest
+          // of the tabs stay reachable via the inline <ComponentTabs> bar
+          // on the page itself.
+          //
+          // Rather than dropping the other docs from the sidebar tree
+          // entirely (which was tried first and broke navigation — once a
+          // doc isn't present anywhere in a sidebar, Docusaurus can't tell
+          // which sidebar it belongs to, so visiting e.g. a Guidelines page
+          // rendered with no sidebar at all), this keeps a real category
+          // with all the original docs as `items` — every one of them
+          // still resolves to this sidebar — and only *visually* hides the
+          // children via the `flamingo-tabGroupCategory` class (see
+          // theme-refresh.css). `collapsible: false` also drops the caret/
+          // sublist styling, so it reads as a single plain link either way.
+          //
+          // Only fires for category nodes whose children are ALL docs
+          // (no nested subcategories) — so Assets itself (whose children
+          // are Icons/Graphic blocks/Animations, categories, not docs)
+          // still expands normally — and skips the two folders that
+          // legitimately are separate standalone pages rather than tabs of
+          // one page: components/about (All components / Component status
+          // / Component gallery apps) and every docs/tokens/** subfolder.
+          sidebarItemsGenerator: async ({ defaultSidebarItemsGenerator, ...args }) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            const EXCLUDED_ID_PREFIXES = ['components/about/', 'tokens/'];
+            function collapse(items: typeof items): typeof items {
+              return items.map((item) => {
+                if (item.type !== 'category') return item;
+                const allDocs = item.items.every((c) => c.type === 'doc');
+                const isExcluded = item.items.some(
+                  (c) =>
+                    c.type === 'doc' &&
+                    EXCLUDED_ID_PREFIXES.some((prefix) => c.id.startsWith(prefix)),
+                );
+                const [entryDoc] = item.items;
+                if (allDocs && entryDoc?.type === 'doc' && !isExcluded) {
+                  return {
+                    ...item,
+                    link: { type: 'doc' as const, id: entryDoc.id },
+                    collapsible: false,
+                    className: 'flamingo-tabGroupCategory',
+                  };
+                }
+                return { ...item, items: collapse(item.items) };
+              });
+            }
+            return collapse(items);
+          },
         },
         blog: false, // a design system doesn't need the blog preset
         theme: {
@@ -102,6 +163,11 @@ const config: Config = {
           sidebarId: 'tokensSidebar',
           position: 'left',
           label: 'Tokens',
+        },
+        {
+          href: 'https://deliveryhero.atlassian.net/servicedesk/customer/portal/899',
+          label: 'Make a request',
+          position: 'right',
         },
       ],
     },
