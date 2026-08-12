@@ -1,42 +1,25 @@
 ---
-title: Component status
+title: Component Status
+slug: /components/component-status
 sidebar_position: 2
 status: stable
-tags: [about, status, components]
+tags: [components, status]
 ---
 
-import { StatusBadge } from '@site/src/components/ComponentDocs/shared';
-import { UpdateBanner } from '@site/src/components/GettingStarted/shared';
+import ComponentStatusTable from '@site/src/components/ComponentStatusTable';
 
-# Component status <StatusBadge status="stable" />
+# Component Status
 
-Learn about the components' design and development status.
-
-<UpdateBanner date="July 2025" />
-
-## Status List
-
-Take a look at this document to find the updated status of components.
-
-## Guide for Zeroheight
-
-On top of component pages, you can see the status of the component.
-
-| Status | Meaning |
-| --- | --- |
-| 🔴 | To do / Not available |
-| 🟠 | Outdated |
-| 🟡 | WIP |
-| 🟢 | Available |
-
-For example:
-
-| Figma | Web | iOS | Android |
-| --- | --- | --- | --- |
-| 🟢 Available | 🟢 Available | 🔴 Not available | 🟢 Available |
+What each component is actually called in code on every platform, and how it's
+built there. Several symbols in one cell means that platform ships the
+component as separate variants; a single symbol with options listed underneath
+means one component parameterised by props or enums.
 
 :::info
-Need a component that is 🔴 Not Available? Reach out to our flamingo team to discuss next steps.
-
-Components can be built either by the Flamingo team or squads (with support/review).
+1. This table is generated from the platform source repositories — see
+   `scripts/README-component-status.md` to refresh it or correct a mapping.
+2. iOS is not yet representing the correct components, will be updated soon.
+3. An auto update of this table will be added soon.
 :::
+
+<ComponentStatusTable />
