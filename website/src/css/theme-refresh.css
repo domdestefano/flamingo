@@ -39,12 +39,22 @@
   background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
 }
 
-/* Markdown tables (props tables, availability table, changelog table, plain
-   prose tables) — Infima's defaults render these with no border/radius/
-   shadow at all. */
+/* Markdown tables (props tables, changelog table, plain prose tables) —
+   Infima's defaults render these with no border/radius/shadow at all.
+   `display: table` overrides Infima's own `table { display: block;
+   overflow: auto }` (added upstream for mobile horizontal scrolling) —
+   that turns the table into a block box wrapping an anonymous table
+   object that doesn't reliably stretch to fill it, so columns fall short
+   of the full width and leave a dangling blank strip on the right at
+   some viewport widths. This was the real cause of "the table looks
+   weird" reports across several different tables this session, not
+   table-layout — confirmed by measuring column vs. container width live
+   in the browser before/after toggling this property. Content still
+   wraps via word-wrap below instead of needing horizontal scroll. */
 .markdown table {
+  display: table;
   width: 100%;
-  table-layout: fixed;
+  table-layout: auto;
   border: var(--flamingo-border01) solid var(--flamingo-border-color);
   border-radius: var(--flamingo-corner-radius05);
   box-shadow: var(--flamingo-shadow-sm);
