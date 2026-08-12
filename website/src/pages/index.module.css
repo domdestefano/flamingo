@@ -67,11 +67,17 @@
   }
 }
 
+/* Not top-right: the source video has a small watermark baked in around
+   (91%, 82%) of its native frame. With object-fit: cover on a container
+   narrower than the video's own 16:9 aspect ratio, cropping happens only
+   on the sides, so that fraction maps to ~18% up from the container's
+   bottom edge with no horizontal crop correction needed at the right
+   edge — measured by sampling video frames via canvas, not eyeballed. */
 .heroLogo {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  height: 64px;
+  bottom: calc(18% - 40px);
+  right: 0.75rem;
+  height: 80px;
   width: auto;
   z-index: 2;
 }

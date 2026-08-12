@@ -95,6 +95,29 @@
   overflow: visible;
 }
 
+/* --- Availability table (Figma/Web/iOS/Android/Specs) — unlike
+   stretchTable, this always has exactly 5 short, similarly-sized labels,
+   so equal fixed-width columns read better than auto layout: auto lets
+   the browser leave unclaimed space as a blank trailing strip whenever the
+   labels don't add up to the full container width. Wrapping (the default,
+   not nowrap) means "Not available" wraps to two lines instead of being
+   clipped, which was the original reason auto layout got used here. */
+.availabilityTable {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.availabilityTable th,
+.availabilityTable td {
+  width: 20%;
+  text-align: center;
+}
+
+:global(.markdown) table.availabilityTable {
+  table-layout: fixed;
+  overflow: visible;
+}
+
 /* --- Do / Don't (and Caution) comparison table --- */
 
 .doDontTable {

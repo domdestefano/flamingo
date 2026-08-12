@@ -5,17 +5,22 @@
 }
 
 .featureCard {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   padding: 2rem;
   margin-bottom: 1.5rem;
   color: var(--ifm-font-color-base);
   text-decoration: none;
+  transition: box-shadow 150ms ease, transform 150ms ease;
 }
 
 .featureCard:hover {
   color: var(--ifm-font-color-base);
   text-decoration: none;
+  transform: translateY(-4px);
+  box-shadow: var(--flamingo-shadow-lg);
 }
 
 /* Solid white (from the shared .flamingo-card rule) reads too heavy sitting
