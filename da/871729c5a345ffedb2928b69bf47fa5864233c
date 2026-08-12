@@ -1,0 +1,77 @@
+website/docs/components/form/tile/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 22
+website/src/css/theme-refresh.css
+  s_54bf5f254aeba9::t_3c39593b0a5cea 42-53,55,57
+website/docs/components/assets/animations/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 20
+website/docs/components/buttons/floating-icon-button/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 26
+website/docs/components/progressors-and-charts/stepper/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 27
+website/docs/components/assets/graphic-blocks/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 20
+website/docs/components/overlay/dialog/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 21
+website/docs/components/buttons/floating-button/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 27
+website/docs/components/form/text-area/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 22
+website/docs/components/overlay/tooltip/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 21
+website/docs/components/buttons/slider-button/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 22
+website/docs/components/navigation/tabs/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 23
+website/docs/components/assets/icons/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 20
+website/docs/components/layout/horizontal-divider/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 22
+website/docs/components/overlay/bottom-sheet/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 22
+website/docs/components/loaders/skeleton-screen/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 27
+website/docs/components/layout/vertical-divider/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 22
+website/docs/components/navigation/header/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 22
+website/docs/components/layout/empty-screen/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 26
+website/docs/components/layout/card/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 28
+website/docs/components/loaders/pull-to-refresh/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 28
+website/docs/components/buttons/icon-button/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 27
+website/docs/components/feedback/message-bar/overview.mdx
+  s_54bf5f254aeba9::t_cdd70f5fed96da 22
+website/docs/components/overlay/option-picker/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 23
+website/docs/components/loaders/loading-screen/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 27
+website/docs/components/loaders/skeleton/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 26
+website/docs/components/form/text-input/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 22
+website/docs/components/navigation/content-header/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 27
+website/docs/components/content-display-and-lists/action-cards/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 21
+website/docs/components/content-display-and-lists/accordion/overview.mdx
+  s_54bf5f254aeba9::t_48448094d612f6 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "da871729c5a345ffedb2928b69bf47fa5864233c",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
