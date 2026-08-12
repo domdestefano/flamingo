@@ -1,0 +1,79 @@
+website/docs/components/form/switch/overview.mdx
+  s_54bf5f254aeba9::t_0bf7b894e15945 29-34
+website/docs/components/feedback/message-box/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 29-33
+website/docs/components/loaders/skeleton/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 33-39
+website/docs/components/form/tile/overview.mdx
+  s_54bf5f254aeba9::t_b8dac2a1a75149 29-32
+website/docs/components/feedback/tag/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 29-32
+website/docs/components/form/radio-button/overview.mdx
+  s_54bf5f254aeba9::t_aff07284d67c65 29-34
+website/docs/components/layout/horizontal-divider/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 33-35
+website/docs/components/navigation/content-header/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 34-40
+website/docs/components/layout/vertical-divider/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 33-35
+website/docs/components/overlay/time-picker/overview.mdx
+  s_54bf5f254aeba9::t_7ada54b87e1312 36-38
+website/docs/components/overlay/date-picker/overview.mdx
+  s_54bf5f254aeba9::t_f3445759a943cd 34-36
+website/docs/components/navigation/header/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 29-36
+website/docs/components/feedback/snackbar/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 29-31
+website/docs/components/buttons/floating-button/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 34-39
+website/docs/components/form/drop-down/overview.mdx
+  s_54bf5f254aeba9::t_74774c5b5fbf81 29-33
+website/docs/components/form/text-area/overview.mdx
+  s_54bf5f254aeba9::t_3f47ff22d10ee4 29-33
+website/docs/components/form/text-input/overview.mdx
+  s_54bf5f254aeba9::t_ed1c0f7c973309 29-33
+website/docs/components/feedback/message-bar/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 29-34
+website/docs/components/overlay/option-picker/overview.mdx
+  s_54bf5f254aeba9::t_7683cf6035e398 30-32
+website/docs/components/progressors-and-charts/specs-bar-chart/overview.mdx
+  s_54bf5f254aeba9::t_390715358a7fb5 37-40
+website/docs/components/buttons/floating-icon-button/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 33-40
+website/docs/components/overlay/bottom-sheet/overview.mdx
+  s_54bf5f254aeba9::t_7ae7ee4698d5f6 29-31
+website/docs/components/feedback/badge/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 29-31
+website/docs/components/overlay/action-picker/overview.mdx
+  s_54bf5f254aeba9::t_cc3ef63d41557c 31-33
+website/docs/components/progressors-and-charts/pie-chart/overview.mdx
+  s_54bf5f254aeba9::t_0df61837613334 31-38
+website/docs/components/progressors-and-charts/stepper/overview.mdx
+  s_54bf5f254aeba9::t_e4b811c7e9d05c 34-36
+website/docs/components/progressors-and-charts/sectioned-progress-bar/overview.mdx
+  s_54bf5f254aeba9::t_d994442cff206f 29-33
+website/docs/components/progressors-and-charts/circle-chart/overview.mdx
+  s_54bf5f254aeba9::t_a366f795138008 54-61
+website/docs/components/navigation/tabs/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 30-34
+website/docs/components/layout/empty-screen/overview.mdx
+  s_54bf5f254aeba9::t_ba9eaf9498a0f7 33-36
+website/docs/components/form/checkbox/overview.mdx
+  s_54bf5f254aeba9::t_be68bf821200aa 29-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d944cdf0d85f95f8f050f57ea27184d3704ff659",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
