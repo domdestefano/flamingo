@@ -1,0 +1,22 @@
+website/src/components/ComponentGallery/icons.ts
+  s_54bf5f254aeba9::t_7c4beb4243a5f5 31
+  s_54bf5f254aeba9::t_f50b1c7ab8d57b 98
+website/static/img/gallery-icons/numeric-stepper.svg
+  s_54bf5f254aeba9::t_4995b7f894d38e 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "5a2feabd74cd06f0b4e85bf58c55dce56a57e988",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
