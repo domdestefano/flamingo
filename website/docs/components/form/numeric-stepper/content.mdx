@@ -1,0 +1,25 @@
+---
+title: Content
+sidebar_position: 3
+status: stable
+tags: [numeric-stepper, content, ux-writing]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+
+# Content
+
+<ComponentTabs basePath="/components/form/numeric-stepper" />
+
+The value itself is the only text the component owns — keep it short and unambiguous.
+
+## Postfix
+
+When a postfix is used (a unit, a currency symbol, "%", "x"), keep it as short as possible so the
+value and its unit stay readable at a glance. Avoid abbreviations the user would need to decode.
+
+## Precision
+
+Match `fixedDecimals` to what the value actually means — whole counts (people, items) should show
+0 decimals, while money or ratios typically need 2. Showing more precision than the value
+meaningfully has invites confusion rather than accuracy.

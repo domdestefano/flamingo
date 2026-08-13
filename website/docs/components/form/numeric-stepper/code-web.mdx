@@ -1,0 +1,86 @@
+---
+title: Code - Web
+sidebar_position: 5
+status: stable
+tags: [numeric-stepper, code, web, api]
+---
+
+import StorybookEmbed from '@site/src/components/StorybookEmbed';
+import { PropsTable } from '@site/src/components/ComponentDocs/shared';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+
+# Code - Web
+
+<ComponentTabs basePath="/components/form/numeric-stepper" />
+
+## Preview
+
+<StorybookEmbed storyId="components-form-numeric-stepper--docs" viewMode="docs" height={900} />
+
+[View in Storybook ↗](https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-numeric-stepper--docs)
+
+## API
+
+### Numeric Stepper API
+
+<PropsTable
+  rows={[
+    {
+      name: 'value',
+      description: 'Current value.',
+      type: 'number',
+    },
+    {
+      name: 'onChange',
+      description: 'Callback when value changes.',
+      type: '(value: number) => void',
+    },
+    {
+      name: 'min',
+      description: 'Minimum value.',
+      type: 'number | undefined',
+      default: '-',
+    },
+    {
+      name: 'max',
+      description: 'Maximum value.',
+      type: 'number | undefined',
+      default: '-',
+    },
+    {
+      name: 'step',
+      description: 'Step increment/decrement value.',
+      type: 'number | undefined',
+      default: '0.01',
+    },
+    {
+      name: 'stepSpeed',
+      description: 'Speed of auto-stepping in milliseconds.',
+      type: 'number | undefined',
+      default: '100',
+    },
+    {
+      name: 'fixedDecimals',
+      description: 'Number of decimal places to display.',
+      type: 'number | undefined',
+      default: '2',
+    },
+    {
+      name: 'decrementIcon',
+      description: 'Icon for the decrement button.',
+      type: 'ReactElement<any, string | JSXElementConstructor<any>> | undefined',
+      default: '<MinusIcon />',
+    },
+    {
+      name: 'incrementIcon',
+      description: 'Icon for the increment button.',
+      type: 'ReactElement<any, string | JSXElementConstructor<any>> | undefined',
+      default: '<PlusIcon />',
+    },
+    {
+      name: 'renderPostfix',
+      description: 'Render function for postfix content (e.g., units).',
+      type: '(() => ReactNode) | undefined',
+    },
+  ]}
+/>

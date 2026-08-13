@@ -169,6 +169,12 @@ export const galleryCategories: GalleryCategory[] = [
         "href": "/components/form/drop-down/overview"
       },
       {
+        "slug": "numeric-stepper",
+        "title": "Numeric stepper",
+        "image": "/img/components/numeric-stepper/numeric-stepper-overview.png",
+        "href": "/components/form/numeric-stepper/overview"
+      },
+      {
         "slug": "radio-button",
         "title": "Radio Button",
         "image": "/img/components/radio-button/radio-button-overview.png",
