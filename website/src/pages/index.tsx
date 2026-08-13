@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
@@ -11,6 +10,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   const logoUrl = useBaseUrl('img/flamingo-logo-white.png');
+  const logotypeUrl = useBaseUrl('img/flamingo-logotype.svg');
   const videoUrl = useBaseUrl('video/hero-background.mp4');
   const posterUrl = useBaseUrl('img/hero-background.jpg');
   return (
@@ -27,9 +27,7 @@ function HomepageHeader() {
       />
       <img className={styles.heroLogo} src={logoUrl} alt="" aria-hidden="true" />
       <div className={clsx('container', styles.heroContent)}>
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
+        <img className={styles.heroLogotype} src={logotypeUrl} alt={siteConfig.title} />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <HomepageFeatures />
       </div>
