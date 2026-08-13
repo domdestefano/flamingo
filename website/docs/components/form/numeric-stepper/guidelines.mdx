@@ -1,0 +1,38 @@
+---
+title: Guidelines
+sidebar_position: 2
+status: stable
+tags: [numeric-stepper, guidelines]
+---
+
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+
+# Guidelines
+
+<ComponentTabs basePath="/components/form/numeric-stepper" />
+
+## Placement
+
+Place the numeric stepper close to the label or content it modifies — a quantity, a count, a
+rating — so the relationship between the value and what it represents is unambiguous. Give it
+enough surrounding context (a title, an icon, a unit) that the number alone isn't left to speak
+for itself.
+
+## Min/Max behaviour
+
+<DoDontTable
+  doImage="/img/components/numeric-stepper/numeric-stepper-minmax-do.png"
+  doText="Disable the decrement button when the value reaches its minimum, and the increment button at its maximum — provide clear visual feedback."
+  dontImage="/img/components/numeric-stepper/numeric-stepper-minmax-dont.png"
+  dontText="Don't allow the stepper to show an active-looking button that actually can't do anything when tapped at a limit."
+/>
+
+## Range size
+
+<DoDontTable
+  doImage="/img/components/numeric-stepper/numeric-stepper-range-do.png"
+  doText="Use a numeric stepper for small, precise adjustments where every tap has clear meaning — quantity pickers, small counters, ratings."
+  dontImage="/img/components/numeric-stepper/numeric-stepper-range-dont.png"
+  dontText="Don't use a bare stepper for a very wide range (e.g. 0–1000) with no faster way to reach a distant value — pair it with a direct editable field instead."
+/>

@@ -1,0 +1,66 @@
+---
+title: Overview
+sidebar_position: 1
+status: stable
+platforms: [web]
+category: form
+figma_node: '31:1969'
+used_in: [checkout, order-tracking, rider-onboarding]
+tags: [numeric-stepper, stepper, form, quantity, input]
+---
+
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
+import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
+import { LastUpdatedBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
+
+# Numeric stepper <LastUpdatedBadge />
+
+Let users increment or decrement a numeric value using two buttons around a centered value.
+
+<ComponentTabs basePath="/components/form/numeric-stepper" />
+
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/-Core-library--Components?node-id=31-1969" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-form-numeric-stepper--docs" specsHref="https://www.figma.com/design/VuBl4ugiWKRiGROf3zglzb/Components-Specs?node-id=40004322-4316" />
+
+## Component
+
+<ComponentImage src="/img/components/numeric-stepper/numeric-stepper-overview.png" alt="Numeric stepper states: default, with max, with postfix, with no decimals" />
+
+1. Default
+2. With max
+3. With postfix
+4. With no decimals
+
+Use the numeric stepper when a user needs to make small, precise adjustments to a number — a
+quantity picker, a small counter, a rating.
+
+## Properties
+
+The component has several properties you can choose from:
+
+| Property | Details |
+| --- | --- |
+| Value | The current numeric value shown between the two buttons. Required. |
+| Min / Max | Optional lower/upper bounds. When set, the relevant button (decrement at min, increment at max) becomes visually inactive and non-interactive at the limit. |
+| Step | The amount added or subtracted per tap. Defaults to 0.01. |
+| Step speed | While a button is pressed and held, the value auto-increments/decrements repeatedly at this interval (defaults to 100ms) until released. |
+| Fixed decimals | How many decimal places the value displays (defaults to 2; set to 0 for whole numbers only). |
+| Postfix | Optional unit or suffix rendered after the numeric value (e.g. a currency symbol, "%", "x"). |
+| Icons | The decrement/increment icons default to a minus/plus glyph but can be swapped for a different icon pair if the use case calls for it. |
+
+## Anatomy
+
+<ComponentImage src="/img/components/numeric-stepper/numeric-stepper-anatomy.png" alt="Numeric stepper anatomy: decrement button, value, increment button" width={400} />
+
+1. Decrement button — steps the value down; becomes inactive at the minimum value if one is set.
+2. Value — the current number, centered, always paired with enough surrounding context for the
+   user to know what it represents.
+3. Increment button — steps the value up; becomes inactive at the maximum value if one is set.
+
+### Clickable area
+
+Numeric stepper buttons can be tapped individually — each button's tappable area extends beyond
+its visible icon to meet the standard touch target size, even though the two buttons sit close
+together.
+
+<ComponentImage src="/img/components/numeric-stepper/numeric-stepper-clickable-area.png" alt="Numeric stepper clickable areas around the decrement and increment buttons" width={300} />
