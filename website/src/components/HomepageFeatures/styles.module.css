@@ -4,6 +4,17 @@
   width: 100%;
 }
 
+/* The homepage is the one screen that must look identical regardless of
+   the site-wide dark/light toggle (the fixed dark scrim + video already
+   doesn't react to theme) — so this card's text and icon are pinned to
+   their light-mode literal values instead of the reactive --ifm-font-
+   color-base / --flamingo-color-primary-main tokens. Both of those flip
+   to near-white and pale lavender respectively in dark mode, which read
+   as washed-out and low-contrast against the translucent white card
+   background below (also fixed, never theme-reactive) — same "pin
+   regardless of toggle" pattern already used for the navbar/sidebar in
+   theme-refresh.css, just applied here via a literal value instead of a
+   non-reactive custom property. */
 .featureCard {
   display: flex;
   flex-direction: column;
@@ -11,16 +22,16 @@
   height: 100%;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  color: var(--ifm-font-color-base);
+  color: #171717;
   text-decoration: none;
   transition: box-shadow 150ms ease, transform 150ms ease;
 }
 
 .featureCard:hover {
-  color: var(--ifm-font-color-base);
+  color: #171717;
   text-decoration: none;
   transform: translateY(-4px);
-  box-shadow: var(--flamingo-shadow-lg);
+  box-shadow: 0 8px 24px rgba(23, 23, 23, 0.32); /* pinned light-mode value of --flamingo-shadow-lg */
 }
 
 /* Solid white (from the shared .flamingo-card rule) reads too heavy sitting
@@ -39,7 +50,7 @@
   width: 2.5rem;
   height: 2.5rem;
   margin-bottom: 1rem;
-  background-color: var(--flamingo-color-primary-main);
+  background-color: #3F47CF; /* pinned light-mode value of --flamingo-color-primary-main, see .featureCard comment above */
   mask-image: var(--icon-mask-url);
   -webkit-mask-image: var(--icon-mask-url);
   mask-size: contain;

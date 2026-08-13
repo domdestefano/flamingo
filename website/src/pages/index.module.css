@@ -82,6 +82,20 @@
   z-index: 2;
 }
 
+/* Replaces the plain "Flamingo" H1 text with the real logotype mark.
+   Source SVG is solid #171717 (dark, on-light-background variant) — the
+   hero sits on a dark video+scrim, so it's forced to white the same way
+   already established for the sidebar's caret icons
+   (theme-refresh.css:.menu__caret::before), rather than shipping a second
+   pre-recolored SVG asset to maintain. Width sized to roughly match the
+   prior h1's visual weight (Infima's --ifm-h1-font-size: 3rem) at the
+   logotype's native 697:170 aspect ratio. */
+.heroLogotype {
+  width: 380px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
 .heroContent {
   position: relative;
   z-index: 1;
@@ -97,5 +111,8 @@
   }
   .heroLogo {
     height: 44px;
+  }
+  .heroLogotype {
+    width: 240px;
   }
 }
