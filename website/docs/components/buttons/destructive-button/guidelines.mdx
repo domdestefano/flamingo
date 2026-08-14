@@ -6,7 +6,7 @@ tags: [button, destructive, guidelines]
 ---
 
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
-import { DoDontTable } from '@site/src/components/ComponentDocs/shared';
+import { DoDontTable, CautionTable } from '@site/src/components/ComponentDocs/shared';
 
 # Guidelines
 
@@ -31,8 +31,14 @@ Because of this, the button shouldn't be overused in the app. In most cases you 
 subtle variant so that the component doesn't draw too much attention to these actions.
 
 <DoDontTable
-  doText="Dangerous actions such as Profile deletion are usually something riders do rarely — a subtle Destructive button is the right choice here."
+  doImage="/img/components/destructive-button/destructive-button-prominentsubtle-do.png"
+  doText="Use Prominent (filled) for the main destructive CTA. Use Subtle (outlined) for less critical destructive actions."
   dontText="Don't use the Prominent-looking Destructive button in a section where it would draw too much attention to a rarely-used action."
+/>
+
+<CautionTable
+  image="/img/components/destructive-button/destructive-button-prominentsubtle-caution.png"
+  text="Avoid using Subtle for irreversible actions like account deletion. Subtle is best for secondary destructive actions (e.g. 'Remove from list')."
 />
 
 ### Multiple use on the screen
@@ -41,8 +47,10 @@ Destructive buttons can only be used once on a screen, as they represent the des
 dangerous action of the screen. Use secondary or tertiary buttons for less important actions.
 
 <DoDontTable
-  doText="The user should know which action will be destructive."
-  dontText="Having 2 or more destructive actions will confuse users, especially if they want to cancel or revert back to a previous state."
+  doImage="/img/components/destructive-button/destructive-button-singleaction-do.png"
+  doText="Use only one destructive button per screen. Pair with a secondary or tertiary button for the safe alternative."
+  dontImage="/img/components/destructive-button/destructive-button-singleaction-dont.png"
+  dontText="Don't use multiple destructive buttons on the same screen. This confuses users about which action is truly dangerous."
 />
 
 ### Vertical resizing
