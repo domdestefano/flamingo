@@ -9,6 +9,7 @@ used_in: [rider-profile, order-cancellation, account-settings]
 tags: [button, destructive, danger, action, cta, interactive]
 ---
 
+import ComponentImage from '@site/src/components/ComponentDocs/ComponentImage';
 import ComponentTabs from '@site/src/components/ComponentDocs/ComponentTabs';
 import { LastUpdatedBadge, AvailabilityTable } from '@site/src/components/ComponentDocs/shared';
 
@@ -19,19 +20,22 @@ undone.
 
 <ComponentTabs basePath="/components/buttons/destructive-button" />
 
-<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="not-available"
-  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=15-700" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-buttons-button--docs" />
+<AvailabilityTable figma="available" web="available" ios="not-available" android="not-available" specs="available"
+  figmaHref="https://www.figma.com/design/bKbzOPgCX31dHdxAGGyFJg/Components?node-id=15-700" webHref="https://deliveryhero.github.io/rrds-web/?path=/docs/components-buttons-button--docs" specsHref="https://www.figma.com/design/VuBl4ugiWKRiGROf3zglzb/Components-Specs?node-id=40004340-6674" />
 
 ## Component
 
 Destructive buttons reuse the same underlying `Button` component as Primary and Tertiary button,
 with `color="destructive"` — there's no separate component in code.
 
-1. Active, pressed, and inactive states
-2. **Prominent** size — resembles the Primary button, for when the danger of the action should be
-   visually obvious and easy to notice.
-3. **Subtle** size — resembles the Tertiary button, for when the destructive action is less
-   desired or should draw less attention.
+<ComponentImage src="/img/components/destructive-button/destructive-button-overview.png" alt="Destructive button variants: prominent and subtle, default and with a left or right icon" />
+
+1. Prominent Default
+2. Prominent with left icon
+3. Prominent with right icon
+4. Subtle Default
+5. Subtle with left icon
+6. Subtle with right icon
 
 ## Properties
 
@@ -39,3 +43,12 @@ with `color="destructive"` — there's no separate component in code.
 | --- | --- |
 | Size | **Prominent**: resembles the primary style button — use when you want the danger/destructive nature of the action to be visually important and easy to notice. **Subtle**: resembles the tertiary style button — use when the danger/destructive action is a less desired or less important action. |
 | State | **Active**: the button is clickable. **Pressed**: the button is being pressed. **Inactive**: the button is not interactive and not clickable. |
+
+## Anatomy
+
+### Clickable area
+
+The destructive button can be tapped as a whole — its entire visible background is the tappable
+area.
+
+<ComponentImage src="/img/components/destructive-button/destructive-button-clickable-area.png" alt="Destructive button clickable area matching its visible background" width={180} />
