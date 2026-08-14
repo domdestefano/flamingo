@@ -1,0 +1,20 @@
+website/docs/components/buttons/destructive-button/overview.mdx
+  s_54bf5f254aeba9::t_b5aee77e5e4490 12,23-24,31-38
+  s_54bf5f254aeba9::t_f063ecddc5809b 46-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "bd3a4cd4ea1b4a30dd555893acdd68107033f7a1",
+  "prompts": {},
+  "sessions": {
+    "s_54bf5f254aeba9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5e5c9f2e-aa84-48e9-88d3-0bba9c9592c3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Dom De Stefano <domenico.de@deliveryhero.com>"
+    }
+  }
+}
